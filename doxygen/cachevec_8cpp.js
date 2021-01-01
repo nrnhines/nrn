@@ -1,7 +1,6 @@
 var cachevec_8cpp =
 [
     [ "nrn_linmod_update_ptrs", "cachevec_8cpp.html#add58f5788e8647fd10e11ceb3c0491ca", null ],
-    [ "nrn_partrans_update_ptrs", "cachevec_8cpp.html#a71a93a41da378d9b6c9cc7c34d409646", null ],
     [ "nrn_recalc_ptr", "cachevec_8cpp.html#a74587b5975cff6f3673a5a9488d68946", null ],
     [ "nrn_recalc_ptrvector", "cachevec_8cpp.html#ae33722af6a0df8d01bef303c2af59e9a", null ],
     [ "nrniv_recalc_ptrs", "cachevec_8cpp.html#a25024f11b37a4c5abaf3fcab24d19775", null ],

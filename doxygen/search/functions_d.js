@@ -331,7 +331,6 @@ var searchData=
   ['mvm',['Mvm',['../extras_8c.html#aef4ea1b068394f81a98a3f4c6a5e6556',1,'extras.c']]],
   ['mvupwind',['mvupwind',['../efunc_8h.html#a2525c9826920d6e666e462f5349ef9a1',1,'mvupwind():&#160;efunc.h'],['../window_8c.html#a01e777b60d7dbc52fc172d3251f08382',1,'mvupwind(int f, int n):&#160;window.c']]],
   ['myabort',['myabort',['../njvm_8cpp.html#a25921c8babb79370d1a148d446295d75',1,'njvm.cpp']]],
-  ['mycompar',['mycompar',['../partrans_8cpp.html#a8acc899177a6b5f52f3b8ae73b5f997c',1,'partrans.cpp']]],
   ['myexit',['myexit',['../njvm_8cpp.html#a921b14efa0c13994274fecdfa9fb060d',1,'njvm.cpp']]],
   ['myid',['myid',['../class_b_b_s.html#a1d8766632c8335895d6596f79525a99f',1,'BBS']]],
   ['mymap',['mymap',['../d__avec_8cpp.html#a6ba525d9bf70172296fb22715e6122d9',1,'mymap(doubleMapper f, doubleAVec &amp;a):&#160;d_avec.cpp'],['../d__vec_8cpp.html#aabcb92b5c045cbc967cdae858ac12f44',1,'mymap(doubleMapper f, doubleVec &amp;a):&#160;d_vec.cpp']]],

@@ -8,6 +8,7 @@ var searchData=
   ['parse1_2eh',['parse1.h',['../modlunit_2parse1_8h.html',1,'(Global Namespace)'],['../nmodl_2parse1_8h.html',1,'(Global Namespace)']]],
   ['partial_2ec',['partial.c',['../partial_8c.html',1,'']]],
   ['partrans_2ecpp',['partrans.cpp',['../partrans_8cpp.html',1,'']]],
+  ['partrans_2eh',['partrans.h',['../partrans_8h.html',1,'']]],
   ['passive_2ec',['passive.c',['../passive_8c.html',1,'']]],
   ['passive0_2ec',['passive0.c',['../passive0_8c.html',1,'']]],
   ['passn_2ec',['passn.c',['../passn_8c.html',1,'']]],

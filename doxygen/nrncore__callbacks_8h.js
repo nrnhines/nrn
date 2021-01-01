@@ -10,7 +10,6 @@ var nrncore__callbacks_8h =
     [ "datum2int", "nrncore__callbacks_8h.html#a55c5f084f918e727ab6aff30fffe491c", null ],
     [ "get_global_dbl_item", "nrncore__callbacks_8h.html#a4d8268d3e537524ccc5dc11246261a3b", null ],
     [ "get_global_int_item", "nrncore__callbacks_8h.html#a98202d67be3f6663d980285f9cf999ee", null ],
-    [ "get_partrans_setup_info", "nrncore__callbacks_8h.html#aa01a6eee78fe0c468db11db49e62447b", null ],
     [ "map_coreneuron_callbacks", "nrncore__callbacks_8h.html#a4a3f03a818f2d0d59d00811f2d2fa590", null ],
     [ "nrnthread_all_spike_vectors_return", "nrncore__callbacks_8h.html#a3bcf3bb0145ecbd5b9c95ce8b3a23dd3", null ],
     [ "nrnthread_dat1", "nrncore__callbacks_8h.html#a8b7e2f14246afad2d50e8c4b782c00a8", null ],

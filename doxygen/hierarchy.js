@@ -34,7 +34,6 @@ var hierarchy =
     [ "BAMech", "struct_b_a_mech.html", null ],
     [ "BAMechList", "class_b_a_mech_list.html", null ],
     [ "BAND", "struct_b_a_n_d.html", null ],
-    [ "BBCoreGapInfo", "struct_b_b_core_gap_info.html", null ],
     [ "BBS", "class_b_b_s.html", [
       [ "OcBBS", "class_oc_b_b_s.html", null ]
     ] ],
@@ -462,8 +461,8 @@ var hierarchy =
     [ "ReactSet", "struct_react_set.html", null ],
     [ "ReadyList", "class_ready_list.html", null ],
     [ "ReducedTree", "class_reduced_tree.html", null ],
-    [ "regexp", "structregexp.html", null ],
     [ "Regexp", "class_regexp.html", null ],
+    [ "regexp", "structregexp.html", null ],
     [ "REGION", "struct_r_e_g_i_o_n.html", null ],
     [ "Requirement", "class_requirement.html", null ],
     [ "Requisition", "class_requisition.html", null ],
@@ -524,6 +523,7 @@ var hierarchy =
     [ "SaveState::SecState", "struct_save_state_1_1_sec_state.html", null ],
     [ "Section", "struct_section.html", null ],
     [ "SectionListImpl", "class_section_list_impl.html", null ],
+    [ "SetupTransferInfo", "struct_setup_transfer_info.html", null ],
     [ "ShapePlotInterface", "class_shape_plot_interface.html", [
       [ "ShapePlotData", "class_shape_plot_data.html", null ]
     ] ],
@@ -541,8 +541,8 @@ var hierarchy =
     [ "StandardPicker", "class_standard_picker.html", [
       [ "ScenePicker", "class_scene_picker.html", null ]
     ] ],
-    [ "StateStructInfo", "struct_state_struct_info.html", null ],
     [ "SaveState::StateStructInfo", "struct_save_state_1_1_state_struct_info.html", null ],
+    [ "StateStructInfo", "struct_state_struct_info.html", null ],
     [ "StateTransitionEvent", "class_state_transition_event.html", null ],
     [ "Stepper", null, [
       [ "HocValStepper", "class_hoc_val_stepper.html", null ]

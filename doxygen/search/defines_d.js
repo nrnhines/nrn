@@ -91,7 +91,7 @@ var searchData=
   ['mfdialogkit',['MFDialogKit',['../_inter_views_2__defines_8h.html#ac7a2d8c73d7def7f904a70840d9a3227',1,'_defines.h']]],
   ['mfkit',['MFKit',['../_inter_views_2__defines_8h.html#a07c3f0b0f2e68f6ed433716cd4995fa1',1,'_defines.h']]],
   ['mfkitimpl',['MFKitImpl',['../_inter_views_2__defines_8h.html#a30cfd8db3ea0e8736f1fa5716a908bab',1,'_defines.h']]],
-  ['min',['MIN',['../grids_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN():&#160;grids.h'],['../spdefs_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN():&#160;spdefs.h'],['../matrix_8h.html#ac6afabdc09a49a433ee19d8a9486056d',1,'min():&#160;matrix.h']]],
+  ['min',['min',['../matrix_8h.html#ac6afabdc09a49a433ee19d8a9486056d',1,'min():&#160;matrix.h'],['../grids_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN():&#160;grids.h'],['../spdefs_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f',1,'MIN():&#160;spdefs.h']]],
   ['minf',['minf',['../hh_8c.html#aeceb8c10d8a928b2d2e66993298ed5b5',1,'hh.c']]],
   ['minrowlen',['MINROWLEN',['../sparse_8c.html#a4d0ed1a40da2d428106407477efd2d30',1,'MINROWLEN():&#160;sparse.c'],['../sprow_8c.html#a4d0ed1a40da2d428106407477efd2d30',1,'MINROWLEN():&#160;sprow.c']]],
   ['mix',['mix',['../isaac64_8c.html#ac32e062705cff271e6d54efa486a5545',1,'isaac64.c']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['section',['Section',['../section_8h.html#ab9393dbeb6781477363efbb3899c6542',1,'section.h']]],
+  ['sgid_5ft',['sgid_t',['../partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d',1,'partrans.h']]],
   ['sighandler',['SigHandler',['../readline_8c.html#ab9ed694e08f0ba9e509f7bd91e1dfbca',1,'readline.c']]],
   ['signaltype',['SignalType',['../hoc_8c.html#ab419331d757f979204e5e4ad129a1a3f',1,'hoc.c']]],
   ['speciesindexlist',['SpeciesIndexList',['../rxd_8h.html#a8280ce1995db78dbdbaf7447d9fa5c49',1,'rxd.h']]],

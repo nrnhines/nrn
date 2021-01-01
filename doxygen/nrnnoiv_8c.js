@@ -36,6 +36,7 @@ var nrnnoiv_8c =
     [ "nrn_multisplit_ptr_update", "nrnnoiv_8c.html#a5fe510a3aa38162209b7f38ba9fe871e", null ],
     [ "nrn_multisplit_reduce_solve", "nrnnoiv_8c.html#afa098d39169a7adbf5d72c9a03f06f2b", null ],
     [ "nrn_multisplit_triang", "nrnnoiv_8c.html#a81d702a5eb12e46470d382490d2dcd85", null ],
+    [ "nrn_partrans_update_ptrs", "nrnnoiv_8c.html#a71a93a41da378d9b6c9cc7c34d409646", null ],
     [ "nrn_play_init", "nrnnoiv_8c.html#a7d05302e0a364ef26e6ae136465ddc16", null ],
     [ "nrn_pool_alloc", "nrnnoiv_8c.html#a726e2e2d9bd5415da1c7412a971ee0af", null ],
     [ "nrn_pool_create", "nrnnoiv_8c.html#aaed63c6a7966a1418fd065e3938eeaec", null ],

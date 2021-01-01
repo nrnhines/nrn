@@ -1,6 +1,5 @@
 var NAVTREEINDEX67 =
 {
-"neuron_8h.html#ac2fa49ae79c69a8df159b574c6d329f4":[5,0,0,14,34,15],
 "neuron_8h.html#ac64acdb302d0585b85b2026dcdc6b6b1":[5,0,0,14,34,66],
 "neuron_8h.html#ac6f0859b25b373ce0cd850612e67f589":[5,0,0,14,34,27],
 "neuron_8h.html#ac7949ea689e174a3a5bf7ea9304542f9":[5,0,0,14,34,59],
@@ -249,5 +248,6 @@ var NAVTREEINDEX67 =
 "nmodl_2lex_8c.html#a48e81b6f60f5f21fcaca3cc542e6c9f2":[5,0,0,9,14,108],
 "nmodl_2lex_8c.html#a4bf8969e5234aef8b46cce9a67a62724":[5,0,0,9,14,121],
 "nmodl_2lex_8c.html#a4d4e3dd7e6f1d795e01b61794b31ac34":[5,0,0,9,14,111],
-"nmodl_2lex_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4":[5,0,0,9,14,83]
+"nmodl_2lex_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4":[5,0,0,9,14,83],
+"nmodl_2lex_8c.html#a5206f64af3a299a0dc820c385cf0c489":[5,0,0,9,14,48]
 };

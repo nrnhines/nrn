@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['o',['o',['../union_templatedatum.html#ab547d073b03928607b0aab7ca4eae788',1,'Templatedatum::o()'],['../modlunit_2lex_8c.html#a396fecfabe3105afc15a61c209f910f0',1,'O():&#160;lex.c'],['../seclist_8c.html#ae47ca7a09cf6781e29634502345930a7',1,'o():&#160;seclist.c']]],
+  ['o',['o',['../union_templatedatum.html#ab547d073b03928607b0aab7ca4eae788',1,'Templatedatum::o()'],['../seclist_8c.html#ae47ca7a09cf6781e29634502345930a7',1,'o():&#160;seclist.c'],['../modlunit_2lex_8c.html#a396fecfabe3105afc15a61c209f910f0',1,'O():&#160;lex.c']]],
   ['o1',['o1',['../class_oc_jump_impl.html#a8769485822732d09bcce9da677bb16b8',1,'OcJumpImpl']]],
   ['o2',['o2',['../class_oc_jump_impl.html#a77c6500bc0db684f7888e8291d0d191e',1,'OcJumpImpl']]],
   ['o2loc',['o2loc',['../nrnpy__nrn_8cpp.html#a3dc0918ac5f4ba0daae64ceb32123873',1,'nrnpy_nrn.cpp']]],

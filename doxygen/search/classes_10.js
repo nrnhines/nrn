@@ -14,7 +14,7 @@ var searchData=
   ['rect',['Rect',['../class_rect.html',1,'']]],
   ['rectangle',['Rectangle',['../class_rectangle.html',1,'']]],
   ['reducedtree',['ReducedTree',['../class_reduced_tree.html',1,'']]],
-  ['regexp',['regexp',['../structregexp.html',1,'regexp'],['../class_regexp.html',1,'Regexp']]],
+  ['regexp',['Regexp',['../class_regexp.html',1,'Regexp'],['../structregexp.html',1,'regexp']]],
   ['region',['REGION',['../struct_r_e_g_i_o_n.html',1,'']]],
   ['requirement',['Requirement',['../class_requirement.html',1,'']]],
   ['requisition',['Requisition',['../class_requisition.html',1,'']]],

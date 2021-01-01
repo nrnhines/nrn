@@ -33,6 +33,7 @@ var treeset_8c =
     [ "nrn_modeltype", "treeset_8c.html#aa6118c7b88c9be43e54458d74e0ae540", null ],
     [ "nrn_old_thread_save", "treeset_8c.html#ab33aa8b1c41aab404cade60bb222618f", null ],
     [ "nrn_parent_node", "treeset_8c.html#a2d905805cc23ad639943821248495bc9", null ],
+    [ "nrn_partrans_update_ptrs", "treeset_8c.html#a71a93a41da378d9b6c9cc7c34d409646", null ],
     [ "nrn_pt3dbufchk", "treeset_8c.html#aee3e0eeceb85150b47bd8bf502f2d8a5", null ],
     [ "nrn_pt3dchange1", "treeset_8c.html#a90ecdb19867e3d14ea0fc589d5fd3eb7", null ],
     [ "nrn_pt3dchange2", "treeset_8c.html#a74e577ce52a3fc2e78893b354f16b82b", null ],

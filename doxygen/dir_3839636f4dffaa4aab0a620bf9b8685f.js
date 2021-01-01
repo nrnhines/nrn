@@ -104,6 +104,7 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "occvode.cpp", "nrniv_2occvode_8cpp.html", null ],
     [ "ocjump.cpp", "nrniv_2ocjump_8cpp.html", null ],
     [ "partrans.cpp", "partrans_8cpp.html", "partrans_8cpp" ],
+    [ "partrans.h", "partrans_8h.html", "partrans_8h" ],
     [ "ppshape.cpp", "ppshape_8cpp.html", "ppshape_8cpp" ],
     [ "ppshape.h", "ppshape_8h.html", [
       [ "PointProcessGlyph", "class_point_process_glyph.html", "class_point_process_glyph" ],

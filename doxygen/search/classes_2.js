@@ -3,7 +3,6 @@ var searchData=
   ['bamech',['BAMech',['../struct_b_a_mech.html',1,'']]],
   ['bamechlist',['BAMechList',['../class_b_a_mech_list.html',1,'']]],
   ['band',['BAND',['../struct_b_a_n_d.html',1,'']]],
-  ['bbcoregapinfo',['BBCoreGapInfo',['../struct_b_b_core_gap_info.html',1,'']]],
   ['bbs',['BBS',['../class_b_b_s.html',1,'']]],
   ['bbsavestate',['BBSaveState',['../class_b_b_save_state.html',1,'']]],
   ['bbsclient',['BBSClient',['../class_b_b_s_client.html',1,'']]],

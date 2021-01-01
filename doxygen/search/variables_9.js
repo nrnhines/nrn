@@ -189,6 +189,5 @@ var searchData=
   ['its_5f',['its_',['../struct_py_hoc_object.html#a88ed71ad35cc4e23bad442f6cba05df2',1,'PyHocObject']]],
   ['iv_5frelation_5f',['iv_relation_',['../class_k_s_chan.html#ad8f68e2bd6d2e06b5f8eb7a0f9663005',1,'KSChan']]],
   ['ive',['ive',['../struct_i_v_e_c.html#ac01e353621a08bd0a3f1d19683609e0c',1,'IVEC']]],
-  ['ivkstrans_5f',['ivkstrans_',['../class_k_s_chan.html#ac01689bd23325b4ddea845932961e59e',1,'KSChan']]],
-  ['ix_5fvpre',['ix_vpre',['../struct_b_b_core_gap_info.html#a01ea17add590c609f27b3b8d44e80adb',1,'BBCoreGapInfo']]]
+  ['ivkstrans_5f',['ivkstrans_',['../class_k_s_chan.html#ac01689bd23325b4ddea845932961e59e',1,'KSChan']]]
 ];
