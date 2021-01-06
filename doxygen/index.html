@@ -91,15 +91,25 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a href="https://travis-ci.org/neuronsimulator/nrn"></a> <a href="https://dev.azure.com/neuronsimulator/nrn/_build/latest?definitionId=1&amp;branchName=master"></a> <a href="https://github.com/neuronsimulator/nrn/actions"></a> <a href="https://github.com/neuronsimulator/nrn/actions"></a></p>
+<h1>NEURON</h1>
 <p>NEURON is a simulator for models of neurons and networks of neuron. See <a href="http://neuron.yale.edu">http://neuron.yale.edu</a> for installers, source code, documentation, tutorials, announcements of courses and conferences, and a discussion forum.</p>
-<h2>Building NEURON</h2>
-<p>NEURON provided binary installers for Linux, Mac and Windows platform <a href="https://neuron.yale.edu/ftp/neuron/versions/alpha/">here</a>. If you want to build latest version from source, you can find instructions bellow.</p>
+<h2>Installing Binary Distributions</h2>
+<p>NEURON provides binary installers for Linux, Mac and Windows platforms. You can find the latest installers for Mac and Windows <a href="https://neuron.yale.edu/ftp/neuron/versions/alpha/">here</a>. For Linux and Mac you can install the official Python 3 wheel with:</p>
+<div class="fragment"><div class="line">pip3 install neuron</div></div><!-- fragment --><h2>Installing from source</h2>
+<p>If you want to build the latest version from source, you can find instructions in the following. Currently we are supporting two build systems:</p>
+<ul>
+<li><a href="#build-cmake">CMake</a> (<b>recommended</b>)</li>
+<li><a href="#build-autotools">Autotools</a> (legacy, minimum support)</li>
+</ul>
+<p>Note that starting with the 8.0 release, we recommend users to use CMake as the primary build system for NEURON. We would be grateful for any feedback or issues you encounter using the CMake-based build system. Please <a href="https://github.com/neuronsimulator/nrn/issues">report any issue here</a> and we will be happy to help.</p>
+<p>If you are using autotools, we highly recommend switching to CMake.</p>
 <h3>Build Dependencies</h3>
 <p>In order to build NEURON from source, following packages must be available:</p>
 <ul>
 <li>Bison</li>
 <li>Flex</li>
 <li>C/C++ compiler suite</li>
+<li>CMake 3.8 or Autotools</li>
 </ul>
 <p>Following packages are optional (see build options):</p>
 <ul>
@@ -108,26 +118,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>MPI (for parallel)</li>
 <li>X11 (Linux) or XQuartz (MacOS) (for GUI)</li>
 </ul>
-<h3>Build using Autotools</h3>
-<p>If you would like to have GUI support, you first need to install Interviews package available from GitHub <a href="http://github.com/neuronsimulator/iv">here</a> or tarball provided <a href="http://neuron.yale.edu/ftp/neuron/versions/alpha/">here</a>. In case of git repository, first you need to run <code>build.sh</code> script to create the automake, autoconf, libtool generated files:</p>
-<div class="fragment"><div class="line">sh build.sh</div></div><!-- fragment --><p>And then run standard <code>configure</code>, <code>make</code> and <code>make install</code> steps to install Interviews:</p>
-<div class="fragment"><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div></div><!-- fragment --><p>To build NEURON we have to use same steps as Interviews i.e. if source is obtained from the git repository, run <code>build.sh</code> script to create the automake, autoconf, libtool generated files:</p>
-<div class="fragment"><div class="line">sh build.sh</div></div><!-- fragment --><p>and then run standard <code>configure</code>, <code>make</code> and <code>make install</code> steps:</p>
-<div class="fragment"><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div></div><!-- fragment --><p>If you want to customize build, particularly useful configure options are:</p>
-<ul>
-<li><code>--prefix=/some/path</code> : Install in this location of your filesystem.</li>
-<li><code>--without-x</code> : If the InterViews graphics library is not installed, disable GUI.</li>
-<li><code>--with-iv=&lt;prefix&gt;/../iv</code> : If InterViews was not installed in &lt;prefix&gt;/../iv</li>
-<li><code>--with-paranrn</code> : Parallel models on cluster computers using MPI</li>
-<li><code>--with-nrnpython</code> : Use Python as an alternative interpreter (as well as the native HOC interpreter).</li>
-<li><code>--with-nmodl-only</code> : Build nmodl only (in case of cross compiling)</li>
-<li><code>--disable-rx3d</code> : Do not compile the cython translated 3-d rxd features</li>
-</ul>
-<p>For more details see the https://github.com/neuronsimulator/nrn/blob/master/INSTALL.md "INSTALL.md" file.</p>
-<p>For more installation information see: <a href="https://neuron.yale.edu/neuron/download/getdevel">https://neuron.yale.edu/neuron/download/getdevel</a>.</p>
-<h3>Build using CMake</h3>
-<p>NEURON can now also be built and installed using <a href="https://cmake.org/">CMake build system</a>. Currently we are supporting two build systems i.e. Autoconf and CMake. In the future, based on the feedback from the community we will decide on switching to CMake build system. Therefore, we would be grateful for any feedback or issues you encounter using CMake based build system. Please <a href="https://github.com/neuronsimulator/nrn/issues">report an issue here</a> and we will be happy to help.</p>
-<p>One of the primary advantage of CMake based build system is integration with other projects like <a href="https://github.com/neuronsimulator/iv">Interviews</a>, <a href="https://github.com/BlueBrain/CoreNeuron/">CoreNEURON</a>, <a href="https://github.com/BlueBrain/nmodl/">NMODL</a> etc. Such projects are now integrated into single CMake based build system and they can be installed together as shown below:</p>
+<p><a class="anchor" id="build-cmake"></a> </p><h3>Build using CMake</h3>
+<p>Starting with the 7.8.1 release, NEURON can be installed using the <a href="https://cmake.org/">CMake build system</a>. One of the primary advantages of a CMake-based build system is cross platform support and integration with other projects like <a href="https://github.com/neuronsimulator/iv">Interviews</a>, <a href="https://github.com/BlueBrain/CoreNeuron/">CoreNEURON</a>, <a href="https://github.com/BlueBrain/nmodl/">NMODL</a> etc. These projects are now integrated into single a CMake-based build system and they can be installed together as shown below:</p>
 <ol type="1">
 <li>Clone latest version:</li>
 </ol>
@@ -135,15 +127,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Create a build directory:</li>
 </ol>
 <div class="fragment"><div class="line">mkdir build</div><div class="line">cd build</div></div><!-- fragment --><ol type="1">
-<li>Run cmake with the appropriate options (see below for list of common options). \ A full list of options can be found in <em>nrn/CMakeLists.txt</em> . Defaults are shown in <em>nrn/cmake/BuildOptionDefaults.cmake</em>), \ e.g. a bare-bones install:</li>
+<li>If you are building on Cray systems with a GNU toolchain, you have to set following environmental variable:</li>
 </ol>
-<div class="fragment"><div class="line">cmake .. \</div><div class="line"> -DNRN_ENABLE_INTERVIEWS=OFF \</div><div class="line"> -DNRN_ENABLE_MPI=OFF \</div><div class="line"> -DNRN_ENABLE_RX3D=OFF</div></div><!-- fragment --><p>Note that if you are building on Cray system with GNU toolchain, you have to set following environmental variable <b>before</b> calling above CMake comamnd:</p>
 <div class="fragment"><div class="line">export CRAYPE_LINK_TYPE=dynamic</div></div><!-- fragment --><ol type="1">
+<li>Run <code>cmake</code> with the appropriate options (see below for a list of common options). \ A full list of options can be found in <code>nrn/CMakeLists.txt</code> and defaults are shown in <code>nrn/cmake/BuildOptionDefaults.cmake</code>. \ e.g. a bare-bones install:</li>
+</ol>
+<div class="fragment"><div class="line">cmake .. \</div><div class="line"> -DNRN_ENABLE_INTERVIEWS=OFF \</div><div class="line"> -DNRN_ENABLE_MPI=OFF \</div><div class="line"> -DNRN_ENABLE_RX3D=OFF \</div><div class="line"> -DCMAKE_INSTALL_PREFIX=/path/to/install/directory</div></div><!-- fragment --><ol type="1">
 <li>Build the code:</li>
 </ol>
-<div class="fragment"><div class="line">make -j</div><div class="line">make install</div></div><!-- fragment --><p>Particularly useful CMake options are (use <b>ON</b> to enable and <b>OFF</b> to disable feature):</p>
+<div class="fragment"><div class="line">make -j</div><div class="line">make install</div></div><!-- fragment --><ol type="1">
+<li>Set PATH and PYTHONPATH environmental variables to use the installation:</li>
+</ol>
+<div class="fragment"><div class="line">export PATH=/path/to/install/directory/bin:$PATH</div><div class="line">export PYTHONPATH=/path/to/install/directory/lib/python:$PYTHONPATH</div></div><!-- fragment --><p>Particularly useful CMake options are (use <b>ON</b> to enable and <b>OFF</b> to disable feature):</p>
 <ul>
-<li><b>-DNRN_ENABLE_BINARY_SPECIAL=ON</b> : Build special as a binary instead of shell script</li>
 <li><b>-DNRN_ENABLE_INTERVIEWS=OFF</b> : Disable Interviews (native GUI support)</li>
 <li><b>-DNRN_ENABLE_PYTHON=OFF</b> : Disable Python support</li>
 <li><b>-DNRN_ENABLE_MPI=OFF</b> : Disable MPI support for parallelization</li>
@@ -153,8 +149,27 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><b>-DPYTHON_EXECUTABLE=/python/binary/path</b> : Use provided Python binary to build Python interface</li>
 <li><b>-DCMAKE_INSTALL_PREFIX=/install/dir/path</b> : Location for installing</li>
 <li><b>-DCORENRN_ENABLE_NMODL=ON</b> : Use <a href="https://github.com/BlueBrain/nmodl/">NMODL</a> instead of <a href="https://github.com/BlueBrain/mod2c/">MOD2C</a> for code generation with CoreNEURON</li>
+<li><b>-DNRN_ENABLE_BINARY_SPECIAL=ON</b> : Build special as a binary instead of shell script</li>
 </ul>
 <p>Please refer to <a href="docs/cmake_doc/options.rst">docs/cmake_doc/options.rst</a> for more information on the CMake options.</p>
+<p><a class="anchor" id="build-autotools"></a> </p><h3>Build using Autotools</h3>
+<p>If you would like to have GUI support, you first need to install the Interviews package available from GitHub <a href="http://github.com/neuronsimulator/iv">here</a> or the tarball provided <a href="http://neuron.yale.edu/ftp/neuron/versions/alpha/">here</a>. In case of the former, first you need to run <code>build.sh</code> script to create the automake, autoconf, and libtool generated files:</p>
+<div class="fragment"><div class="line">sh build.sh</div></div><!-- fragment --><p>And then run the standard <code>configure</code>, <code>make</code> and <code>make install</code> steps to install Interviews:</p>
+<div class="fragment"><div class="line">./configure --prefix=/path/to/install/directory</div><div class="line">make</div><div class="line">make install</div></div><!-- fragment --><p>To build NEURON we have to use the same steps as Interviews, i.e., if the source is obtained from the git repository, run <code>build.sh</code> script to create the automake, autoconf, and libtool generated files:</p>
+<div class="fragment"><div class="line">sh build.sh</div></div><!-- fragment --><p>and then run the standard <code>configure</code>, <code>make</code> and <code>make install</code> steps:</p>
+<div class="fragment"><div class="line">./configure --prefix=/path/to/install/directory</div><div class="line">make</div><div class="line">make install</div></div><!-- fragment --><p>You can set the following environmental variables to use the installation:</p>
+<div class="fragment"><div class="line">export PATH=/path/to/install/directory/&lt;arch&gt;/bin:$PATH              # replace &lt;arch&gt; with x86_64 or other platform directory</div><div class="line">export PYTHONPATH=/path/to/install/directory/lib/python:$PYTHONPATH</div></div><!-- fragment --><p>If you want to customize the build, particularly useful configure options are:</p>
+<ul>
+<li><code>--prefix=/some/path</code> : Install in this location of your filesystem.</li>
+<li><code>--without-x</code> : If the InterViews graphics library is not installed, disable GUI.</li>
+<li><code>--with-iv=&lt;prefix&gt;/../iv</code> : If InterViews was not installed in &lt;prefix&gt;/../iv</li>
+<li><code>--with-paranrn</code> : Parallel models on cluster computers using MPI</li>
+<li><code>--with-nrnpython</code> : Use Python as an alternative interpreter (as well as the native HOC interpreter).</li>
+<li><code>--with-nmodl-only</code> : Build nmodl only (in case of cross compiling)</li>
+<li><code>--disable-rx3d</code> : Do not compile the cython translated 3-d rxd features</li>
+</ul>
+<p>For additional documentation see the INSTALL file file.</p>
+<p>For more installation information see: <a href="https://neuron.yale.edu/neuron/download/getdevel">https://neuron.yale.edu/neuron/download/getdevel</a>.</p>
 <h2>Developer documentation</h2>
 <p>Please refer to docs/README.md </p>
 </div></div><!-- contents -->
