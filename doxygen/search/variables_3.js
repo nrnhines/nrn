@@ -39,6 +39,7 @@ var searchData=
   ['ce',['CE',['../tcap_8c.html#a6ccd69586bb7c0f0ba467d95843382fb',1,'tcap.c']]],
   ['ceil',['ceil',['../modlunit_2extdef_8h.html#a1a091e180efdd826ad83f08c8925819b',1,'ceil():&#160;extdef.h'],['../nmodl_2extdef_8h.html#a1a091e180efdd826ad83f08c8925819b',1,'ceil():&#160;extdef.h']]],
   ['cell_5f',['cell_',['../struct_n_py_sec_obj.html#a8c747f0e2447a3a6d932d6180fcca8f6',1,'NPySecObj']]],
+  ['cell_5fweakref_5f',['cell_weakref_',['../struct_n_py_sec_obj.html#a7b5b158504822a27654073226356251b',1,'NPySecObj']]],
   ['cellgroups_5f',['cellgroups_',['../nrncore__callbacks_8cpp.html#a10c7e354a988d8c07b496a43cb80ab7c',1,'cellgroups_():&#160;nrncore_write.cpp'],['../nrncore__write_8cpp.html#a10c7e354a988d8c07b496a43cb80ab7c',1,'cellgroups_():&#160;nrncore_write.cpp']]],
   ['celsius',['celsius',['../kschan_8h.html#a2575c5fd89198ddb2044f884edd03f22',1,'celsius():&#160;init.c'],['../hh_8c.html#a2575c5fd89198ddb2044f884edd03f22',1,'celsius():&#160;init.c'],['../nrnoc_2init_8c.html#a2575c5fd89198ddb2044f884edd03f22',1,'celsius():&#160;init.c'],['../neuron_8h.html#a2575c5fd89198ddb2044f884edd03f22',1,'celsius():&#160;init.c']]],
   ['cg_5f',['cg_',['../ivocmac_8cpp.html#a3d97637d72a481a5fa70e9f97797e632',1,'ivocmac.cpp']]],

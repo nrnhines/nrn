@@ -119,9 +119,10 @@ var NAVTREEINDEX114 =
 "struct_n_py_range_var.html#a70a8343c274e70dad53dcc0fa6e87c35":[4,0,267,2],
 "struct_n_py_range_var.html#a70defe863a3f2f48a5eb865e8d18013a":[4,0,267,3],
 "struct_n_py_sec_obj.html":[4,0,269],
+"struct_n_py_sec_obj.html#a7b5b158504822a27654073226356251b":[4,0,269,1],
 "struct_n_py_sec_obj.html#a8c747f0e2447a3a6d932d6180fcca8f6":[4,0,269,0],
-"struct_n_py_sec_obj.html#adc0ef4bfceb31909aa2e216045f02e52":[4,0,269,2],
-"struct_n_py_sec_obj.html#af29788f7cc4b07acba4d7e13aa388539":[4,0,269,1],
+"struct_n_py_sec_obj.html#adc0ef4bfceb31909aa2e216045f02e52":[4,0,269,3],
+"struct_n_py_sec_obj.html#af29788f7cc4b07acba4d7e13aa388539":[4,0,269,2],
 "struct_n_py_seg_obj.html":[4,0,270],
 "struct_n_py_seg_obj.html#a932a706fcdcf2b734d1410c20049d075":[4,0,270,1],
 "struct_n_py_seg_obj.html#a95503257d58ac54b33d8b1d5c5b04132":[4,0,270,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX114 =
 "struct_proc.html#af0d059dcd47bddb3febd908433af5168":[4,0,339,3],
 "struct_prop.html":[4,0,340],
 "struct_prop.html#a0b99fdef2200457d3e8a1efa762990de":[4,0,340,1],
-"struct_prop.html#a43e381c87b11636ab527ff14ff3b029b":[4,0,340,7],
-"struct_prop.html#a45bf4474019eaf9cc1a1a87a9a554b22":[4,0,340,4]
+"struct_prop.html#a43e381c87b11636ab527ff14ff3b029b":[4,0,340,7]
 };

@@ -139,6 +139,7 @@ var searchData=
   ['cell_5f',['cell_',['../struct_n_py_sec_obj.html#a8c747f0e2447a3a6d932d6180fcca8f6',1,'NPySecObj']]],
   ['cell_5fgroup_2ecpp',['cell_group.cpp',['../cell__group_8cpp.html',1,'']]],
   ['cell_5fgroup_2eh',['cell_group.h',['../cell__group_8h.html',1,'']]],
+  ['cell_5fweakref_5f',['cell_weakref_',['../struct_n_py_sec_obj.html#a7b5b158504822a27654073226356251b',1,'NPySecObj']]],
   ['celldebug',['celldebug',['../bgpdmasetup_8cpp.html#aea929676eeb9af5369650a57fb72e985',1,'bgpdmasetup.cpp']]],
   ['cellgroup',['CellGroup',['../class_cell_group.html',1,'CellGroup'],['../class_cell_group.html#ad0504e220d39e6b06438c60c0af271ce',1,'CellGroup::CellGroup()']]],
   ['cellgroups_5f',['cellgroups_',['../nrncore__callbacks_8cpp.html#a10c7e354a988d8c07b496a43cb80ab7c',1,'cellgroups_():&#160;nrncore_write.cpp'],['../nrncore__write_8cpp.html#a10c7e354a988d8c07b496a43cb80ab7c',1,'cellgroups_():&#160;nrncore_write.cpp']]],
