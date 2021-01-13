@@ -257,7 +257,7 @@ and PYINCDIR to find Python.h</dd>
 </dd>
 </dl>
 <p>I use this script to build a version of NEURON that works with python2.5-7 and python3.5-6</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">hines@hines-T7500:~/neuron$</span> cat bld-nrndynam.sh
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">hines@hines-T7500:~/neuron$ </span>cat bld-nrndynam.sh
 <span class="gp">#</span>!/bin/bash
 
 <span class="go">cd $HOME/neuron/nrndynam</span>
@@ -276,7 +276,7 @@ and PYINCDIR to find Python.h</dd>
 <span class="go">cd lib/python/neuron</span>
 <span class="go">cp hoc.cpython-35m-x86_64-linux-gnu.so hoc.cpython-36m-x86_64-linux-gnu.so</span>
 <span class="go">cd ../../..</span>
-<span class="gp">#</span> or alternatively configure ..<span class="p">;</span> rm...<span class="p">;</span> make... with other versions <span class="k">for</span> --with-pyexe
+<span class="gp"># </span>or alternatively configure ..<span class="p">;</span> rm...<span class="p">;</span> make... with other versions <span class="k">for</span> --with-pyexe
 </pre></div>
 </div>
 <p>Originally I thought that <code class="docutils literal notranslate"><span class="pre">nrniv</span> <span class="pre">-python</span> <span class="pre">...</span></code> was the best way to launch (and perhaps is
