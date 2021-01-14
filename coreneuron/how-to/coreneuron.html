@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>NEURON - CoreNEURON Integration &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="NEURON SCM and Release" href="../../scm/index.html" />
+    <link rel="prev" title="How to use CoreNEURON" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">NEURON CMake Build</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../py_doc/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">How to use CoreNEURON</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">NEURON - CoreNEURON Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-install-coreneuron">How to install CoreNEURON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#performance">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gpu-execution">GPU execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nmodl">NMODL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-coreneuron">How to use CoreNEURON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-api">Python API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hoc-api">HOC API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compiling-mod-files">Compiling MOD files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">How to use CoreNEURON</a> &raquo;</li>
+        
+      <li>NEURON - CoreNEURON Integration</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/coreneuron/how-to/coreneuron.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+</li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="neuron-coreneuron-integration">
+<h1>NEURON - CoreNEURON Integration<a class="headerlink" href="#neuron-coreneuron-integration" title="Permalink to this headline">¶</a></h1>
+<p><strong>CoreNEURON</strong> is a compute engine for the <strong>NEURON</strong> simulator optimised for both memory usage and computational speed using modern CPU/GPU architetcures. Its goal is to simulate large cell networks with minimal memory footprint and optimal performance.</p>
+<p>If you are a new user and would like to use <strong>CoreNEURON</strong>, this tutorial will be a good starting point to understand the complete workflow of using <strong>CoreNEURON</strong> with <strong>NEURON</strong>. We would be grateful for any feedback about your use cases or issues you encounter using the CoreNEURON. Please <a class="reference external" href="https://github.com/neuronsimulator/nrn/issues">report any issue here</a> and we will be happy to help.</p>
+</div>
+<div class="section" id="how-to-install-coreneuron">
+<h1>How to install CoreNEURON<a class="headerlink" href="#how-to-install-coreneuron" title="Permalink to this headline">¶</a></h1>
+<p><strong>CoreNEURON</strong> is a submodule of the <strong>NEURON</strong> repository and can be installed with <strong>NEURON</strong> by enabling the flag <strong>NRN_ENABLE_CORENEURON</strong> in the CMake command used to install <strong>NEURON</strong>.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">..</span> \
+     <span class="o">-</span><span class="n">DNRN_ENABLE_INTERVIEWS</span><span class="o">=</span><span class="n">OFF</span> \
+     <span class="o">-</span><span class="n">DNRN_ENABLE_MPI</span><span class="o">=</span><span class="n">OFF</span> \
+     <span class="o">-</span><span class="n">DNRN_ENABLE_RX3D</span><span class="o">=</span><span class="n">OFF</span> \
+     <span class="o">-</span><span class="n">DNRN_ENABLE_CORENEURON</span><span class="o">=</span><span class="n">ON</span>
+</pre></div>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="performance">
+<h3>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h3>
+<p><strong>CoreNEURON</strong> is by itself an optimized compute engine of <strong>NEURON</strong>, however to unlock better CPU performance it’s recommended to use compilers like <strong>Intel / PGI / Cray  Compiler</strong> or the <strong>ISPC Backend</strong> using the new <a class="reference external" href="https://github.com/BlueBrain/nmodl">NMODL Compiler Framework</a> (described described below). These compilers are able to vectorize the code better than <strong>GCC</strong> or <strong>Clang</strong>, achieving the best possible performance gains. Note that Intel compiler can be installed by downloading <a class="reference external" href="https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit.html">oneAPI HPC Toolkit</a>.</p>
+</div>
+<div class="section" id="gpu-execution">
+<h3>GPU execution<a class="headerlink" href="#gpu-execution" title="Permalink to this headline">¶</a></h3>
+<p><strong>CoreNEURON</strong> supports also GPU execution based on an <strong>OpenACC</strong> backend. To be able to use it it’s needed to install <strong>NEURON</strong> and <strong>CoreNEURON</strong> with a compiler that supports <strong>OpenACC</strong>. Currently the best supported compiler for the <strong>OpenACC</strong> backend is <strong>PGI</strong> (available via <a class="reference external" href="https://developer.nvidia.com/hpc-sdk">NVIDIA-HPC-SDK</a>) and this is the recommended one for compilation.
+To enable the GPU backend specify the following <em>CMake</em> variables:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DNRN_ENABLE_CORENEURON</span><span class="o">=</span><span class="n">ON</span>
+<span class="o">-</span><span class="n">DCORENRN_ENABLE_GPU</span><span class="o">=</span><span class="n">ON</span>
+</pre></div>
+</div>
+<p>Make sure to set the compilers via CMake flags <code class="docutils literal notranslate"><span class="pre">-DCMAKE_C_COMPILER=&lt;C_Compiler&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">-DCMAKE_CXX_COMPILER=&lt;CXX_Compiler&gt;</span></code>.</p>
+</div>
+<div class="section" id="nmodl">
+<h3>NMODL<a class="headerlink" href="#nmodl" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>NMODL</strong> Framework is a code generation engine for the <strong>N</strong>EURON <strong>MOD</strong>eling <strong>L</strong>anguage.
+<strong>NMODL</strong> is a part of <strong>CoreNEURON</strong> and can be used to generate optimized code for modern compute architectures including CPUs and GPUs.
+<strong>NMODL</strong> can also generate code using a backend for the <strong>ISPC</strong> compiler, which can vectorize greatly the generated code running on CPU and accelerate further the simulation.</p>
+<p><strong>NOTE</strong>: To use the ISPC compiler backend ISPC compiler must be preinstalled in your system. More information on how to install ISPC can be found <a class="reference external" href="https://ispc.github.io/downloads.html">here</a>.</p>
+<div class="section" id="how-to-use-nmodl">
+<h4>How to use NMODL<a class="headerlink" href="#how-to-use-nmodl" title="Permalink to this headline">¶</a></h4>
+<p>To enable the <strong>NMODL</strong> code generation in <strong>CoreNEURON</strong> specify the following <em>CMake</em> variables:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DNRN_ENABLE_CORENEURON</span><span class="o">=</span><span class="n">ON</span>
+<span class="o">-</span><span class="n">DCORENRN_ENABLE_NMODL</span><span class="o">=</span><span class="n">ON</span>
+</pre></div>
+</div>
+<p>To use the <strong>ISPC</strong> backend add the following flags:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DCORENRN_ENABLE_ISPC</span><span class="o">=</span><span class="n">ON</span>
+<span class="o">-</span><span class="n">DCMAKE_ISPC_COMPILER</span><span class="o">=&lt;</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">ISPC</span><span class="o">-</span><span class="n">compiler</span><span class="o">-</span><span class="n">installation</span><span class="o">&gt;</span> <span class="c1"># Only if the ispc executable is not in the PATH environment variable</span>
+</pre></div>
+</div>
+<p><strong>NOTE</strong> : NMODL is currently under active development and some mod files could be unsupported. Please feel free to try using NMODL with your mod files and report any issues on the <a class="reference external" href="https://github.com/BlueBrain/nmodl">NMODL repository</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-use-coreneuron">
+<h1>How to use CoreNEURON<a class="headerlink" href="#how-to-use-coreneuron" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="python-api">
+<h2>Python API<a class="headerlink" href="#python-api" title="Permalink to this headline">¶</a></h2>
+<p>To use <strong>CoreNEURON</strong> directly from <strong>NEURON</strong> using the in-memory mode add the following in your python script before calling the <em>psolve</em> function to run the simulation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">coreneuron</span>
+<span class="n">coreneuron</span><span class="o">.</span><span class="n">enable</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">coreneuron</span><span class="o">.</span><span class="n">gpu</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># Only for GPU execution</span>
+</pre></div>
+</div>
+<p><strong>NOTE</strong>: In order to run a simulation with CoreNEURON, <code class="docutils literal notranslate"><span class="pre">h.cvode.cache_efficient(1)</span></code> must also be set.</p>
+<p>You can find an example of the in-memory mode usage of <strong>CoreNEURON</strong> <a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.py">here</a>.</p>
+</div>
+<div class="section" id="hoc-api">
+<h2>HOC API<a class="headerlink" href="#hoc-api" title="Permalink to this headline">¶</a></h2>
+<p>To use the <strong>CoreNEURON</strong> in-memory mode using a HOC script you need to add the following before calling the <em>psolve</em> function to run the simulation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>if (!nrnpython(&quot;from neuron import coreneuron&quot;)) {
+    printf(&quot;Python not available\n&quot;)
+    return
+}
+
+po = new PythonObject()
+po.coreneuron.enable = 1
+</pre></div>
+</div>
+<p><strong>NOTE</strong>: In order to run a simulation with CoreNEURON, h.cvode.cache_efficient(1) must also be set</p>
+<p>You can find an example of the in-memory mode usage of <strong>CoreNEURON</strong> <a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.hoc">here</a></p>
+<p>See more informaiton in CoreNEURON <a class="reference external" href="https://github.com/BlueBrain/CoreNeuron#dependencies">README documentation</a>.</p>
+</div>
+<div class="section" id="compiling-mod-files">
+<h2>Compiling MOD files<a class="headerlink" href="#compiling-mod-files" title="Permalink to this headline">¶</a></h2>
+<p>In order to use mod files with <strong>NEURON</strong> or <strong>CoreNEURON</strong> you need to execute <strong>nrnivmodl</strong> and pass as argument the folder of the mod files you want to compile. To run the simulation using <strong>CoreNEURON</strong>, you have to use <em>-coreneuron</em> flag and then you can execute your <strong>special</strong> binary to run the model.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nrnivmodl</span> <span class="o">-</span><span class="n">coreneuron</span> <span class="n">mod_folder</span>
+<span class="o">./</span><span class="n">x86_64</span><span class="o">/</span><span class="n">special</span> <span class="o">-</span><span class="n">python</span> <span class="n">init</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../scm/index.html" class="btn btn-neutral float-right" title="NEURON SCM and Release" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="How to use CoreNEURON" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
