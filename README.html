@@ -205,7 +205,12 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="o">-</span><span class="n">r</span> <span class="n">docs</span><span class="o">/</span><span class="n">docs_requirements</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">upgrade</span>
 </pre></div>
 </div>
-<p>Then in your CMake build folder:</p>
+<p>Also, make sure to have Doxygen installed on your system. With all dependencies installed, configure project with
+cmake as described in <a class="reference internal" href="#"><span class="doc">README</span></a>. e.g. In your CMake build folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cmake .. -DNRN_ENABLE_INTERVIEWS=OFF -DNRN_ENABLE_MPI=OFF -DNRN_ENABLE_RX3D=OFF -DCMAKE_INSTALL_PREFIX=`pwd`/install
+</pre></div>
+</div>
+<p>Then build docs using command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">docs</span>
 </pre></div>
 </div>
