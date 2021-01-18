@@ -111,6 +111,7 @@ var searchData=
   ['get_5fmech_5fobject_5f',['get_mech_object_',['../nrnpy__hoc_8cpp.html#afd66b15d5899ed3ae7de190cc8e6c4dd',1,'nrnpy_hoc.cpp']]],
   ['get_5fmla_5frankbytes',['get_mla_rankbytes',['../class_cell_group.html#aba05dc37b70702968896b76ac3b70611',1,'CellGroup']]],
   ['get_5fname',['get_name',['../class_oc_file.html#ab5cc471754fac1368f4c56339a9911a1',1,'OcFile']]],
+  ['get_5fnrncore_5fopt_5fvalue',['get_nrncore_opt_value',['../nrnpy__hoc_8cpp.html#a9994be0c51040a7a8df1115a99efed1e',1,'nrnpy_hoc.cpp']]],
   ['get_5fnum_5fthreads',['get_num_threads',['../rxd_8cpp.html#ab6b513132f81d9de1ab9578e8a02dfe1',1,'get_num_threads(void):&#160;rxd.cpp'],['../rxd_8h.html#ab6b513132f81d9de1ab9578e8a02dfe1',1,'get_num_threads(void):&#160;rxd.cpp']]],
   ['get_5fout_5fmat',['get_out_mat',['../matrix_8cpp.html#a41a3520e3709450283cb4aa0b0bafcdb',1,'get_out_mat(Matrix *mat, int n, int m, int i, const char *mes=NULL):&#160;matrix.cpp'],['../matrix_8cpp.html#a1374beb97031fd989a7309c9c7a86efa',1,'get_out_mat(Matrix *m, int i, const char *mes=NULL):&#160;matrix.cpp']]],
   ['get_5fperm',['get_perm',['../oldnames_8h.html#ab75259ff9ddb6babd6d3475cf3469d95',1,'oldnames.h']]],

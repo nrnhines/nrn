@@ -1,5 +1,14 @@
 var NAVTREEINDEX112 =
 {
+"sputils_8c.html#a7e215e6127bc5bf6b38595e645eaae6e":[5,0,0,20,16,30],
+"sputils_8c.html#a7fa3afb5cf2625deb1e859cbb93d2943":[5,0,0,20,16,0],
+"sputils_8c.html#a8c0d9a61c8e718653dfb12b35eb6ed8b":[5,0,0,20,16,18],
+"sputils_8c.html#a9717e7bbecb906637e86cef6da3d83c2":[5,0,0,20,16,35],
+"sputils_8c.html#a9762d668369115ed56576387476d6268":[5,0,0,20,16,26],
+"sputils_8c.html#a97d1e8195aa37bc6ec32b74d3423fe95":[5,0,0,20,16,13],
+"sputils_8c.html#a99077a6e66618effc4db9adf130de077":[5,0,0,20,16,19],
+"sputils_8c.html#ab1d4383be3161ac2c68b2f8d344cd587":[5,0,0,20,16,29],
+"sputils_8c.html#ab222e534835471a1e997139c295de8cc":[5,0,0,20,16,21],
 "sputils_8c.html#abd2e76f31787de296f58c292d31b1d05":[5,0,0,20,16,31],
 "sputils_8c.html#abf4445dd101f58cf9d64d3918879d559":[5,0,0,20,16,24],
 "sputils_8c.html#ac0c149f79e39647f28305f5eeb472acc":[5,0,0,20,16,36],
@@ -240,14 +249,5 @@ var NAVTREEINDEX112 =
 "struct_current___triple.html#a1d30b5764e9486c02e96456124421bd9":[4,0,63,2],
 "struct_current___triple.html#a6c79909898ac211c159093d338c2ac2d":[4,0,63,0],
 "struct_current___triple.html#a7ffe6972b11593e6f50b58aa154fd0cc":[4,0,63,1],
-"struct_current_data.html":[4,0,64],
-"struct_current_data.html#a1089d8507e6c9dc294c12c1f1c3b9b7a":[4,0,64,3],
-"struct_current_data.html#a856df03a790e3e02dd39f45449d6d691":[4,0,64,2],
-"struct_current_data.html#a89ddaa1d311b003f4a53fda583369e47":[4,0,64,0],
-"struct_current_data.html#ae6e8144fb923f928b6f21d974cb873c7":[4,0,64,1],
-"struct_d_e_list.html":[4,0,73],
-"struct_d_e_list.html#a477e3fb4072fa38d3191f41c9fcb7dfb":[4,0,73,0],
-"struct_d_e_list.html#afa5100278b2efea298f86216252eab96":[4,0,73,1],
-"struct_doub_scal.html":[4,0,83],
-"struct_doub_scal.html#a79e99665a118297f431a643bdd26741e":[4,0,83,1]
+"struct_current_data.html":[4,0,64]
 };

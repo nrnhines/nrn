@@ -5,6 +5,7 @@ var nrncore__io_8h =
     [ "bbcore_write_t", "nrncore__io_8h.html#ab647763c19c0ff929eac3cfe87130b76", null ],
     [ "begin_ptr", "nrncore__io_8h.html#a91374a3b2a80154af9c3ebd72063cf7a", null ],
     [ "contiguous_art_data", "nrncore__io_8h.html#aca9c714e12dff3995f861479bd9e88b6", null ],
+    [ "create_dir_path", "nrncore__io_8h.html#a2fca80ced7b278935b11a44a7236ab14", null ],
     [ "get_filename", "nrncore__io_8h.html#a4f31dbc88ed47580c5eedc42e03fa345", null ],
     [ "get_write_path", "nrncore__io_8h.html#ae81f93400ba3ccc5d846fade249965f8", null ],
     [ "nrn_write_mapping_info", "nrncore__io_8h.html#a9e13377d9feb3acf8384bcc1c7814841", null ],

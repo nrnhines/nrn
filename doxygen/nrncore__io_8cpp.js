@@ -3,6 +3,7 @@ var nrncore__io_8cpp =
     [ "writedbl", "nrncore__io_8cpp.html#ae4417cafe329f6da732331fc87a8a699", null ],
     [ "writeint", "nrncore__io_8cpp.html#a26e0b495b3bd1f0df29e568263ef6521", null ],
     [ "contiguous_art_data", "nrncore__io_8cpp.html#aca9c714e12dff3995f861479bd9e88b6", null ],
+    [ "create_dir_path", "nrncore__io_8cpp.html#a2fca80ced7b278935b11a44a7236ab14", null ],
     [ "get_filename", "nrncore__io_8cpp.html#a4f31dbc88ed47580c5eedc42e03fa345", null ],
     [ "get_write_path", "nrncore__io_8cpp.html#ae81f93400ba3ccc5d846fade249965f8", null ],
     [ "nrn_write_mapping_info", "nrncore__io_8cpp.html#a9e13377d9feb3acf8384bcc1c7814841", null ],

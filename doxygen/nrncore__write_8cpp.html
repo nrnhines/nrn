@@ -119,12 +119,17 @@ Functions</h2></td></tr>
 <tr class="separator:ac0a26eaaaccaada5a3452b77e310254c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00be9f35dad80fa69bcfaf8f4ba69c14"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a00be9f35dad80fa69bcfaf8f4ba69c14">part2</a> (const char *)</td></tr>
 <tr class="separator:a00be9f35dad80fa69bcfaf8f4ba69c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1648850cfe22059e8dfd93d80bfff68c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a1648850cfe22059e8dfd93d80bfff68c">write_corenrn_model</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a1648850cfe22059e8dfd93d80bfff68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump neuron model to given directory path  <a href="#a1648850cfe22059e8dfd93d80bfff68c">More...</a><br /></td></tr>
+<tr class="separator:a1648850cfe22059e8dfd93d80bfff68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c1379a41579a07744a53f1dc4f4526"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a14c1379a41579a07744a53f1dc4f4526">nrnbbcore_write</a> ()</td></tr>
 <tr class="separator:a14c1379a41579a07744a53f1dc4f4526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0415189332cf2d5c581878aa5bb44e35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a0415189332cf2d5c581878aa5bb44e35">nrncore_run</a> (const char *)</td></tr>
 <tr class="separator:a0415189332cf2d5c581878aa5bb44e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f13f7b31eb65a85aa8adcef4d976b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a42f13f7b31eb65a85aa8adcef4d976b7">nrncore_is_enabled</a> ()</td></tr>
 <tr class="separator:a42f13f7b31eb65a85aa8adcef4d976b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de785e01fcce1ce13d95062555445e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a4de785e01fcce1ce13d95062555445e6">nrncore_is_file_mode</a> ()</td></tr>
+<tr class="separator:a4de785e01fcce1ce13d95062555445e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc549a13fe3b516927eadc30ef9c34d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a7fc549a13fe3b516927eadc30ef9c34d">nrncore_psolve</a> (double tstop)</td></tr>
 <tr class="separator:a7fc549a13fe3b516927eadc30ef9c34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -143,8 +148,11 @@ Variables</h2></td></tr>
 <tr class="memitem:a0d386e78220e977ff1e98b022e366a3b"><td class="memItemLeft" align="right" valign="top">short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a0d386e78220e977ff1e98b022e366a3b">nrn_is_artificial_</a></td></tr>
 <tr class="separator:a0d386e78220e977ff1e98b022e366a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4925f6663bba15770e9d6a156217f2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#ad4925f6663bba15770e9d6a156217f2c">nrnpy_nrncore_enable_value_p_</a> )()</td></tr>
-<tr class="memdesc:ad4925f6663bba15770e9d6a156217f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of neuron.coreneuron.enable as 0, 1 (-1 if error) TODO: seems like this could be generalized so that additional cases would require less code.  <a href="#ad4925f6663bba15770e9d6a156217f2c">More...</a><br /></td></tr>
+<tr class="memdesc:ad4925f6663bba15770e9d6a156217f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of neuron.coreneuron.enable as 0, 1 (-1 if error)  <a href="#ad4925f6663bba15770e9d6a156217f2c">More...</a><br /></td></tr>
 <tr class="separator:ad4925f6663bba15770e9d6a156217f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8075bb694b1da8a2dd36fc30880212b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#a8075bb694b1da8a2dd36fc30880212b6">nrnpy_nrncore_file_mode_value_p_</a> )()</td></tr>
+<tr class="memdesc:a8075bb694b1da8a2dd36fc30880212b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">value of neuron.coreneuron.file_mode as 0, 1 (-1 if error)  <a href="#a8075bb694b1da8a2dd36fc30880212b6">More...</a><br /></td></tr>
+<tr class="separator:a8075bb694b1da8a2dd36fc30880212b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8132781b038c62ea65be55280b96f22"><td class="memItemLeft" align="right" valign="top">char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__write_8cpp.html#aa8132781b038c62ea65be55280b96f22">nrnpy_nrncore_arg_p_</a> )(double tstop)</td></tr>
 <tr class="memdesc:aa8132781b038c62ea65be55280b96f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the python string returned by neuron.coreneuron.nrncore_arg(tstop) return a strdup() copy of the string which should be free when the caller finishes with it.  <a href="#aa8132781b038c62ea65be55280b96f22">More...</a><br /></td></tr>
 <tr class="separator:aa8132781b038c62ea65be55280b96f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +210,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00146">146</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00171">171</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +229,26 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00308">308</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00340">340</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4de785e01fcce1ce13d95062555445e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de785e01fcce1ce13d95062555445e6">&#9670;&nbsp;</a></span>nrncore_is_file_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nrncore_is_file_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00344">344</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +287,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00312">312</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00348">348</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +307,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00304">304</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00336">336</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,7 +334,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00160">160</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00176">176</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +363,29 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>write mapping information </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00187">187</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00203">203</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1648850cfe22059e8dfd93d80bfff68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1648850cfe22059e8dfd93d80bfff68c">&#9670;&nbsp;</a></span>write_corenrn_model()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t write_corenrn_model </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dump neuron model to given directory path </p>
+
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00146">146</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +418,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00131">131</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00133">133</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +434,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00138">138</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00140">140</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -403,7 +452,7 @@ Variables</h2></td></tr>
 
 <p>mapping information </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00133">133</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00135">135</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -470,7 +519,7 @@ Variables</h2></td></tr>
 <p>Gets the python string returned by neuron.coreneuron.nrncore_arg(tstop) return a strdup() copy of the string which should be free when the caller finishes with it. </p>
 <p>Return NULL if error or bool(neuron.coreneuron.enable) is False. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00129">129</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00131">131</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -486,9 +535,27 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>value of neuron.coreneuron.enable as 0, 1 (-1 if error) TODO: seems like this could be generalized so that additional cases would require less code. </p>
+<p>value of neuron.coreneuron.enable as 0, 1 (-1 if error) </p>
 
 <p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00128">128</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8075bb694b1da8a2dd36fc30880212b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8075bb694b1da8a2dd36fc30880212b6">&#9670;&nbsp;</a></span>nrnpy_nrncore_file_mode_value_p_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(* nrnpy_nrncore_file_mode_value_p_) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>value of neuron.coreneuron.file_mode as 0, 1 (-1 if error) </p>
+
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00129">129</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
