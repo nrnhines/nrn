@@ -37,6 +37,7 @@ var neuron_8h =
     [ "make_pointprocess", "neuron_8h.html#a45b88d16af4779c2f5b82a4dad46ebda", null ],
     [ "n3d", "neuron_8h.html#a9110c967fd1c475af2e9ef3fa77922f5", null ],
     [ "nernst", "neuron_8h.html#abb5f3c0e6fb498a502ee2b5386c97ff9", null ],
+    [ "nlayer_extracellular", "neuron_8h.html#a4a570b3cfd356566724e4f0d3cd10990", null ],
     [ "node_data", "neuron_8h.html#ab1f30eeb5340af069bf344eb69484d71", null ],
     [ "nrnallpointmenu", "neuron_8h.html#ab22fd03230c0c60a5fb7ec1890141491", null ],
     [ "nrnallsectionmenu", "neuron_8h.html#a8512340779d934d26554425fad945585", null ],

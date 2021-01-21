@@ -21,7 +21,7 @@ var searchData=
   ['point_5fprocess',['Point_process',['../section_8h.html#a28c1d7647f4121a29abe25dcd08e3b95',1,'section.h']]],
   ['proc',['Proc',['../hocdec_8h.html#a46977fd6de51a2fe0d70b4c59d32bc1a',1,'hocdec.h']]],
   ['prop',['Prop',['../section_8h.html#a3cdc33376f1d3c02557c339688125b0d',1,'section.h']]],
-  ['psym',['Psym',['../hocgetsym_8h.html#a36aace9e6848af5ed13501872bb220b6',1,'Psym():&#160;hocgetsym.h'],['../nrnmenu_8cpp.html#a73ea27051aca1c53be47dbcb9d41934f',1,'PSym():&#160;nrnmenu.cpp']]],
+  ['psym',['PSym',['../nrnmenu_8cpp.html#a73ea27051aca1c53be47dbcb9d41934f',1,'PSym():&#160;nrnmenu.cpp'],['../hocgetsym_8h.html#a36aace9e6848af5ed13501872bb220b6',1,'Psym():&#160;hocgetsym.h']]],
   ['pt3d',['Pt3d',['../section_8h.html#a6dc25f5d6574f38763fd1e10024a3ea3',1,'section.h']]],
   ['pvmi',['Pvmi',['../membfunc_8h.html#a5a4dd068a91f599ea079d0c8085ac67a',1,'membfunc.h']]],
   ['pvmp',['Pvmp',['../membfunc_8h.html#a3cc749f32b1c4922a8c99da543d22cfd',1,'membfunc.h']]],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX84 =
 {
+"nrnoc_2init_8c.html#a4025bb6f955281bfd0417e40b5622b76":[5,0,0,14,20,33],
+"nrnoc_2init_8c.html#a40f1261f2e8fb86cc0bba14703c7ea9a":[5,0,0,14,20,46],
+"nrnoc_2init_8c.html#a444d49fc2d2f4ef2f95edae6a947e82b":[5,0,0,14,20,68],
+"nrnoc_2init_8c.html#a483d5c32311aa6aceab3df8f02eff4e3":[5,0,0,14,20,80],
+"nrnoc_2init_8c.html#a48e994683dbb7cc7eca078599939450f":[5,0,0,14,20,25],
+"nrnoc_2init_8c.html#a4a5a69c116a1aa44f1f5cea7d4bf3275":[5,0,0,14,20,19],
+"nrnoc_2init_8c.html#a4b7bd681f14079f403d9100d6541adfe":[5,0,0,14,20,92],
+"nrnoc_2init_8c.html#a4c3c2dcf6c8b850c4353dc687f1271f7":[5,0,0,14,20,3],
+"nrnoc_2init_8c.html#a4e5a40f3d901f17936e5c06a3d2d246d":[5,0,0,14,20,74],
+"nrnoc_2init_8c.html#a5234bde085d0519332a60026a39fd342":[5,0,0,14,20,70],
+"nrnoc_2init_8c.html#a53b275ec4a320c131d0d1a1395c773ae":[5,0,0,14,20,67],
 "nrnoc_2init_8c.html#a556582ddee44a865bd48a225c6e4bbbc":[5,0,0,14,20,79],
 "nrnoc_2init_8c.html#a5e4ae294559af0189592fe6851189e44":[5,0,0,14,20,89],
 "nrnoc_2init_8c.html#a5e6fefa680f08e6adfafd78d853510c1":[5,0,0,14,20,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX84 =
 "nrnpy__hoc_8cpp.html#a93cb31c5f7bf6ca505c4b078d3b6345a":[5,0,0,15,4,60],
 "nrnpy__hoc_8cpp.html#a9492dd3ffca43876645377ac8a6042cc":[5,0,0,15,4,182],
 "nrnpy__hoc_8cpp.html#a9598fa84e99b7a0451b9d4d121de34c8":[5,0,0,15,4,103],
-"nrnpy__hoc_8cpp.html#a96c6520607c7c2018f4663527420d131":[5,0,0,15,4,65],
-"nrnpy__hoc_8cpp.html#a9994be0c51040a7a8df1115a99efed1e":[5,0,0,15,4,17],
-"nrnpy__hoc_8cpp.html#a999b2ed9882d1f53bcb3e7fc00dec2df":[5,0,0,15,4,4],
-"nrnpy__hoc_8cpp.html#a99f630ae4ae46956caac309a9b69544d":[5,0,0,15,4,179],
-"nrnpy__hoc_8cpp.html#a9a46a490ded4f255d090306f24ce612a":[5,0,0,15,4,171],
-"nrnpy__hoc_8cpp.html#a9c9c6d588986da2964b109b6f84d0565":[5,0,0,15,4,178],
-"nrnpy__hoc_8cpp.html#a9cd7d6facc9730072b9ee7bd889a88e6":[5,0,0,15,4,119],
-"nrnpy__hoc_8cpp.html#a9d4829d996dd7599e7c9c7747a84b8ed":[5,0,0,15,4,106],
-"nrnpy__hoc_8cpp.html#aa01e50b35bbd252766518435f845979a":[5,0,0,15,4,27],
-"nrnpy__hoc_8cpp.html#aa13ff2f5fd4df0d3f65633dee03d7433":[5,0,0,15,4,68],
-"nrnpy__hoc_8cpp.html#aa3ee7616e6b3cc7aa57d7da7f729da63":[5,0,0,15,4,116],
-"nrnpy__hoc_8cpp.html#aa5092c41cef5de3e2133ca0fedffc20a":[5,0,0,15,4,177]
+"nrnpy__hoc_8cpp.html#a96c6520607c7c2018f4663527420d131":[5,0,0,15,4,65]
 };

@@ -63,6 +63,7 @@ var searchData=
   ['check_5fdeliver',['check_deliver',['../class_cvode.html#a8331dbb976be436196c3dc125e92da0b',1,'Cvode']]],
   ['check_5fdomain',['check_domain',['../matrix_8cpp.html#ac19a65b6d2631604261dad14b0e5b39f',1,'matrix.cpp']]],
   ['check_5fdomain_5flimits',['check_domain_limits',['../group__hoc__functions.html#ga585739ceef571195fc71196c183c4f50',1,'check_domain_limits(float *limits, double val):&#160;code2.c'],['../group__hoc__functions.html#ga585739ceef571195fc71196c183c4f50',1,'check_domain_limits(float *, double):&#160;code2.c']]],
+  ['check_5fif_5fextracellular_5fin_5fuse',['check_if_extracellular_in_use',['../extcelln_8c.html#aa13dd59d41591e73d76158a20ab462b3',1,'extcelln.c']]],
   ['check_5flen',['check_len',['../classdouble_a_vec.html#a4f8c912ea7ae3e010012a80bd2dcd35a',1,'doubleAVec']]],
   ['check_5flist',['check_list',['../hocmech_8cpp.html#a27be0dff3a912155ed8257fbc4d6b35d',1,'hocmech.cpp']]],
   ['check_5fmenu_5fitem',['check_menu_item',['../class_k.html#aecf3774842c94592966b0626eaf9737a',1,'K']]],

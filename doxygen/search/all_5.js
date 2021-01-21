@@ -529,6 +529,8 @@ var searchData=
   ['externaldecl',['EXTERNALDECL',['../parse_8c.html#a15c9f7bd2f0e9686df5d9df4f3314aa9acb5e2a11f464de4b7ce0d8039663abd0',1,'EXTERNALDECL():&#160;parse.c'],['../parse_8h.html#a15c9f7bd2f0e9686df5d9df4f3314aa9acb5e2a11f464de4b7ce0d8039663abd0',1,'EXTERNALDECL():&#160;parse.h']]],
   ['externs',['EXTERNS',['../ivoc_2classreg_8cpp.html#ab6327cd0e0df940e3293a8b349e7bee6',1,'classreg.cpp']]],
   ['extnode',['Extnode',['../struct_extnode.html',1,'Extnode'],['../struct_node.html#a23971e5d6cfbb202ee137baf25c447ad',1,'Node::extnode()'],['../md1redef_8h.html#a5f6b01db7eef70c422b3e21603e9ca12',1,'extnode():&#160;md1redef.h'],['../section_8h.html#a5ce1948e04cc63e31dace353ace2c292',1,'Extnode():&#160;section.h']]],
+  ['extnode_5falloc_5felements',['extnode_alloc_elements',['../extcelln_8c.html#a7c77ecc2330ce30f79844f53fe5a3080',1,'extcelln.c']]],
+  ['extnode_5ffree_5felements',['extnode_free_elements',['../extcelln_8c.html#af7b8a04d384e362c20896c657d258832',1,'extcelln.c']]],
   ['extra',['extra',['../struct_symbol.html#adbc7304015dd7d9f8b6d97c3528ec214',1,'Symbol']]],
   ['extra_5feqn_5fcount',['extra_eqn_count',['../class_nrn_d_a_e.html#af6da2956734c2c53dd43c53b51419451',1,'NrnDAE']]],
   ['extra_5fscatter_5fgather',['extra_scatter_gather',['../nrncvode_2cvodeobj_8cpp.html#a6a5a14a0af93c9a6c4df82e1303bc65f',1,'cvodeobj.cpp']]],

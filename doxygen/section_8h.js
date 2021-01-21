@@ -51,6 +51,7 @@ var section_8h =
     [ "section_length", "section_8h.html#abb42dbd8033422d876e7baccc4d9a56d", null ],
     [ "cvode_active_", "section_8h.html#a6efd2445b014e1f85ed3bcd960f417bc", null ],
     [ "nrn_global_ncell", "section_8h.html#a5234bde085d0519332a60026a39fd342", null ],
+    [ "nrn_nlayer_extracellular", "section_8h.html#a27e8f9c12852bd3b14acf650121b8259", null ],
     [ "secondorder", "section_8h.html#a984807412b7df3aff69549693a1fa9ce", null ],
     [ "section_list", "section_8h.html#a2c80c1471352c56128708fd0d7401274", null ],
     [ "stoprun", "section_8h.html#a0d4507488759efb672f5e8039b549ed7", null ],

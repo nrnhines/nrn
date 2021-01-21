@@ -1,6 +1,7 @@
 var cprop_8c =
 [
     [ "nrn_cache_prop_realloc", "cprop_8c.html#a196d3502bf8e23b23190d4ee04536ec8", null ],
+    [ "nrn_delete_prop_pool", "cprop_8c.html#acb07568ef29c2be667f96446889e87d3", null ],
     [ "nrn_is_valid_section_ptr", "cprop_8c.html#ac4aabf215add6c04e58d1dd0e1aac019", null ],
     [ "nrn_mk_prop_pools", "cprop_8c.html#a6acac22045fcf927229a0de1b0ce4440", null ],
     [ "nrn_prop_data_alloc", "cprop_8c.html#af62fadedb478b03ecd8376e90271dbda", null ],

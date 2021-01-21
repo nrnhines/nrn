@@ -388,11 +388,8 @@ on all host machines.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Not much checking for correctness or help in finding common bugs.</p>
-<p>The best sanity test of a working mpi environment is testmpi.py
-.. code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span>
-
-<span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span>
+<p>The best sanity test of a working mpi environment is testmpi.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span>
 <span class="n">h</span><span class="o">.</span><span class="n">nrnmpi_init</span><span class="p">()</span>
 
 <span class="n">pc</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">ParallelContext</span><span class="p">()</span>
@@ -402,8 +399,7 @@ on all host machines.</p>
 <span class="n">h</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>which gives ( the output lines are in indeterminate order)
-.. code-block:</p>
+<p>which gives ( the output lines are in indeterminate order)</p>
 <div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mpiexec</span> <span class="o">-</span><span class="n">n</span> <span class="mi">3</span> <span class="n">python</span> <span class="n">testmpi</span><span class="o">.</span><span class="n">py</span>
 <span class="n">numprocs</span><span class="o">=</span><span class="mi">3</span>
 <span class="n">I</span> <span class="n">am</span> <span class="mi">0</span> <span class="n">of</span> <span class="mi">3</span>

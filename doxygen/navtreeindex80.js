@@ -1,5 +1,16 @@
 var NAVTREEINDEX80 =
 {
+"nrncvode_2cvodestb_8cpp.html#a9db3677a980a6b74c56ce228b594a069":[5,0,0,10,4,13],
+"nrncvode_2cvodestb_8cpp.html#aa25f68b32cd6fcd143ece2d90b991233":[5,0,0,10,4,3],
+"nrncvode_2cvodestb_8cpp.html#aab2b4ce6612d95da5aabf0d91d9acab1":[5,0,0,10,4,8],
+"nrncvode_2cvodestb_8cpp.html#aaf67532de5c359f676a52c288fe23c20":[5,0,0,10,4,16],
+"nrncvode_2cvodestb_8cpp.html#ab967529d86880103ba2bfd0fbe164246":[5,0,0,10,4,20],
+"nrncvode_2cvodestb_8cpp.html#ac7930789c990ff63352a04ed77b53850":[5,0,0,10,4,15],
+"nrncvode_2cvodestb_8cpp.html#acd2d677f470987a31c2ffefe9b434e56":[5,0,0,10,4,19],
+"nrncvode_2cvodestb_8cpp.html#acd9cf285e8415c2e85ebd0992d0ec5cc":[5,0,0,10,4,11],
+"nrncvode_2cvodestb_8cpp.html#ae452885a48fccddd4099f7fe1866c548":[5,0,0,10,4,1],
+"nrncvode_2cvodestb_8cpp.html#aeb6106dd0fab17ad75f0892380a55ab5":[5,0,0,10,4,4],
+"nrncvode_2cvodestb_8cpp.html#afdeb6a228dad944e165496c8481d67f9":[5,0,0,10,4,5],
 "nrncvode_2cvodestb_8cpp.html#afe7e5322ba6ee5b950f8db2d940b9a96":[5,0,0,10,4,6],
 "nrncvode_2cvodestb_8cpp_source.html":[5,0,0,10,4],
 "nrncvode_2cvtrset_8cpp.html":[5,0,0,10,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX80 =
 "nrncvode_2occvode_8cpp.html#aab22eada665f71f4350df8eb2341e3f6":[5,0,0,10,12,25],
 "nrncvode_2occvode_8cpp.html#ab8a17ddb485706bc4337a2777c3a154d":[5,0,0,10,12,9],
 "nrncvode_2occvode_8cpp.html#abcd0a22ee4346cad5706adb6d2119429":[5,0,0,10,12,3],
-"nrncvode_2occvode_8cpp.html#ac3b15998ba7221fca6fc579b1cd60557":[5,0,0,10,12,2],
-"nrncvode_2occvode_8cpp.html#ac5cf87d2267e47f568035c377d8f5efd":[5,0,0,10,12,10],
-"nrncvode_2occvode_8cpp.html#ad80049967a5b0771c397f9ec2928ec1c":[5,0,0,10,12,23],
-"nrncvode_2occvode_8cpp.html#ad921de90b40159648eab03447f6081c3":[5,0,0,10,12,30],
-"nrncvode_2occvode_8cpp.html#ada3625db9949b1480710d6c51ada1c8e":[5,0,0,10,12,5],
-"nrncvode_2occvode_8cpp.html#adb4ecf873c25d77b0b4d0a0792234ae6":[5,0,0,10,12,27],
-"nrncvode_2occvode_8cpp.html#ae046b60235c6a1c8135201c1dfabd64f":[5,0,0,10,12,29],
-"nrncvode_2occvode_8cpp.html#ae20401573356c726533b01e3850f51a9":[5,0,0,10,12,11],
-"nrncvode_2occvode_8cpp.html#ae452885a48fccddd4099f7fe1866c548":[5,0,0,10,12,1],
-"nrncvode_2occvode_8cpp.html#af36f3805e4d65e73539c59e92ae2e81a":[5,0,0,10,12,20],
-"nrncvode_2occvode_8cpp.html#afb0300a61c904047e3f68681caaf60ed":[5,0,0,10,12,32],
-"nrncvode_2occvode_8cpp.html#afb785cfb60ba1c0450b9460ec3cd5f5d":[5,0,0,10,12,19]
+"nrncvode_2occvode_8cpp.html#ac3b15998ba7221fca6fc579b1cd60557":[5,0,0,10,12,2]
 };

@@ -156,7 +156,7 @@ Macros</h2></td></tr>
 <tr class="separator:a0316cfe305cf7f4c08083ec6b01422d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3869585ebb22ff27e47c12e0bc58495b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a3869585ebb22ff27e47c12e0bc58495b">NODEB</a>(<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)&#160;&#160;&#160;(<a class="el" href="section_8h.html#a5163cd321eb9ddc60c2c5835053d0fae">VEC_B</a>((<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)-&gt;v_node_index))</td></tr>
 <tr class="separator:a3869585ebb22ff27e47c12e0bc58495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae27b28b2b4822cecf44b1162406a0a2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#ae27b28b2b4822cecf44b1162406a0a2d">nlayer</a>&#160;&#160;&#160;(<a class="el" href="options_8h.html#ad00c751838136c1f5c15b4857bb1e6aa">EXTRACELLULAR</a>)	/* <a class="el" href="fmenu_8c.html#a6c8ec3c3e77241328358d43697f6f840">first</a> (0) layer is extracellular <a class="el" href="oc_2list_8c.html#a715e46818ab165891fd57c3d6b86c207">next</a> to membrane */</td></tr>
+<tr class="memitem:ae27b28b2b4822cecf44b1162406a0a2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#ae27b28b2b4822cecf44b1162406a0a2d">nlayer</a>&#160;&#160;&#160;(<a class="el" href="section_8h.html#a27e8f9c12852bd3b14acf650121b8259">nrn_nlayer_extracellular</a>) /* <a class="el" href="fmenu_8c.html#a6c8ec3c3e77241328358d43697f6f840">first</a> (0) layer is extracellular <a class="el" href="oc_2list_8c.html#a715e46818ab165891fd57c3d6b86c207">next</a> to membrane */</td></tr>
 <tr class="separator:ae27b28b2b4822cecf44b1162406a0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c61e9b629ef5bffb1bd0e7500c38ef2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a7c61e9b629ef5bffb1bd0e7500c38ef2">PROP_PY_INDEX</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a7c61e9b629ef5bffb1bd0e7500c38ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +225,8 @@ Variables</h2></td></tr>
 <tr class="separator:a984807412b7df3aff69549693a1fa9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6efd2445b014e1f85ed3bcd960f417bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a6efd2445b014e1f85ed3bcd960f417bc">cvode_active_</a></td></tr>
 <tr class="separator:a6efd2445b014e1f85ed3bcd960f417bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e8f9c12852bd3b14acf650121b8259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a27e8f9c12852bd3b14acf650121b8259">nrn_nlayer_extracellular</a></td></tr>
+<tr class="separator:a27e8f9c12852bd3b14acf650121b8259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5234bde085d0519332a60026a39fd342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a5234bde085d0519332a60026a39fd342">nrn_global_ncell</a></td></tr>
 <tr class="separator:a5234bde085d0519332a60026a39fd342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c80c1471352c56128708fd0d7401274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hocdec_8h.html#af004aa65226149e618c019b8b8214c2e">hoc_List</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="section_8h.html#a2c80c1471352c56128708fd0d7401274">section_list</a></td></tr>
@@ -265,7 +267,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00313">313</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00311">311</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -276,12 +278,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define nlayer&#160;&#160;&#160;(<a class="el" href="options_8h.html#ad00c751838136c1f5c15b4857bb1e6aa">EXTRACELLULAR</a>)	/* <a class="el" href="fmenu_8c.html#a6c8ec3c3e77241328358d43697f6f840">first</a> (0) layer is extracellular <a class="el" href="oc_2list_8c.html#a715e46818ab165891fd57c3d6b86c207">next</a> to membrane */</td>
+          <td class="memname">#define nlayer&#160;&#160;&#160;(<a class="el" href="section_8h.html#a27e8f9c12852bd3b14acf650121b8259">nrn_nlayer_extracellular</a>) /* <a class="el" href="fmenu_8c.html#a6c8ec3c3e77241328358d43697f6f840">first</a> (0) layer is extracellular <a class="el" href="oc_2list_8c.html#a715e46818ab165891fd57c3d6b86c207">next</a> to membrane */</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00189">189</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00190">190</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +455,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00216">216</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00214">214</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +487,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00323">323</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00321">321</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -501,7 +503,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00324">324</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00322">322</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +519,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00325">325</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="section_8h_source.html#l00323">323</a> of file <a class="el" href="section_8h_source.html">section.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +872,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00316">316</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00328">328</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -926,7 +928,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00262">262</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00274">274</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +958,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00287">287</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00299">299</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -992,7 +994,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00273">273</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00285">285</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1024,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00294">294</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00306">306</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1043,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00305">305</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00317">317</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -1061,7 +1063,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00312">312</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cxprop_8cpp_source.html#l00324">324</a> of file <a class="el" href="cxprop_8cpp_source.html">cxprop.cpp</a>.</p>
 
 </div>
 </div>
@@ -1134,6 +1136,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00096">96</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+
+</div>
+</div>
+<a id="a27e8f9c12852bd3b14acf650121b8259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e8f9c12852bd3b14acf650121b8259">&#9670;&nbsp;</a></span>nrn_nlayer_extracellular</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nrn_nlayer_extracellular</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="extcelln_8c_source.html#l00017">17</a> of file <a class="el" href="extcelln_8c_source.html">extcelln.c</a>.</p>
 
 </div>
 </div>

@@ -9,6 +9,7 @@ var cxprop_8cpp =
     [ "in_place_data_realloc", "cxprop_8cpp.html#a603b53ee6112839f64ba23e5c314b823", null ],
     [ "mk_prop_pools", "cxprop_8cpp.html#a7fe5633ae59abfbff3c006e7e961f1e5", null ],
     [ "nrn_cache_prop_realloc", "cxprop_8cpp.html#a196d3502bf8e23b23190d4ee04536ec8", null ],
+    [ "nrn_delete_prop_pool", "cxprop_8cpp.html#acb07568ef29c2be667f96446889e87d3", null ],
     [ "nrn_is_ion", "cxprop_8cpp.html#a3c98e7c64214324ee3a95ac96e75af5c", null ],
     [ "nrn_is_valid_section_ptr", "cxprop_8cpp.html#ac4aabf215add6c04e58d1dd0e1aac019", null ],
     [ "nrn_mk_prop_pools", "cxprop_8cpp.html#a6337e88cd35a90f87d4fc413ec2d9d39", null ],
