@@ -41,7 +41,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="NEURON Python documentation" href="../py_doc/index.html" />
-    <link rel="prev" title="NEURON CMake Build" href="index.html" /> 
+    <link rel="prev" title="CMake Build Options" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,64 +88,62 @@
             
               <p class="caption"><span class="caption-text">Building:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">NEURON CMake Build</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#quick-links">Quick Links</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#general-options">General options</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cmake-install-prefix-path-path-where-nrn-should-be-installed">CMAKE_INSTALL_PREFIX:PATH=&lt;path-where-nrn-should-be-installed&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cmake-build-type-string-relwithdebinfo">CMAKE_BUILD_TYPE:STRING=RelWithDebInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">CMake Build Options</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-options">General options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-install-prefix-path-path-where-nrn-should-be-installed">CMAKE_INSTALL_PREFIX:PATH=&lt;path-where-nrn-should-be-installed&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-build-type-string-relwithdebinfo">CMAKE_BUILD_TYPE:STRING=RelWithDebInfo</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#interviews-options">InterViews options</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-interviews-bool-on">NRN_ENABLE_INTERVIEWS:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#iv-dir-path-path-to-external-installation-of-interviews">IV_DIR:PATH=&lt;path-to-external-installation-of-interviews&gt;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#iv-enable-shared-bool-off">IV_ENABLE_SHARED:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#iv-enable-x11-dynamic-bool-off">IV_ENABLE_X11_DYNAMIC:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#iv-enable-x11-dynamic-make-headers-bool-off">IV_ENABLE_X11_DYNAMIC_MAKE_HEADERS:BOOL=OFF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interviews-options">InterViews options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-interviews-bool-on">NRN_ENABLE_INTERVIEWS:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iv-dir-path-path-to-external-installation-of-interviews">IV_DIR:PATH=&lt;path-to-external-installation-of-interviews&gt;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iv-enable-shared-bool-off">IV_ENABLE_SHARED:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iv-enable-x11-dynamic-bool-off">IV_ENABLE_X11_DYNAMIC:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iv-enable-x11-dynamic-make-headers-bool-off">IV_ENABLE_X11_DYNAMIC_MAKE_HEADERS:BOOL=OFF</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#mpi-options">MPI options:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-mpi-bool-on">NRN_ENABLE_MPI:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-mpi-dynamic-bool-off">NRN_ENABLE_MPI_DYNAMIC:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-mpi-dynamic-string">NRN_MPI_DYNAMIC:STRING=</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mpi-options">MPI options:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-mpi-bool-on">NRN_ENABLE_MPI:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-mpi-dynamic-bool-off">NRN_ENABLE_MPI_DYNAMIC:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-mpi-dynamic-string">NRN_MPI_DYNAMIC:STRING=</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#python-options">Python options:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-python-bool-on">NRN_ENABLE_PYTHON:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-python-dynamic-bool-off">NRN_ENABLE_PYTHON_DYNAMIC:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-python-dynamic-string">NRN_PYTHON_DYNAMIC:STRING=</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#python-executable-path">PYTHON_EXECUTABLE:PATH=</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-module-install-bool-on">NRN_ENABLE_MODULE_INSTALL:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-module-install-options-string-home-usr-local">NRN_MODULE_INSTALL_OPTIONS:STRING=–home=/usr/local</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-rx3d-bool-on">NRN_ENABLE_RX3D:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-rx3d-opt-level-string-0">NRN_RX3D_OPT_LEVEL:STRING=0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-options">Python options:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-python-bool-on">NRN_ENABLE_PYTHON:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-python-dynamic-bool-off">NRN_ENABLE_PYTHON_DYNAMIC:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-python-dynamic-string">NRN_PYTHON_DYNAMIC:STRING=</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python-executable-path">PYTHON_EXECUTABLE:PATH=</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-module-install-bool-on">NRN_ENABLE_MODULE_INSTALL:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-module-install-options-string-home-usr-local">NRN_MODULE_INSTALL_OPTIONS:STRING=–home=/usr/local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-rx3d-bool-on">NRN_ENABLE_RX3D:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-rx3d-opt-level-string-0">NRN_RX3D_OPT_LEVEL:STRING=0</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#coreneuron-options">CoreNEURON options:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-coreneuron-bool-off">NRN_ENABLE_CORENEURON:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-mod-compatibility-bool-off">NRN_ENABLE_MOD_COMPATIBILITY:BOOL=OFF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coreneuron-options">CoreNEURON options:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-coreneuron-bool-off">NRN_ENABLE_CORENEURON:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-mod-compatibility-bool-off">NRN_ENABLE_MOD_COMPATIBILITY:BOOL=OFF</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#occasionally-useful-advanced-options">Occasionally useful advanced options:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cmake-c-compiler-filepath-usr-bin-cc">CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cmake-cxx-compiler-filepath-usr-bin-c">CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#readline-root-dir-path-usr">Readline_ROOT_DIR:PATH=/usr</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-tests-bool-off">NRN_ENABLE_TESTS:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#neuron-cmake-format-bool-off">NEURON_CMAKE_FORMAT:BOOL=OFF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#occasionally-useful-advanced-options">Occasionally useful advanced options:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-c-compiler-filepath-usr-bin-cc">CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cmake-cxx-compiler-filepath-usr-bin-c">CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#readline-root-dir-path-usr">Readline_ROOT_DIR:PATH=/usr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-tests-bool-off">NRN_ENABLE_TESTS:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#neuron-cmake-format-bool-off">NEURON_CMAKE_FORMAT:BOOL=OFF</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#miscellaneous-rarely-used-options-specific-to-neuron">Miscellaneous Rarely used options specific to NEURON:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-discrete-event-observer-bool-on">NRN_ENABLE_DISCRETE_EVENT_OBSERVER:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-dynamic-units-use-legacy-bool-off">NRN_DYNAMIC_UNITS_USE_LEGACY:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-mech-dll-style-bool-on">NRN_ENABLE_MECH_DLL_STYLE:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-memacs-bool-off">NRN_ENABLE_MEMACS:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-shared-bool-on">NRN_ENABLE_SHARED:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-threads-bool-on">NRN_ENABLE_THREADS:BOOL=ON</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-use-rel-rpath-off">NRN_USE_REL_RPATH=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-binary-special-bool-off">NRN_ENABLE_BINARY_SPECIAL:BOOL=OFF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#nrn-enable-internal-readline-bool-off">NRN_ENABLE_INTERNAL_READLINE:BOOL=OFF</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#miscellaneous-rarely-used-options-specific-to-neuron">Miscellaneous Rarely used options specific to NEURON:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-discrete-event-observer-bool-on">NRN_ENABLE_DISCRETE_EVENT_OBSERVER:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-dynamic-units-use-legacy-bool-off">NRN_DYNAMIC_UNITS_USE_LEGACY:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-mech-dll-style-bool-on">NRN_ENABLE_MECH_DLL_STYLE:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-memacs-bool-off">NRN_ENABLE_MEMACS:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-shared-bool-on">NRN_ENABLE_SHARED:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-threads-bool-on">NRN_ENABLE_THREADS:BOOL=ON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-use-rel-rpath-off">NRN_USE_REL_RPATH=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-binary-special-bool-off">NRN_ENABLE_BINARY_SPECIAL:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-internal-readline-bool-off">NRN_ENABLE_INTERNAL_READLINE:BOOL=OFF</a></li>
 </ul>
 </li>
 </ul>
@@ -212,7 +210,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="index.html">NEURON CMake Build</a> &raquo;</li>
+          <li><a href="index.html">CMake Build Options</a> &raquo;</li>
         
       <li>Introduction</li>
     
@@ -685,7 +683,7 @@ folder will be automatically loaded.</p>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="../py_doc/index.html" class="btn btn-neutral float-right" title="NEURON Python documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="NEURON CMake Build" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="CMake Build Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
