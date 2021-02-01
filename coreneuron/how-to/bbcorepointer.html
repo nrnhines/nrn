@@ -1,0 +1,306 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Transferring dynamically allocated data between NEURON and CoreNEURON &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../py_doc/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Transferring dynamically allocated data between NEURON and CoreNEURON</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/coreneuron/how-to/bbcorepointer.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+</li>
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="transferring-dynamically-allocated-data-between-neuron-and-coreneuron">
+<h1>Transferring dynamically allocated data between NEURON and CoreNEURON<a class="headerlink" href="#transferring-dynamically-allocated-data-between-neuron-and-coreneuron" title="Permalink to this headline">¶</a></h1>
+<p>User-allocated data can be managed in NMODL using the <code class="docutils literal notranslate"><span class="pre">POINTER</span></code> type. It allows the
+programmer to reference data that has been allocated in HOC or in VERBATIM blocks. This
+allows for more advanced data-structures that are not natively supported in NMODL.</p>
+<p>Since NEURON itself has no knowledge of the layout and size of this data it cannot
+transfer <code class="docutils literal notranslate"><span class="pre">POINTER</span></code> data automatically to CoreNEURON. Furtheremore, in many cases there
+is no need to transfer the data between the two instances. In some cases, however, the
+programmer would like to transfer certain user-defined data into CoreNEURON. The most
+prominent example are random123 RNG stream parameters used in synapse mechanisms. To
+support this use-case the <code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code> type was introduced. Variables that are declared as
+<code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code> behave exactly the same as <code class="docutils literal notranslate"><span class="pre">POINTER</span></code> but are additionally taken into account
+when NEURON is serializing mechanism data (for file writing or direct-memory transfer).
+For NEURON to be able to write (and indeed CoreNEURON to be able to read) <code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code>
+data, the programmer has to additionally provide two C functions that are called as part
+of the serialization/deserialization.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">static</span> <span class="n">void</span> <span class="n">bbcore_write</span><span class="p">(</span><span class="n">double</span><span class="o">*</span> <span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">d</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">d_offset</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">x_offset</span><span class="p">,</span> <span class="n">_threadargsproto_</span><span class="p">);</span>
+
+<span class="n">static</span> <span class="n">void</span> <span class="n">bbcore_read</span><span class="p">(</span><span class="n">double</span><span class="o">*</span> <span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">d</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">d_offset</span><span class="p">,</span> <span class="nb">int</span><span class="o">*</span> <span class="n">x_offset</span><span class="p">,</span> <span class="n">_threadargsproto_</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The implementation of <code class="docutils literal notranslate"><span class="pre">bbcore_write</span></code> and <code class="docutils literal notranslate"><span class="pre">bbcore_read</span></code> determines the serialization and
+deserialization of the per-instance mechanism data referenced through the various
+<code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code>s.</p>
+<p>NEURON will call <code class="docutils literal notranslate"><span class="pre">bbcore_write</span></code> twice per mechanism instance. In a first sweep, the call is used to
+determine the required memory to be allocated on the serialization arrays. In the second sweep the
+call is used to fill in the data per mechanism instance.</p>
+<p>The functions take following arguments</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">x</span></code>: A <code class="docutils literal notranslate"><span class="pre">double</span></code> type array that will be allocated by NEURON to fill with real-valued data. In the
+first call, <code class="docutils literal notranslate"><span class="pre">x</span></code> is NULL as it has not been allocated yet.</li>
+<li><code class="docutils literal notranslate"><span class="pre">d</span></code>: An <code class="docutils literal notranslate"><span class="pre">int</span></code> type array that will be allocated by NEURON to fill with integer-valued data. In the
+first call, <code class="docutils literal notranslate"><span class="pre">d</span></code> is NULL as it has not been allocated yet.</li>
+<li><code class="docutils literal notranslate"><span class="pre">x_offset</span></code>: The offset in <code class="docutils literal notranslate"><span class="pre">x</span></code> at which the mechanism instance should write its real-valued
+<code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code> data. In the first call this is an output argument that is expected to be updated
+by the per-instance size to be allocated.</li>
+<li><code class="docutils literal notranslate"><span class="pre">d_offset</span></code>: The offset in <code class="docutils literal notranslate"><span class="pre">d</span></code> at which the mechanism instance should write its integer-valued
+<code class="docutils literal notranslate"><span class="pre">BBCOREPOINTER</span></code> data. In the first call this is an output argument that is expected to be updated
+by the per-instance size to be allocated.</li>
+<li><code class="docutils literal notranslate"><span class="pre">_threadargsproto_</span></code>: a macro placeholder for NEURON/CoreNEURON data-structure parameters. They
+are typically only used through generated defines and not by the programmer. The macro is defined
+as follows:</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#define _threadargsproto_                                                                         \</span>
+    <span class="nb">int</span> <span class="n">_iml</span><span class="p">,</span> <span class="nb">int</span> <span class="n">_cntml_padded</span><span class="p">,</span> <span class="n">double</span> <span class="o">*</span><span class="n">_p</span><span class="p">,</span> <span class="n">Datum</span> <span class="o">*</span><span class="n">_ppvar</span><span class="p">,</span> <span class="n">ThreadDatum</span> <span class="o">*</span><span class="n">_thread</span><span class="p">,</span> <span class="n">NrnThread</span> <span class="o">*</span><span class="n">_nt</span><span class="p">,</span> \
+    <span class="n">double</span> <span class="n">_v</span>
+</pre></div>
+</div>
+<p>Putting all of this together, the following is a minimal MOD using BBCOREPOINTER:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>TITLE A BBCOREPOINTER Example 
+
+NEURON {
+    BBCOREPOINTER my_data
+}
+
+ASSIGNED {
+    my_data
+}
+
+: Do something interesting with my_data ...
+
+VERBATIM
+static void bbcore_write(double* x, int* d, int* x_offset, int* d_offset, _threadargsproto_) {
+    if (x) {
+        double* x_i = x + *x_offset;
+        x_i[0] = _p_my_data[0];
+        x_i[1] = _p_my_data[1];
+    }
+    *x_offset += 2; // reserve 2 doubles on serialization buffer x
+}
+
+static void bbcore_read(double* x, int* d, int* x_offset, int* d_offset, _threadargsproto_) {
+    assert(!_p_my_data);
+    double* x_i = x + *x_offset;
+    // my_data needs to be allocated somehow
+    _p_my_data = (double*)malloc(sizeof(double)*2); 
+    _p_my_data[0] = x_i[0];
+    _p_my_data[1] = x_i[1];
+    *x_offset += 2;
+}
+ENDVERBATIM
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
