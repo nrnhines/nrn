@@ -9,5 +9,5 @@ var class_message_item =
     [ "s", "class_message_item.html#a61149ca07b4a5cc788e47b72a127b990", null ],
     [ "size_", "class_message_item.html#a0f29348ff156a6c2930545864f405450", null ],
     [ "type_", "class_message_item.html#a1f8d516fc23c0fdae13a7a95f1e5d8a8", null ],
-    [ "u", "class_message_item.html#a1e4b6e1f10545b3803640cc86c348282", null ]
+    [ "u", "class_message_item.html#a3145da5baeac8c801ddf1cd0c638b2c1", null ]
 ];

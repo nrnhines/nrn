@@ -4,7 +4,7 @@ var rbtqueue_8cpp =
     [ "color", "rbtqueue_8cpp.html#addc0ea0a88e0ea5e051be50e479d1bad", null ],
     [ "compEQ", "rbtqueue_8cpp.html#a6b787c3a12d0654f379393d97a77ddee", null ],
     [ "compLT", "rbtqueue_8cpp.html#a635ef777c24d8f1ca6fb42a748693de2", null ],
-    [ "data", "rbtqueue_8cpp.html#a43a278d13284fb3412e9eee1db1d967e", null ],
+    [ "data", "rbtqueue_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453", null ],
     [ "left", "rbtqueue_8cpp.html#a428f8207615465afdfcf1d31547ffef3", null ],
     [ "NIL", "rbtqueue_8cpp.html#a263efce0e5cda1d387a1a43f94715445", null ],
     [ "Node", "rbtqueue_8cpp.html#a7990b2937fad555b345f91c3b73b2895", null ],

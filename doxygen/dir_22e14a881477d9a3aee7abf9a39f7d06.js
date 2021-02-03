@@ -20,8 +20,8 @@ var dir_22e14a881477d9a3aee7abf9a39f7d06 =
     [ "rxd.h", "rxd_8h.html", "rxd_8h" ],
     [ "rxd_extracellular.cpp", "rxd__extracellular_8cpp.html", "rxd__extracellular_8cpp" ],
     [ "rxd_intracellular.cpp", "rxd__intracellular_8cpp.html", "rxd__intracellular_8cpp" ],
-    [ "rxd_llgramarea.c", "rxd__llgramarea_8c.html", "rxd__llgramarea_8c" ],
-    [ "rxd_marching_cubes.c", "rxd__marching__cubes_8c.html", "rxd__marching__cubes_8c" ],
+    [ "rxd_llgramarea.cpp", "rxd__llgramarea_8cpp.html", "rxd__llgramarea_8cpp" ],
+    [ "rxd_marching_cubes.cpp", "rxd__marching__cubes_8cpp.html", "rxd__marching__cubes_8cpp" ],
     [ "rxd_vol.cpp", "rxd__vol_8cpp.html", "rxd__vol_8cpp" ],
-    [ "rxdmath.c", "rxdmath_8c.html", "rxdmath_8c" ]
+    [ "rxdmath.cpp", "rxdmath_8cpp.html", "rxdmath_8cpp" ]
 ];

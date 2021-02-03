@@ -15,7 +15,7 @@ var struct_py_hoc_object =
     [ "sym_", "struct_py_hoc_object.html#a6e2d52c920343fa8c380f58de4bd1bde", null ],
     [ "type_", "struct_py_hoc_object.html#aac7a440b42a40c81e5e218b40efd17b2", null ],
     [ "type_", "struct_py_hoc_object.html#afa6a3e880defe66556d5639d51d4745a", null ],
-    [ "u", "struct_py_hoc_object.html#ada9729b5e786ea34ff0841804329415b", null ],
-    [ "u", "struct_py_hoc_object.html#ab816260d74fcea41723ab59936920bce", null ],
+    [ "u", "struct_py_hoc_object.html#abf58dd950f5edaee45dea93e3dcc966c", null ],
+    [ "u", "struct_py_hoc_object.html#a39802a6ecf6e30cfe0c0e18c4cabf7f9", null ],
     [ "x_", "struct_py_hoc_object.html#aa72d60614d0f991a02c9bd67cd7ceb17", null ]
 ];

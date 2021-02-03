@@ -99,8 +99,6 @@ $(document).ready(function(){initNavTree('rxd_8cpp.html','');});
 <code>#include &lt;<a class="el" href="string_8h_source.html">string.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="grids_8h_source.html">grids.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rxd_8h_source.html">rxd.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="matrix2_8h_source.html">matrix2.h</a>&gt;</code><br />
-<code>#include &lt;pthread.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="section_8h_source.html">../nrnoc/section.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="nrn__ansi_8h_source.html">../nrnoc/nrn_ansi.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="multicore_8h_source.html">../nrnoc/multicore.h</a>&gt;</code><br />
@@ -129,19 +127,19 @@ Functions</h2></td></tr>
 <tr class="separator:aa5f1aaa627222c7a8ba3d71d012bab8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fee29242f6da7eef8d8d751734c07a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a4fee29242f6da7eef8d8d751734c07a3">rxd_setup_conc_ptrs</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> conc_count, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *conc_index, <a class="el" href="struct_py_hoc_object.html">PyHocObject</a> **conc_ptrs)</td></tr>
 <tr class="separator:a4fee29242f6da7eef8d8d751734c07a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69de555cc9fcbc17733d45f06601b4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ac69de555cc9fcbc17733d45f06601b4b">rxd_include_node_flux3D</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_count, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *grid_counts, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *grids, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8c.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *scales, PyObject **sources)</td></tr>
+<tr class="memitem:ac69de555cc9fcbc17733d45f06601b4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ac69de555cc9fcbc17733d45f06601b4b">rxd_include_node_flux3D</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> grid_count, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *grid_counts, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *grids, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8cpp.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *scales, PyObject **sources)</td></tr>
 <tr class="separator:ac69de555cc9fcbc17733d45f06601b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082c1f56e95469efb798582068ccec6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a082c1f56e95469efb798582068ccec6e">rxd_include_node_flux1D</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8c.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *scales, PyObject **sources)</td></tr>
+<tr class="memitem:a082c1f56e95469efb798582068ccec6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a082c1f56e95469efb798582068ccec6e">rxd_include_node_flux1D</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8cpp.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *scales, PyObject **sources)</td></tr>
 <tr class="separator:a082c1f56e95469efb798582068ccec6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a9428ce71cd7b27b880844822aac0da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5a9428ce71cd7b27b880844822aac0da">apply_node_flux</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8c.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *<a class="el" href="nrn__aoex4_8cpp.html#a6cf21a2fdbbf58e6ad03ed207f0b3f2f">scale</a>, PyObject **source, double <a class="el" href="nrnoc_2init_8c.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>)</td></tr>
+<tr class="memitem:a5a9428ce71cd7b27b880844822aac0da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5a9428ce71cd7b27b880844822aac0da">apply_node_flux</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *<a class="el" href="readline_8cpp.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>, double *<a class="el" href="nrn__aoex4_8cpp.html#a6cf21a2fdbbf58e6ad03ed207f0b3f2f">scale</a>, PyObject **source, double <a class="el" href="nrnoc_2init_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>)</td></tr>
 <tr class="separator:a5a9428ce71cd7b27b880844822aac0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c45604cf4c64d7047296d76ce7243f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa9c45604cf4c64d7047296d76ce7243f">apply_node_flux1D</a> (double <a class="el" href="nrnoc_2init_8c.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>)</td></tr>
+<tr class="memitem:aa9c45604cf4c64d7047296d76ce7243f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa9c45604cf4c64d7047296d76ce7243f">apply_node_flux1D</a> (double <a class="el" href="nrnoc_2init_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>)</td></tr>
 <tr class="separator:aa9c45604cf4c64d7047296d76ce7243f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec104b10da63a468a6aba805b8e60d17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aec104b10da63a468a6aba805b8e60d17">rxd_set_euler_matrix</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nrow, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nnonzero, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_i, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_j, double *nonzero_values, double *c_diagonal)</td></tr>
 <tr class="separator:aec104b10da63a468a6aba805b8e60d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f4aa2778bab08c87378f0ed7ed0be8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5f4aa2778bab08c87378f0ed7ed0be8f">add_currents</a> (double *<a class="el" href="diffeq_8c.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
+<tr class="memitem:a5f4aa2778bab08c87378f0ed7ed0be8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5f4aa2778bab08c87378f0ed7ed0be8f">add_currents</a> (double *<a class="el" href="diffeq_8cpp.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
 <tr class="separator:a5f4aa2778bab08c87378f0ed7ed0be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3985a1da481d5e9f34abbd99622982"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aad3985a1da481d5e9f34abbd99622982">mul</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nnonzero, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_i, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_j, const double *nonzero_values, const double *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *<a class="el" href="diffeq_8c.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
+<tr class="memitem:aad3985a1da481d5e9f34abbd99622982"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aad3985a1da481d5e9f34abbd99622982">mul</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nnonzero, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_i, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *nonzero_j, const double *nonzero_values, const double *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *<a class="el" href="diffeq_8cpp.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
 <tr class="separator:aad3985a1da481d5e9f34abbd99622982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f40c0ef0a25e243442b34b086bb948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad3f40c0ef0a25e243442b34b086bb948">set_setup</a> (const <a class="el" href="rxd_8h.html#abb07928efbdbdbc1a4e97cb706bbc25a">fptr</a> setup_fn)</td></tr>
 <tr class="separator:ad3f40c0ef0a25e243442b34b086bb948"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +149,7 @@ Functions</h2></td></tr>
 <tr class="separator:a550e6b69ad606691eb3146b1b4bf27ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d7be64d22d7ce680001a7cc539dde8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a48d7be64d22d7ce680001a7cc539dde8">set_setup_units</a> (<a class="el" href="rxd_8h.html#abb07928efbdbdbc1a4e97cb706bbc25a">fptr</a> setup_units)</td></tr>
 <tr class="separator:a48d7be64d22d7ce680001a7cc539dde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76917647e907ff62e295d5e6ee7cb9ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a76917647e907ff62e295d5e6ee7cb9ef">nrn_tree_solve</a> (double *<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>, double *<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>, double *<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>, double *dbase, double *<a class="el" href="lineq_8h.html#ade4650485fe35fd3e12fea272fc80209">rhs</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *pindex, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double <a class="el" href="nrnoc_2init_8c.html#a03e28be41881b703c836edbfe9b51b17">dt</a>)</td></tr>
+<tr class="memitem:a76917647e907ff62e295d5e6ee7cb9ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a76917647e907ff62e295d5e6ee7cb9ef">nrn_tree_solve</a> (double *<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, double *<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>, double *<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>, double *dbase, double *<a class="el" href="lineq_8h.html#ade4650485fe35fd3e12fea272fc80209">rhs</a>, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *pindex, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double <a class="el" href="nrnoc_2init_8cpp.html#a03e28be41881b703c836edbfe9b51b17">dt</a>)</td></tr>
 <tr class="separator:a76917647e907ff62e295d5e6ee7cb9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7879cf3f1c53939a14d958109c17b262"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a7879cf3f1c53939a14d958109c17b262">ode_abs_tol</a> (double *p1)</td></tr>
 <tr class="separator:a7879cf3f1c53939a14d958109c17b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,21 +165,21 @@ Functions</h2></td></tr>
 <tr class="separator:a697f483f31429efed44ea09f1cc180ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4fcd914dcf727151e6c717a873a8a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aba4fcd914dcf727151e6c717a873a8a5">clear_rates</a> ()</td></tr>
 <tr class="separator:aba4fcd914dcf727151e6c717a873a8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c45a42e3e496a2cd18e002b06713231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a1c45a42e3e496a2cd18e002b06713231">species_atolscale</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="md1redef_8h.html#a6dc5438d7da45fe939a6b00cb23365a3">id</a>, double <a class="el" href="nrn__aoex4_8cpp.html#a6cf21a2fdbbf58e6ad03ed207f0b3f2f">scale</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> len, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *idx)</td></tr>
+<tr class="memitem:a1c45a42e3e496a2cd18e002b06713231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a1c45a42e3e496a2cd18e002b06713231">species_atolscale</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="md1redef_8h.html#a6dc5438d7da45fe939a6b00cb23365a3">id</a>, double <a class="el" href="nrn__aoex4_8cpp.html#a6cf21a2fdbbf58e6ad03ed207f0b3f2f">scale</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="readline_8cpp.html#a560caa016d417ade4263383b7a0b449d">len</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *idx)</td></tr>
 <tr class="separator:a1c45a42e3e496a2cd18e002b06713231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf0de82cdfcb08cfc7e794426d4ea81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a8cf0de82cdfcb08cfc7e794426d4ea81">remove_species_atolscale</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="md1redef_8h.html#a6dc5438d7da45fe939a6b00cb23365a3">id</a>)</td></tr>
 <tr class="separator:a8cf0de82cdfcb08cfc7e794426d4ea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa899eb77c8f23a9fe10d7f23d75e80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aefa899eb77c8f23a9fe10d7f23d75e80">setup_solver</a> (double *my_states, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> my_num_states, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *zvi, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> num_zvi)</td></tr>
 <tr class="separator:aefa899eb77c8f23a9fe10d7f23d75e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756e5cbaaefc6d932ade90371ca25fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a756e5cbaaefc6d932ade90371ca25fae">start_threads</a> (const <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:a756e5cbaaefc6d932ade90371ca25fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a756e5cbaaefc6d932ade90371ca25fae">start_threads</a> (const <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:a756e5cbaaefc6d932ade90371ca25fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58eab483e3e7c5f20eec0469c223daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa58eab483e3e7c5f20eec0469c223daf">TaskQueue_add_task</a> (<a class="el" href="struct_task_queue.html">TaskQueue</a> *q, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *(*task)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *), <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="modlunit_2parse1_8c.html#a3ece300ebadb367b97cfb9c556fe898f">args</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="diffeq_8c.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
+<tr class="memitem:aa58eab483e3e7c5f20eec0469c223daf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa58eab483e3e7c5f20eec0469c223daf">TaskQueue_add_task</a> (<a class="el" href="struct_task_queue.html">TaskQueue</a> *<a class="el" href="nrngsl__real__radix2_8cpp.html#a099b3b060154898840f0ebdfb46ec78f">q</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *(*task)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *), <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="readline_8cpp.html#a8187411843a6284ffb964ef3fb9fcab3">args</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="diffeq_8cpp.html#a47e98627527297b179e3bf904a0943cc">result</a>)</td></tr>
 <tr class="separator:aa58eab483e3e7c5f20eec0469c223daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e8edf35f35609b58ba0c40a978f989"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a50e8edf35f35609b58ba0c40a978f989">TaskQueue_exe_tasks</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *dat)</td></tr>
 <tr class="separator:a50e8edf35f35609b58ba0c40a978f989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa9c84eabcb657399b3ab6ac6c19322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a4fa9c84eabcb657399b3ab6ac6c19322">set_num_threads</a> (const <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:a4fa9c84eabcb657399b3ab6ac6c19322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a4fa9c84eabcb657399b3ab6ac6c19322">set_num_threads</a> (const <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:a4fa9c84eabcb657399b3ab6ac6c19322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5b186f34f9606a13207a44a197be84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#adb5b186f34f9606a13207a44a197be84">TaskQueue_sync</a> (<a class="el" href="struct_task_queue.html">TaskQueue</a> *q)</td></tr>
+<tr class="memitem:adb5b186f34f9606a13207a44a197be84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#adb5b186f34f9606a13207a44a197be84">TaskQueue_sync</a> (<a class="el" href="struct_task_queue.html">TaskQueue</a> *<a class="el" href="nrngsl__real__radix2_8cpp.html#a099b3b060154898840f0ebdfb46ec78f">q</a>)</td></tr>
 <tr class="separator:adb5b186f34f9606a13207a44a197be84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b513132f81d9de1ab9578e8a02dfe1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ab6b513132f81d9de1ab9578e8a02dfe1">get_num_threads</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>)</td></tr>
 <tr class="separator:ab6b513132f81d9de1ab9578e8a02dfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +193,7 @@ Functions</h2></td></tr>
 <tr class="separator:a99a6be1defa57da17c70a16012683ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba657eca411e5b014902a60b0ecb6a1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aba657eca411e5b014902a60b0ecb6a1f">solve_reaction</a> (<a class="el" href="struct_i_c_s_reactions.html">ICSReactions</a> *react, double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>, double *bval, double *cvode_states, double *cvode_b)</td></tr>
 <tr class="separator:aba657eca411e5b014902a60b0ecb6a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b5e275cae16684de57767d1723a358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a71b5e275cae16684de57767d1723a358">do_ics_reactions</a> (double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>, double *<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>, double *cvode_states, double *cvode_b)</td></tr>
+<tr class="memitem:a71b5e275cae16684de57767d1723a358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a71b5e275cae16684de57767d1723a358">do_ics_reactions</a> (double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>, double *<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>, double *cvode_states, double *cvode_b)</td></tr>
 <tr class="separator:a71b5e275cae16684de57767d1723a358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea3064c4e3aa45dc9f5fc533578d840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a1ea3064c4e3aa45dc9f5fc533578d840">get_all_reaction_rates</a> (double *<a class="el" href="hh_8c.html#aad78b8d276f8b365ffe5e512d7b8cf28">states</a>, double *<a class="el" href="hh_8c.html#aaad99b2c30a66bf7f9d44e08f8735191">rates</a>, double *ydot)</td></tr>
 <tr class="separator:a1ea3064c4e3aa45dc9f5fc533578d840"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,9 +218,9 @@ Variables</h2></td></tr>
 <tr class="separator:a8cd59102b8d53ee53984c1ee1995fa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1ee38c31aa7ff91c5a450c128046053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad1ee38c31aa7ff91c5a450c128046053">NUM_THREADS</a> = 1</td></tr>
 <tr class="separator:ad1ee38c31aa7ff91c5a450c128046053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b35149eb14db4372b03a3e9556a311d"><td class="memItemLeft" align="right" valign="top">pthread_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a9b35149eb14db4372b03a3e9556a311d">Threads</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a9b35149eb14db4372b03a3e9556a311d"><td class="memItemLeft" align="right" valign="top">pthread_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a9b35149eb14db4372b03a3e9556a311d">Threads</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a9b35149eb14db4372b03a3e9556a311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81232e979ba0fab580f515fbe055cec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_task_queue.html">TaskQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a81232e979ba0fab580f515fbe055cec5">AllTasks</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a81232e979ba0fab580f515fbe055cec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_task_queue.html">TaskQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a81232e979ba0fab580f515fbe055cec5">AllTasks</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a81232e979ba0fab580f515fbe055cec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080b607dd7a3dba1330d56784720ba4e"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a080b607dd7a3dba1330d56784720ba4e">dt_ptr</a></td></tr>
 <tr class="separator:a080b607dd7a3dba1330d56784720ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,35 +242,35 @@ Variables</h2></td></tr>
 <tr class="separator:a354fc840f30300d6a973ab329679c9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19fa83c50a8a601d02d3c5592864e6e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a19fa83c50a8a601d02d3c5592864e6e7">_rxd_num_zvi</a> =0</td></tr>
 <tr class="separator:a19fa83c50a8a601d02d3c5592864e6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9e93794b3d7a6803d490e7ab1c0be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5b9e93794b3d7a6803d490e7ab1c0be3">_rxd_euler_nonzero_i</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a5b9e93794b3d7a6803d490e7ab1c0be3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5b9e93794b3d7a6803d490e7ab1c0be3">_rxd_euler_nonzero_i</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a5b9e93794b3d7a6803d490e7ab1c0be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ed1892e1c390f2fdf3b0ccc3e4f91d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3ed1892e1c390f2fdf3b0ccc3e4f91d9">_rxd_euler_nonzero_j</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a3ed1892e1c390f2fdf3b0ccc3e4f91d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3ed1892e1c390f2fdf3b0ccc3e4f91d9">_rxd_euler_nonzero_j</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a3ed1892e1c390f2fdf3b0ccc3e4f91d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba2f6d9f4b1e07232303c02e06da524"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5ba2f6d9f4b1e07232303c02e06da524">_rxd_euler_nonzero_values</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a5ba2f6d9f4b1e07232303c02e06da524"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a5ba2f6d9f4b1e07232303c02e06da524">_rxd_euler_nonzero_values</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a5ba2f6d9f4b1e07232303c02e06da524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d00dd2826577972da23951a4a023d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a88d00dd2826577972da23951a4a023d5">_rxd_zero_volume_indices</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a88d00dd2826577972da23951a4a023d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a88d00dd2826577972da23951a4a023d5">_rxd_zero_volume_indices</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a88d00dd2826577972da23951a4a023d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc65f67985ef0975ead5b7182bee0ed0"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#adc65f67985ef0975ead5b7182bee0ed0">_rxd_a</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:adc65f67985ef0975ead5b7182bee0ed0"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#adc65f67985ef0975ead5b7182bee0ed0">_rxd_a</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:adc65f67985ef0975ead5b7182bee0ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ed64320c8ce8aba6d84328b84768ec"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#af5ed64320c8ce8aba6d84328b84768ec">_rxd_b</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:af5ed64320c8ce8aba6d84328b84768ec"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#af5ed64320c8ce8aba6d84328b84768ec">_rxd_b</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:af5ed64320c8ce8aba6d84328b84768ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b54829ed6ee10359c0b8891ee9694df"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3b54829ed6ee10359c0b8891ee9694df">_rxd_c</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a3b54829ed6ee10359c0b8891ee9694df"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3b54829ed6ee10359c0b8891ee9694df">_rxd_c</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a3b54829ed6ee10359c0b8891ee9694df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3160b0375022ffa9c1e07bf8a5f59c0e"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3160b0375022ffa9c1e07bf8a5f59c0e">_rxd_d</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a3160b0375022ffa9c1e07bf8a5f59c0e"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a3160b0375022ffa9c1e07bf8a5f59c0e">_rxd_d</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a3160b0375022ffa9c1e07bf8a5f59c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c06b519352d747745c829444f62bba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad2c06b519352d747745c829444f62bba">_rxd_p</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:ad2c06b519352d747745c829444f62bba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad2c06b519352d747745c829444f62bba">_rxd_p</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:ad2c06b519352d747745c829444f62bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a499f3f4c6f8b60953799208b752d37b7"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a499f3f4c6f8b60953799208b752d37b7">_rxd_zvi_child_count</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a499f3f4c6f8b60953799208b752d37b7"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a499f3f4c6f8b60953799208b752d37b7">_rxd_zvi_child_count</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a499f3f4c6f8b60953799208b752d37b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0fae9af21e3354ee759fa9e031578a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad0fae9af21e3354ee759fa9e031578a0">_rxd_zvi_child</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:ad0fae9af21e3354ee759fa9e031578a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ad0fae9af21e3354ee759fa9e031578a0">_rxd_zvi_child</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:ad0fae9af21e3354ee759fa9e031578a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8504764dc05666b66f11e242c88d4be9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a8504764dc05666b66f11e242c88d4be9">_cvode_offset</a></td></tr>
 <tr class="separator:a8504764dc05666b66f11e242c88d4be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8304ed5d0dc03faa2dcb45eb923ce2f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa8304ed5d0dc03faa2dcb45eb923ce2f">_ecs_count</a></td></tr>
 <tr class="separator:aa8304ed5d0dc03faa2dcb45eb923ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4962cb15708645cab96d9f05f24cd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_c_s_reactions.html">ICSReactions</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aaf4962cb15708645cab96d9f05f24cd4">_reactions</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:aaf4962cb15708645cab96d9f05f24cd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i_c_s_reactions.html">ICSReactions</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aaf4962cb15708645cab96d9f05f24cd4">_reactions</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:aaf4962cb15708645cab96d9f05f24cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437f7bf17ea689f5d5445e7f778ed7ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_species_index_list.html">SpeciesIndexList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a437f7bf17ea689f5d5445e7f778ed7ae">species_indices</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a437f7bf17ea689f5d5445e7f778ed7ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_species_index_list.html">SpeciesIndexList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a437f7bf17ea689f5d5445e7f778ed7ae">species_indices</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a437f7bf17ea689f5d5445e7f778ed7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d094a3d100f88bb0f96723ad449e08e"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a8d094a3d100f88bb0f96723ad449e08e">states</a></td></tr>
 <tr class="separator:a8d094a3d100f88bb0f96723ad449e08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,17 +280,17 @@ Variables</h2></td></tr>
 <tr class="separator:a252573dfd3064636dbd8a7d99e612419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2e732f4ad2929474fbe5ee9235ec84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#abb2e732f4ad2929474fbe5ee9235ec84">_curr_count</a></td></tr>
 <tr class="separator:abb2e732f4ad2929474fbe5ee9235ec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b26ebb9337c4aabf0f65cce3e396e33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a6b26ebb9337c4aabf0f65cce3e396e33">_curr_indices</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a6b26ebb9337c4aabf0f65cce3e396e33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a6b26ebb9337c4aabf0f65cce3e396e33">_curr_indices</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a6b26ebb9337c4aabf0f65cce3e396e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7e4863276ad36dc41b962b37917296"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a9f7e4863276ad36dc41b962b37917296">_curr_scales</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a9f7e4863276ad36dc41b962b37917296"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a9f7e4863276ad36dc41b962b37917296">_curr_scales</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a9f7e4863276ad36dc41b962b37917296"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a124d6f8cb39a9bbefa6e7b78429ec"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a54a124d6f8cb39a9bbefa6e7b78429ec">_curr_ptrs</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a54a124d6f8cb39a9bbefa6e7b78429ec"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a54a124d6f8cb39a9bbefa6e7b78429ec">_curr_ptrs</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a54a124d6f8cb39a9bbefa6e7b78429ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf011b5dd23bdd5f36e3c0d3f2e90ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aadf011b5dd23bdd5f36e3c0d3f2e90ef">_conc_count</a></td></tr>
 <tr class="separator:aadf011b5dd23bdd5f36e3c0d3f2e90ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a444af5f34a36ef11333e2f438baa8d57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a444af5f34a36ef11333e2f438baa8d57">_conc_indices</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a444af5f34a36ef11333e2f438baa8d57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a444af5f34a36ef11333e2f438baa8d57">_conc_indices</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a444af5f34a36ef11333e2f438baa8d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b2162bb35fedda0f1d55742d27b78b"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a01b2162bb35fedda0f1d55742d27b78b">_conc_ptrs</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a01b2162bb35fedda0f1d55742d27b78b"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a01b2162bb35fedda0f1d55742d27b78b">_conc_ptrs</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a01b2162bb35fedda0f1d55742d27b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0005efed181a344dfa5d2a8f5a52e16b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a0005efed181a344dfa5d2a8f5a52e16b">_memb_curr_total</a> = 0</td></tr>
 <tr class="separator:a0005efed181a344dfa5d2a8f5a52e16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,9 +314,9 @@ Variables</h2></td></tr>
 <tr class="separator:aff44c4e7737e9a4e1b147438bce757f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f16b7f0aca8db43568fb8b84bc4f11b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a8f16b7f0aca8db43568fb8b84bc4f11b">_memb_cur_mapped_ecs</a></td></tr>
 <tr class="separator:a8f16b7f0aca8db43568fb8b84bc4f11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96972579e8b809db91f3d665f2ed6fe6"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a96972579e8b809db91f3d665f2ed6fe6">_rxd_induced_currents</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a96972579e8b809db91f3d665f2ed6fe6"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a96972579e8b809db91f3d665f2ed6fe6">_rxd_induced_currents</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a96972579e8b809db91f3d665f2ed6fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67aa743ccb2d62f24e64ab67cc31b872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a67aa743ccb2d62f24e64ab67cc31b872">_rxd_induced_currents_grid</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:a67aa743ccb2d62f24e64ab67cc31b872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a67aa743ccb2d62f24e64ab67cc31b872">_rxd_induced_currents_grid</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:a67aa743ccb2d62f24e64ab67cc31b872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ac01fdfd4acc3f507be3ad83348532"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a34ac01fdfd4acc3f507be3ad83348532">_membrane_flux</a> = <a class="el" href="grids_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></td></tr>
 <tr class="separator:a34ac01fdfd4acc3f507be3ad83348532"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,11 +324,11 @@ Variables</h2></td></tr>
 <tr class="separator:aaf6bef4ed43012e214346e4a3314fa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117320cef97ae077a410935c09a171e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#a117320cef97ae077a410935c09a171e1">_node_flux_count</a> = 0</td></tr>
 <tr class="separator:a117320cef97ae077a410935c09a171e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85603988466fce4544d51b732bda2af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ac85603988466fce4544d51b732bda2af">_node_flux_idx</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:ac85603988466fce4544d51b732bda2af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ac85603988466fce4544d51b732bda2af">_node_flux_idx</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:ac85603988466fce4544d51b732bda2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11c3a2dd0f5a72cf922b6b024efbfc4"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa11c3a2dd0f5a72cf922b6b024efbfc4">_node_flux_scale</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:aa11c3a2dd0f5a72cf922b6b024efbfc4"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#aa11c3a2dd0f5a72cf922b6b024efbfc4">_node_flux_scale</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:aa11c3a2dd0f5a72cf922b6b024efbfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f23d86a7e24e9c22f9e680da8d785b"><td class="memItemLeft" align="right" valign="top">PyObject **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ab5f23d86a7e24e9c22f9e680da8d785b">_node_flux_src</a> = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
+<tr class="memitem:ab5f23d86a7e24e9c22f9e680da8d785b"><td class="memItemLeft" align="right" valign="top">PyObject **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rxd_8cpp.html#ab5f23d86a7e24e9c22f9e680da8d785b">_node_flux_src</a> = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td></tr>
 <tr class="separator:ab5f23d86a7e24e9c22f9e680da8d785b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -358,7 +356,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00805">805</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00801">801</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +376,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01332">1332</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01328">1328</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -398,7 +396,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01376">1376</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01372">1372</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -428,7 +426,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01401">1401</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01397">1397</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +454,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00482">482</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00478">478</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,7 +492,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00134">134</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00130">130</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +546,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00325">325</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00321">321</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +584,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00380">380</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00376">376</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -605,7 +603,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01071">1071</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01067">1067</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -647,7 +645,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l02003">2003</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01999">1999</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -666,7 +664,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00173">173</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00169">169</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -685,7 +683,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00159">159</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00155">155</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +710,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00660">660</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00656">656</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -739,7 +737,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00109">109</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00105">105</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -775,7 +773,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l02013">2013</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l02009">2009</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +793,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01327">1327</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01323">1323</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -837,7 +835,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01510">1510</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01506">1506</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +897,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00509">509</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00505">505</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -973,7 +971,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00539">539</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00535">535</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +999,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00641">641</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00637">637</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1043,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00591">591</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00587">587</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1139,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00938">938</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00934">934</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1159,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01143">1143</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01139">1139</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1203,7 +1201,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00305">305</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00301">301</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1257,7 +1255,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00218">218</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00214">214</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1305,7 +1303,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00851">851</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00847">847</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1359,7 +1357,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00385">385</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00381">381</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1376,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00141">141</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00137">137</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1414,7 +1412,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00203">203</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00199">199</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1454,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00185">185</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00181">181</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1474,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00524">524</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00520">520</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1496,7 +1494,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01281">1281</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01277">1277</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1516,7 +1514,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00520">520</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00516">516</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1536,7 +1534,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00529">529</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00525">525</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1556,7 +1554,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00533">533</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00529">529</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1620,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00687">687</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00683">683</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1664,7 +1662,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01163">1163</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01159">1159</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1712,7 +1710,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01685">1685</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01681">1681</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1754,7 +1752,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01111">1111</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01107">1107</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1774,7 +1772,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01182">1182</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01178">1178</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1816,7 +1814,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01204">1204</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01200">1200</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1836,7 +1834,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01236">1236</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01232">1232</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1856,7 +1854,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01318">1318</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l01314">1314</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1883,7 +1881,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00124">124</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00120">120</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1900,7 +1898,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00073">73</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00069">69</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1911,12 +1909,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _conc_indices = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _conc_indices = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00074">74</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00070">70</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1927,12 +1925,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double** _conc_ptrs = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double** _conc_ptrs = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00075">75</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00071">71</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1948,7 +1946,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00085">85</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00081">81</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +1962,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00069">69</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00065">65</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1975,12 +1973,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _curr_indices = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _curr_indices = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00070">70</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00066">66</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -1991,12 +1989,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double** _curr_ptrs = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double** _curr_ptrs = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00072">72</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00068">68</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2007,12 +2005,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _curr_scales = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _curr_scales = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00071">71</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00067">67</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2036,7 +2034,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00056">56</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00052">52</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2060,7 +2058,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00057">57</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00053">53</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2076,7 +2074,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00039">39</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00035">35</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2092,7 +2090,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00082">82</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00078">78</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2108,7 +2106,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00094">94</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00090">90</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2124,7 +2122,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00095">95</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00091">91</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2140,7 +2138,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00096">96</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00092">92</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2154,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00093">93</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00089">89</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2172,7 +2170,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00080">80</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00076">76</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2188,7 +2186,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00078">78</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00074">74</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2204,7 +2202,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00088">88</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00084">84</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2220,7 +2218,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00101">101</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00097">97</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2236,7 +2234,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00102">102</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00098">98</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2252,7 +2250,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00104">104</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00100">100</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2263,12 +2261,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _node_flux_idx = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _node_flux_idx = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00105">105</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00101">101</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2279,12 +2277,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _node_flux_scale = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _node_flux_scale = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00106">106</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00102">102</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2295,12 +2293,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PyObject** _node_flux_src = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">PyObject** _node_flux_src = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00107">107</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00103">103</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2316,7 +2314,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2hoc__init_8c_source.html#l00272">272</a> of file <a class="el" href="oc_2hoc__init_8c_source.html">hoc_init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2hoc__init_8cpp_source.html#l00274">274</a> of file <a class="el" href="oc_2hoc__init_8cpp_source.html">hoc_init.cpp</a>.</p>
 
 </div>
 </div>
@@ -2332,7 +2330,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00068">68</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00064">64</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2343,12 +2341,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_i_c_s_reactions.html">ICSReactions</a>* _reactions = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="struct_i_c_s_reactions.html">ICSReactions</a>* _reactions = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00060">60</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00056">56</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2359,12 +2357,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_a = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_a = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00049">49</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00045">45</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2375,12 +2373,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_b = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_b = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00050">50</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00046">46</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2391,12 +2389,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_c = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_c = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00051">51</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00047">47</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2407,12 +2405,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_d = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_d = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00052">52</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00048">48</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2428,7 +2426,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00044">44</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00040">40</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2439,12 +2437,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_euler_nonzero_i = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_euler_nonzero_i = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00045">45</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00041">41</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2455,12 +2453,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_euler_nonzero_j = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_euler_nonzero_j = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00046">46</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00042">42</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2471,12 +2469,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_euler_nonzero_values = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_euler_nonzero_values = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00047">47</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00043">43</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2492,7 +2490,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00044">44</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00040">40</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2508,7 +2506,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00083">83</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00079">79</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2519,12 +2517,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double* _rxd_induced_currents = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">double* _rxd_induced_currents = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00098">98</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00094">94</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2535,12 +2533,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a>** _rxd_induced_currents_grid = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="class_e_c_s___grid__node.html">ECS_Grid_node</a>** _rxd_induced_currents_grid = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00099">99</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00095">95</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2556,7 +2554,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00084">84</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00080">80</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2572,7 +2570,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00044">44</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00040">40</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2583,12 +2581,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_p = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_p = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00053">53</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00049">49</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2599,12 +2597,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_zero_volume_indices = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>* _rxd_zero_volume_indices = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00048">48</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00044">44</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2615,12 +2613,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>** _rxd_zvi_child = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>** _rxd_zvi_child = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00055">55</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00051">51</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2631,12 +2629,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _rxd_zvi_child_count = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">unsigned <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>* _rxd_zvi_child_count = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00054">54</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00050">50</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2652,7 +2650,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00039">39</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00035">35</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2668,7 +2666,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00039">39</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00035">35</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2684,7 +2682,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00039">39</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00035">35</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2695,12 +2693,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_task_queue.html">TaskQueue</a>* AllTasks = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="struct_task_queue.html">TaskQueue</a>* AllTasks = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00032">32</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00028">28</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2716,7 +2714,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00043">43</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00039">39</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2748,7 +2746,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnpy__hoc_8cpp_source.html#l00207">207</a> of file <a class="el" href="nrnpy__hoc_8cpp_source.html">nrnpy_hoc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnpy__hoc_8cpp_source.html#l00205">205</a> of file <a class="el" href="nrnpy__hoc_8cpp_source.html">nrnpy_hoc.cpp</a>.</p>
 
 </div>
 </div>
@@ -2764,7 +2762,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00024">24</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00020">20</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2780,7 +2778,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00040">40</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00036">36</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2796,7 +2794,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00067">67</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00063">63</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2812,7 +2810,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00030">30</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00026">26</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2828,7 +2826,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00023">23</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00019">19</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2844,7 +2842,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00022">22</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00018">18</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2855,12 +2853,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_species_index_list.html">SpeciesIndexList</a>* species_indices = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname"><a class="el" href="struct_species_index_list.html">SpeciesIndexList</a>* species_indices = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00063">63</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00059">59</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2876,7 +2874,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00066">66</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00062">62</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>
@@ -2892,7 +2890,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd__extracellular_8cpp_source.html#l00030">30</a> of file <a class="el" href="rxd__extracellular_8cpp_source.html">rxd_extracellular.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd__extracellular_8cpp_source.html#l00028">28</a> of file <a class="el" href="rxd__extracellular_8cpp_source.html">rxd_extracellular.cpp</a>.</p>
 
 </div>
 </div>
@@ -2908,7 +2906,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00071">71</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodeobj_8cpp_source.html#l00067">67</a> of file <a class="el" href="nrncvode_2cvodeobj_8cpp_source.html">cvodeobj.cpp</a>.</p>
 
 </div>
 </div>
@@ -2935,12 +2933,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pthread_t* Threads = <a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
+          <td class="memname">pthread_t* Threads = <a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00031">31</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rxd_8cpp_source.html#l00027">27</a> of file <a class="el" href="rxd_8cpp_source.html">rxd.cpp</a>.</p>
 
 </div>
 </div>

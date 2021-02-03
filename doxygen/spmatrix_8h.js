@@ -33,7 +33,7 @@ var spmatrix_8h =
     [ "spFileVector", "spmatrix_8h.html#a22ceba84f26d1bf1c705b1fa88258d2a", null ],
     [ "spFillinCount", "spmatrix_8h.html#a6c1a992044fa72be747001aa8ee775f7", null ],
     [ "spGetAdmittance", "spmatrix_8h.html#aa14c2d55a236de5255f6ad3c43725c0f", null ],
-    [ "spGetElement", "spmatrix_8h.html#a9cccb21006c79b682b5703b26abed896", null ],
+    [ "spGetElement", "spmatrix_8h.html#ac664bb198003aede03e8655a3161170a", null ],
     [ "spGetInitInfo", "spmatrix_8h.html#a239dfcb6bbf0c69b8c067581ef5105de", null ],
     [ "spGetOnes", "spmatrix_8h.html#a06ffd4865b3f9a5af3e11485324e37f2", null ],
     [ "spGetQuad", "spmatrix_8h.html#ad9a48fdfb73c896dfbeb5bffc39cdf01", null ],

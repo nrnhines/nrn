@@ -26,7 +26,6 @@ var hierarchy =
     [ "Area2Buf", "struct_area2_buf.html", null ],
     [ "Area2RT", "struct_area2_r_t.html", null ],
     [ "Arrayinfo", "struct_arrayinfo.html", null ],
-    [ "assoc_list", "structassoc__list.html", null ],
     [ "Background", null, [
       [ "AxisBackground", "class_axis_background.html", null ],
       [ "BoxBackground", "class_box_background.html", null ]
@@ -80,6 +79,7 @@ var hierarchy =
     ] ],
     [ "CoordinateSpace", "class_coordinate_space.html", null ],
     [ "core2nrn_callback_t", "structcore2nrn__callback__t.html", null ],
+    [ "cTemplate", "structc_template.html", null ],
     [ "Current_Triple", "struct_current___triple.html", null ],
     [ "CurrentData", "struct_current_data.html", null ],
     [ "CvMembList", "class_cv_memb_list.html", null ],
@@ -564,7 +564,6 @@ var hierarchy =
     [ "TarList", "class_tar_list.html", null ],
     [ "TaskList", "struct_task_list.html", null ],
     [ "TaskQueue", "struct_task_queue.html", null ],
-    [ "Template", "struct_template.html", null ],
     [ "Templatedatum", "union_templatedatum.html", null ],
     [ "TERM", "struct_t_e_r_m.html", null ],
     [ "TQItem", "class_t_q_item.html", null ],

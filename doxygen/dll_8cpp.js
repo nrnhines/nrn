@@ -40,9 +40,9 @@ var dll_8cpp =
     [ "find_file", "dll_8cpp.html#ab46a3c795efcf5282c42e7f24c21ff2f", null ],
     [ "common_symtab", "dll_8cpp.html#a9cbfacfa02e7f6f572beb56cda9315df", null ],
     [ "dll_argv0", "dll_8cpp.html#ad28c87e4b928ee11ab65e5eb1aaa4194", null ],
-    [ "flags", "dll_8cpp.html#a6a301e722edf0d235685159412943d4c", null ],
+    [ "flags", "dll_8cpp.html#a4f452821e709cc71daa3dfb467e96436", null ],
     [ "local_symtab", "dll_8cpp.html#aab7a4cb4035b4e360df906176279a587", null ],
     [ "name", "dll_8cpp.html#a5ac083a645d964373f022d03df4849c8", null ],
-    [ "sflags", "dll_8cpp.html#ab63199cd3c5f0ab592cb534afa8084cf", null ],
+    [ "sflags", "dll_8cpp.html#a22283a97c2a9a14d3afe8d09f6ea7b25", null ],
     [ "val", "dll_8cpp.html#aa0ccb5ee6d882ee3605ff47745c6467b", null ]
 ];

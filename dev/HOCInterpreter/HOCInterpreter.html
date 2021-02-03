@@ -247,7 +247,7 @@
 <h2><strong>HOC Grammar</strong><a class="headerlink" href="#hoc-grammar" title="Permalink to this headline">¶</a></h2>
 <p>With respect to the HOC grammar we have:</p>
 <ul>
-<li><p class="first"><strong>‘src/oc/parse.y’ →</strong> HOC language is defined thanks to <strong>bison/yacc;</strong> this file holds actual HOC grammar</p>
+<li><p class="first"><strong>‘src/oc/parse.ypp’ →</strong> HOC language is defined thanks to <strong>bison/yacc;</strong> this file holds actual HOC grammar</p>
 <p>The grammar consists of token definitions, left-right precedence setup,  grammar rules (i.e. expressions like assignments) and actions; these actions represent code blocks triggered when rules have been recognised.</p>
 <p>HOC also provides functions and procedures. Grammar wise, the difference is that functions are treated as expressions whereas procedures are statements. Technically, a function will return a value and a procedure will not.</p>
 <p>Given different depth of rules, parsing makes use of a stack  where we normally push operands and operators. These are basically symbols(<strong>Symbol</strong>) or machine instructions tied to grammar actions(<strong>Inst</strong>).</p>
@@ -518,7 +518,7 @@
 </li>
 </ul>
 <p><img alt="../../_images/58791210.png" src="../../_images/58791210.png" /></p>
-<p>How does this map to <em><strong>parse.y</strong></em> grammar? Corresponding part is :</p>
+<p>How does this map to <em><strong>parse.ypp</strong></em> grammar? Corresponding part is :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>expr:  
 .......
    | function begin &#39;(&#39; arglist &#39;)&#39;

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('ndatclas_8cpp.html','');});
 <code>#include &quot;<a class="el" href="nrnoc2iv_8h_source.html">nrnoc2iv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="classreg_8h_source.html">classreg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="membfunc_8h_source.html">membfunc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse_8h_source.html">parse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parse_8hpp_source.html">parse.hpp</a>&quot;</code><br />
 </div>
 <p><a href="ndatclas_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -113,8 +113,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a76a48c8dcd7a9123b4b576798c61db88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_prop.html">Prop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndatclas_8cpp.html#a76a48c8dcd7a9123b4b576798c61db88">prop_alloc</a> (<a class="el" href="struct_prop.html">Prop</a> **, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="struct_node.html">Node</a> *)</td></tr>
-<tr class="separator:a76a48c8dcd7a9123b4b576798c61db88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c70067f1024484724aafb2776c2c194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_prop.html">Prop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndatclas_8cpp.html#a9c70067f1024484724aafb2776c2c194">prop_alloc</a> (<a class="el" href="struct_prop.html">Prop</a> **, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="struct_node.html">Node</a> *)</td></tr>
+<tr class="separator:a9c70067f1024484724aafb2776c2c194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac89b2438ab47674b69968135982b5ba0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndatclas_8cpp.html#ac89b2438ab47674b69968135982b5ba0">single_prop_free</a> (<a class="el" href="struct_prop.html">Prop</a> *)</td></tr>
 <tr class="separator:ac89b2438ab47674b69968135982b5ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -126,29 +126,29 @@ Variables</h2></td></tr>
 <tr class="separator:a3d40bb7d874ee28820b75aab425b1f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a76a48c8dcd7a9123b4b576798c61db88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76a48c8dcd7a9123b4b576798c61db88">&#9670;&nbsp;</a></span>prop_alloc()</h2>
+<a id="a9c70067f1024484724aafb2776c2c194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c70067f1024484724aafb2776c2c194">&#9670;&nbsp;</a></span>prop_alloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_prop.html">Prop</a>* prop_alloc </td>
+          <td class="memname"><a class="el" href="struct_prop.html">Prop</a> * prop_alloc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_prop.html">Prop</a> **&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>pp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>nd</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -158,7 +158,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00664">664</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l00676">676</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00713">713</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l00724">724</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -195,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2symbol_8c_source.html#l00042">42</a> of file <a class="el" href="oc_2symbol_8c_source.html">symbol.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2symbol_8cpp_source.html#l00042">42</a> of file <a class="el" href="oc_2symbol_8cpp_source.html">symbol.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2symbol_8c_source.html#l00044">44</a> of file <a class="el" href="oc_2symbol_8c_source.html">symbol.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2symbol_8cpp_source.html#l00044">44</a> of file <a class="el" href="oc_2symbol_8cpp_source.html">symbol.cpp</a>.</p>
 
 </div>
 </div>

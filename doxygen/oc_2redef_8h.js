@@ -109,7 +109,7 @@ var oc_2redef_8h =
     [ "pushs", "oc_2redef_8h.html#aa919e73ddaf2d03d9010d26f1bc722e4", null ],
     [ "pushx", "oc_2redef_8h.html#adc5cb0e62939906405fe1f21b2d3cbc1", null ],
     [ "pushzero", "oc_2redef_8h.html#ad532563645ef8f2a3ea978248c43b9d4", null ],
-    [ "ret", "oc_2redef_8h.html#ae7b1d18a435dcca5e1837205e5fc909d", null ],
+    [ "ret", "oc_2redef_8h.html#a339672ff94e6199019102f50d317c3d7", null ],
     [ "ropen", "oc_2redef_8h.html#aa87b4c2c5a78ae8c94aa39be5ea9e12a", null ],
     [ "run", "oc_2redef_8h.html#ac7a48d6c2afd367fa7bd7b724b93c48d", null ],
     [ "set_color", "oc_2redef_8h.html#a23f81bfb2ce441bb8230c0116d84fde2", null ],

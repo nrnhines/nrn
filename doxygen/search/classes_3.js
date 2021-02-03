@@ -13,6 +13,7 @@ var searchData=
   ['coordinatespace',['CoordinateSpace',['../class_coordinate_space.html',1,'']]],
   ['copystring',['CopyString',['../class_copy_string.html',1,'']]],
   ['core2nrn_5fcallback_5ft',['core2nrn_callback_t',['../structcore2nrn__callback__t.html',1,'']]],
+  ['ctemplate',['cTemplate',['../structc_template.html',1,'']]],
   ['current_5ftriple',['Current_Triple',['../struct_current___triple.html',1,'']]],
   ['currentdata',['CurrentData',['../struct_current_data.html',1,'']]],
   ['cvmemblist',['CvMembList',['../class_cv_memb_list.html',1,'']]],

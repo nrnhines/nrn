@@ -1,8 +1,8 @@
 var structexternal__syment =
 [
     [ "__attribute__", "structexternal__syment.html#aadbfafb0e61b42f27ae6bddf5e9cc92a", null ],
-    [ "e", "structexternal__syment.html#af7e45ac24e0771fceb83863ed2a1c1c3", null ],
-    [ "e", "structexternal__syment.html#a3bf1b0c8535f8025d6580e57e49d2cc0", null ],
+    [ "e", "structexternal__syment.html#a6655b7f192a0f9d5aeedc751536e2d48", null ],
+    [ "e", "structexternal__syment.html#ae943da7ec0d2bfad8ad1a6900605fdba", null ],
     [ "e_name", "structexternal__syment.html#a2d4defeac73804c1612120837b7701b3", null ],
     [ "e_numaux", "structexternal__syment.html#a03bdccd1431c3e8d317ba4fcab19cca0", null ],
     [ "e_sclass", "structexternal__syment.html#ac91dfe89bacc690ce270c1d64e5f908b", null ],

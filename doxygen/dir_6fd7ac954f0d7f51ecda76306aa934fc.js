@@ -8,7 +8,7 @@ var dir_6fd7ac954f0d7f51ecda76306aa934fc =
       [ "StandardWindow", "class_standard_window.html", "class_standard_window" ],
       [ "PrintableWindowManager", "class_printable_window_manager.html", "class_printable_window_manager" ]
     ] ],
-    [ "axis.cpp", "axis_8cpp.html", null ],
+    [ "axis.cpp", "ivoc_2axis_8cpp.html", null ],
     [ "axis.h", "axis_8h.html", [
       [ "Axis", "class_axis.html", "class_axis" ],
       [ "BoxBackground", "class_box_background.html", "class_box_background" ],
@@ -78,8 +78,8 @@ var dir_6fd7ac954f0d7f51ecda76306aa934fc =
     [ "mymath.h", "mymath_8h.html", "mymath_8h" ],
     [ "nrnbbs.cpp", "ivoc_2nrnbbs_8cpp.html", null ],
     [ "nrngsl.h", "nrngsl_8h.html", "nrngsl_8h" ],
-    [ "nrngsl_hc_radix2.c", "nrngsl__hc__radix2_8c.html", "nrngsl__hc__radix2_8c" ],
-    [ "nrngsl_real_radix2.c", "nrngsl__real__radix2_8c.html", "nrngsl__real__radix2_8c" ],
+    [ "nrngsl_hc_radix2.cpp", "nrngsl__hc__radix2_8cpp.html", "nrngsl__hc__radix2_8cpp" ],
+    [ "nrngsl_real_radix2.cpp", "nrngsl__real__radix2_8cpp.html", "nrngsl__real__radix2_8cpp" ],
     [ "nrnmain.cpp", "nrnmain_8cpp.html", "nrnmain_8cpp" ],
     [ "nrnmutdec.h", "nrnmutdec_8h.html", "nrnmutdec_8h" ],
     [ "nrnsymdiritem.h", "nrnsymdiritem_8h.html", "nrnsymdiritem_8h" ],

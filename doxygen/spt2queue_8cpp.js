@@ -1,7 +1,7 @@
 var spt2queue_8cpp =
 [
     [ "cnt", "spt2queue_8cpp.html#a2502bdb1cc7403561c336de5d73c5f85", null ],
-    [ "key", "spt2queue_8cpp.html#ae57736c8a0ddeb64dc394712624d8209", null ],
+    [ "key", "spt2queue_8cpp.html#a35af0be900467fedbb610bd6ea65ed78", null ],
     [ "leftlink", "spt2queue_8cpp.html#a8b17789b6fc21f3a5613d324458aab60", null ],
     [ "rightlink", "spt2queue_8cpp.html#a9d205c6ef5889343852b6996252b8284", null ],
     [ "sp1enq", "spt2queue_8cpp.html#a1f2b6b68cc857c238cf6abe23d6b5c49", null ],

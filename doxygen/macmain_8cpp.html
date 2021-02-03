@@ -97,14 +97,15 @@ $(document).ready(function(){initNavTree('macmain_8cpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4769d7e6a556654c3d70b7654abb6d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macmain_8cpp.html#a4769d7e6a556654c3d70b7654abb6d99">ivocmain</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, char **, char **)</td></tr>
-<tr class="separator:a4769d7e6a556654c3d70b7654abb6d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08959a9caedf5abac3903fa5efb1a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macmain_8cpp.html#ab08959a9caedf5abac3903fa5efb1a07">ivocmain</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, const char **, const char **)</td></tr>
+<tr class="memdesc:ab08959a9caedf5abac3903fa5efb1a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main entrypoint function into the HOC interpeter.  <a href="#ab08959a9caedf5abac3903fa5efb1a07">More...</a><br /></td></tr>
+<tr class="separator:ab08959a9caedf5abac3903fa5efb1a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macmain_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4769d7e6a556654c3d70b7654abb6d99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4769d7e6a556654c3d70b7654abb6d99">&#9670;&nbsp;</a></span>ivocmain()</h2>
+<a id="ab08959a9caedf5abac3903fa5efb1a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08959a9caedf5abac3903fa5efb1a07">&#9670;&nbsp;</a></span>ivocmain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,19 +114,19 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> ivocmain </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>argc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>argv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>env</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -134,6 +135,23 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Main entrypoint function into the HOC interpeter. </p>
+<p>This function simply calls ivocmain_session with the <code>start_session</code> = 1.</p>
+<dl class="section note"><dt>Note</dt><dd>This is part of NEURON's public interface</dd>
+<dd>
+<code>env</code> argument should not be used as it might become invalid</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>argument count as found in C/C++ <code>main</code> functions </td></tr>
+    <tr><td class="paramname">argv</td><td>argument vector as found in C/C++ <code>main</code> functions </td></tr>
+    <tr><td class="paramname">env</td><td>environment variable array as optionally found in main functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, otherwise error code. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="ivocmain_8cpp_source.html#l00413">413</a> of file <a class="el" href="ivocmain_8cpp_source.html">ivocmain.cpp</a>.</p>
 
 </div>
 </div>
@@ -152,7 +170,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="macmain_8cpp_source.html#l00007">7</a> of file <a class="el" href="macmain_8cpp_source.html">macmain.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="macmain_8cpp_source.html#l00005">5</a> of file <a class="el" href="macmain_8cpp_source.html">macmain.cpp</a>.</p>
 
 </div>
 </div>

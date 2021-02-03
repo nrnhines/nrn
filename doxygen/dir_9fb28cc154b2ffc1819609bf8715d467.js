@@ -11,7 +11,7 @@ var dir_9fb28cc154b2ffc1819609bf8715d467 =
     [ "epath.h", "epath_8h.html", "epath_8h" ],
     [ "estruct.h", "estruct_8h.html", "estruct_8h" ],
     [ "file.c", "file_8c.html", "file_8c" ],
-    [ "fileio.c", "memacs_2fileio_8c.html", "memacs_2fileio_8c" ],
+    [ "fileio.c", "fileio_8c.html", "fileio_8c" ],
     [ "ibm.c", "ibm_8c.html", "ibm_8c" ],
     [ "intfunc.h", "intfunc_8h.html", "intfunc_8h" ],
     [ "line.c", "line_8c.html", "line_8c" ],
@@ -24,7 +24,7 @@ var dir_9fb28cc154b2ffc1819609bf8715d467 =
     [ "search.c", "search_8c.html", "search_8c" ],
     [ "spawn.c", "spawn_8c.html", "spawn_8c" ],
     [ "tcap.c", "tcap_8c.html", "tcap_8c" ],
-    [ "termio.c", "memacs_2termio_8c.html", "memacs_2termio_8c" ],
+    [ "termio.c", "termio_8c.html", "termio_8c" ],
     [ "window.c", "window_8c.html", "window_8c" ],
     [ "word.c", "word_8c.html", "word_8c" ]
 ];

@@ -8,8 +8,8 @@ var struct_object =
     [ "recurse", "struct_object.html#ae1f6dee6abace09d734588f5b6a65865", null ],
     [ "refcount", "struct_object.html#a4d742fec511819c8fefd31997a7afb0e", null ],
     [ "secelm_", "struct_object.html#a2def2d856bb89187e86a9294bab0f36b", null ],
-    [ "template", "struct_object.html#a83a6c4e193fc676300b06f8ebc670c58", null ],
+    [ "template", "struct_object.html#ad3368818a2b8b231c194d2ceb025484d", null ],
     [ "this_pointer", "struct_object.html#a1e6a31003c0d2856dec46e1a8f3d400c", null ],
-    [ "u", "struct_object.html#a14751a599642e548a058a8c0c5a1d3b1", null ],
+    [ "u", "struct_object.html#ad714561872e55455259bbedfe99f610b", null ],
     [ "unref_recurse_cnt", "struct_object.html#a3b5a52f1e5e6f097afa6ad1cb6dc60e2", null ]
 ];

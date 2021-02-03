@@ -7,7 +7,7 @@ var struct_t_e_r_m =
     [ "t_flush", "struct_t_e_r_m.html#a00ef51e89f1acfed561519260f2ff00c", null ],
     [ "t_getchar", "struct_t_e_r_m.html#acf688193c6b3bd556f33789ee174dfa6", null ],
     [ "t_margin", "struct_t_e_r_m.html#adc1d866441b1be70389b8f0f86b4dc1c", null ],
-    [ "t_move", "struct_t_e_r_m.html#ac707f22185877cdc1adc5c21adecd161", null ],
+    [ "t_move", "struct_t_e_r_m.html#ac0503389185b48a227752c681e025df3", null ],
     [ "t_ncol", "struct_t_e_r_m.html#ab5939836467569b69fb07cb6f41d6431", null ],
     [ "t_nrow", "struct_t_e_r_m.html#a5a7413dfda34e29cbaec75c9500d240b", null ],
     [ "t_open", "struct_t_e_r_m.html#acc2f6044350c62f961112dbb09c6b6bb", null ],

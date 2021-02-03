@@ -1,0 +1,26 @@
+var hocedit_8cpp =
+[
+    [ "Fprintf", "hocedit_8cpp.html#afdc08699807b888a15fe28a2647ed466", null ],
+    [ "IGNORE", "hocedit_8cpp.html#a8f464d6408bd401f00df1c270641971f", null ],
+    [ "emacs_exit", "hocedit_8cpp.html#a3ed560d38779e1d10ebbcd1940288c32", null ],
+    [ "emacs_main", "hocedit_8cpp.html#a6e92299fd25385d089e278fa031eeff6", null ],
+    [ "emacs_refresh", "hocedit_8cpp.html#a5e0d9be8a85fd24a7daad133368efe6a", null ],
+    [ "emacs_vtinit", "hocedit_8cpp.html#a397045f41e5d5ff0fd385203f4bdaade", null ],
+    [ "hoc_edit", "group__hoc__functions.html#ga4289aef62dd27a0888eb18d4b48ad2c3", null ],
+    [ "hoc_edit_quit", "group__hoc__functions.html#ga278566231ae119b8d59be0811cef4611", null ],
+    [ "hoc_pipeflush", "group__hoc__functions.html#gab504054aed64fdfc1fed492f37fef9f9", null ],
+    [ "hoc_pipegets", "hocedit_8cpp.html#a926f50fe3528a7548b692ea9d1b6dad7", null ],
+    [ "hoc_pipegets_need", "group__hoc__functions.html#gacd1d3128c86c85adaaf1e9470082ac5f", null ],
+    [ "argv", "hocedit_8cpp.html#abd1a2cf54950f450187ef24c1cdcac0c", null ],
+    [ "called", "hocedit_8cpp.html#a463534eb86f1fbc3649efcba3a167f5c", null ],
+    [ "cnt", "hocedit_8cpp.html#abc9543cb3f5442a6d291a5e8e5e2efa5", null ],
+    [ "emacs_begin", "hocedit_8cpp.html#a3c1fe408423f5ec012afd1b11ebf5883", null ],
+    [ "emacs_curbp", "hocedit_8cpp.html#ad4a59246cd1ceadf9f0b6b1c29af4201", null ],
+    [ "emacs_curwp", "hocedit_8cpp.html#af763071ee90a4a449ddffa7e12b313af", null ],
+    [ "emacs_term", "hocedit_8cpp.html#a03ada80c7ba784da32a6c8d3fa54e469", null ],
+    [ "hoc_lineno", "hocedit_8cpp.html#a8b452bcae34f8bfaf4fc8c2ff3ba93e4", null ],
+    [ "hoc_pipeflag", "hocedit_8cpp.html#ae32f39f4b48ce2573854d29c49b32baf", null ],
+    [ "lastlp", "hocedit_8cpp.html#a9a107cd806d5d3942c6dc8330678dfb3", null ],
+    [ "lhead", "hocedit_8cpp.html#a2680b7ad6992d76d933e9000d2bf160e", null ],
+    [ "lp", "hocedit_8cpp.html#af1551da7848eed806be08bd4783b9268", null ]
+];

@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('fourier_8cpp.html','');});
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="nrngsl__real__radix2_8c_source.html">nrngsl_real_radix2.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="nrngsl__hc__radix2_8c_source.html">nrngsl_hc_radix2.c</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nrngsl__real__radix2_8cpp_source.html">nrngsl_real_radix2.cpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="nrngsl__hc__radix2_8cpp_source.html">nrngsl_hc_radix2.cpp</a>&quot;</code><br />
 </div>
 <p><a href="fourier_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,30 +107,30 @@ $(document).ready(function(){initNavTree('fourier_8cpp.html','');});
 Macros</h2></td></tr>
 <tr class="memitem:a525335710b53cb064ca56b936120431e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a525335710b53cb064ca56b936120431e">_USE_MATH_DEFINES</a></td></tr>
 <tr class="separator:a525335710b53cb064ca56b936120431e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a435a192bc87b7f097a43e7042a22b299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>&#160;&#160;&#160;<a class="el" href="modlunit_2units_8c.html#a48d950ff005149bdd61f0286d9df061c">fabs</a></td></tr>
+<tr class="memitem:a435a192bc87b7f097a43e7042a22b299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>&#160;&#160;&#160;<a class="el" href="modlunit_2units_8cpp.html#a1354b6667fe971c1d7bf28dcef770265">fabs</a></td></tr>
 <tr class="separator:a435a192bc87b7f097a43e7042a22b299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1ff01607260f08d4fd61341f9008e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a1c1ff01607260f08d4fd61341f9008e0">WINDOW</a>(j,  <a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>,  <a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)&#160;&#160;&#160;(1.0-<a class="el" href="math_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>((((j)-1)-(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>))*(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)))       /* Bartlett */</td></tr>
+<tr class="memitem:a1c1ff01607260f08d4fd61341f9008e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a1c1ff01607260f08d4fd61341f9008e0">WINDOW</a>(<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>,  <a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>,  <a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)&#160;&#160;&#160;(1.0-<a class="el" href="ivos_2math_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>((((<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>)-1)-(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>))*(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)))       /* Bartlett */</td></tr>
 <tr class="separator:a1c1ff01607260f08d4fd61341f9008e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aafc382000b1ea019bf1208d930d58a2c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#aafc382000b1ea019bf1208d930d58a2c">SQUARE</a> (double <a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>)</td></tr>
+<tr class="memitem:aafc382000b1ea019bf1208d930d58a2c"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#aafc382000b1ea019bf1208d930d58a2c">SQUARE</a> (double <a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>)</td></tr>
 <tr class="separator:aafc382000b1ea019bf1208d930d58a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1290c5c93eb6c5c39f4352be583cfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a1f1290c5c93eb6c5c39f4352be583cfa">hoc_execerror</a> (const char *, const char *)</td></tr>
 <tr class="separator:a1f1290c5c93eb6c5c39f4352be583cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb3b5ca96b6b48d60d51b8a2121bf65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a7eb3b5ca96b6b48d60d51b8a2121bf65">nrn_exit</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
 <tr class="separator:a7eb3b5ca96b6b48d60d51b8a2121bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ec6062bd8ed9463bae43e211f4d47ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a1ec6062bd8ed9463bae43e211f4d47ef">nrngsl_realft</a> (double *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> direction)</td></tr>
+<tr class="memitem:a1ec6062bd8ed9463bae43e211f4d47ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a1ec6062bd8ed9463bae43e211f4d47ef">nrngsl_realft</a> (double *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="readline_8cpp.html#aadecf6863aee588c54a4008523339096">direction</a>)</td></tr>
 <tr class="separator:a1ec6062bd8ed9463bae43e211f4d47ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27f9979e6026cef8e88bcff169bc11f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#af27f9979e6026cef8e88bcff169bc11f">nrn_gsl2nrc</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:af27f9979e6026cef8e88bcff169bc11f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#af27f9979e6026cef8e88bcff169bc11f">nrn_gsl2nrc</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:af27f9979e6026cef8e88bcff169bc11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf72275b004af2933a68f647adea8813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#adf72275b004af2933a68f647adea8813">nrn_nrc2gsl</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:adf72275b004af2933a68f647adea8813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#adf72275b004af2933a68f647adea8813">nrn_nrc2gsl</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:adf72275b004af2933a68f647adea8813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae56372a66e38b3d6a0df0837e520e59a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#ae56372a66e38b3d6a0df0837e520e59a">nrn_convlv</a> (double *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double *respns, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="bbsavestate_8cpp.html#a1f3247a59ae876eb894dc71868379d84">m</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> isign, double *ans)</td></tr>
+<tr class="memitem:ae56372a66e38b3d6a0df0837e520e59a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#ae56372a66e38b3d6a0df0837e520e59a">nrn_convlv</a> (double *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double *respns, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="bbsavestate_8cpp.html#a1f3247a59ae876eb894dc71868379d84">m</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> isign, double *ans)</td></tr>
 <tr class="separator:ae56372a66e38b3d6a0df0837e520e59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a502be9b1c339b8baf3cffca728c99f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a502be9b1c339b8baf3cffca728c99f06">nrn_correl</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double *z)</td></tr>
+<tr class="memitem:a502be9b1c339b8baf3cffca728c99f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#a502be9b1c339b8baf3cffca728c99f06">nrn_correl</a> (double *x, double *y, unsigned <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a> <a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, double *z)</td></tr>
 <tr class="separator:a502be9b1c339b8baf3cffca728c99f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21cae32a756fd5c7862becfafa0d0d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#af21cae32a756fd5c7862becfafa0d0d5">nrn_spctrm</a> (double *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, double *psd, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> setsize, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numsegpairs)</td></tr>
+<tr class="memitem:af21cae32a756fd5c7862becfafa0d0d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fourier_8cpp.html#af21cae32a756fd5c7862becfafa0d0d5">nrn_spctrm</a> (double *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>, double *psd, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> setsize, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> numsegpairs)</td></tr>
 <tr class="separator:af21cae32a756fd5c7862becfafa0d0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -157,7 +157,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define myfabs&#160;&#160;&#160;<a class="el" href="modlunit_2units_8c.html#a48d950ff005149bdd61f0286d9df061c">fabs</a></td>
+          <td class="memname">#define myfabs&#160;&#160;&#160;<a class="el" href="modlunit_2units_8cpp.html#a1354b6667fe971c1d7bf28dcef770265">fabs</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,24 +176,24 @@ Functions</h2></td></tr>
           <td class="memname">#define <a class="el" href="struct_w_i_n_d_o_w.html">WINDOW</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">j, </td>
+          <td class="paramname"><a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>, </td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>&#160;</td>
+          <td class="paramname"><a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(1.0-<a class="el" href="math_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>((((j)-1)-(<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>))*(<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>)))       /* Bartlett */</td>
+          <td></td><td>&#160;&#160;&#160;(1.0-<a class="el" href="ivos_2math_8cpp.html#a435a192bc87b7f097a43e7042a22b299">myfabs</a>((((<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>)-1)-(<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>))*(<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)))       /* Bartlett */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l00740">740</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l00738">738</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hoc_8c_source.html#l00218">218</a> of file <a class="el" href="hoc_8c_source.html">hoc.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hoc_8cpp_source.html#l00216">216</a> of file <a class="el" href="hoc_8cpp_source.html">hoc.cpp</a>.</p>
 
 </div>
 </div>

@@ -2,11 +2,11 @@ var inithoc_8cpp =
 [
     [ "HOCMOD", "inithoc_8cpp.html#a4d4437ef86bff2858a8384089e596ec7", null ],
     [ "inithoc", "inithoc_8cpp.html#aacb397069e8bd903e4f52e136ecb797a", null ],
-    [ "ivocmain", "inithoc_8cpp.html#a4769d7e6a556654c3d70b7654abb6d99", null ],
+    [ "ivocmain", "inithoc_8cpp.html#ab08959a9caedf5abac3903fa5efb1a07", null ],
     [ "modl_reg", "inithoc_8cpp.html#a45882ccffcf3ebb547064479dd3b1e65", null ],
     [ "nrnpy_augment_path", "inithoc_8cpp.html#a503b45fad75396f502be9be5abbbac99", null ],
     [ "nrnpy_hoc", "inithoc_8cpp.html#a55dddacd99444c7ad9ed674eb44358a6", null ],
-    [ "nrnpython_finalize", "inithoc_8cpp.html#a72b70f0070195d3aa6b935f32be6493f", null ],
+    [ "nrnpython_finalize", "inithoc_8cpp.html#a8fa8b46cc1d1a827f5f745e6d2823cfc", null ],
     [ "argc_nompi", "inithoc_8cpp.html#abd85e11435763c24751e18bbf2cda367", null ],
     [ "argv_nompi", "inithoc_8cpp.html#a0a9814df20c08e4e4c12b06ee877055a", null ],
     [ "env", "inithoc_8cpp.html#a5738560caa2f8501be3e53acc629264e", null ],

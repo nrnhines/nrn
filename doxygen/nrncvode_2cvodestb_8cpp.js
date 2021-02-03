@@ -21,5 +21,6 @@ var nrncvode_2cvodestb_8cpp =
     [ "dt", "nrncvode_2cvodestb_8cpp.html#a03e28be41881b703c836edbfe9b51b17", null ],
     [ "net_cvode_instance", "nrncvode_2cvodestb_8cpp.html#acd2d677f470987a31c2ffefe9b434e56", null ],
     [ "nrn_use_daspk_", "nrncvode_2cvodestb_8cpp.html#ab967529d86880103ba2bfd0fbe164246", null ],
-    [ "t", "nrncvode_2cvodestb_8cpp.html#a87accd1af8e0aff4b818d891374f7cec", null ]
+    [ "t", "nrncvode_2cvodestb_8cpp.html#a87accd1af8e0aff4b818d891374f7cec", null ],
+    [ "v_structure_change", "nrncvode_2cvodestb_8cpp.html#af015cef6f105d9c0f041a339835c3b11", null ]
 ];

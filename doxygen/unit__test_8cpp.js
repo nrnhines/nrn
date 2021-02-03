@@ -2,7 +2,7 @@ var unit__test_8cpp =
 [
     [ "CATCH_CONFIG_RUNNER", "unit__test_8cpp.html#a34b4c3eca7342fbc4cba090d02139902", null ],
     [ "run", "unit__test_8cpp.html#ac7a48d6c2afd367fa7bd7b724b93c48d", null ],
-    [ "ivocmain_session", "unit__test_8cpp.html#ac6840a4eca5b668f1cf5701be67ea506", null ],
+    [ "ivocmain_session", "unit__test_8cpp.html#ab8126f8b07da9fcd260b26cf99f49060", null ],
     [ "main", "unit__test_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
     [ "modl_reg", "unit__test_8cpp.html#a45882ccffcf3ebb547064479dd3b1e65", null ],
     [ "nrn_threads_create", "unit__test_8cpp.html#aa63ff798a60d835f5ceeebef14f4bcfd", null ],

@@ -97,9 +97,9 @@ $(document).ready(function(){initNavTree('chardefs_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:abb76e9f0eacf35ac61f9080497555ccd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#abb76e9f0eacf35ac61f9080497555ccd">savestring</a>(x)&#160;&#160;&#160;(char *)strcpy (<a class="el" href="readline_8c.html#a44dba9eda5cdcd1c935bc7c404198a74">xmalloc</a> (1 + strlen (x)), (x))</td></tr>
+<tr class="memitem:abb76e9f0eacf35ac61f9080497555ccd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#abb76e9f0eacf35ac61f9080497555ccd">savestring</a>(x)&#160;&#160;&#160;(char *)<a class="el" href="readline_8cpp.html#a51f31f15756fe8daf11ba7503716de89">strcpy</a> (<a class="el" href="readline_8cpp.html#a44dba9eda5cdcd1c935bc7c404198a74">xmalloc</a> (1 + strlen (x)), (x))</td></tr>
 <tr class="separator:abb76e9f0eacf35ac61f9080497555ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8878e323ddb4bf57b7c9db293b3fd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a6a8878e323ddb4bf57b7c9db293b3fd6">whitespace</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == ' ') || ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == '\<a class="el" href="parallel_2ocbbs_8cpp.html#a87accd1af8e0aff4b818d891374f7cec">t</a>'))</td></tr>
+<tr class="memitem:a6a8878e323ddb4bf57b7c9db293b3fd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a6a8878e323ddb4bf57b7c9db293b3fd6">whitespace</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == ' ') || ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == '\<a class="el" href="parallel_2ocbbs_8cpp.html#a87accd1af8e0aff4b818d891374f7cec">t</a>'))</td></tr>
 <tr class="separator:a6a8878e323ddb4bf57b7c9db293b3fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c621474dddfc5c36373cf57e0062ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ad2c621474dddfc5c36373cf57e0062ea">control_character_threshold</a>&#160;&#160;&#160;0x020   /* smaller than this is control */</td></tr>
 <tr class="separator:ad2c621474dddfc5c36373cf57e0062ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,29 +109,29 @@ Macros</h2></td></tr>
 <tr class="separator:acb8ce414e155926c8619b8781bd83cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae370461b95b809edbb340d8a55e6faee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>&#160;&#160;&#160;0x080	    /* x0000000, must be on. */</td></tr>
 <tr class="separator:ae370461b95b809edbb340d8a55e6faee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38adf45853bf0ab387f2b9ce3145cd37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a38adf45853bf0ab387f2b9ce3145cd37">CTRL</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td></tr>
+<tr class="memitem:a38adf45853bf0ab387f2b9ce3145cd37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a38adf45853bf0ab387f2b9ce3145cd37">CTRL</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td></tr>
 <tr class="separator:a38adf45853bf0ab387f2b9ce3145cd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f437fcc45d6a9cda7fe593ce350aaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a3f437fcc45d6a9cda7fe593ce350aaad">META</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) | <a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>)</td></tr>
+<tr class="memitem:a3f437fcc45d6a9cda7fe593ce350aaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a3f437fcc45d6a9cda7fe593ce350aaad">META</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) | <a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>)</td></tr>
 <tr class="separator:a3f437fcc45d6a9cda7fe593ce350aaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac125da79ccad5247fa4172d995d0b533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ac125da79ccad5247fa4172d995d0b533">UNMETA</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>))</td></tr>
+<tr class="memitem:ac125da79ccad5247fa4172d995d0b533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ac125da79ccad5247fa4172d995d0b533">UNMETA</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>))</td></tr>
 <tr class="separator:ac125da79ccad5247fa4172d995d0b533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818642fe93154c3455f5c1daffe01920"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a818642fe93154c3455f5c1daffe01920">UNCTRL</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;<a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)|<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td></tr>
+<tr class="memitem:a818642fe93154c3455f5c1daffe01920"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a818642fe93154c3455f5c1daffe01920">UNCTRL</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;<a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)|<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td></tr>
 <tr class="separator:a818642fe93154c3455f5c1daffe01920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f43fa573176f7fc66820d3784c3dab2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('z' + 1)))</td></tr>
+<tr class="memitem:a9f43fa573176f7fc66820d3784c3dab2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('z' + 1)))</td></tr>
 <tr class="separator:a9f43fa573176f7fc66820d3784c3dab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaada834b63a969c52e00df1f4fb0c12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="exp2syn_8c.html#a955f504eccf76b4eb2489c0adab03121">A</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('<a class="el" href="mfunc_8c.html#a35f41f9d79f72e7c92d0676dbc999609">Z</a>' + 1)))</td></tr>
+<tr class="memitem:abaada834b63a969c52e00df1f4fb0c12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="exp2syn_8c.html#a955f504eccf76b4eb2489c0adab03121">A</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('<a class="el" href="mfunc_8c.html#a35f41f9d79f72e7c92d0676dbc999609">Z</a>' + 1)))</td></tr>
 <tr class="separator:abaada834b63a969c52e00df1f4fb0c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43a392e802c09aa589398124d8b00b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ad43a392e802c09aa589398124d8b00b8">pure_alphabetic</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) || <a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
+<tr class="memitem:ad43a392e802c09aa589398124d8b00b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ad43a392e802c09aa589398124d8b00b8">pure_alphabetic</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) || <a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
 <tr class="separator:ad43a392e802c09aa589398124d8b00b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13a91b76d5d073259bc1479211cc72c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) - 32) : (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
+<tr class="memitem:aa13a91b76d5d073259bc1479211cc72c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) - 32) : (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
 <tr class="separator:aa13a91b76d5d073259bc1479211cc72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5cba5d128e4a99abcf08f9d7354722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#acb5cba5d128e4a99abcf08f9d7354722">to_lower</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) + 32) : (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
+<tr class="memitem:acb5cba5d128e4a99abcf08f9d7354722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#acb5cba5d128e4a99abcf08f9d7354722">to_lower</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) + 32) : (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td></tr>
 <tr class="separator:acb5cba5d128e4a99abcf08f9d7354722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1080f489bd36c5dcba92898b1202b31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ab1080f489bd36c5dcba92898b1202b31">CTRL_P</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; <a class="el" href="chardefs_8h.html#ad2c621474dddfc5c36373cf57e0062ea">control_character_threshold</a>)</td></tr>
+<tr class="memitem:ab1080f489bd36c5dcba92898b1202b31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#ab1080f489bd36c5dcba92898b1202b31">CTRL_P</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; <a class="el" href="chardefs_8h.html#ad2c621474dddfc5c36373cf57e0062ea">control_character_threshold</a>)</td></tr>
 <tr class="separator:ab1080f489bd36c5dcba92898b1202b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abd74194c1ff2014edcb72f5d691120"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a8abd74194c1ff2014edcb72f5d691120">META_P</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; <a class="el" href="chardefs_8h.html#ae454fd2edbb11fdd76db09c87db737ca">meta_character_threshold</a>)</td></tr>
+<tr class="memitem:a8abd74194c1ff2014edcb72f5d691120"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a8abd74194c1ff2014edcb72f5d691120">META_P</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; <a class="el" href="chardefs_8h.html#ae454fd2edbb11fdd76db09c87db737ca">meta_character_threshold</a>)</td></tr>
 <tr class="separator:a8abd74194c1ff2014edcb72f5d691120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806511f4930171733227c99101dc0606"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>&#160;&#160;&#160;'\<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>'</td></tr>
+<tr class="memitem:a806511f4930171733227c99101dc0606"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a806511f4930171733227c99101dc0606">NEWLINE</a>&#160;&#160;&#160;'\<a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>'</td></tr>
 <tr class="separator:a806511f4930171733227c99101dc0606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0e6b80dd3d5ca395cf58151749f5e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chardefs_8h.html#a6a0e6b80dd3d5ca395cf58151749f5e2">RETURN</a>&#160;&#160;&#160;<a class="el" href="chardefs_8h.html#a38adf45853bf0ab387f2b9ce3145cd37">CTRL</a>('<a class="el" href="intfire4_8c.html#ae9412fdf6e3f71718b35e82739b4781c">M</a>')</td></tr>
 <tr class="separator:a6a0e6b80dd3d5ca395cf58151749f5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,8 +207,8 @@ Macros</h2></td></tr>
           <td class="memname">#define CTRL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -227,8 +227,8 @@ Macros</h2></td></tr>
           <td class="memname">#define CTRL_P</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; <a class="el" href="chardefs_8h.html#ad2c621474dddfc5c36373cf57e0062ea">control_character_threshold</a>)</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; <a class="el" href="chardefs_8h.html#ad2c621474dddfc5c36373cf57e0062ea">control_character_threshold</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,8 +263,8 @@ Macros</h2></td></tr>
           <td class="memname">#define lowercase_p</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('z' + 1)))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('z' + 1)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -283,8 +283,8 @@ Macros</h2></td></tr>
           <td class="memname">#define META</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) | <a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>)</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) | <a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,8 +335,8 @@ Macros</h2></td></tr>
           <td class="memname">#define META_P</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; <a class="el" href="chardefs_8h.html#ae454fd2edbb11fdd76db09c87db737ca">meta_character_threshold</a>)</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; <a class="el" href="chardefs_8h.html#ae454fd2edbb11fdd76db09c87db737ca">meta_character_threshold</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -352,7 +352,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEWLINE&#160;&#160;&#160;'\<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>'</td>
+          <td class="memname">#define NEWLINE&#160;&#160;&#160;'\<a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>'</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -387,8 +387,8 @@ Macros</h2></td></tr>
           <td class="memname">#define pure_alphabetic</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) || <a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) || <a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,7 +440,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(char *)strcpy (<a class="el" href="readline_8c.html#a44dba9eda5cdcd1c935bc7c404198a74">xmalloc</a> (1 + strlen (x)), (x))</td>
+          <td>&#160;&#160;&#160;(char *)<a class="el" href="readline_8cpp.html#a51f31f15756fe8daf11ba7503716de89">strcpy</a> (<a class="el" href="readline_8cpp.html#a44dba9eda5cdcd1c935bc7c404198a74">xmalloc</a> (1 + strlen (x)), (x))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -491,8 +491,8 @@ Macros</h2></td></tr>
           <td class="memname">#define to_lower</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) + 32) : (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#abaada834b63a969c52e00df1f4fb0c12">uppercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) + 32) : (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -511,8 +511,8 @@ Macros</h2></td></tr>
           <td class="memname">#define to_upper</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) - 32) : (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="chardefs_8h.html#a9f43fa573176f7fc66820d3784c3dab2">lowercase_p</a>(<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) ? ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) - 32) : (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -531,8 +531,8 @@ Macros</h2></td></tr>
           <td class="memname">#define UNCTRL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)|<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="chardefs_8h.html#aa13a91b76d5d073259bc1479211cc72c">to_upper</a>(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>)|<a class="el" href="chardefs_8h.html#acb8ce414e155926c8619b8781bd83cc1">control_character_bit</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -551,8 +551,8 @@ Macros</h2></td></tr>
           <td class="memname">#define UNMETA</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &amp; (~<a class="el" href="chardefs_8h.html#ae370461b95b809edbb340d8a55e6faee">meta_character_bit</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -571,8 +571,8 @@ Macros</h2></td></tr>
           <td class="memname">#define uppercase_p</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="exp2syn_8c.html#a955f504eccf76b4eb2489c0adab03121">A</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('<a class="el" href="mfunc_8c.html#a35f41f9d79f72e7c92d0676dbc999609">Z</a>' + 1)))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &gt; ('<a class="el" href="exp2syn_8c.html#a955f504eccf76b4eb2489c0adab03121">A</a>' - 1) &amp;&amp; (<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) &lt; ('<a class="el" href="mfunc_8c.html#a35f41f9d79f72e7c92d0676dbc999609">Z</a>' + 1)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -591,8 +591,8 @@ Macros</h2></td></tr>
           <td class="memname">#define whitespace</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == ' ') || ((<a class="el" href="hoc_8c.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == '\<a class="el" href="parallel_2ocbbs_8cpp.html#a87accd1af8e0aff4b818d891374f7cec">t</a>'))</td>
+          <td class="paramname"><a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == ' ') || ((<a class="el" href="hoc_8cpp.html#a4e1e0e72dd773439e333c84dd762a9c3">c</a>) == '\<a class="el" href="parallel_2ocbbs_8cpp.html#a87accd1af8e0aff4b818d891374f7cec">t</a>'))</td>
         </tr>
       </table>
 </div><div class="memdoc">

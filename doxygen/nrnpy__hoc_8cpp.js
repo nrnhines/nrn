@@ -98,7 +98,7 @@ var nrnpy__hoc_8cpp =
     [ "nrn_hocobj_ptr", "nrnpy__hoc_8cpp.html#aba350b7eb2e8fa14380be0bb2524c90b", null ],
     [ "nrn_is_hocobj_ptr", "nrnpy__hoc_8cpp.html#a7a385d6c24789cd53efbdae952e2eff9", null ],
     [ "nrn_matrix_dim", "nrnpy__hoc_8cpp.html#af2d0b6e27055e73e55240abcd80453ab", null ],
-    [ "nrn_netcon_weight", "nrnpy__hoc_8cpp.html#aab0403b2bbd279124877661eaf6d1b57", null ],
+    [ "nrn_netcon_weight", "nrnpy__hoc_8cpp.html#aa5dd759ae2db9ef67ff114056a6e9299", null ],
     [ "nrn_noerr_access", "nrnpy__hoc_8cpp.html#a434e3be2a0f5bb4a30a3517e2124de7b", null ],
     [ "nrn_ptr_richcmp", "nrnpy__hoc_8cpp.html#ae483decc42b30eba7a60fba4197b77e7", null ],
     [ "nrn_secref_nchild", "nrnpy__hoc_8cpp.html#add351e391b3b3a60d4951a5c71520ff8", null ],

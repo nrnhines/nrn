@@ -18,7 +18,7 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "bbssrv.cpp", "bbssrv_8cpp.html", null ],
     [ "bgpdma.cpp", "bgpdma_8cpp.html", "bgpdma_8cpp" ],
     [ "bgpdmasetup.cpp", "bgpdmasetup_8cpp.html", "bgpdmasetup_8cpp" ],
-    [ "bgpmeminfo.c", "bgpmeminfo_8c.html", null ],
+    [ "bgpmeminfo.cpp", "bgpmeminfo_8cpp.html", null ],
     [ "cachevec.cpp", "cachevec_8cpp.html", "cachevec_8cpp" ],
     [ "classreg.cpp", "nrniv_2classreg_8cpp.html", "nrniv_2classreg_8cpp" ],
     [ "cvodeobj.cpp", "nrniv_2cvodeobj_8cpp.html", null ],
@@ -47,7 +47,7 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
       [ "LinearModelAddition", "class_linear_model_addition.html", "class_linear_model_addition" ]
     ] ],
     [ "linmod1.cpp", "linmod1_8cpp.html", "linmod1_8cpp" ],
-    [ "matrixmap.cpp", "matrixmap_8cpp.html", null ],
+    [ "matrixmap.cpp", "matrixmap_8cpp.html", "matrixmap_8cpp" ],
     [ "matrixmap.h", "matrixmap_8h.html", [
       [ "MatrixMap", "class_matrix_map.html", "class_matrix_map" ]
     ] ],
@@ -84,20 +84,16 @@ var dir_3839636f4dffaa4aab0a620bf9b8685f =
     [ "nrnoc2iv.h", "nrnoc2iv_8h.html", null ],
     [ "nrnpy.cpp", "nrnpy_8cpp.html", "nrnpy_8cpp" ],
     [ "nrnrtime.cpp", "nrnrtime_8cpp.html", null ],
-    [ "nrnsection_mapping.h", "nrnsection__mapping_8h.html", [
-      [ "SecMapping", "struct_sec_mapping.html", "struct_sec_mapping" ],
-      [ "CellMapping", "struct_cell_mapping.html", "struct_cell_mapping" ],
-      [ "NrnMappingInfo", "struct_nrn_mapping_info.html", "struct_nrn_mapping_info" ]
-    ] ],
+    [ "nrnsection_mapping.h", "nrnsection__mapping_8h.html", "nrnsection__mapping_8h" ],
     [ "nrnste.cpp", "nrnste_8cpp.html", "nrnste_8cpp" ],
     [ "nrnste.h", "nrnste_8h.html", "nrnste_8h" ],
-    [ "nvector_nrnparallel_ld.c", "nvector__nrnparallel__ld_8c.html", "nvector__nrnparallel__ld_8c" ],
+    [ "nvector_nrnparallel_ld.cpp", "nvector__nrnparallel__ld_8cpp.html", "nvector__nrnparallel__ld_8cpp" ],
     [ "nvector_nrnparallel_ld.h", "nvector__nrnparallel__ld_8h.html", "nvector__nrnparallel__ld_8h" ],
-    [ "nvector_nrnserial_ld.c", "nvector__nrnserial__ld_8c.html", "nvector__nrnserial__ld_8c" ],
+    [ "nvector_nrnserial_ld.cpp", "nvector__nrnserial__ld_8cpp.html", "nvector__nrnserial__ld_8cpp" ],
     [ "nvector_nrnserial_ld.h", "nvector__nrnserial__ld_8h.html", "nvector__nrnserial__ld_8h" ],
-    [ "nvector_nrnthread.c", "nvector__nrnthread_8c.html", "nvector__nrnthread_8c" ],
+    [ "nvector_nrnthread.cpp", "nvector__nrnthread_8cpp.html", "nvector__nrnthread_8cpp" ],
     [ "nvector_nrnthread.h", "nvector__nrnthread_8h.html", "nvector__nrnthread_8h" ],
-    [ "nvector_nrnthread_ld.c", "nvector__nrnthread__ld_8c.html", "nvector__nrnthread__ld_8c" ],
+    [ "nvector_nrnthread_ld.cpp", "nvector__nrnthread__ld_8cpp.html", "nvector__nrnthread__ld_8cpp" ],
     [ "nvector_nrnthread_ld.h", "nvector__nrnthread__ld_8h.html", "nvector__nrnthread__ld_8h" ],
     [ "nvkludge.cpp", "nvkludge_8cpp.html", "nvkludge_8cpp" ],
     [ "ocbbs.cpp", "nrniv_2ocbbs_8cpp.html", null ],

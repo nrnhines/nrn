@@ -1,7 +1,7 @@
 var searchData=
 [
   ['q2least_5ft',['q2least_t',['../class_t_queue.html#aaeabd0d02e0914351483ae3fa1dc7829',1,'TQueue']]],
-  ['qconcat',['qconcat',['../kinetic_8c.html#a56d1160705cd8c26ccf5ce0b7466b25e',1,'kinetic.c']]],
+  ['qconcat',['qconcat',['../kinetic_8cpp.html#a56d1160705cd8c26ccf5ce0b7466b25e',1,'kinetic.cpp']]],
   ['qrcondest',['QRcondest',['../matrix2_8h.html#a3e2f91053c88d6c75778cf8d017330d1',1,'QRcondest(MAT *A):&#160;qrfactor.c'],['../qrfactor_8c.html#ab8011eb7ee39ead04bf23643f28d3fe3',1,'QRcondest(MAT *QR):&#160;qrfactor.c']]],
   ['qrcpfactor',['QRCPfactor',['../matrix2_8h.html#aa73da658ad6effa0a7fe1f7821bd0de0',1,'QRCPfactor(MAT *A, VEC *diag, PERM *pivot):&#160;matrix2.h'],['../qrfactor_8c.html#abbf107d9d19e9b21ecf48b47cee41777',1,'QRCPfactor(MAT *A, diag, PERM *px):&#160;qrfactor.c']]],
   ['qrcpsolve',['QRCPsolve',['../matrix2_8h.html#a20b49894d8e9eca10127434ad907e601',1,'QRCPsolve(MAT *QR, VEC *diag, PERM *pivot, VEC *b, VEC *x):&#160;matrix2.h'],['../qrfactor_8c.html#adaadb7c52e70054c6315f4966c0b1e6c',1,'QRCPsolve(MAT *QR, diag, PERM *pivot, VEC *b, VEC *x):&#160;qrfactor.c']]],
@@ -10,9 +10,10 @@ var searchData=
   ['qrsolve',['QRsolve',['../matrix2_8h.html#adb4630ddffc8a43c01c3aa18161f1f0c',1,'QRsolve(MAT *A, VEC *, VEC *b, VEC *x):&#160;matrix2.h'],['../qrfactor_8c.html#add1d943589ed6e56690c0cfe184375f2',1,'QRsolve(MAT *QR, diag, VEC *diag *b, VEC *diag *x):&#160;qrfactor.c']]],
   ['qrtsolve',['QRTsolve',['../matrix2_8h.html#a6cdb17c32e3fdbcf00e74bfa16ec61d2',1,'QRTsolve(MAT *A, VEC *, VEC *b, VEC *x):&#160;matrix2.h'],['../qrfactor_8c.html#ad521f00670e5816e9cd8dbeb46e6447f',1,'QRTsolve(MAT *A, VEC *diag, VEC *c, VEC *sc):&#160;qrfactor.c']]],
   ['qrupdate',['QRupdate',['../matrix2_8h.html#acea95d4d72a84248f2b24d2c35fc5e66',1,'QRupdate(MAT *Q, MAT *R, VEC *u, VEC *v):&#160;update.c'],['../update_8c.html#a8660e3a36e3dbe4ac122dfa4b0b92bb6',1,'QRupdate(MAT *Q, MAT *R, VEC *u, VEC *v):&#160;update.c']]],
-  ['qsort_5fstring_5fcompare',['qsort_string_compare',['../funmap_8c.html#a34d65695e8e0a26934b0c6979e915ae5',1,'funmap.c']]],
+  ['qsort',['qsort',['../readline_8cpp.html#ae7b53729e520afc5dde89a606c2713c7',1,'readline.cpp']]],
+  ['qsort_5fstring_5fcompare',['qsort_string_compare',['../funmap_8cpp.html#afe1c99bc952ff47e876a12802511e293',1,'funmap.cpp']]],
   ['queue_5fmode',['queue_mode',['../nrncvode_2cvodeobj_8cpp.html#ae6f53dd48e78478943cc676ca9bd8971',1,'cvodeobj.cpp']]],
-  ['queue_5fstmt',['queue_stmt',['../nmodlfunc_8h.html#a424d05f17e70fa7742d64aeabfdb822e',1,'queue_stmt():&#160;nmodlfunc.h'],['../parsact_8c.html#ac04f49dafc0053ab10438fe2f5a92aff',1,'queue_stmt(Item *q1, Item *q2):&#160;parsact.c']]],
+  ['queue_5fstmt',['queue_stmt',['../nmodlfunc_8h.html#ac04f49dafc0053ab10438fe2f5a92aff',1,'queue_stmt(Item *q1, Item *q2):&#160;parsact.cpp'],['../parsact_8cpp.html#ac04f49dafc0053ab10438fe2f5a92aff',1,'queue_stmt(Item *q1, Item *q2):&#160;parsact.cpp']]],
   ['quickexit',['quickexit',['../efunc_8h.html#a5121078006935ddeaef1fddd1ec67e13',1,'quickexit():&#160;efunc.h'],['../main1_8c.html#ac089016bdea6871e233e2b58d1205ac9',1,'quickexit(int f, int n):&#160;main1.c']]],
   ['quicklysearchdiagonal',['QuicklySearchDiagonal',['../spfactor_8c.html#a033cf747eece550cf2647f33eab98ce3',1,'QuicklySearchDiagonal():&#160;spfactor.c'],['../spfactor_8c.html#ab4d7ef5e2b50febd692a17bd6eeab9bf',1,'QuicklySearchDiagonal(MatrixPtr Matrix, int Step):&#160;spfactor.c']]],
   ['quit',['quit',['../efunc_8h.html#a041c4fd02fe320e833aa34a820274935',1,'quit():&#160;efunc.h'],['../main1_8c.html#a946cd31a983268a994ee6db3450f499d',1,'quit(int f, int n):&#160;main1.c'],['../mswin_2extra_2hel2mos_8cpp.html#acc7b8ffd1173bb9c447c1c8edf643552',1,'quit(const char *msg):&#160;hel2mos.cpp'],['../uxnrnbbs_2hel2mos_8cpp.html#acc7b8ffd1173bb9c447c1c8edf643552',1,'quit(const char *msg):&#160;hel2mos.cpp']]],

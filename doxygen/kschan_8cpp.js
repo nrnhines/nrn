@@ -80,6 +80,7 @@ var kschan_8cpp =
     [ "ode_matsol", "kschan_8cpp.html#ada64e43544e9d9dd5d891ddcbd295f84", null ],
     [ "ode_spec", "kschan_8cpp.html#aa822a911d87c4e840c4f61c5ff51641e", null ],
     [ "singchan", "kschan_8cpp.html#abb5de26c09be23f69022a590062f6c38", null ],
+    [ "spGetElement", "kschan_8cpp.html#ac664bb198003aede03e8655a3161170a", null ],
     [ "temp_objvar", "kschan_8cpp.html#abe8f0d9d05137a323cc8e4474287e1a4", null ],
     [ "unref", "kschan_8cpp.html#acb0d273e0cb0a4506f05c50e24bd28ac", null ],
     [ "channels", "kschan_8cpp.html#a31d82298f6c8bb438aaa46e52e6e00e5", null ],

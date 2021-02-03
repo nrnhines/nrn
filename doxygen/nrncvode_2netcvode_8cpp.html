@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('nrncvode_2netcvode_8cpp.html','');});
 <code>#include &lt;<a class="el" href="regexp_8h_source.html">InterViews/regexp.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="classreg_8h_source.html">classreg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nrnoc2iv_8h_source.html">nrnoc2iv.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse_8h_source.html">parse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parse_8hpp_source.html">parse.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cvodeobj_8h_source.html">cvodeobj.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hoclist_8h_source.html">hoclist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pool_8h_source.html">pool.h</a>&quot;</code><br />
@@ -148,7 +148,7 @@ Macros</h2></td></tr>
 <tr class="separator:a58be9506764765b138344b9176013b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84122cc8fb20a83dda3ef92cf3286740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a84122cc8fb20a83dda3ef92cf3286740">PROFILE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a84122cc8fb20a83dda3ef92cf3286740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16882150c7ff9eed8ba5c4db62b310bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a16882150c7ff9eed8ba5c4db62b310bb">lvardtloop</a>(<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>,  j)&#160;&#160;&#160;<a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a>(<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>=0; <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="el" href="unit__test_8cpp.html#a49271c8337e86ddf2b0e0b0516160842">nrn_nthread</a>; ++<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) <a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a> (j=0; j &lt; <a class="el" href="nmodl_2init_8c.html#a722c4ca7ae51fee605749daf824bcf30">p</a>[<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].nlcv_; ++j)</td></tr>
+<tr class="memitem:a16882150c7ff9eed8ba5c4db62b310bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a16882150c7ff9eed8ba5c4db62b310bb">lvardtloop</a>(<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>,  <a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>)&#160;&#160;&#160;<a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a>(<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>=0; <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="el" href="unit__test_8cpp.html#a49271c8337e86ddf2b0e0b0516160842">nrn_nthread</a>; ++<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) <a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a> (<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>=0; <a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a> &lt; <a class="el" href="nmodl_2init_8cpp.html#a722c4ca7ae51fee605749daf824bcf30">p</a>[<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].nlcv_; ++<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>)</td></tr>
 <tr class="separator:a16882150c7ff9eed8ba5c4db62b310bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf386900a8cad3e066d5c74b0f4898d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#adf386900a8cad3e066d5c74b0f4898d8">NVI_SUCCESS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:adf386900a8cad3e066d5c74b0f4898d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +168,7 @@ Macros</h2></td></tr>
 <tr class="separator:ae452885a48fccddd4099f7fe1866c548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a1c680d08e6538c3cef81690b7d7da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a18a1c680d08e6538c3cef81690b7d7da">ITE_SIZE</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a18a1c680d08e6538c3cef81690b7d7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bdeba76ec11b56e63528821f4245165"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a2bdeba76ec11b56e63528821f4245165">fifo_event</a>&#160;&#160;&#160;<a class="el" href="netstim_8c.html#a458ebda081910e5752d71e513a5f49c8">event</a></td></tr>
+<tr class="memitem:a2bdeba76ec11b56e63528821f4245165"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a2bdeba76ec11b56e63528821f4245165">fifo_event</a>&#160;&#160;&#160;<a class="el" href="history_8cpp.html#ae78cbd4be70d5ce72fc793d9fa317ef4">event</a></td></tr>
 <tr class="separator:a2bdeba76ec11b56e63528821f4245165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -206,9 +206,9 @@ Functions</h2></td></tr>
 <tr class="separator:a8b86d63305d4e05362f8d0795ae46b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82e8ac8736ee478196fb397f3ba9dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ae82e8ac8736ee478196fb397f3ba9dd3">artcell_net_move</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **, <a class="el" href="struct_point__process.html">Point_process</a> *, double)</td></tr>
 <tr class="separator:ae82e8ac8736ee478196fb397f3ba9dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0c3e342cb32158781fa8b79c7cba91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#abf0c3e342cb32158781fa8b79c7cba91">nrn_pending_selfqueue</a> (double tt, <a class="el" href="struct_nrn_thread.html">NrnThread</a> *)</td></tr>
+<tr class="memitem:abf0c3e342cb32158781fa8b79c7cba91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#abf0c3e342cb32158781fa8b79c7cba91">nrn_pending_selfqueue</a> (double <a class="el" href="history_8cpp.html#ab4c26f989b6da7ff0b9bf112034be36f">tt</a>, <a class="el" href="struct_nrn_thread.html">NrnThread</a> *)</td></tr>
 <tr class="separator:abf0c3e342cb32158781fa8b79c7cba91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41b038fb9338921b16d79ee3e07a531"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa41b038fb9338921b16d79ee3e07a531">all_pending_selfqueue</a> (double tt)</td></tr>
+<tr class="memitem:aa41b038fb9338921b16d79ee3e07a531"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa41b038fb9338921b16d79ee3e07a531">all_pending_selfqueue</a> (double <a class="el" href="history_8cpp.html#ab4c26f989b6da7ff0b9bf112034be36f">tt</a>)</td></tr>
 <tr class="separator:aa41b038fb9338921b16d79ee3e07a531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1277d9b5970166273c74bff0548705e8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a1277d9b5970166273c74bff0548705e8">pending_selfqueue</a> (<a class="el" href="struct_nrn_thread.html">NrnThread</a> *)</td></tr>
 <tr class="separator:a1277d9b5970166273c74bff0548705e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,8 +254,6 @@ Functions</h2></td></tr>
 <tr class="separator:aaba253e92cd138438b9bd755eaa3d13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae642fcb8aca4223eeb8f993b8648b6ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ae642fcb8aca4223eeb8f993b8648b6ed">_nrn_free_fornetcon</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)</td></tr>
 <tr class="separator:ae642fcb8aca4223eeb8f993b8648b6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a764011764ec4bff4f733e9aa2ac59594"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a764011764ec4bff4f733e9aa2ac59594">_nrn_netcon_args</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *, double ***)</td></tr>
-<tr class="separator:a764011764ec4bff4f733e9aa2ac59594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5cdccb7a73d5fd8e8ec4d8fb2319b60"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa5cdccb7a73d5fd8e8ec4d8fb2319b60">nrn_netcon_get_delay</a> (<a class="el" href="class_net_con.html">NetCon</a> *nc)</td></tr>
 <tr class="separator:aa5cdccb7a73d5fd8e8ec4d8fb2319b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad729b689f8faaeff6872da3241e108d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ad729b689f8faaeff6872da3241e108d2">nrn_netcon_set_delay</a> (<a class="el" href="class_net_con.html">NetCon</a> *nc, double d)</td></tr>
@@ -276,7 +274,7 @@ Functions</h2></td></tr>
 <tr class="separator:a5eb3ed4acc0351aac947db50e960b684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b9a950e1e166d7972942841168c30e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a1b9a950e1e166d7972942841168c30e4">nrn_presyn_count</a> (<a class="el" href="class_pre_syn.html">PreSyn</a> *<a class="el" href="bgpdmasetup_8cpp.html#ad061c79febf1840dd9d4857744604213">ps</a>)</td></tr>
 <tr class="separator:a1b9a950e1e166d7972942841168c30e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3204ffd9bd27d98515042913e9d89a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a2e3204ffd9bd27d98515042913e9d89a">nrn_presyn_netcon</a> (<a class="el" href="class_pre_syn.html">PreSyn</a> *<a class="el" href="bgpdmasetup_8cpp.html#ad061c79febf1840dd9d4857744604213">ps</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)</td></tr>
+<tr class="memitem:a2e3204ffd9bd27d98515042913e9d89a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a2e3204ffd9bd27d98515042913e9d89a">nrn_presyn_netcon</a> (<a class="el" href="class_pre_syn.html">PreSyn</a> *<a class="el" href="bgpdmasetup_8cpp.html#ad061c79febf1840dd9d4857744604213">ps</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>)</td></tr>
 <tr class="separator:a2e3204ffd9bd27d98515042913e9d89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40ba259a9a734a8ae4faa816e55a5ecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a40ba259a9a734a8ae4faa816e55a5ecc">ncs2nrn_integrate</a> (double tstop)</td></tr>
 <tr class="separator:a40ba259a9a734a8ae4faa816e55a5ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,7 +316,7 @@ Functions</h2></td></tr>
 <tr class="separator:a1df4451230ad6f975fdabc4a28695414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af028226c4ef8996d5cf355d106347d55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#af028226c4ef8996d5cf355d106347d55">nc_pre</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:af028226c4ef8996d5cf355d106347d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c85536cc6134639757d5d6e84870c7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa4c85536cc6134639757d5d6e84870c7">newoclist</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="class_oc_list.html">OcList</a> *&amp;<a class="el" href="seclist_8c.html#ae47ca7a09cf6781e29634502345930a7">o</a>)</td></tr>
+<tr class="memitem:aa4c85536cc6134639757d5d6e84870c7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa4c85536cc6134639757d5d6e84870c7">newoclist</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="class_oc_list.html">OcList</a> *&amp;<a class="el" href="seclist_8cpp.html#ae47ca7a09cf6781e29634502345930a7">o</a>)</td></tr>
 <tr class="separator:aa4c85536cc6134639757d5d6e84870c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42526594551a4d53917a2f0955ae69db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a42526594551a4d53917a2f0955ae69db">nc_prelist</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:a42526594551a4d53917a2f0955ae69db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,13 +348,13 @@ Functions</h2></td></tr>
 <tr class="separator:a66d411ba903aa62df859c399b9005c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadfd312b835a007fdc703509d8a60a6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aadfd312b835a007fdc703509d8a60a6e">steer_val</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:aadfd312b835a007fdc703509d8a60a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab492523befb7b819f3cc7fb9aa25140d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ab492523befb7b819f3cc7fb9aa25140d">cons</a> (<a class="el" href="struct_object.html">Object</a> *<a class="el" href="seclist_8c.html#ae47ca7a09cf6781e29634502345930a7">o</a>)</td></tr>
+<tr class="memitem:ab492523befb7b819f3cc7fb9aa25140d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ab492523befb7b819f3cc7fb9aa25140d">cons</a> (<a class="el" href="struct_object.html">Object</a> *<a class="el" href="seclist_8cpp.html#ae47ca7a09cf6781e29634502345930a7">o</a>)</td></tr>
 <tr class="separator:ab492523befb7b819f3cc7fb9aa25140d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670645edd1cfedf7068c1f7caacda4e4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a670645edd1cfedf7068c1f7caacda4e4">destruct</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:a670645edd1cfedf7068c1f7caacda4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cf21c2c95a210f3bceeea45cc4bf55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ad7cf21c2c95a210f3bceeea45cc4bf55">NetCon_reg</a> ()</td></tr>
 <tr class="separator:ad7cf21c2c95a210f3bceeea45cc4bf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870a757eef8679e00bcbd4454cda962b"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a870a757eef8679e00bcbd4454cda962b">escape_bracket</a> (const char *<a class="el" href="bgpdmasetup_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>)</td></tr>
+<tr class="memitem:a870a757eef8679e00bcbd4454cda962b"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a870a757eef8679e00bcbd4454cda962b">escape_bracket</a> (const char *<a class="el" href="system_8cpp.html#aa8ca182462c7f7eaa385ba421fb972a4">s</a>)</td></tr>
 <tr class="separator:a870a757eef8679e00bcbd4454cda962b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30649775adb1427d911b595160fd5ca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ae30649775adb1427d911b595160fd5ca">peq</a> (const <a class="el" href="class_t_q_item.html">TQItem</a> *, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
 <tr class="separator:ae30649775adb1427d911b595160fd5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,7 +362,9 @@ Functions</h2></td></tr>
 <tr class="separator:a561a2d4f9e1ce54aff68da140c94e747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a348d2bc1e0ef5217400e93dd4c56498d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a348d2bc1e0ef5217400e93dd4c56498d">declareNrnHash</a> (SelfEventPPTable, <a class="el" href="nrncvode_2netcvode_8cpp.html#a0bc651ef7626a7868da4cbfdbe70f96f">long</a>, <a class="el" href="struct_point__process.html">Point_process</a> *) <a class="el" href="partrans_8cpp.html#a59300c2a262d4e0ae62244657e4e09e8">implementNrnHash</a>(SelfEventPPTable</td></tr>
 <tr class="separator:a348d2bc1e0ef5217400e93dd4c56498d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1b4aa965011612a16a8f5fd28f226b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a5c1b4aa965011612a16a8f5fd28f226b">record_init_clear</a> (const <a class="el" href="class_t_q_item.html">TQItem</a> *q, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="memitem:acaf0a70d768c9e1d2339d3345d8601e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#acaf0a70d768c9e1d2339d3345d8601e4">_nrn_netcon_args</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double ***argslist)</td></tr>
+<tr class="separator:acaf0a70d768c9e1d2339d3345d8601e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1b4aa965011612a16a8f5fd28f226b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a5c1b4aa965011612a16a8f5fd28f226b">record_init_clear</a> (const <a class="el" href="class_t_q_item.html">TQItem</a> *<a class="el" href="nrngsl__real__radix2_8cpp.html#a099b3b060154898840f0ebdfb46ec78f">q</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
 <tr class="separator:a5c1b4aa965011612a16a8f5fd28f226b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a7a79a57ede9a061a568cd4cc99f79"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a39a7a79a57ede9a061a568cd4cc99f79">nrn_hoc2fixed_step</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *)</td></tr>
 <tr class="separator:a39a7a79a57ede9a061a568cd4cc99f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,7 +384,7 @@ Functions</h2></td></tr>
 <tr class="separator:af2fd9986ef9c1bba6a7a86032858f3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcbe3abb74daee6720b01963d49e4645"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#abcbe3abb74daee6720b01963d49e4645">chk_deliv</a> (<a class="el" href="struct_nrn_thread.html">NrnThread</a> *nt)</td></tr>
 <tr class="separator:abcbe3abb74daee6720b01963d49e4645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1871dc59b1468dec7c28e6e7d99e738"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ad1871dc59b1468dec7c28e6e7d99e738">trajec_buffered</a> (<a class="el" href="struct_nrn_thread.html">NrnThread</a> &amp;nt, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> bsize, <a class="el" href="class_ivoc_vect.html">IvocVect</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *pd, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i_pr, <a class="el" href="class_play_record.html">PlayRecord</a> *<a class="el" href="nvector__nrnthread__ld_8c.html#abe3fb2727eb7f6df9441a8529e9c766d">pr</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **vpr, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i_trajec, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *types, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *indices, double **pvars, double **varrays)</td></tr>
+<tr class="memitem:ad1871dc59b1468dec7c28e6e7d99e738"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#ad1871dc59b1468dec7c28e6e7d99e738">trajec_buffered</a> (<a class="el" href="struct_nrn_thread.html">NrnThread</a> &amp;nt, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> bsize, <a class="el" href="class_ivoc_vect.html">IvocVect</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *pd, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i_pr, <a class="el" href="class_play_record.html">PlayRecord</a> *<a class="el" href="nvector__nrnthread__ld_8cpp.html#abe3fb2727eb7f6df9441a8529e9c766d">pr</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **vpr, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> i_trajec, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *types, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *indices, double **pvars, double **varrays)</td></tr>
 <tr class="separator:ad1871dc59b1468dec7c28e6e7d99e738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa372937427ce0114b0c81b4d8573b334"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#aa372937427ce0114b0c81b4d8573b334">implementPtrList</a> (PlayRecList, <a class="el" href="class_play_record.html">PlayRecord</a>) <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> <a class="el" href="class_net_cvode.html">NetCvode</a></td></tr>
 <tr class="separator:aa372937427ce0114b0c81b4d8573b334"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,7 +409,7 @@ Variables</h2></td></tr>
 <tr class="separator:a6efd2445b014e1f85ed3bcd960f417bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2d677f470987a31c2ffefe9b434e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_net_cvode.html">NetCvode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#acd2d677f470987a31c2ffefe9b434e56">net_cvode_instance</a></td></tr>
 <tr class="separator:acd2d677f470987a31c2ffefe9b434e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68857e7606891ae9e9e515c60a842771"><td class="memItemLeft" align="right" valign="top">cTemplate **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a68857e7606891ae9e9e515c60a842771">nrn_pnt_template_</a></td></tr>
+<tr class="memitem:a68857e7606891ae9e9e515c60a842771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc_template.html">cTemplate</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a68857e7606891ae9e9e515c60a842771">nrn_pnt_template_</a></td></tr>
 <tr class="separator:a68857e7606891ae9e9e515c60a842771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87accd1af8e0aff4b818d891374f7cec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncvode_2netcvode_8cpp.html#a87accd1af8e0aff4b818d891374f7cec">t</a></td></tr>
 <tr class="separator:a87accd1af8e0aff4b818d891374f7cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -496,7 +496,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define fifo_event&#160;&#160;&#160;<a class="el" href="netstim_8c.html#a458ebda081910e5752d71e513a5f49c8">event</a></td>
+          <td class="memname">#define fifo_event&#160;&#160;&#160;<a class="el" href="history_8cpp.html#ae78cbd4be70d5ce72fc793d9fa317ef4">event</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -551,18 +551,18 @@ Variables</h2></td></tr>
           <td class="memname">#define lvardtloop</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, </td>
+          <td class="paramname"><a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">j&#160;</td>
+          <td class="paramname"><a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a>(<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>=0; <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="el" href="unit__test_8cpp.html#a49271c8337e86ddf2b0e0b0516160842">nrn_nthread</a>; ++<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) <a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a> (j=0; j &lt; <a class="el" href="nmodl_2init_8c.html#a722c4ca7ae51fee605749daf824bcf30">p</a>[<a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].nlcv_; ++j)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a>(<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>=0; <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a> &lt; <a class="el" href="unit__test_8cpp.html#a49271c8337e86ddf2b0e0b0516160842">nrn_nthread</a>; ++<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>) <a class="el" href="sputils_8c.html#af505c6836c3401f76009cd1f0d34183a">for</a> (<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>=0; <a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a> &lt; <a class="el" href="nmodl_2init_8cpp.html#a722c4ca7ae51fee605749daf824bcf30">p</a>[<a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>].nlcv_; ++<a class="el" href="treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0">j</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -583,7 +583,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00076">76</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00077">77</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -599,7 +599,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00077">77</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00078">78</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -827,8 +827,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a764011764ec4bff4f733e9aa2ac59594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a764011764ec4bff4f733e9aa2ac59594">&#9670;&nbsp;</a></span>_nrn_netcon_args()</h2>
+<a id="acaf0a70d768c9e1d2339d3345d8601e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf0a70d768c9e1d2339d3345d8601e4">&#9670;&nbsp;</a></span>_nrn_netcon_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -962,7 +962,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00197">197</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00198">198</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1074,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05466">5466</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05464">5464</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1502,7 +1502,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06607">6607</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06605">6605</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1586,7 +1586,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05439">5439</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05437">5437</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1671,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2code_8c_source.html#l00711">711</a> of file <a class="el" href="oc_2code_8c_source.html">code.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2code_8cpp_source.html#l00726">726</a> of file <a class="el" href="oc_2code_8cpp_source.html">code.cpp</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1731,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05874">5874</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05872">5872</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -1776,7 +1776,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06508">6508</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06506">6506</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2643,7 +2643,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l01010">1010</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l01012">1012</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -2663,7 +2663,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="netpar_8cpp_source.html#l00973">973</a> of file <a class="el" href="netpar_8cpp_source.html">netpar.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="netpar_8cpp_source.html#l00971">971</a> of file <a class="el" href="netpar_8cpp_source.html">netpar.cpp</a>.</p>
 
 </div>
 </div>
@@ -2699,7 +2699,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04173">4173</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04171">4171</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2719,7 +2719,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00712">712</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00755">755</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -2739,7 +2739,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00139">139</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00140">140</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2758,7 +2758,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00300">300</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00343">343</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -2778,7 +2778,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00351">351</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00394">394</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -2798,7 +2798,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04178">4178</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04176">4176</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2818,7 +2818,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04183">4183</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04181">4181</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2838,7 +2838,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04206">4206</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04204">4204</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2858,7 +2858,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04196">4196</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04194">4194</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2878,7 +2878,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06652">6652</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06650">6650</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2897,7 +2897,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l01913">1913</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l01922">1922</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -2927,7 +2927,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00160">160</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00161">161</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2947,7 +2947,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00133">133</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00134">134</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -2967,7 +2967,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00147">147</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00148">148</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3015,7 +3015,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00170">170</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00171">171</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3045,7 +3045,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00134">134</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00135">135</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3075,7 +3075,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00154">154</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00155">155</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3095,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00165">165</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00166">166</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3125,7 +3125,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00135">135</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00136">136</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3145,7 +3145,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cabcode_8c_source.html#l01683">1683</a> of file <a class="el" href="cabcode_8c_source.html">cabcode.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cabcode_8cpp_source.html#l01683">1683</a> of file <a class="el" href="cabcode_8cpp_source.html">cabcode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3195,7 +3195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00179">179</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00180">180</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3225,7 +3225,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00182">182</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00183">183</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3245,7 +3245,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l02137">2137</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l02146">2146</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -3265,7 +3265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cabcode_8c_source.html#l00224">224</a> of file <a class="el" href="cabcode_8c_source.html">cabcode.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cabcode_8cpp_source.html#l00224">224</a> of file <a class="el" href="cabcode_8cpp_source.html">cabcode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3295,7 +3295,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cabcode_8c_source.html#l00239">239</a> of file <a class="el" href="cabcode_8c_source.html">cabcode.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cabcode_8cpp_source.html#l00239">239</a> of file <a class="el" href="cabcode_8cpp_source.html">cabcode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3315,7 +3315,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04797">4797</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04795">4795</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3335,7 +3335,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multicore_8c_source.html#l01224">1224</a> of file <a class="el" href="multicore_8c_source.html">multicore.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multicore_8cpp_source.html#l01224">1224</a> of file <a class="el" href="multicore_8cpp_source.html">multicore.cpp</a>.</p>
 
 </div>
 </div>
@@ -3427,7 +3427,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05561">5561</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05559">5559</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3475,7 +3475,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05767">5767</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05765">5765</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3517,7 +3517,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05725">5725</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05723">5723</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3537,7 +3537,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hocmech_8cpp_source.html#l00090">90</a> of file <a class="el" href="hocmech_8cpp_source.html">hocmech.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hocmech_8cpp_source.html#l00088">88</a> of file <a class="el" href="hocmech_8cpp_source.html">hocmech.cpp</a>.</p>
 
 </div>
 </div>
@@ -3557,7 +3557,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="hocmech_8cpp_source.html#l00080">80</a> of file <a class="el" href="hocmech_8cpp_source.html">hocmech.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hocmech_8cpp_source.html#l00078">78</a> of file <a class="el" href="hocmech_8cpp_source.html">hocmech.cpp</a>.</p>
 
 </div>
 </div>
@@ -3653,7 +3653,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04066">4066</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l04065">4065</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3814,7 +3814,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05521">5521</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05519">5519</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3833,7 +3833,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l01602">1602</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l01611">1611</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -3850,7 +3850,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00162">162</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00163">163</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -3890,7 +3890,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cabcode_8c_source.html#l00023">23</a> of file <a class="el" href="cabcode_8c_source.html">cabcode.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cabcode_8cpp_source.html#l00023">23</a> of file <a class="el" href="cabcode_8cpp_source.html">cabcode.cpp</a>.</p>
 
 </div>
 </div>
@@ -3906,7 +3906,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00092">92</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00094">94</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -3930,7 +3930,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05438">5438</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l05436">5436</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4042,7 +4042,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2symbol_8c_source.html#l00042">42</a> of file <a class="el" href="oc_2symbol_8c_source.html">symbol.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2symbol_8cpp_source.html#l00042">42</a> of file <a class="el" href="oc_2symbol_8cpp_source.html">symbol.cpp</a>.</p>
 
 </div>
 </div>
@@ -4058,7 +4058,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00124">124</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2code_8cpp_source.html#l00041">41</a> of file <a class="el" href="oc_2code_8cpp_source.html">code.cpp</a>.</p>
 
 </div>
 </div>
@@ -4074,7 +4074,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="oc_2symbol_8c_source.html#l00044">44</a> of file <a class="el" href="oc_2symbol_8c_source.html">symbol.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="oc_2symbol_8cpp_source.html#l00044">44</a> of file <a class="el" href="oc_2symbol_8cpp_source.html">symbol.cpp</a>.</p>
 
 </div>
 </div>
@@ -4114,7 +4114,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06506">6506</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l06504">6504</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4163,7 +4163,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodestb_8cpp_source.html#l00028">28</a> of file <a class="el" href="nrncvode_2cvodestb_8cpp_source.html">cvodestb.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodestb_8cpp_source.html#l00027">27</a> of file <a class="el" href="nrncvode_2cvodestb_8cpp_source.html">cvodestb.cpp</a>.</p>
 
 </div>
 </div>
@@ -4203,7 +4203,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00068">68</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00069">69</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -4219,7 +4219,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00188">188</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00190">190</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4235,7 +4235,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00174">174</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00176">176</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4251,7 +4251,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00176">176</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00178">178</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4267,7 +4267,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00175">175</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00177">177</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4283,7 +4283,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00187">187</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00189">189</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4299,7 +4299,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00061">61</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l00067">67</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -4310,12 +4310,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">cTemplate** nrn_pnt_template_</td>
+          <td class="memname"><a class="el" href="structc_template.html">cTemplate</a>** nrn_pnt_template_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00138">138</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00140">140</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4331,7 +4331,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00119">119</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00120">120</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4363,7 +4363,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00063">63</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="treeset_8cpp_source.html#l00069">69</a> of file <a class="el" href="treeset_8cpp_source.html">treeset.cpp</a>.</p>
 
 </div>
 </div>
@@ -4379,7 +4379,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00239">239</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00250">250</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4395,7 +4395,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00090">90</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00091">91</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4411,7 +4411,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00115">115</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00116">116</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4427,7 +4427,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fadvance_8c_source.html#l00152">152</a> of file <a class="el" href="fadvance_8c_source.html">fadvance.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fadvance_8cpp_source.html#l00153">153</a> of file <a class="el" href="fadvance_8cpp_source.html">fadvance.cpp</a>.</p>
 
 </div>
 </div>
@@ -4550,7 +4550,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00140">140</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00142">142</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4566,7 +4566,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00141">141</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00143">143</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4582,7 +4582,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00142">142</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00144">144</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4622,7 +4622,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00071">71</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2netcvode_8cpp_source.html#l00065">65</a> of file <a class="el" href="nrncvode_2netcvode_8cpp_source.html">netcvode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4638,7 +4638,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00092">92</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00094">94</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -4654,7 +4654,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cabcode_8c_source.html#l00019">19</a> of file <a class="el" href="cabcode_8c_source.html">cabcode.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cabcode_8cpp_source.html#l00019">19</a> of file <a class="el" href="cabcode_8cpp_source.html">cabcode.cpp</a>.</p>
 
 </div>
 </div>
@@ -4718,7 +4718,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="treeset_8c_source.html#l00070">70</a> of file <a class="el" href="treeset_8c_source.html">treeset.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodestb_8cpp_source.html#l00099">99</a> of file <a class="el" href="nrncvode_2cvodestb_8cpp_source.html">cvodestb.cpp</a>.</p>
 
 </div>
 </div>

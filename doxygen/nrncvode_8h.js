@@ -11,7 +11,7 @@ var nrncvode_8h =
     [ "nrn_daspk_init_step", "nrncvode_8h.html#a617c4666db9a7afb58016ed61160418c", null ],
     [ "nrn_deliver_events", "nrncvode_8h.html#acd9cf285e8415c2e85ebd0992d0ec5cc", null ],
     [ "nrn_play_init", "nrncvode_8h.html#ac0177757b505661c0127831080d07e48", null ],
-    [ "nrn_random_play", "nrncvode_8h.html#a801f0e38ffabfbd97198b65359c4d331", null ],
+    [ "nrn_random_play", "nrncvode_8h.html#a9db3677a980a6b74c56ce228b594a069", null ],
     [ "nrn_record_init", "nrncvode_8h.html#a1585089e2b1483f5efc7a9349e034fbe", null ],
     [ "nrn_solver_prepare", "nrncvode_8h.html#a853aa557debfe039faf17b8fe161a1b4", null ],
     [ "nrn_spike_exchange", "nrncvode_8h.html#aa88e5159f2d8b3038bbda80c458dac23", null ],

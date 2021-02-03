@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('nrncore__callbacks_8cpp.html','');});
 <code>#include &quot;<a class="el" href="hocdec_8h_source.html">hocdec.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="cell__group_8h_source.html">nrncore_write/data/cell_group.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nrncore__io_8h_source.html">nrncore_write/io/nrncore_io.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse_8h_source.html">parse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parse_8hpp_source.html">parse.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nrnran123_8h_source.html">nrnran123.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="netcvode_8h_source.html">netcvode.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vrecitem_8h_source.html">vrecitem.h</a>&quot;</code><br />
@@ -115,31 +115,31 @@ Functions</h2></td></tr>
 <tr class="memitem:a4a3f03a818f2d0d59d00811f2d2fa590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a4a3f03a818f2d0d59d00811f2d2fa590">map_coreneuron_callbacks</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *handle)</td></tr>
 <tr class="memdesc:a4a3f03a818f2d0d59d00811f2d2fa590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate function pointers by mapping function pointers for callback.  <a href="#a4a3f03a818f2d0d59d00811f2d2fa590">More...</a><br /></td></tr>
 <tr class="separator:a4a3f03a818f2d0d59d00811f2d2fa590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d931e6fdce167be5c13bd1dbfde655"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a87d931e6fdce167be5c13bd1dbfde655">write_memb_mech_types_direct</a> (std::ostream &amp;<a class="el" href="bgpdmasetup_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>)</td></tr>
+<tr class="memitem:a87d931e6fdce167be5c13bd1dbfde655"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a87d931e6fdce167be5c13bd1dbfde655">write_memb_mech_types_direct</a> (std::ostream &amp;<a class="el" href="system_8cpp.html#aa8ca182462c7f7eaa385ba421fb972a4">s</a>)</td></tr>
 <tr class="separator:a87d931e6fdce167be5c13bd1dbfde655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98202d67be3f6663d980285f9cf999ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a98202d67be3f6663d980285f9cf999ee">get_global_int_item</a> (const char *<a class="el" href="hocmodl_8h.html#a5ac083a645d964373f022d03df4849c8">name</a>)</td></tr>
 <tr class="separator:a98202d67be3f6663d980285f9cf999ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8268d3e537524ccc5dc11246261a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a4d8268d3e537524ccc5dc11246261a3b">get_global_dbl_item</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="nmodl_2init_8c.html#a722c4ca7ae51fee605749daf824bcf30">p</a>, const char *&amp;<a class="el" href="hocmodl_8h.html#a5ac083a645d964373f022d03df4849c8">name</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;size, double *&amp;<a class="el" href="dll_8cpp.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>)</td></tr>
+<tr class="memitem:a4d8268d3e537524ccc5dc11246261a3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a4d8268d3e537524ccc5dc11246261a3b">get_global_dbl_item</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="nmodl_2init_8cpp.html#a722c4ca7ae51fee605749daf824bcf30">p</a>, const char *&amp;<a class="el" href="hocmodl_8h.html#a5ac083a645d964373f022d03df4849c8">name</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;size, double *&amp;<a class="el" href="dll_8cpp.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>)</td></tr>
 <tr class="separator:a4d8268d3e537524ccc5dc11246261a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77512a4bac3f1fac40d505b7d40c2157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a77512a4bac3f1fac40d505b7d40c2157">nrnthreads_all_weights_return</a> (std::vector&lt; double *&gt; &amp;weights)</td></tr>
 <tr class="memdesc:a77512a4bac3f1fac40d505b7d40c2157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy weights from all coreneuron::NrnThread to <a class="el" href="class_net_con.html">NetCon</a> instances.  <a href="#a77512a4bac3f1fac40d505b7d40c2157">More...</a><br /></td></tr>
 <tr class="separator:a77512a4bac3f1fac40d505b7d40c2157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad26636eede57a93aa76213ecdf3cc8f9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#ad26636eede57a93aa76213ecdf3cc8f9">nrnthreads_type_return</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, double *&amp;<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, double **&amp;mdata)</td></tr>
+<tr class="memitem:ad26636eede57a93aa76213ecdf3cc8f9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#ad26636eede57a93aa76213ecdf3cc8f9">nrnthreads_type_return</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, double *&amp;<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>, double **&amp;mdata)</td></tr>
 <tr class="memdesc:ad26636eede57a93aa76213ecdf3cc8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return location for CoreNEURON to copy data into.  <a href="#ad26636eede57a93aa76213ecdf3cc8f9">More...</a><br /></td></tr>
 <tr class="separator:ad26636eede57a93aa76213ecdf3cc8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225fbd39d20f7713c9f5c3f5bee11ea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a225fbd39d20f7713c9f5c3f5bee11ea7">nrnthread_group_ids</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *grp)</td></tr>
 <tr class="separator:a225fbd39d20f7713c9f5c3f5bee11ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7e2f14246afad2d50e8c4b782c00a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a8b7e2f14246afad2d50e8c4b782c00a8">nrnthread_dat1</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;n_presyn, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;n_netcon, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;output_gid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;netcon_srcgid, std::vector&lt; <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &amp;netcon_negsrcgid_tid)</td></tr>
 <tr class="separator:a8b7e2f14246afad2d50e8c4b782c00a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a512566cfecb4bf947de5790883712b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a512566cfecb4bf947de5790883712b0f">nrnthread_dat2_1</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;ngid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;n_real_gid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nnode, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;ndiam, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nmech, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;tml_index, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;ml_nodecount, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nidata, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nvdata, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nweight)</td></tr>
+<tr class="memitem:a512566cfecb4bf947de5790883712b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a512566cfecb4bf947de5790883712b0f">nrnthread_dat2_1</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;ngid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;n_real_gid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="treeset_8cpp.html#a1fd6ec0a9907eaf5837513e88961dfe1">nnode</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;ndiam, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nmech, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;tml_index, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;ml_nodecount, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nidata, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nvdata, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;nweight)</td></tr>
 <tr class="separator:a512566cfecb4bf947de5790883712b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1428a8b38a942bbc417533e1436717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#aaf1428a8b38a942bbc417533e1436717">nrnthread_dat2_2</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;v_parent_index, double *&amp;<a class="el" href="diffeq_8c.html#a9057fe5bc5653a0a8122d7f47e373849">a</a>, double *&amp;<a class="el" href="diffeq_8c.html#a964e70bc01c39ff795ccaf5b68b28dc0">b</a>, double *&amp;<a class="el" href="treeset_8c.html#af0c5dd438d4afc5b1dd3743616fae105">area</a>, double *&amp;<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *&amp;diamvec)</td></tr>
+<tr class="memitem:aaf1428a8b38a942bbc417533e1436717"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#aaf1428a8b38a942bbc417533e1436717">nrnthread_dat2_2</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;v_parent_index, double *&amp;<a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, double *&amp;<a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>, double *&amp;<a class="el" href="treeset_8cpp.html#af0c5dd438d4afc5b1dd3743616fae105">area</a>, double *&amp;<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>, double *&amp;diamvec)</td></tr>
 <tr class="separator:aaf1428a8b38a942bbc417533e1436717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929ad187872fcc72e0582ff10db1ca5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a929ad187872fcc72e0582ff10db1ca5f">nrnthread_dat2_mech</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, size_t <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dsz_inst, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;<a class="el" href="md1redef_8h.html#a1ff1bbebd81c505a14afe713d4b1ed15">nodeindices</a>, double *&amp;<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;<a class="el" href="md1redef_8h.html#aea2e5a282b579f8e789d94760dce947d">pdata</a>)</td></tr>
+<tr class="memitem:a929ad187872fcc72e0582ff10db1ca5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a929ad187872fcc72e0582ff10db1ca5f">nrnthread_dat2_mech</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, size_t <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> dsz_inst, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;<a class="el" href="md1redef_8h.html#a1ff1bbebd81c505a14afe713d4b1ed15">nodeindices</a>, double *&amp;<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;<a class="el" href="md1redef_8h.html#aea2e5a282b579f8e789d94760dce947d">pdata</a>)</td></tr>
 <tr class="separator:a929ad187872fcc72e0582ff10db1ca5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43cd2f4061b112460d3871a86840f886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a43cd2f4061b112460d3871a86840f886">nrnthread_dat2_3</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nweight, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;output_vindex, double *&amp;output_threshold, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;netcon_pnttype, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;netcon_pntindex, double *&amp;weights, double *&amp;delays)</td></tr>
 <tr class="separator:a43cd2f4061b112460d3871a86840f886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d048743caac36b9410438fdd41aec87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a9d048743caac36b9410438fdd41aec87">nrnthread_dat2_corepointer</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:a9d048743caac36b9410438fdd41aec87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a9d048743caac36b9410438fdd41aec87">nrnthread_dat2_corepointer</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:a9d048743caac36b9410438fdd41aec87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c6c112a7b4da698a6fb2b50006e308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a32c6c112a7b4da698a6fb2b50006e308">nrnthread_dat2_corepointer_mech</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;icnt, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;dcnt, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&amp;iArray, double *&amp;dArray)</td></tr>
 <tr class="separator:a32c6c112a7b4da698a6fb2b50006e308"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,14 +147,14 @@ Functions</h2></td></tr>
 <tr class="separator:a55c5f084f918e727ab6aff30fffe491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bbc066bc97454dd769b5e04fa188633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a6bbc066bc97454dd769b5e04fa188633">part2_clean</a> ()</td></tr>
 <tr class="separator:a6bbc066bc97454dd769b5e04fa188633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d4fa46df8ed69c198e135e85c548458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a5d4fa46df8ed69c198e135e85c548458">nrnthread_dat2_vecplay</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="multicore_8c.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="memitem:a5d4fa46df8ed69c198e135e85c548458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a5d4fa46df8ed69c198e135e85c548458">nrnthread_dat2_vecplay</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:a5d4fa46df8ed69c198e135e85c548458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d5f5150084eec095361df59f332245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#ac6d5f5150084eec095361df59f332245">nrnthread_dat2_vecplay_inst</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8c.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;vptype, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;mtype, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="pump_8c.html#aa96f0443cf1f4f27c819fc9b9488576e">ix</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="bgpdmasetup_8cpp.html#a0e1ea19fb9fa7881d15d84eff4c090e1">sz</a>, double *&amp;yvec, double *&amp;tvec)</td></tr>
+<tr class="memitem:ac6d5f5150084eec095361df59f332245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#ac6d5f5150084eec095361df59f332245">nrnthread_dat2_vecplay_inst</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> tid, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="seclist_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;vptype, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;mtype, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="pump_8c.html#aa96f0443cf1f4f27c819fc9b9488576e">ix</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="bgpdmasetup_8cpp.html#a0e1ea19fb9fa7881d15d84eff4c090e1">sz</a>, double *&amp;yvec, double *&amp;tvec)</td></tr>
 <tr class="separator:ac6d5f5150084eec095361df59f332245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abfd5ce8fb1d1570160e542d125ed1b01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnoc_2init_8c.html#a68ac5e5c0298f7b5e932eae52b17238f">bbcore_write_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#abfd5ce8fb1d1570160e542d125ed1b01">nrn_bbcore_write_</a></td></tr>
+<tr class="memitem:abfd5ce8fb1d1570160e542d125ed1b01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnoc_2init_8cpp.html#a68ac5e5c0298f7b5e932eae52b17238f">bbcore_write_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#abfd5ce8fb1d1570160e542d125ed1b01">nrn_bbcore_write_</a></td></tr>
 <tr class="separator:abfd5ce8fb1d1570160e542d125ed1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d386e78220e977ff1e98b022e366a3b"><td class="memItemLeft" align="right" valign="top">short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__callbacks_8cpp.html#a0d386e78220e977ff1e98b022e366a3b">nrn_is_artificial_</a></td></tr>
 <tr class="separator:a0d386e78220e977ff1e98b022e366a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +220,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00460">460</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00471">471</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00084">84</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00095">95</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00071">71</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00082">82</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Variables</h2></td></tr>
 
 <p>Populate function pointers by mapping function pointers for callback. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00030">30</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00041">41</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eion_8c_source.html#l00051">51</a> of file <a class="el" href="eion_8c_source.html">eion.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eion_8cpp_source.html#l00055">55</a> of file <a class="el" href="eion_8cpp_source.html">eion.cpp</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00204">204</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00215">215</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00219">219</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00230">230</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -522,7 +522,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00262">262</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00273">273</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00370">370</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00381">381</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00410">410</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00421">421</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -672,7 +672,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00426">426</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00437">437</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,7 +726,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00308">308</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00319">319</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -756,7 +756,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00527">527</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00538">538</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +822,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00554">554</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00565">565</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00196">196</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00207">207</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -865,7 +865,7 @@ Variables</h2></td></tr>
 <p>Copy weights from all coreneuron::NrnThread to <a class="el" href="class_net_con.html">NetCon</a> instances. </p>
 <p>This depends on the CoreNEURON weight order for each thread to be the same as was originally sent from NEURON. See how that order was constructed in <a class="el" href="class_cell_group.html#a29440c12d413fb87b04e0f41974350db">CellGroup::mk_cgs_netcon_info</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00123">123</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00134">134</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ Variables</h2></td></tr>
 <p>Return location for CoreNEURON to copy data into. </p>
 <p>The type is mechanism type or special negative type for voltage, i_membrane_, or time. See coreneuron/io/nrn_setup.cpp:stdindex2ptr. We allow coreneuron to copy to NEURON's AoS data as CoreNEURON knows how its data is arranged (SoA and possibly permuted). This function figures out the size (just for sanity check) and data pointer to be returned based on type and thread id. The ARTIFICIAL_CELL type case is special as there is no thread specific <a class="el" href="struct_memb__list.html">Memb_list</a> for those. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00151">151</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00162">162</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -929,7 +929,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00506">506</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00517">517</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -949,7 +949,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00045">45</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__callbacks_8cpp_source.html#l00056">56</a> of file <a class="el" href="nrncore__callbacks_8cpp_source.html">nrncore_callbacks.cpp</a>.</p>
 
 </div>
 </div>
@@ -966,7 +966,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00118">118</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00131">131</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -982,7 +982,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00133">133</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00146">146</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +998,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00140">140</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__write_8cpp_source.html#l00153">153</a> of file <a class="el" href="nrncore__write_8cpp_source.html">nrncore_write.cpp</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +1014,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodestb_8cpp_source.html#l00028">28</a> of file <a class="el" href="nrncvode_2cvodestb_8cpp_source.html">cvodestb.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncvode_2cvodestb_8cpp_source.html#l00027">27</a> of file <a class="el" href="nrncvode_2cvodestb_8cpp_source.html">cvodestb.cpp</a>.</p>
 
 </div>
 </div>
@@ -1025,12 +1025,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="nrnoc_2init_8c.html#a68ac5e5c0298f7b5e932eae52b17238f">bbcore_write_t</a>* nrn_bbcore_write_</td>
+          <td class="memname"><a class="el" href="nrnoc_2init_8cpp.html#a68ac5e5c0298f7b5e932eae52b17238f">bbcore_write_t</a>* nrn_bbcore_write_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00152">152</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00154">154</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -1046,7 +1046,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00187">187</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00189">189</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1062,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8c_source.html#l00135">135</a> of file <a class="el" href="nrnoc_2init_8c_source.html">init.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrnoc_2init_8cpp_source.html#l00137">137</a> of file <a class="el" href="nrnoc_2init_8cpp_source.html">init.cpp</a>.</p>
 
 </div>
 </div>

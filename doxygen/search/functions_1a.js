@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z3d',['z3d',['../neuron_8h.html#a6fd1d3291dbc8ef5f8b195fad8639037',1,'z3d():&#160;neuron.h'],['../treeset_8c.html#ad5d3fb002b0b415a9e692c24dc079e45',1,'z3d(void):&#160;treeset.c']]],
+  ['z3d',['z3d',['../neuron_8h.html#a6fd1d3291dbc8ef5f8b195fad8639037',1,'z3d():&#160;neuron.h'],['../treeset_8cpp.html#ad5d3fb002b0b415a9e692c24dc079e45',1,'z3d(void):&#160;treeset.cpp']]],
   ['z_5faxis',['z_axis',['../class_rotation3d.html#a4ee442b5a4ef9692816ff37165f0878e',1,'Rotation3d']]],
   ['z_5ffinput',['z_finput',['../zmatio_8c.html#abde5eb188ad826781de9790142739479',1,'z_finput(FILE *fp):&#160;zmatio.c'],['../zmatrix_8h.html#abde5eb188ad826781de9790142739479',1,'z_finput(FILE *fp):&#160;zmatio.c']]],
   ['z_5ffoutput',['z_foutput',['../zmatio_8c.html#a313d6b94438a5046e75823d0d71b0612',1,'z_foutput(FILE *fp, complex z):&#160;zmatio.c'],['../zmatrix_8h.html#a313d6b94438a5046e75823d0d71b0612',1,'z_foutput(FILE *fp, complex z):&#160;zmatio.c']]],
@@ -10,7 +10,7 @@ var searchData=
   ['zconj',['zconj',['../zfunc_8c.html#a9ceee8ba9d8c8203093971eb9a051fe5',1,'zconj(complex z):&#160;zfunc.c'],['../zmatrix_8h.html#a9ceee8ba9d8c8203093971eb9a051fe5',1,'zconj(complex z):&#160;zfunc.c']]],
   ['zdiv',['zdiv',['../zfunc_8c.html#a2758f93ec31d670250cb3167f3213ce5',1,'zdiv(complex z1, complex z2):&#160;zfunc.c'],['../zmatrix_8h.html#a2758f93ec31d670250cb3167f3213ce5',1,'zdiv(complex z1, complex z2):&#160;zfunc.c']]],
   ['zdsolve',['zDsolve',['../zmatrix2_8h.html#acffdc7d62e4ab5d67a757db23b293442',1,'zDsolve(ZMAT *A, ZVEC *b, ZVEC *x):&#160;zsolve.c'],['../zsolve_8c.html#acffdc7d62e4ab5d67a757db23b293442',1,'zDsolve(ZMAT *A, ZVEC *b, ZVEC *x):&#160;zsolve.c']]],
-  ['zero',['zero',['../class_oc_matrix.html#aee9318e66c6ad3cf57f4080604d67049',1,'OcMatrix::zero()'],['../class_oc_full_matrix.html#a903e6265b4cae6dce96469dadc75d80c',1,'OcFullMatrix::zero()'],['../class_oc_sparse_matrix.html#a257fce7a3ffedfa8e7257a604ceb0b72',1,'OcSparseMatrix::zero()'],['../class_memory.html#a84a9c2ae51931b20ba74710c20a361de',1,'Memory::zero()'],['../class_matrix_map.html#afc2505d75804969cf11be9cb3cd7419b',1,'MatrixMap::zero()'],['../diffeq_8c.html#af8a53863208405d2f64f336c5358b402',1,'zero():&#160;diffeq.c'],['../diffeq_8c.html#aaf977c218db6586afcf935b6a80daf80',1,'zero(char *cp):&#160;diffeq.c']]],
+  ['zero',['zero',['../class_oc_matrix.html#aee9318e66c6ad3cf57f4080604d67049',1,'OcMatrix::zero()'],['../class_oc_full_matrix.html#a903e6265b4cae6dce96469dadc75d80c',1,'OcFullMatrix::zero()'],['../class_oc_sparse_matrix.html#a257fce7a3ffedfa8e7257a604ceb0b72',1,'OcSparseMatrix::zero()'],['../class_memory.html#a84a9c2ae51931b20ba74710c20a361de',1,'Memory::zero()'],['../class_matrix_map.html#afc2505d75804969cf11be9cb3cd7419b',1,'MatrixMap::zero()'],['../diffeq_8cpp.html#ad7f54f2ad4ef2c7e65ee1a93f2833e04',1,'zero():&#160;diffeq.cpp']]],
   ['zero_5fmatrix',['zero_matrix',['../scoplib__ansi_8h.html#a48259736e4684e9f5e33414aff86491b',1,'scoplib_ansi.h']]],
   ['zero_5fptrvector',['zero_ptrvector',['../scoplib__ansi_8h.html#adb069834c8ad6de83c557ea12292177a',1,'scoplib_ansi.h']]],
   ['zero_5fvector',['zero_vector',['../scoplib__ansi_8h.html#a872bee4804e51d087485f781abd1e5df',1,'scoplib_ansi.h']]],

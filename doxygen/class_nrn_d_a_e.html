@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 </p>
 <p>.  <a href="#a1b82ed604f1d8c9bbe58647b29534e33">More...</a><br /></td></tr>
 <tr class="separator:a1b82ed604f1d8c9bbe58647b29534e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a7912fa750b18259869ce2d91f0570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a72a7912fa750b18259869ce2d91f0570">dkres</a> (double *y, double *yprime, double *delta)</td></tr>
+<tr class="memitem:a72a7912fa750b18259869ce2d91f0570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a72a7912fa750b18259869ce2d91f0570">dkres</a> (double *y, double *yprime, double *<a class="el" href="readline_8cpp.html#a9f03ce195a9f4ce71dedee1cb7507bb7">delta</a>)</td></tr>
 <tr class="memdesc:a72a7912fa750b18259869ce2d91f0570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the residual: </p><p class="formulaDsp">
 \[$f(y) - C \frac{dy}{dt}$\]
 </p>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a673b60652c1840c60918bfba18bc9d76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a673b60652c1840c60918bfba18bc9d76">update</a> ()</td></tr>
 <tr class="memdesc:a673b60652c1840c60918bfba18bc9d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update states to reflect the changes over a time-step.  <a href="#a673b60652c1840c60918bfba18bc9d76">More...</a><br /></td></tr>
 <tr class="separator:a673b60652c1840c60918bfba18bc9d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b78a21900179808f2c1845909c3314a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a5b78a21900179808f2c1845909c3314a">dkmap</a> (double **<a class="el" href="partial_8c.html#a6387da4a388a70e2ff4cf440cb62f4a2">pv</a>, double **pvdot)</td></tr>
+<tr class="memitem:a5b78a21900179808f2c1845909c3314a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a5b78a21900179808f2c1845909c3314a">dkmap</a> (double **<a class="el" href="partial_8cpp.html#a6387da4a388a70e2ff4cf440cb62f4a2">pv</a>, double **pvdot)</td></tr>
 <tr class="memdesc:a5b78a21900179808f2c1845909c3314a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the map between voltages and states in y_.  <a href="#a5b78a21900179808f2c1845909c3314a">More...</a><br /></td></tr>
 <tr class="separator:a5b78a21900179808f2c1845909c3314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3322916f1d60185f9ac7a95bac75e036"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a3322916f1d60185f9ac7a95bac75e036">~NrnDAE</a> ()</td></tr>
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7146ad96aee3c892ee29bf3181cecc95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a7146ad96aee3c892ee29bf3181cecc95">NrnDAE</a> (<a class="el" href="sputils_8c.html#ac4fe16b848533a5e9ae19baa7fa3afda">Matrix</a> *cmat, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const yvec, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const y0, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nnode, <a class="el" href="struct_node.html">Node</a> **const nodes, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const elayer, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*f_init)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>)=<a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *const <a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>=<a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>)</td></tr>
+<tr class="memitem:a7146ad96aee3c892ee29bf3181cecc95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a7146ad96aee3c892ee29bf3181cecc95">NrnDAE</a> (<a class="el" href="sputils_8c.html#ac4fe16b848533a5e9ae19baa7fa3afda">Matrix</a> *cmat, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const yvec, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const y0, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="treeset_8cpp.html#a1fd6ec0a9907eaf5837513e88961dfe1">nnode</a>, <a class="el" href="struct_node.html">Node</a> **const nodes, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *const elayer, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*f_init)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>)=<a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>, <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *const <a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>=<a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a>)</td></tr>
 <tr class="memdesc:a7146ad96aee3c892ee29bf3181cecc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7146ad96aee3c892ee29bf3181cecc95">More...</a><br /></td></tr>
 <tr class="separator:a7146ad96aee3c892ee29bf3181cecc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -166,7 +166,7 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a96211c63e98a0952c41f90df2d8e8364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4b8d1c5a71d386d917aa23c2e33075"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a3c4b8d1c5a71d386d917aa23c2e33075">jacobian_multiplier_</a> ()</td></tr>
 <tr class="separator:a3c4b8d1c5a71d386d917aa23c2e33075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7d75ed62ef70d8cc41ed89d37531d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a5f7d75ed62ef70d8cc41ed89d37531d5">alloc_</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> size, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="uxnrnbbs_2hel2mos_8cpp.html#a60de64d75454385b23995437f1d72669">start</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> nnode, <a class="el" href="struct_node.html">Node</a> **nodes, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *elayer)</td></tr>
+<tr class="memitem:a5f7d75ed62ef70d8cc41ed89d37531d5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a5f7d75ed62ef70d8cc41ed89d37531d5">alloc_</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> size, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="uxnrnbbs_2hel2mos_8cpp.html#a60de64d75454385b23995437f1d72669">start</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="treeset_8cpp.html#a1fd6ec0a9907eaf5837513e88961dfe1">nnode</a>, <a class="el" href="struct_node.html">Node</a> **nodes, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *elayer)</td></tr>
 <tr class="memdesc:a5f7d75ed62ef70d8cc41ed89d37531d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional allocation for subclasses.  <a href="#a5f7d75ed62ef70d8cc41ed89d37531d5">More...</a><br /></td></tr>
 <tr class="separator:a5f7d75ed62ef70d8cc41ed89d37531d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1401b6a60d65af637082af6a9e62ba9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a1401b6a60d65af637082af6a9e62ba9f">v2y</a> ()</td></tr>
@@ -175,7 +175,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af4536eb17ed9b825415f944aff20bcef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#af4536eb17ed9b825415f944aff20bcef">f_init_</a> )(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>)</td></tr>
+<tr class="memitem:af4536eb17ed9b825415f944aff20bcef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#af4536eb17ed9b825415f944aff20bcef">f_init_</a> )(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>)</td></tr>
 <tr class="memdesc:af4536eb17ed9b825415f944aff20bcef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used for initializing the state variables.  <a href="#af4536eb17ed9b825415f944aff20bcef">More...</a><br /></td></tr>
 <tr class="separator:af4536eb17ed9b825415f944aff20bcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67dfba3674cea0328f6952e99a2a261d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_nrn_d_a_e.html#a67dfba3674cea0328f6952e99a2a261d">data_</a></td></tr>
@@ -255,7 +255,7 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00177">177</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00175">175</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,14 +307,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>)&#160;</td>
-          <td class="paramname"><em>f_init</em> = <code><a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></code>, </td>
+          <td class="paramtype"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(*)(<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>)&#160;</td>
+          <td class="paramname"><em>f_init</em> = <code><a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *const&#160;</td>
-          <td class="paramname"><em>data</em> = <code><a class="el" href="cabcode_8c.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></code>&#160;</td>
+          <td class="paramname"><em>data</em> = <code><a class="el" href="cabcode_8cpp.html#a1a05ede2ad100bf5de5dfa7ccdfa4397">NULL</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,7 +356,7 @@ Private Attributes</h2></td></tr>
 <dd>
 If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then initializes to those values. Otherwise initializes by setting all states to 0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00137">137</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00135">135</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00105">105</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00103">103</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
 
 <p>Reimplemented in <a class="el" href="class_linear_model_addition.html#aa6842e9a2485758bbb7254f1862451a9">LinearModelAddition</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00102">102</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00100">100</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -485,7 +485,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00198">198</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00196">196</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00261">261</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00259">259</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
 <p>Find the number of state variables introduced by this object. </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of states added (not modified) by this instance. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00192">192</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00190">190</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -632,7 +632,7 @@ If f_init is non-NULL, that takes priority. Otherwise, if y0 is non-NULL, then i
 <p>Initialize the dynamics. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Does this by calling f_init_. If f_init_ is NULL, initializes to values in y0_. If y0_ is NULL, initializes all states to 0. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00219">219</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00217">217</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ It is occasionally easier to return the Jacobian divided by a constant factor. I
 </p>
 <p>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00298">298</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00296">296</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -749,7 +749,7 @@ It is occasionally easier to return the Jacobian divided by a constant factor. I
 </p>
 <p>. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00289">289</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00287">287</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ It is occasionally easier to return the Jacobian divided by a constant factor. I
 <p>Update states to reflect the changes over a time-step. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>When this function is called, the changes have already been computed by the solver. This just updates the local variables. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00208">208</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00206">206</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ It is occasionally easier to return the Jacobian divided by a constant factor. I
 
 <p>Transfer any voltage states to y_. </p>
 
-<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00241">241</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrndae_8cpp_source.html#l00239">239</a> of file <a class="el" href="nrndae_8cpp_source.html">nrndae.cpp</a>.</p>
 
 </div>
 </div>
@@ -978,7 +978,7 @@ It is occasionally easier to return the Jacobian divided by a constant factor. I
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(* NrnDAE::f_init_) (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="md1redef_8h.html#a43a278d13284fb3412e9eee1db1d967e">data</a>)</td>
+          <td class="memname"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>(* NrnDAE::f_init_) (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="readline_8cpp.html#ab5dd39b3c6371b911a65f9b97dc61453">data</a>)</td>
         </tr>
       </table>
   </td>
