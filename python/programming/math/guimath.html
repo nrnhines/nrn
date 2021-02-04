@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>GUIMath &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Solving Nonlinear Systems" href="eqnsolve.html" />
+    <link rel="prev" title="mcell_ran4" href="mcran4.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">NEURON Python documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#basic-programming">Basic Programming</a><ul class="current">
+<li class="toctree-l3"><a class="reference external" href="https://neuronsimulator.github.io/nrn/tutorials/scripting-neuron-basics.html">NEURON Python tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../hoc.html">HOC Language</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../mathematics.html">Mathematics</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="constants.html">Constants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="functions.html">Common Math Functions (HOC)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html">Matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="vector.html">Vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="random.html">Pseudo-Random Number Generation</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">GUIMath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eqnsolve.html">Solving Nonlinear Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../errors.html">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../projectmanagement.html">Project Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hoc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">NEURON Python documentation</a> &raquo;</li>
+        
+          <li><a href="../mathematics.html">Mathematics</a> &raquo;</li>
+        
+      <li>GUIMath</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/hoc/programming/math/guimath.html" > Switch to HOC</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/python/programming/math/guimath.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><dl class="docutils"><dt><a href="#GUIMath" title="Link to this definition">GUIMath</a></dt><dd><a href="#GUIMath.d2line" title="Link to this definition">d2line</a> &middot; <a href="#GUIMath.d2line_seg" title="Link to this definition">d2line_seg</a> &middot; <a href="#GUIMath.feround" title="Link to this definition">feround</a> &middot; <a href="#GUIMath.inside" title="Link to this definition">inside</a></dd></dl></p><div class="section" id="guimath">
+<span id="id1"></span><h1>GUIMath<a class="headerlink" href="#guimath" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="GUIMath">
+<em class="property">class </em><code class="descname">GUIMath</code><a class="headerlink" href="#GUIMath" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">obj</span> <span class="pre">=</span> <span class="pre">h.GUIMath()</span></code></dd>
+<dt>Description:</dt><dd>Contains functions which calculate common relationships between graphics
+objects.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="GUIMath.d2line">
+<code class="descclassname">GUIMath.</code><code class="descname">d2line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GUIMath.d2line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">=</span> <span class="pre">guimath.d2line(xpoint,</span> <span class="pre">ypoint,</span> <span class="pre">xline0,</span> <span class="pre">yline0,</span> <span class="pre">xline1,</span> <span class="pre">yline1)</span></code></dd>
+<dt>Description:</dt><dd>Return distance between the point (xpoint,ypoint) and the (infinitely long)
+line defined by the 0 and 1 points.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="GUIMath.d2line_seg">
+<code class="descclassname">GUIMath.</code><code class="descname">d2line_seg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GUIMath.d2line_seg" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">d</span> <span class="pre">=</span> <span class="pre">guimath.d2line_seg(xpoint,</span> <span class="pre">ypoint,</span> <span class="pre">xline0,</span> <span class="pre">yline0,</span> <span class="pre">xline1,</span> <span class="pre">yline1)</span></code></dd>
+<dt>Description:</dt><dd>Return distance between the point (xpoint, ypoint) and the line segment
+line defined by the 0 and 1 points.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="GUIMath.inside">
+<code class="descclassname">GUIMath.</code><code class="descname">inside</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GUIMath.inside" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">boolean</span> <span class="pre">=</span> <span class="pre">guimath.inside(xpoint,</span> <span class="pre">ypoint,</span> <span class="pre">left,</span> <span class="pre">bottom,</span> <span class="pre">right,</span> <span class="pre">top)</span></code></dd>
+<dt>Description:</dt><dd>return True if the point is inside the box, False otherwise</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="GUIMath.feround">
+<code class="descclassname">GUIMath.</code><code class="descname">feround</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GUIMath.feround" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">mode</span> <span class="pre">=</span> <span class="pre">guimath.feround()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">lastmode</span> <span class="pre">=</span> <span class="pre">guimath.feround(mode)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Set the floating point rounding mode. Mode 1, 2, 3, 4 refers to
+FE_DOWNWARD, FE_TONEAREST, FE_TOWARDZERO, FE_UPWARD respectively.
+The default, and most accurate, mode is FE_TONEAREST.
+The mode is changed only if the argument is 1-4. If there is no
+support for this function the return value is 0.</p>
+<p>This function is useful to determine if a simulation depends unduly
+on double precision round-off error.</p>
+<p>This affects calculations performed in both Python and HOC.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span>
+
+<span class="n">gm</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">GUIMath</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;default rounding mode </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">gm</span><span class="o">.</span><span class="n">feround</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">test_round</span><span class="p">(</span><span class="n">mode</span><span class="p">):</span>
+    <span class="n">gm</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">GUIMath</span><span class="p">()</span>
+    <span class="n">old</span> <span class="o">=</span> <span class="n">gm</span><span class="o">.</span><span class="n">feround</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000001</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mf">0.1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;round mode </span><span class="si">%d</span><span class="s1"> x=</span><span class="si">%25.17lf</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">mode</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+    <span class="n">gm</span><span class="o">.</span><span class="n">feround</span><span class="p">(</span><span class="n">old</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">test_round</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>default rounding mode 2
+round mode 1 x=  99999.99999613071850035
+round mode 2 x= 100000.00000133288267534
+round mode 3 x=  99999.99999613071850035
+round mode 4 x= 100000.00000432481465396
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="eqnsolve.html" class="btn btn-neutral float-right" title="Solving Nonlinear Systems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mcran4.html" class="btn btn-neutral float-left" title="mcell_ran4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

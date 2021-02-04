@@ -6,7 +6,6 @@ Python RXD tutorials
    :maxdepth: 2
 
    Calcium Waves
-   Extracellular Tutorial
    Reaction-Diffusion tutorial
    changing intial conditions
    circadian

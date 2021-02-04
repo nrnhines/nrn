@@ -41,7 +41,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="changing intial conditions" href="changing%20intial%20conditions.html" />
-    <link rel="prev" title="Extracellular Tutorial" href="Extracellular%20Tutorial.html" /> 
+    <link rel="prev" title="Calcium Waves" href="Calcium%20Waves.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,12 +93,11 @@
 </ul>
 <p class="caption"><span class="caption-text">User documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../py_doc/index.html">NEURON Python documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hoc/index.html">NEURON HOC documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Python tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Python RXD tutorials</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Calcium%20Waves.html">Calcium Waves</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Extracellular%20Tutorial.html">Extracellular Tutorial</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Reaction-Diffusion tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changing%20intial%20conditions.html">changing intial conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circadian.html">circadian</a></li>
@@ -172,7 +171,8 @@
     
 <li class="wy-breadcrumbs-aside">
     
-    
+</li>
+
       <li class="wy-breadcrumbs-aside">
         
           
@@ -181,7 +181,6 @@
         
       </li>
     
-</li>
 
   </ul>
 
@@ -14486,20 +14485,13 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p><h2>Specification</h2><p>To describe a reaction-diffusion problem in NEURON, begin by loading the <code>rxd</code> library:</p></p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">rxd</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">rxd</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14514,20 +14506,13 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>
     The <a href="https://neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.Region"><code>rxd.Region</code></a> class is used to describe the domain:</p>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">sections</span><span class="p">,</span> <span class="n">nrn_region</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">sections</span><span class="p">,</span> <span class="n">nrn_region</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14540,59 +14525,38 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p><b>Example:</b> Region on all sections:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">())</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">())</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><b>Example:</b> Region on just a few sections:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">([</span><span class="n">soma</span><span class="p">,</span> <span class="n">apical1</span><span class="p">,</span> <span class="n">apical2</span><span class="p">])</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">([</span><span class="n">soma</span><span class="p">,</span> <span class="n">apical1</span><span class="p">,</span> <span class="n">apical2</span><span class="p">])</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>If the region you are describing coincides with the domain on the immediate interior of the membrane, set <code>nrn_region='i'</code>, e.g.</p>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">(),</span> <span class="n">nrn_region</span><span class="o">=</span><span class="s1">&#39;i&#39;</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">(),</span> <span class="n">nrn_region</span><span class="o">=</span><span class="s1">&#39;i&#39;</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14617,20 +14581,13 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>Who are the actors? Often they are chemical species (proteins, ions), sometimes they are State variables (such as a gating variable), and other times parameters that vary throughout the domain are key actors. All three of these can be described using the <a href="/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.Species"><code>rxd.Species</code></a> class:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">atolscale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">atolscale</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14673,60 +14630,39 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p><b>Example:</b> to have concentrations set to 47 at <code>h.finitialize(init_v)</code>:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">region</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mi">47</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">region</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mi">47</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><b>Note:</b> For consistency <a href="/neuron/static/docs/units/unitchart.html">with the rest of NEURON</a>, the units of concentration are assumed to be in mM. Many cell biology models involve concentrations on the order of μM; calcium is often even smaller. Besides the need to be consistent about units, this has implications for variable step integration which by default has an absolute tolerance of (10^{-3}) or 1 μM. To address this, use <code>atolscale</code> to indicate that the tolerance should be scaled for the corresponding variable; e.g.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ca</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">cyt</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">atolscale</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">ca</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">cyt</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">atolscale</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><b>Note:</b> <code>initial</code> is also a property of the Species/Parameter/State and may be changed at any time, as in:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ca</span><span class="o">.</span><span class="n">initial</span> <span class="o">=</span> <span class="mf">1.2345e-3</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">ca</span><span class="o">.</span><span class="n">initial</span> <span class="o">=</span> <span class="mf">1.2345e-3</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14744,40 +14680,26 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>How do they interact? Species interact via one or more chemical reactions. The primary class used to specify reactions is <a href="/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.Reaction">rxd.Reaction</a>:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">,</span> <span class="n">rate_f</span><span class="p">,</span> <span class="n">rate_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">custom_dynamics</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">lhs</span><span class="p">,</span> <span class="n">rhs</span><span class="p">,</span> <span class="n">rate_f</span><span class="p">,</span> <span class="n">rate_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">custom_dynamics</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Here <code>lhs</code> and <code>rhs</code> describe the reaction scheme and are expressed using arithmetic sums of integer multiples of a Species. For example, an irreversible reaction to form calcium chloride might be written:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cacl2_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">ca</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cl</span><span class="p">,</span> <span class="n">cacl2</span><span class="p">,</span> <span class="n">kf</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">cacl2_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">ca</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cl</span><span class="p">,</span> <span class="n">cacl2</span><span class="p">,</span> <span class="n">kf</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14795,41 +14717,27 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>While we can sometimes ignore the reverse reactions due to them having a high energy barrier, the laws of physics imply that all reactions are in fact reversible. A more correct specification of a mass action reaction for calcium chloride would thus include a backward reaction rate <code>kb</code> here in units of 1/ms:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cacl2_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">ca</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cl</span><span class="p">,</span> <span class="n">cacl2</span><span class="p">,</span> <span class="n">kf</span><span class="p">,</span> <span class="n">kb</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">cacl2_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">ca</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">cl</span><span class="p">,</span> <span class="n">cacl2</span><span class="p">,</span> <span class="n">kf</span><span class="p">,</span> <span class="n">kb</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>While mass-action works well for elementary reactions, this is often impractical for modeling intracellular dynamics where there are potentially many elementary reactions driving the observable reaction. In this case, we often turn to phenomenological models, such as <a href="https://en.wikipedia.org/wiki/Michaelis%E2%80%93Menten_kinetics">Michelis-Menten kinetics</a> or the <a href="https://en.wikipedia.org/wiki/Hill_equation_(biochemistry)">Hill equation</a>. To indicate these in NEURON, set <code>custom_dynamics=True</code> and specify the forward and backward rates as the corresponding formula, e.g.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">enzymatic_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">substrate</span><span class="p">,</span> <span class="n">product</span><span class="p">,</span> <span class="n">vmax</span> <span class="o">*</span> <span class="n">substrate</span> <span class="o">/</span> <span class="p">(</span><span class="n">km</span> <span class="o">+</span> <span class="n">substrate</span><span class="p">),</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">enzymatic_reaction</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Reaction</span><span class="p">(</span><span class="n">substrate</span><span class="p">,</span> <span class="n">product</span><span class="p">,</span> <span class="n">vmax</span> <span class="o">*</span> <span class="n">substrate</span> <span class="o">/</span> <span class="p">(</span><span class="n">km</span> <span class="o">+</span> <span class="n">substrate</span><span class="p">),</span>
                                  <span class="n">custom_dynamics</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14848,40 +14756,26 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>Reactions conserve mass. This property is especially important for stochastic simulations. Often, however, one might wish to model a source or a sink (e.g. protein degradation), or describe the dynamics of a state variable that is not a concentration. In this case, use the non-conservative <a href="/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.Rate"><code>rxd.Rate</code></a>.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">membrane_flux</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="n">species</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">membrane_flux</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>For example, if IP3 is degraded at a rate proportional to its concentration, then</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ip3_degradation</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="n">ip3</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span> <span class="o">*</span> <span class="n">ip3</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">ip3_degradation</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Rate</span><span class="p">(</span><span class="n">ip3</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span> <span class="o">*</span> <span class="n">ip3</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14906,20 +14800,13 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>The previous methods assume that all the reactants exist in the same region. (If they are not all present in a given location, then the reaction does not occur there.) Pumps and channels can allow material to move between compartments. These are implemented in NEURON using an <a href="/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.MultiCompartmentReaction"><code>rxd.MultiCompartmentReaction</code></a> and using square brackets to specify regions. The rate is proportional to the area of the <code>membrane</code> between the regions, which must be specified. e.g. if <code>ca</code> is a species present on the <code>rxd.Region</code> objects <code>er</code> and <code>cyt</code> then a leak compartment across the ER membrane might be implemented as:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">leak</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">MultiCompartmentReaction</span><span class="p">(</span><span class="n">ca</span><span class="p">[</span><span class="n">er</span><span class="p">],</span> <span class="n">ca</span><span class="p">[</span><span class="n">cyt</span><span class="p">],</span> <span class="n">gleak</span><span class="p">,</span> <span class="n">gleak</span><span class="p">,</span> <span class="n">membrane</span><span class="o">=</span><span class="n">cyt_er_membrane</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">leak</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">MultiCompartmentReaction</span><span class="p">(</span><span class="n">ca</span><span class="p">[</span><span class="n">er</span><span class="p">],</span> <span class="n">ca</span><span class="p">[</span><span class="n">cyt</span><span class="p">],</span> <span class="n">gleak</span><span class="p">,</span> <span class="n">gleak</span><span class="p">,</span> <span class="n">membrane</span><span class="o">=</span><span class="n">cyt_er_membrane</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14942,61 +14829,40 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>For a given species <code>s</code>, <code>s.nodes</code> is an <a href="/neuron/static/py_doc/modelspec/programmatic/rxd.html#neuron.rxd.nodelist.NodeList"><code>rxd.NodeList</code></a> of all of its nodes. NodeList objects are derived from the Python list, so they offer all the same methods, e.g. one can access the first node</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">node</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">node</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>or get the total number of nodes</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_nodes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">nodes</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">num_nodes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">nodes</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>exactly as if <code>s.nodes</code> was a list, but one can also read and set concentrations (<code>concentration</code>) and diffusion constants (<code>diff</code>) for all nodes in the NodeList in a vectorized way, as well as read the volumes (<code>volume</code>), surface areas (<code>surface_area</code>), regions (<code>region</code>), species (<code>species</code>), and normalized positions (<code>x</code>). For example, to get lists of positions (<code>x</code>) and concentrations (<code>y</code>) suitable for plotting from the NodeList <code>nl</code>, use</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">nl</span><span class="o">.</span><span class="n">x</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">nl</span><span class="o">.</span><span class="n">x</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">nl</span><span class="o">.</span><span class="n">concentration</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15009,60 +14875,39 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>When assigning concentration or the diffusion constant, one can either set them equal to an iterable with the same length as the NodeList or to a scalar as in</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nl</span><span class="o">.</span><span class="n">concentration</span> <span class="o">=</span> <span class="mi">47</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">nl</span><span class="o">.</span><span class="n">concentration</span> <span class="o">=</span> <span class="mi">47</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Calling a NodeList returns a sub-NodeList of nodes satisfying a given restriction. For example,</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nl</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">nl</span><span class="p">(</span><span class="n">soma</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>returns a NodeList of all Nodes lying in the <code>h.Section</code> referred to by <code>soma</code>. As this is itself a NodeList, we can get a list of the nodes from nl in the soma section belonging to the <code>rxd.Region</code> referred to by <code>er</code>:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nl</span><span class="p">(</span><span class="n">soma</span><span class="p">)(</span><span class="n">er</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">nl</span><span class="p">(</span><span class="n">soma</span><span class="p">)(</span><span class="n">er</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15080,68 +14925,40 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 <p>Sometimes though, it is important to work with an individual Node, such as for communication with nmodl or for plotting. NEURON's <a href="/neuron/static/py_doc/visualization/graph.html#Graph.addvar"><code>Graph.addvar()</code></a> method, for example, needs a reference to the memory location containing the concentration, which is available via the <code>&#95;ref_concentration</code> property:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">addvar</span><span class="p">(</span><span class="s1">&#39;calcium&#39;</span><span class="p">,</span> <span class="n">node</span><span class="o">.</span><span class="n">_ref_concentration</span><span class="p">)</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">addvar</span><span class="p">(</span><span class="s1">&#39;calcium&#39;</span><span class="p">,</span> <span class="n">node</span><span class="o">.</span><span class="n">_ref_concentration</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>If a node is mapped to a NEURON range variable (that is, if the species name is specified and the Region's <code>nrn_region</code> is <code>'i'</code> or <code>'o'</code>), then there are three equivalent ways to read the concentration in 1d simulations. Here we assume the species is named <code>ca</code> and the <code>nrn_region='i'</code> and that the node is at 0.5 in the h.Section <code>soma</code>:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">cai</span>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">cai</span>
 </pre></div>
 
-     </div>
 </div>
 </div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">concentration</span>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">concentration</span>
 </pre></div>
 
-     </div>
 </div>
 </div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">_ref_concentration</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">node</span><span class="o">.</span><span class="n">_ref_concentration</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15241,11 +15058,11 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 
 ---- cacl2 production rate should speed up below here ----
 
-      0.15    0.712186    0.856093    0.143907
-     0.175    0.632848    0.816424    0.183576
-       0.2    0.570372    0.785186    0.214814
-     0.225    0.519873    0.759937    0.240063
-      0.25    0.478173    0.739086    0.260914
+      0.15    0.691965    0.845982    0.154018
+     0.175    0.602562    0.801281    0.198719
+       0.2    0.535061     0.76753     0.23247
+     0.225    0.482188    0.741094    0.258906
+      0.25     0.43957    0.719785    0.280215
 </pre>
 </div>
 </div>
@@ -15274,7 +15091,7 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -15344,7 +15161,7 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -15386,14 +15203,14 @@ where \(u\) is the concentration of some state variable. If the diffusion coeffi
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="changing%20intial%20conditions.html" class="btn btn-neutral float-right" title="changing intial conditions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="Extracellular%20Tutorial.html" class="btn btn-neutral float-left" title="Extracellular Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Calcium%20Waves.html" class="btn btn-neutral float-left" title="Calcium Waves" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
 
     </p>
   </div>

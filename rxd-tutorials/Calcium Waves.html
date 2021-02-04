@@ -40,7 +40,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Extracellular Tutorial" href="Extracellular%20Tutorial.html" />
+    <link rel="next" title="Reaction-Diffusion tutorial" href="Reaction-Diffusion%20tutorial.html" />
     <link rel="prev" title="Python RXD tutorials" href="index.html" /> 
 </head>
 
@@ -93,12 +93,11 @@
 </ul>
 <p class="caption"><span class="caption-text">User documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../py_doc/index.html">NEURON Python documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hoc/index.html">NEURON HOC documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Python tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Python RXD tutorials</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Calcium Waves</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Extracellular%20Tutorial.html">Extracellular Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Reaction-Diffusion%20tutorial.html">Reaction-Diffusion tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changing%20intial%20conditions.html">changing intial conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circadian.html">circadian</a></li>
@@ -172,7 +171,8 @@
     
 <li class="wy-breadcrumbs-aside">
     
-    
+</li>
+
       <li class="wy-breadcrumbs-aside">
         
           
@@ -181,7 +181,6 @@
         
       </li>
     
-</li>
 
   </ul>
 
@@ -14481,7 +14480,7 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">rxd</span>
@@ -14498,10 +14497,10 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 <p>It is often convenient to load NEURON's <code>stdrun</code> library, which provides high level functions for controlling integration; we do so here:</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">h</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;stdrun.hoc&#39;</span><span class="p">)</span>
@@ -14510,6 +14509,29 @@ Like other RxD problems within NEURON, the first step is to import and load the 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1.0</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14526,7 +14548,7 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sec</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Section</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;sec&#39;</span><span class="p">)</span>
@@ -14557,10 +14579,10 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 <p>Next, we activate the variable time-step integration algorithm. This is a class of functions which are part of the <a href="http://computation.llnl.gov/casc/sundials/description/description.html">SUNDIALS</a> package and allow variable-order, variable time-step, and implicit solving of ordinary differential equations (ODE). This is a particularly useful tool for solving a system with multiple species, whose concentrations may change suddenly from stable conditions.</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">h</span><span class="o">.</span><span class="n">CVode</span><span class="p">()</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -14569,6 +14591,29 @@ Like other RxD problems within NEURON, the first step is to import and load the 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14586,7 +14631,7 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">caDiff</span> <span class="o">=</span> <span class="mf">0.016</span>
@@ -14623,7 +14668,7 @@ Like other RxD problems within NEURON, the first step is to import and load the 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cyt</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">(),</span>
@@ -14654,7 +14699,7 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">er</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">(),</span> <span class="n">geometry</span><span class="o">=</span><span class="n">rxd</span><span class="o">.</span><span class="n">FractionalVolume</span><span class="p">(</span><span class="n">fe</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;er&#39;</span><span class="p">)</span>
@@ -14674,7 +14719,7 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cyt_er_membrane</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">allsec</span><span class="p">(),</span>
@@ -14707,7 +14752,7 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -14751,10 +14796,11 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ca</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">([</span><span class="n">cyt</span><span class="p">,</span> <span class="n">er</span><span class="p">],</span> <span class="n">d</span><span class="o">=</span><span class="n">caDiff</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="n">caCYT_init</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">caCYT_init</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">ca</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">([</span><span class="n">cyt</span><span class="p">,</span> <span class="n">er</span><span class="p">],</span> <span class="n">d</span><span class="o">=</span><span class="n">caDiff</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ca&#39;</span><span class="p">,</span> <span class="n">charge</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="n">caCYT_init</span><span class="p">)</span>
 <span class="n">ip3</span> <span class="o">=</span> <span class="n">rxd</span><span class="o">.</span><span class="n">Species</span><span class="p">(</span><span class="n">cyt</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="n">ip3Diff</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="n">ip3_init</span><span class="p">)</span>
 </pre></div>
 
@@ -14792,7 +14838,7 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Extracellular%20Tutorial.html" class="btn btn-neutral float-right" title="Extracellular Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Reaction-Diffusion%20tutorial.html" class="btn btn-neutral float-right" title="Reaction-Diffusion tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="index.html" class="btn btn-neutral float-left" title="Python RXD tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
@@ -14800,7 +14846,7 @@ We set <code>surface_fraction=1</code> because for the purposes of this model we
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
 
     </p>
   </div>

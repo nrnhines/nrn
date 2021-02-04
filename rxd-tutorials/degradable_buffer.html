@@ -93,12 +93,11 @@
 </ul>
 <p class="caption"><span class="caption-text">User documentation:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../py_doc/index.html">NEURON Python documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hoc/index.html">NEURON HOC documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Python tutorials</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Python RXD tutorials</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Calcium%20Waves.html">Calcium Waves</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Extracellular%20Tutorial.html">Extracellular Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Reaction-Diffusion%20tutorial.html">Reaction-Diffusion tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="changing%20intial%20conditions.html">changing intial conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="circadian.html">circadian</a></li>
@@ -172,7 +171,8 @@
     
 <li class="wy-breadcrumbs-aside">
     
-    
+</li>
+
       <li class="wy-breadcrumbs-aside">
         
           
@@ -181,7 +181,6 @@
         
       </li>
     
-</li>
 
   </ul>
 
@@ -14474,7 +14473,7 @@ $$\mathrm{Ca} + \mathrm{Calbindin_0} \rightleftharpoons \mathrm{Calbindin_1}$$$$
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">rxd</span>
@@ -14488,7 +14487,7 @@ $$\mathrm{Ca} + \mathrm{Calbindin_0} \rightleftharpoons \mathrm{Calbindin_1}$$$$
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># where</span>
@@ -14523,15 +14522,15 @@ $$\mathrm{Ca} + \mathrm{Calbindin_0} \rightleftharpoons \mathrm{Calbindin_1}$$$$
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">()</span>
 <span class="n">ca_vec</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">()</span>
-<span class="n">ca2buf_vec</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">()</span>
+<span class="n">buf_vec</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">()</span>
 <span class="n">t</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">_ref_t</span><span class="p">)</span>
 <span class="n">ca_vec</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">_ref_cai</span><span class="p">)</span>
-<span class="n">ca2buf_vec</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">_ref_ca2bufi</span><span class="p">)</span>
+<span class="n">buf_vec</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">_ref_bufi</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14547,21 +14546,15 @@ $$\mathrm{Ca} + \mathrm{Calbindin_0} \rightleftharpoons \mathrm{Calbindin_1}$$$$
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-13-80b954f3ae29&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">      3</span> ca2buf_vec <span class="ansi-yellow-intense-fg ansi-bold">=</span> h<span class="ansi-yellow-intense-fg ansi-bold">.</span>Vector<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      4</span> t<span class="ansi-yellow-intense-fg ansi-bold">.</span>record<span class="ansi-yellow-intense-fg ansi-bold">(</span>h<span class="ansi-yellow-intense-fg ansi-bold">.</span>_ref_t<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 5</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>ca_vec<span class="ansi-yellow-intense-fg ansi-bold">.</span>record<span class="ansi-yellow-intense-fg ansi-bold">(</span>soma<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">0.5</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>_ref_cai<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      6</span> ca2buf_vec<span class="ansi-yellow-intense-fg ansi-bold">.</span>record<span class="ansi-yellow-intense-fg ansi-bold">(</span>soma<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">0.5</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>_ref_ca2bufi<span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
-<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: _ref_cai was not made to point to anything at soma(0.5)</pre>
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Vector[2]</pre>
 </div>
+
 </div>
 
 </div>
@@ -14600,7 +14593,7 @@ $$\mathrm{Ca} + \mathrm{Calbindin_0} \rightleftharpoons \mathrm{Calbindin_1}$$$$
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
 
     </p>
   </div>

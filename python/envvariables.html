@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Environment Variables &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Interpreter Management" href="simctrl/interpretermanagement.html" />
+    <link rel="prev" title="Rarely Used Compilation Options" href="compilationoptions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">NEURON Python documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#simulation-control">Simulation Control</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="simctrl/programmatic.html">Programmatic Simulation Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simctrl/stdrun.html">Standard Run Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compilationoptions.html">Rarely Used Compilation Options</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Environment Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nrnunit-use-legacy">NRNUNIT_USE_LEGACY</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="simctrl/interpretermanagement.html">Interpreter Management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hoc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">NEURON Python documentation</a> &raquo;</li>
+        
+      <li>Environment Variables</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/hoc/envvariables.html" > Switch to HOC</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/python/envvariables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="environment-variables">
+<h1>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h1>
+<p>With a bash shell, these are set by, e.g. (on ubuntu)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>extern <span class="nv">NEURONHOME</span><span class="o">=</span>/where/neuron/was/installed/share/nrn
+</pre></div>
+</div>
+<div class="section" id="nrnunit-use-legacy">
+<h2>NRNUNIT_USE_LEGACY<a class="headerlink" href="#nrnunit-use-legacy" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>When set to 1, legacy unit values for FARADAY, R, and a few other constants
+are used. See <code class="docutils literal notranslate"><span class="pre">nrn/share/lib/nrnunits.lib.in</span></code> lines which begin with
+<code class="docutils literal notranslate"><span class="pre">&#64;LegacyY&#64;</span></code>, <code class="docutils literal notranslate"><span class="pre">nrn/src/oc/hoc_init.c</span></code> in the code section
+<code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">struct</span> <span class="pre">{</span> <span class="pre">/*</span> <span class="pre">Modern,</span> <span class="pre">Legacy</span> <span class="pre">units</span> <span class="pre">constants</span> <span class="pre">*/</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">nrn/src/nrnoc/eion.c</span></code>.</p>
+<p>When set to 0, (default), values from codata2018 are used.
+See <code class="docutils literal notranslate"><span class="pre">nrn/share/lib/nrnunits.lib.in</span></code> lines that begin with
+<code class="docutils literal notranslate"><span class="pre">&#64;LegacyN&#64;</span></code> and <code class="docutils literal notranslate"><span class="pre">nrn/src/oc/nrnunits_modern.h</span></code>.</p>
+<p>Switching between legacy and modern units can also be done after launch
+with the top level HOC function <a class="reference internal" href="simctrl/programmatic.html#nrnunit_use_legacy" title="nrnunit_use_legacy"><code class="xref py py-func docutils literal notranslate"><span class="pre">nrnunit_use_legacy()</span></code></a>.</p>
+<p>The purpose of allowing legacy unit values is to easily validate
+results of old models (double precision identity).</p>
+<p>This environment variable takes precedence over the CMake option
+<code class="docutils literal notranslate"><span class="pre">NRN_DYNAMIC_UNITS_USE_LEGACY</span></code>.</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="simctrl/interpretermanagement.html" class="btn btn-neutral float-right" title="Interpreter Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="compilationoptions.html" class="btn btn-neutral float-left" title="Rarely Used Compilation Options" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>MechanismStandard (Parameter Control) &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Debugging and Internals Access" href="internals.html" />
+    <link rel="prev" title="Project Management" href="projectmanagement.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python.html">Python Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hoc.html">HOC Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mathematics.html">Mathematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="errors.html">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="projectmanagement.html">Project Management</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">MechanismStandard (Parameter Control)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="projectmanagement.html#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="projectmanagement.html#utilities">Utilities</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+          <li><a href="projectmanagement.html">Project Management</a> &raquo;</li>
+        
+      <li>MechanismStandard (Parameter Control)</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/programming/mechstan.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/hoc/programming/mechstan.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><dl class="docutils"><dt><a href="#MechanismStandard" title="Link to this definition">MechanismStandard</a></dt><dd><a href="#MechanismStandard.action" title="Link to this definition">action</a> &middot; <a href="#MechanismStandard.count" title="Link to this definition">count</a> &middot; <a href="#MechanismStandard.get" title="Link to this definition">get</a> &middot; <a href="#MechanismStandard.in" title="Link to this definition">in</a> &middot; <a href="#MechanismStandard.name" title="Link to this definition">name</a> &middot; <a href="#MechanismStandard.out" title="Link to this definition">out</a> &middot; <a href="#MechanismStandard.panel" title="Link to this definition">panel</a> &middot; <a href="#MechanismStandard.save" title="Link to this definition">save</a> &middot; <a href="#MechanismStandard.set" title="Link to this definition">set</a></dd></dl></p><div class="section" id="mechanismstandard-parameter-control">
+<span id="mechstan"></span><h1>MechanismStandard (Parameter Control)<a class="headerlink" href="#mechanismstandard-parameter-control" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="MechanismStandard">
+<em class="property">class </em><code class="descname">MechanismStandard</code><a class="headerlink" href="#MechanismStandard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="samp docutils literal notranslate"><span class="pre">ms</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">MechanismStandard(&quot;</span><em><span class="pre">name</span></em><span class="pre">&quot;)</span></code></p>
+<p><code class="samp docutils literal notranslate"><span class="pre">ms</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">MechanismStandard(&quot;</span><em><span class="pre">name</span></em><span class="pre">&quot;,</span> <em><span class="pre">vartype</span></em><span class="pre">)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>With no vartype or vartype = 1, this provides
+storage for parameter values of a membrane mechanism or point process.
+This class is useful in maintaining a default set of parameters and can
+be used to specify values for a set of sections.</p>
+<p><em>name</em> is a density mechanism such as <code class="docutils literal notranslate"><span class="pre">hh</span></code> or a point process
+such as <a class="reference internal" href="../../python/modelspec/programmatic/mechanisms/mech.html#VClamp" title="VClamp"><code class="xref py py-class docutils literal notranslate"><span class="pre">VClamp</span></code></a>. A <code class="docutils literal notranslate"><span class="pre">MechanismStandard</span></code> instance, when created,
+contains default values for all parameters associated with the mechanism.</p>
+<p>In combination with the
+<a class="reference internal" href="../../python/modelspec/programmatic/mechtype.html#MechanismType" title="MechanismType"><code class="xref py py-class docutils literal notranslate"><span class="pre">MechanismType</span></code></a> class it is possible to create generic graphical interface
+widgets that are independent of the particular mechanism and parameter names.</p>
+<p>If vartype = 1, 2, or 3, the storage is for PARAMETER, ASSIGNED, or STATE
+variables respectively. If vartype = 0, the storage is for all three types.</p>
+<p>If vartype = -1, the count and names (and array size)
+of the GLOBAL variables are accessible, but any other method will
+generate an error message.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objref ms1, ms2
+ms1 = new MechanismStandard(&quot;hh&quot;)
+ms2 = new MechanismStandard(&quot;AlphaSynapse&quot;)
+ms2.set(&quot;gmax&quot;, .3)
+ms1.panel()
+ms2.panel()
+</pre></div>
+</div>
+<p>The following example prints all the names associated with POINT_PROCESS
+and SUFFIX mechanisms.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>create soma
+access soma
+
+objref ms, mt
+strdef s, msname
+proc pname() {local i, j, k
+    for i=-1,3 {
+            ms = new MechanismStandard($s1, i)
+            print &quot;\n&quot;, $s1, &quot;  vartype=&quot;, i
+            for j=0, ms.count()-1 {
+                    k = ms.name(s, j)
+                    print j, s, &quot; size=&quot;, k
+            }
+    }
+}
+
+proc ptype() {local i, j
+    for i=0,1 {
+            mt = new MechanismType(i)
+            for j=0, mt.count-1 {
+                    mt.select(j)
+                    mt.selected(msname)
+print &quot;\n\n&quot;, msname, &quot; mechanismtype=&quot;, j
+                    pname(msname)
+            }
+    }
+}
+
+ptype()
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/modelspec/programmatic/mechtype.html#MechanismType" title="MechanismType"><code class="xref py py-class docutils literal notranslate"><span class="pre">MechanismType</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.panel">
+<code class="descclassname">MechanismStandard.</code><code class="descname">panel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.panel" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ms.panel()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ms.panel(&quot;string&quot;)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Popup a panel of parameters for this mechanism. It’s a good idea to
+set the default values before generating the panel.</p>
+<p>With no argument the first item in the panel will be the name of the
+mechanism. Otherwise the string is used as the first item label.</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/gui/nfunc.html#nrnglobalmechmenu" title="nrnglobalmechmenu"><code class="xref py py-func docutils literal notranslate"><span class="pre">nrnglobalmechmenu()</span></code></a>, <a class="reference internal" href="../../python/programming/gui/nfunc.html#nrnmechmenu" title="nrnmechmenu"><code class="xref py py-func docutils literal notranslate"><span class="pre">nrnmechmenu()</span></code></a>, <a class="reference internal" href="../../python/programming/gui/nfunc.html#nrnpointmenu" title="nrnpointmenu"><code class="xref py py-func docutils literal notranslate"><span class="pre">nrnpointmenu()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.action">
+<code class="descclassname">MechanismStandard.</code><code class="descname">action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.action" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ms.action(&quot;statement&quot;)</span></code></dd>
+<dt>Description:</dt><dd>action to be executed when any variable is changed in the panel.
+The hoc variable <a class="reference internal" href="../../python/programming/predec.html#hoc_ac_" title="hoc_ac_"><code class="xref py py-data docutils literal notranslate"><span class="pre">hoc_ac_</span></code></a> is set to the index of the variable (0 to count-1).</dd>
+<dt>Example:</dt><dd><p>forall delete_section()</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>create soma, axon, dend[3]
+forsec &quot;a&quot; insert hh
+forsec &quot;d&quot; insert pas
+xpanel(&quot;Updated when MechanismStandard is changed&quot;)
+xvalue(&quot;dend[0].g_pas&quot;)
+xvalue(&quot;dend[1].g_pas&quot;)
+xvalue(&quot;dend[2].g_pas&quot;)
+xpanel()
+objref ms
+ms = new MechanismStandard(&quot;pas&quot;)
+ms.action(&quot;change_pas()&quot;)
+ms.panel()
+
+proc change_pas() {
+    forall if(ismembrane(&quot;pas&quot;)) {
+            ms.out()
+    }
+}
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.in">
+<code class="descclassname">MechanismStandard.</code><code class="descname">in</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.in" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ms.in()</span></code></p>
+<p><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">x</span></em><span class="pre">)</span></code></p>
+<p><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">pointprocess</span></em><span class="pre">)</span></code></p>
+<p><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">mechanismstandard</span></em><span class="pre">)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>copies parameter values into this mechanism standard from …</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">ms.in()</span></code></dt><dd>the mechanism located in first segment of the currently accessed section.</dd>
+<dt><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">x</span></em><span class="pre">)</span></code></dt><dd>the mechanism located in the segment containing x of the currently accessed section.
+(Note that x=0 and 1 are considered to lie in the
+0+ and 1- segments respectively so a proper iteration uses for(x, 0).
+See <a class="reference internal" href="../../python/programming/ockeywor.html#keyword-for"><span class="std std-ref">for</span></a>.</dd>
+<dt><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">pointprocess</span></em><span class="pre">)</span></code></dt><dd>the point process object</dd>
+<dt><code class="samp docutils literal notranslate"><span class="pre">ms.in(</span><em><span class="pre">mechanismstandard</span></em><span class="pre">)</span></code></dt><dd>another mechanism standard</dd>
+</dl>
+<p>If the source is not the same type as the standard then nothing happens.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.out">
+<code class="descclassname">MechanismStandard.</code><code class="descname">out</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.out" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ms.out()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ms.out(x)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ms.out(pointprocess)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">ms.out(mechanismstandard)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>copies parameter values from this mechanism standard to …</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">ms.out()</span></code></dt><dd>the mechanism located in the currently accessed section (all segments).</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ms.out(x)</span></code></dt><dd>the mechanism located in the currently accessed section in the segment
+containing x.(Note that x=0 and 1 are considered to lie in the
+0+ and 1- segments respectively)</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ms.out(pointprocess)</span></code></dt><dd>the point process argument</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">ms.out(mechanismstandard)</span></code></dt><dd>another mechanism standard</dd>
+</dl>
+<p>If the target is not the same type as the standard then nothing happens.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.set">
+<code class="descclassname">MechanismStandard.</code><code class="descname">set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="samp docutils literal notranslate"><span class="pre">ms.set(&quot;</span><em><span class="pre">varname</span></em><span class="pre">&quot;,</span> <em><span class="pre">val</span></em> <span class="pre">[,</span> <em><span class="pre">arrayindex</span></em><span class="pre">])</span></code></dd>
+<dt>Description:</dt><dd>sets the parameter in the standard to <em>val</em>. If the variable is
+an array, then the optional index can be specified.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.get">
+<code class="descclassname">MechanismStandard.</code><code class="descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.get" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">ms.get(&quot;varname&quot;</span> <span class="pre">[,</span> <span class="pre">arrayindex])</span></code></dd>
+<dt>Description:</dt><dd>returns the value of the parameter. If the variable is actually
+a POINTER and it is nil, then return -1e300.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.save">
+<code class="descclassname">MechanismStandard.</code><code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.save" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.save(&quot;name&quot;)</span></code></dd>
+<dt>Description:</dt><dd>For saving the state of a MechanismStandard to a session file.
+The name will be the objectvar that the instance gets assigned to
+when the session file is read.
+See pointman.hoc for an example of usage.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.count">
+<code class="descclassname">MechanismStandard.</code><code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.count" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">cnt</span> <span class="pre">=</span> <span class="pre">ms.count()</span></code></dd>
+<dt>Description:</dt><dd>Returns the number of parameter names of the mechanism
+represented by the MechanismStandard.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="MechanismStandard.name">
+<code class="descclassname">MechanismStandard.</code><code class="descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#MechanismStandard.name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ms.name(strdef)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">size</span> <span class="pre">=</span> <span class="pre">ms.name(strdef,</span> <span class="pre">i)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>The single arg form assigns the name of the mechanism to the strdef
+variable.</p>
+<p>When the i parameter is present (i ranges from 0 to ms.count()-1) the
+strdef parameter gets assigned the ith name of the mechanism represented
+by the MechanismStandard. In addition the return value is the
+array size of that parameter (1 for a scalar).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="internals.html" class="btn btn-neutral float-right" title="Debugging and Internals Access" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="projectmanagement.html" class="btn btn-neutral float-left" title="Project Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

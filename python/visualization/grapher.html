@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Grapher &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="PlotShape" href="plotshapeclass.html" />
+    <link rel="prev" title="Graph" href="graph.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON Python documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#visualization">Visualization</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="glyph.html">Glyph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph.html">Graph</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Grapher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plot">Plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eraseall">EraseAll</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#steps">Steps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#independentvar">IndependentVar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generator">Generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#indepbegin">IndepBegin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#independ">IndepEnd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xexpr">Xexpr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="plotshapeclass.html">PlotShape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotshape.html">PlotShape Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rvarplt.html">RangeVarPlot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notify.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gui.html">GUI Look And Feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shapebox.html">MenuExplore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldgrph.html">Obsolete Plotting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../hoc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON Python documentation</a> &raquo;</li>
+        
+      <li>Grapher</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/hoc/visualization/grapher.html" > Switch to HOC</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/python/visualization/grapher.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="grapher">
+<span id="id1"></span><h1>Grapher<a class="headerlink" href="#grapher" title="Permalink to this headline">¶</a></h1>
+<p>A tool for graphing any set of expressions as a function of
+an independent variable.</p>
+<p>The Grapher is similar to a “for” statement.
+It iterates the independent variable over the range specified by the
+“Indep Begin” and “Indep End” field editors using “Steps” steps.
+At each step, it executes the statements
+specified in the Generator field (if any), and plots the values that are
+specified in the Graph scene from the <a class="reference internal" href="gui.html#gui-plotwhat"><span class="std std-ref">PlotWhat</span></a> menu item at the x-axis
+location specified by the value of the “X-expr” (normally the same
+as the independent variable).</p>
+<p>These y values and X-expr can be variable names or function names.</p>
+<p>To pop up the widget say:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">h</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s2">&quot;grapher.hoc&quot;</span><span class="p">)</span>  <span class="c1"># reads this file</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">makegrapher</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>            <span class="c1"># pop up a new grapher</span>
+</pre></div>
+</div>
+<p>Creating a grapher using</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="n">h</span><span class="o">.</span><span class="n">makegrapher</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>pops up a short form of the Grapher without “Indep Begin”, “Indep
+End”, or “X-expr” buttons. The limits are defined by the x-axis length
+of the current view.</p>
+<p>Graphers may be saved in a .ses file.</p>
+<p>To use the grapher widget:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>enter the independent variable name (press the button) eg. x</li>
+<li>enter the begin, end, and steps values.</li>
+<li>specify the y variables:
+in the graph panel press the left button and select “Plot What?”
+and enter a HOC expression or variable to plot. eg. sin(x)
+You can do this several times to plot several expressions.</li>
+<li>If the y variables are actual functions of the independent variable
+press the Plot button to see the plot. If the y variables
+are in fact just variables then you will need a generator
+statement that tells how to compute the y variables given
+a value of the independent variable. eg. Just for fun you can
+try entering the generator statement: <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">x,</span> <span class="pre">sin(x)</span></code></li>
+</ol>
+</div></blockquote>
+<p>Example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    Example 1: plot sin(t)
+    1) PlotWhat: sin(t)
+    2) Plot
+
+    Example 2: plot of steady state m process in nrniv
+    1) Independent Var: x
+    2) Generator: rates_hh(x)
+    3) IndepBegin -100, Indep End 50
+    4) Set View: x: -100 50  y: 0 1
+    5) PlotWhat: minf_hh
+    6) Plot
+
+    Example 3: In context of Neuron Main Menu simulation
+    0) pop up grapher by selecting appropriate &quot;New Graph&quot; submenu item.
+    1) Independent Var: v_init
+    2) Generator: init()
+    3) IndepBegin -100, Indep End 50
+    4) SetView: x: -100 50 y:cancel
+    5) PlotWhat: &lt;any set of variables in any section&gt;
+    6) Plot
+
+    Example 4: peak inward current during voltage clamp
+    Replace the standard: proc advance() {fadvance()} with a procedure
+    that stores the peak inward current (and possibly sets stoprun=1
+    when you are past the peak). Then in the Grapher set Steps to 20
+    the independent variable to the voltage clamp amplitude and the
+    generator to run().
+</pre></div>
+</div>
+<div class="section" id="plot">
+<h2>Plot<a class="headerlink" href="#plot" title="Permalink to this headline">¶</a></h2>
+<p>For each value of the independent variable the generator statement
+is executed (if it exists) and the PlotWhat expressions are plotted.</p>
+</div>
+<div class="section" id="eraseall">
+<h2>EraseAll<a class="headerlink" href="#eraseall" title="Permalink to this headline">¶</a></h2>
+<p>Removes all expressions from the graph.</p>
+</div>
+<div class="section" id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<p>Number of independent variable values used to make the graph.
+For the small grapher, the range of the independent variable is
+the length of the x-axis.</p>
+</div>
+<div class="section" id="independentvar">
+<h2>IndependentVar<a class="headerlink" href="#independentvar" title="Permalink to this headline">¶</a></h2>
+<p>Dialog appears requesting the variable to be used as the independent
+variable (default t). If the variable is undefined it will
+be created.</p>
+</div>
+<div class="section" id="generator">
+<h2>Generator<a class="headerlink" href="#generator" title="Permalink to this headline">¶</a></h2>
+<p>A statement to be executed after setting a value of the independent
+variable but before plotting the expressions. This allows plotting
+of variables that depend implicitly on the independent variable.</p>
+</div>
+<div class="section" id="indepbegin">
+<h2>IndepBegin<a class="headerlink" href="#indepbegin" title="Permalink to this headline">¶</a></h2>
+<p>For a grapher made with <code class="docutils literal notranslate"><span class="pre">h.makegrapher(1)</span></code>, specifies initial value
+of the independent variable.</p>
+</div>
+<div class="section" id="independ">
+<h2>IndepEnd<a class="headerlink" href="#independ" title="Permalink to this headline">¶</a></h2>
+<p>Specifies final value of independent variable.</p>
+</div>
+<div class="section" id="xexpr">
+<h2>Xexpr<a class="headerlink" href="#xexpr" title="Permalink to this headline">¶</a></h2>
+<p>A grapher made with <code class="docutils literal notranslate"><span class="pre">h.makegrapher(1)</span></code> allows separate specification of
+independent variable and the x axis plot functions. This allows
+phase plane plots. The Xexpr may be any function of the independent
+variable or an implicit function if a generator statement exists.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="plotshapeclass.html" class="btn btn-neutral float-right" title="PlotShape" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="graph.html" class="btn btn-neutral float-left" title="Graph" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,629 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>NEURON Extension to NMODL &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Networks" href="../network.html" />
+    <link rel="prev" title="NMODL" href="nmodl.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../index.html#model-specification">Model Specification</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../guitools.html">Model Specification GUI Tools</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../programmatic.html">Programmatic Model Specification</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../topology.html">Topology</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../ions.html">Ions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../mechanisms.html">Dynamics (Channels, etc…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../rxd.html">Basic Reaction-Diffusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../network.html">Networks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../electrod.html">Electrode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../mechtype.html">MechanismType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../obsoletestimuli.html">Obsolete Stimuli</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+          <li><a href="../../programmatic.html">Programmatic Model Specification</a> &raquo;</li>
+        
+          <li><a href="../mechanisms.html">Dynamics (Channels, etc…)</a> &raquo;</li>
+        
+          <li><a href="nmodl.html">NMODL</a> &raquo;</li>
+        
+      <li>NEURON Extension to NMODL</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/modelspec/programmatic/mechanisms/nmodl2.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../../_sources/hoc/modelspec/programmatic/mechanisms/nmodl2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="neuron-extension-to-nmodl">
+<span id="nmodltoneuron"></span><span id="nmodl2"></span><h1>NEURON Extension to NMODL<a class="headerlink" href="#neuron-extension-to-nmodl" title="Permalink to this headline">¶</a></h1>
+<p>This section describes the special NEURON block that has been added to
+the standard model description language in order to allow translation of
+a model into a form suitable for linking with NEURON.</p>
+<p>The keyword NEURON introduces a special block which contains statements
+that tell NMODL how to organize the variables for access at the NEURON
+user level. It declares:</p>
+<ul class="simple">
+<li>Which names are to be treated as range variables.</li>
+<li>Which names are to be treated as global variables.</li>
+<li>The names of all the ions used in the model and how the corresponding
+concentrations, current, and reversal potential are to be treated.</li>
+<li>The suffix to be used for all variables in the model so that they
+do not conflict with variables in other models.</li>
+<li>Whether the model is for a point process such as a synapse or
+a distributed process with density along an entire section such as a channel
+density.</li>
+<li>Which names will be connected to external variables. (See “Importing
+variables from other mechanisms”.)</li>
+</ul>
+<p>The syntax is (each statement can occur none or more times) :</p>
+<div class="section" id="neuron">
+<h2>Neuron<a class="headerlink" href="#neuron" title="Permalink to this headline">¶</a></h2>
+<p>Description:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>NEURON{
+   SUFFIX ...
+   RANGE ...
+   GLOBAL ...
+   NONSPECIFIC_CURRENT ...
+   USEION ... READ ... WRITE ... VALENCE real
+   POINT_PROCESS ...
+   POINTER ...
+   EXTERNAL ...
+}
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="suffix">
+<h2>Suffix<a class="headerlink" href="#suffix" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd>The suffix, “<code class="docutils literal notranslate"><span class="pre">_name</span></code>” is appended to all variables, functions, and
+procedures that are accessible from the user level of NEURON. If the <code class="docutils literal notranslate"><span class="pre">SUFFIX</span></code>
+statement is absent, the file name is used as the suffix (with the addition
+of an underscore character).  If there is a <a class="reference internal" href="../../../../python/modelspec/programmatic/mechanisms/mech.html#mech"><span class="std std-ref">Point Processes and Artificial Cells</span></a> statement,
+that name
+is used as the suffix.  Suffixes prevent overloading of names at the user
+level of NEURON.  At some point in the future I may add something similar
+to the access statement which will allow the omission of the suffix for a
+specified mechanism.
+Note that suffixes are not used within the model
+description file itself. If the SUFFIX <em>name</em> is the word, “<code class="docutils literal notranslate"><span class="pre">nothing</span></code>”,
+then no suffix is used for
+variables, functions, and procedures explicitly declared in the <code class="file docutils literal notranslate"><span class="pre">.mod</span></code> file.
+However, the mechanism name will be the base file name.
+This is useful if you know that no conflict of names
+will exist or if the <code class="file docutils literal notranslate"><span class="pre">.mod</span></code> file is primarily used to create functions callable
+from NEURON by the user and you want to specify those function names exactly.</dd>
+</dl>
+</div>
+<div class="section" id="range">
+<h2>Range<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd>These names will be become range variables. Do not add suffixes here.
+The names should also be declared in the normal <code class="docutils literal notranslate"><span class="pre">PARAMETER</span></code> or <code class="docutils literal notranslate"><span class="pre">ASSIGNED</span></code>
+statement outside
+of the <code class="docutils literal notranslate"><span class="pre">NEURON</span></code> block.  Parameters that do not appear in a <code class="docutils literal notranslate"><span class="pre">NEURON</span> <span class="pre">RANGE</span></code>
+statement will become global variables.
+Assigned variables that do not appear in this statement or in the
+<code class="docutils literal notranslate"><span class="pre">NEURON</span> <span class="pre">GLOBAL</span></code> statement will be hidden from the user.
+When a mechanism is inserted in
+a section, the values of these range variables are set to the values
+specified in the normal <code class="docutils literal notranslate"><span class="pre">PARAMETER</span></code> statement outside the
+<code class="docutils literal notranslate"><span class="pre">NEURON</span></code> block.</dd>
+</dl>
+</div>
+<div class="section" id="global">
+<h2>Global<a class="headerlink" href="#global" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd>These names, which should be declared elsewhere as <code class="docutils literal notranslate"><span class="pre">ASSIGNED</span></code> or <code class="docutils literal notranslate"><span class="pre">PARAMETER</span></code>
+variables,
+become global variables instead of range variables.  Notice here that
+the default for a <code class="docutils literal notranslate"><span class="pre">PARAMETER</span></code> variable is to become a global variable whereas
+the default for an <code class="docutils literal notranslate"><span class="pre">ASSIGNED</span></code> variable is to become hidden at the user level.</dd>
+</dl>
+</div>
+<div class="section" id="nonspecific-current">
+<h2>Nonspecific Current<a class="headerlink" href="#nonspecific-current" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd>This signifies that we are calculating local currents which get added
+to the total membrane current but will not contribute to any particular
+ionic concentration.  This current should be assigned a value
+after any <code class="docutils literal notranslate"><span class="pre">SOLVE</span></code> statement but before the end of the <code class="docutils literal notranslate"><span class="pre">BREAKPOINT</span></code> block.
+This name will be hidden at the user level unless it appears in a
+<code class="docutils literal notranslate"><span class="pre">NEURON</span> <span class="pre">RANGE</span></code> statement.</dd>
+</dl>
+</div>
+<div class="section" id="useion">
+<h2>Useion<a class="headerlink" href="#useion" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd><p>This statement declares that a  specific ionic species will be used within
+this model. The built-in
+HH channel uses the ions <code class="docutils literal notranslate"><span class="pre">na</span></code> and <code class="docutils literal notranslate"><span class="pre">k</span></code>. Different models which deal with
+the same ionic species should use the same names so that total concentrations
+and currents can be computed consistently. The ion, <code class="docutils literal notranslate"><span class="pre">Na</span></code>, is different from
+<code class="docutils literal notranslate"><span class="pre">na</span></code>.  The example models using calcium call it, <code class="docutils literal notranslate"><span class="pre">ca</span></code>. If an ion is
+declared, suppose it is called,
+<code class="docutils literal notranslate"><span class="pre">ion</span></code>, then a separate mechanism is internally created
+within NEURON, denoted by <code class="docutils literal notranslate"><span class="pre">ion</span></code>, and automatically inserted whenever
+the “using” mechanism is inserted.  The variables of the mechanism
+called <code class="docutils literal notranslate"><span class="pre">ion</span></code> are
+outward total current carried by this ion, <code class="docutils literal notranslate"><span class="pre">iion</span></code>; internal and
+external concentrations of this ion, <code class="docutils literal notranslate"><span class="pre">ioni</span></code> and <code class="docutils literal notranslate"><span class="pre">iono</span></code>; and
+reversal potential of this ion, <code class="docutils literal notranslate"><span class="pre">eion</span></code>.  These ion range variables do
+NOT have suffixes.
+Prior to 9/94 the reversal potential was not automatically calculated
+from the Nernst equation but, if it was <em>used</em> it had to be set by
+the user or by an assignment in some mechanism (normally the Nernst equation).
+The usage of ionic concentrations and reversal potential has been changed
+to more naturally reflect their physiological meaning while remaining
+reasonably efficient computationally.</p>
+<p>The new method governs the behaviour of the reversal potential and
+concentrations with respect to their treatment by the GUI (whether
+they appear in PARAMETER, ASSIGNED, or STATE panels; indeed, whether they
+appear at all in these panels) and when the reversal potential
+is automatically computed from the concentrations using the Nernst
+equation. The decision about what style to use happens on a per section
+basis and is determined by the set of mechanisms inserted within the
+section. The rules are defined in the reference to the function
+ion_style(). Three cases are noteworthy.</p>
+</dd>
+</dl>
+<div class="section" id="read">
+<h3>Read<a class="headerlink" href="#read" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Assume only one model is inserted in a section.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        USEION ca READ eca
+</pre></div>
+</div>
+<p>Then eca will be treated as a PARAMETER and cai/cao will not
+appear in the parameter panels created by the gui.</p>
+<p>Now insert another model at the same section that has</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        USEION ca READ cai, cao
+</pre></div>
+</div>
+<p>Then 1) eca will be “promoted” to an ASSIGNED variable, 2) cai/cao
+will be treated as constant PARAMETER’s, and 3) eca will be computed
+from the Nernst equation when finitialize() is called.</p>
+</div></blockquote>
+</div>
+<div class="section" id="write">
+<h3>Write<a class="headerlink" href="#write" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Lastly, insert a final model at the same location in addition to the
+first two.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        USEION ca WRITE cai, cao
+</pre></div>
+</div>
+<p>Then  eca will still be treated as an ASSIGNED variable but will be
+computed not only by finitialize but on every call to fadvance().
+Also cai/cao will be initialized to the global variables
+cai0_ca_ion and cao0_ca_ion respectively and treated as STATE’s by the
+graphical interface.</p>
+<p>The idea is for the system to automatically choose a style which is
+sensible in terms of dependence of reversal potential on concentration
+and remains efficient.</p>
+<p>Since the nernst equation is now automatically used as needed it is
+necessary to supply the valence (charge carried by the ion) except for
+the privileged ions: na, k, ca which have the VALENCE 1, 1, 2 respectively.</p>
+<p>Only the ion names <code class="docutils literal notranslate"><span class="pre">na</span></code>, <code class="docutils literal notranslate"><span class="pre">k</span></code>, and <code class="docutils literal notranslate"><span class="pre">ca</span></code> are initialized to a
+physiologically meaningful value — and those may not be right for
+your purposes.  Concentrations and reversal potentials should be considered
+parameters unless explicitly calculated by some mechanism.</p>
+</div></blockquote>
+</div>
+<div class="section" id="valence">
+<h3>Valence<a class="headerlink" href="#valence" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>The <code class="docutils literal notranslate"><span class="pre">READ</span></code> list of a <code class="docutils literal notranslate"><span class="pre">USEION</span></code> specifies those ionic variables which
+will be used to calculate other values but is not calculated itself.
+The <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> list of a <code class="docutils literal notranslate"><span class="pre">USEION</span></code> specifies those ionic variables which
+will be calculated within this mechanism. Normally, a channel will read
+the concentration or reversal potential variables and write a current.
+A mechanism that calculates concentrations will normally read a current
+and write the intracellular and/or extracellular; it is no longer necessary
+to ever write the reversal potential as that will be automatically computed
+via the nernst equation.
+It usually does not make sense to both read and
+write the same ionic concentrations.
+It is possible to READ and WRITE currents.
+One can imagine,  a large calcium
+model which would <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> all the ion variables (including current)
+and READ the ion current.
+And one can imagine
+models which <code class="docutils literal notranslate"><span class="pre">READ</span></code> some ion variables and do not <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> any.
+It would be an error if more than one mechanism at the same location tried
+to WRITE the same concentration.</p>
+<p>A bit of implementation specific discussion may be in order here.
+All the statements after the <code class="docutils literal notranslate"><span class="pre">SOLVE</span></code> statement in the
+<code class="docutils literal notranslate"><span class="pre">BREAKPOINT</span></code> block are
+collected to form a function which is called during the construction of
+the charge conservation matrix equation.  This function is called
+several times in order to compute the current and conductance  to be added
+into the matrix equation.  This function is never called if you are not
+writing any current.  The <code class="docutils literal notranslate"><span class="pre">SOLVE</span></code> statement is executed after the new voltages
+have been computed in order to integrate the states over the time step, <code class="docutils literal notranslate"><span class="pre">dt</span></code>.
+Local static variables get appropriate copies of the proper ion variables
+for use in the mechanism. Ion variables get updated on exit from these
+functions such that WRITE currents are added to ion currents.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="point-process">
+<h2>Point_Process<a class="headerlink" href="#point-process" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd><p>The <code class="docutils literal notranslate"><span class="pre">READ</span></code> list of a <code class="docutils literal notranslate"><span class="pre">USEION</span></code> specifies those ionic variables which
+will be used to calculate other values but is not calculated itself.
+The <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> list of a <code class="docutils literal notranslate"><span class="pre">USEION</span></code> specifies those ionic variables which
+will be calculated within this mechanism. Normally, a channel will read
+the concentration or reversal potential variables and write a current.
+A mechanism that calculates concentrations will normally read a current
+and write the intracellular and/or extracellular; it is no longer necessary
+to ever write the reversal potential as that will be automatically computed
+via the nernst equation.
+It usually does not make sense to both read and
+write the same ionic concentrations.
+It is possible to READ and WRITE currents.
+One can imagine,  a large calcium
+model which would <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> all the ion variables (including current)
+and READ the ion current.
+And one can imagine
+models which <code class="docutils literal notranslate"><span class="pre">READ</span></code> some ion variables and do not <code class="docutils literal notranslate"><span class="pre">WRITE</span></code> any.
+It would be an error if more than one mechanism at the same location tried
+to WRITE the same concentration.</p>
+<p>A bit of implementation specific discussion may be in order here.
+All the statements after the SOLVE statement in the BREAKPOINT block are
+collected to form a function which is called during the construction of
+the charge conservation matrix equation.  This function is called
+several times in order to compute the current and conductance  to be added
+into the matrix equation.  This function is never called if you are not
+writing any current.  The SOLVE statement is executed after the new voltages
+have been computed in order to integrate the states over the time step, <code class="docutils literal notranslate"><span class="pre">dt</span></code>.
+Local static variables get appropriate copies of the proper ion variables
+for use in the mechanism. Ion variables get updated on exit from these
+functions such that WRITE currents are added to ion currents.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="pointer">
+<h2>Pointer<a class="headerlink" href="#pointer" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd>These names are pointer references to variables outside the model.
+They should be declared in the body of the description as normal variables
+with units and are used exactly like normal variables. The user is responsible
+for setting these pointer variables to actual variables at the
+hoc interpreter level. Actual variables are normal variables in other
+mechanisms, membrane potential, or any hoc variable. See below for how this
+connection is made. If a POINTER variable is ever used without being
+set to the address of an actual variable, NEURON may crash with a memory
+reference error, or worse, produce wrong results. Unfortunately the errors
+that arise can be quite subtle. For example, if you set a POINTER correctly
+to a mechanism variable in section a. And then change the number of segments in
+section a, the POINTER will be invalid because the memory used by
+section a is freed and might be used for a totally different purpose. It
+is up to the user to reconnect the POINTER to a valid actual variable.</dd>
+</dl>
+</div>
+<div class="section" id="external">
+<h2>External<a class="headerlink" href="#external" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Description:</dt><dd><p>These names, which should be declared elsewhere as <code class="docutils literal notranslate"><span class="pre">ASSIGNED</span></code>
+or <code class="docutils literal notranslate"><span class="pre">PARAMETER</span></code>
+variables allow global variables in other models or NEURON c files to be
+used in this model. That is, the definition of this variable must appear
+in some other file. Note that if the definition appeared in another mod file
+this name should explicitly contain the proper suffix of that model.
+You may also call functions from other models (but do not ignore the warning;
+make sure you declare them as</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>extern double fname_othermodelsuffix();
+</pre></div>
+</div>
+<p>in a <code class="docutils literal notranslate"><span class="pre">VERBATIM</span></code> block and use them with the proper suffix.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="connecting-mechanisms-together">
+<span id="connectingmechanismstogether"></span><h2>Connecting Mechanisms Together<a class="headerlink" href="#connecting-mechanisms-together" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Occasionally mechanisms need information from other mechanisms which may
+be located elsewhere in the neuron. Connecting pre and post synaptic
+point mechanisms is an obvious example. In the same vein, it may be useful
+to call a function from hoc which modifies some mechanism variables
+at a specific
+location. (Normally, mechanism functions callable from HOC should not
+modify range variables since the function does not know where the mechanism
+data for a segment is located. Normally, the pointers are set when NEURON
+calls the <code class="docutils literal notranslate"><span class="pre">BREAKPOINT</span></code> block and the associated <code class="docutils literal notranslate"><span class="pre">SOLVE</span></code> blocks.)</p>
+<p>One kind of connection between mechanisms at the same point is through
+ionic mechanisms invoked with the USEION statement. In fact this is
+entirely adequate for local communication although treating an arbitrary
+variable as an ionic concentration may be conceptually strained.
+However, it does not solve the problem of communication between mechanisms
+at different points.</p>
+</div></blockquote>
+<div class="section" id="pointer-communication">
+<h3>Pointer-Communication<a class="headerlink" href="#pointer-communication" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Description:</dt><dd><p>Basically what is needed is a way to implement the hoc statement</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>section1.var1_mech1(x1) =  section2.var2_mech2(x2)
+</pre></div>
+</div>
+<p>efficiently from within a mechanism without having to explicitly connect them
+through assignment at the HOC level everytime the <code class="samp docutils literal notranslate"><em><span class="pre">var2</span></em></code> might change.</p>
+<p>First of all, the variables which point to the values in some other mechanism
+are declared within the NEURON block via</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>NEURON {
+   POINTER var1, var2, ...
+}
+</pre></div>
+</div>
+<p>These variables are used exactly like normal variables in the sense that
+they can be used on the left or right hand side of assignment statements
+and used as arguments in function calls. They can also be accessed from HOC
+just like normal variables.
+It is essential that the user set up the pointers to point to the correct
+variables. This is done by first making sure that the proper mechanisms
+are inserted into the sections and the proper point processes are actually
+“located” in a section. Then, at the hoc level each POINTER variable
+that exists should be set up via the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>        setpointer pointer, variable
+</pre></div>
+</div>
+<p>where pointer and variable have enough implicit/explicit information to
+determine their exact segment and mechanism location. For a continuous
+mechanism, this means the section and location information. For a point
+process it means the object. The variable may also be any hoc variable
+or voltage, <code class="samp docutils literal notranslate"><em><span class="pre">v</span></em></code>.</p>
+<p>For example, consider a synapse which requires a presynaptic potential
+in order to calculate the amount of transmitter release. Assume the
+declaration in the presynaptic model</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>NEURON { POINTPROCESS Syn   POINTER vpre }
+</pre></div>
+</div>
+<p>Then</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objref syn
+somedendrite {syn = new Syn(.8)}
+setpointer syn.vpre, axon.v(1)
+</pre></div>
+</div>
+<p>will allow the syn object to know the voltage at the distal end of the axon
+section. As a variation on that example, if one supposed that the synapse
+needed the presynaptic transmitter concentration (call it <code class="samp docutils literal notranslate"><em><span class="pre">tpre</span></em></code>) calculated
+from a point process model called “release” (with object reference
+<code class="samp docutils literal notranslate"><em><span class="pre">rel</span></em></code>, say) then the
+statement would be</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>setpointer syn.tpre, rel.AcH_release
+</pre></div>
+</div>
+<p>The caveat is that tight coupling between states in different models
+may cause numerical instability. When this happens,
+merging models into one larger
+model may eliminate the instability.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../network.html" class="btn btn-neutral float-right" title="Networks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="nmodl.html" class="btn btn-neutral float-left" title="NMODL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

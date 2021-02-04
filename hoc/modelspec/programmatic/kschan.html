@@ -1,0 +1,760 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>KSChan &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="LinearMechanism" href="linmod.html" />
+    <link rel="prev" title="HOC-based Mechanisms" href="hocmech.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#model-specification">Model Specification</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../guitools.html">Model Specification GUI Tools</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../programmatic.html">Programmatic Model Specification</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="topology.html">Topology</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ions.html">Ions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="mechanisms.html">Dynamics (Channels, etc…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rxd.html">Basic Reaction-Diffusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">Networks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrod.html">Electrode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mechtype.html">MechanismType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="obsoletestimuli.html">Obsolete Stimuli</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+          <li><a href="../programmatic.html">Programmatic Model Specification</a> &raquo;</li>
+        
+          <li><a href="mechanisms.html">Dynamics (Channels, etc…)</a> &raquo;</li>
+        
+      <li>KSChan</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/modelspec/programmatic/kschan.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/hoc/modelspec/programmatic/kschan.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><dl class="docutils"><dt><a href="#KSChan" title="Link to this definition">KSChan</a></dt><dd><a href="#KSChan.add_hhstate" title="Link to this definition">add_hhstate</a> &middot; <a href="#KSChan.add_ksstate" title="Link to this definition">add_ksstate</a> &middot; <a href="#KSChan.add_transition" title="Link to this definition">add_transition</a> &middot; <a href="#KSChan.erev" title="Link to this definition">erev</a> &middot; <a href="#KSChan.gate" title="Link to this definition">gate</a> &middot; <a href="#KSChan.gmax" title="Link to this definition">gmax</a> &middot; <a href="#KSChan.ion" title="Link to this definition">ion</a> &middot; <a href="#KSChan.iv_type" title="Link to this definition">iv_type</a> &middot; <a href="#KSChan.ligand" title="Link to this definition">ligand</a> &middot; <a href="#KSChan.name" title="Link to this definition">name</a> &middot; <a href="#KSChan.ngate" title="Link to this definition">ngate</a> &middot; <a href="#KSChan.nligand" title="Link to this definition">nligand</a> &middot; <a href="#KSChan.nstate" title="Link to this definition">nstate</a> &middot; <a href="#KSChan.ntrans" title="Link to this definition">ntrans</a> &middot; <a href="#KSChan.pr" title="Link to this definition">pr</a> &middot; <a href="#KSChan.remove_state" title="Link to this definition">remove_state</a> &middot; <a href="#KSChan.remove_transition" title="Link to this definition">remove_transition</a> &middot; <a href="#KSChan.setstructure" title="Link to this definition">setstructure</a> &middot; <a href="#KSChan.state" title="Link to this definition">state</a> &middot; <a href="#KSChan.trans" title="Link to this definition">trans</a></dd></dl></p><p><dl class="docutils"><dt><a href="#KSGate" title="Link to this definition">KSGate</a></dt><dd><a href="#KSGate.index" title="Link to this definition">index</a> &middot; <a href="#KSGate.nstate" title="Link to this definition">nstate</a> &middot; <a href="#KSGate.power" title="Link to this definition">power</a> &middot; <a href="#KSGate.sindex" title="Link to this definition">sindex</a></dd></dl></p><p><dl class="docutils"><dt><a href="#KSState" title="Link to this definition">KSState</a></dt><dd><a href="#KSState.frac" title="Link to this definition">frac</a> &middot; <a href="#KSState.gate" title="Link to this definition">gate</a> &middot; <a href="#KSState.index" title="Link to this definition">index</a> &middot; <a href="#KSState.name" title="Link to this definition">name</a></dd></dl></p><p><dl class="docutils"><dt><a href="#KSTrans" title="Link to this definition">KSTrans</a></dt><dd><a href="#KSTrans.ab" title="Link to this definition">ab</a> &middot; <a href="#KSTrans.f" title="Link to this definition">f</a> &middot; <a href="#KSTrans.ftype" title="Link to this definition">ftype</a> &middot; <a href="#KSTrans.index" title="Link to this definition">index</a> &middot; <a href="#KSTrans.inftau" title="Link to this definition">inftau</a> &middot; <a href="#KSTrans.ligand" title="Link to this definition">ligand</a> &middot; <a href="#KSTrans.parm" title="Link to this definition">parm</a> &middot; <a href="#KSTrans.set_f" title="Link to this definition">set_f</a> &middot; <a href="#KSTrans.src" title="Link to this definition">src</a> &middot; <a href="#KSTrans.target" title="Link to this definition">target</a> &middot; <a href="#KSTrans.type" title="Link to this definition">type</a></dd></dl></p><div class="section" id="kschan">
+<span id="id1"></span><h1>KSChan<a class="headerlink" href="#kschan" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="KSChan">
+<em class="property">class </em><code class="descname">KSChan</code><a class="headerlink" href="#KSChan" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kschan</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">KSChan()</span></code></dd>
+<dt>Description:</dt><dd><p>Declare and manage a new density channel type which can
+be instantiated in sections with the <a class="reference internal" href="../../../python/programming/ockeywor.html#keyword-insert"><span class="std std-ref">insert</span></a>
+statement. After the type comes into existence it
+is always a valid type and the conductance style,
+ligands, name, gating functions, etc can be changed
+at any time. The type cannot be destroyed.</p>
+<p>This is an extension of the KSChan managed by the
+Java catacomb channel builder tool
+for the past several
+years. The primary functional extension is the
+ability to define HH-style gates in addition to
+kinetic scheme gates. The administrative extensions
+allowed a more convenient re-implementation of the
+channel builder gui in HOC — albeit substantially
+similar. The KSChan <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.setstructure" title="KSChan.setstructure"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.setstructure()</span></code></a> method
+uses a slightly modified vector format so the old
+Java channelbuilder tool will not work without
+updating the Java implementation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.setstructure">
+<code class="descclassname">KSChan.</code><code class="descname">setstructure</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.setstructure" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kschan.setstructure(vec)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.remove_state">
+<code class="descclassname">KSChan.</code><code class="descname">remove_state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.remove_state" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">kschan.remove_state(index)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">kschan.remove_state(ksstate)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.remove_transition">
+<code class="descclassname">KSChan.</code><code class="descname">remove_transition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.remove_transition" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">kschan.remove_transition(index)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">kschan.remove_transition(kstrans)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.ngate">
+<code class="descclassname">KSChan.</code><code class="descname">ngate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.ngate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">kschan.ngate()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.nstate">
+<code class="descclassname">KSChan.</code><code class="descname">nstate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.nstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">kschan.nstate()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.ntrans">
+<code class="descclassname">KSChan.</code><code class="descname">ntrans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.ntrans" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">kschan.ntrans()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.nligand">
+<code class="descclassname">KSChan.</code><code class="descname">nligand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.nligand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">kschan.nligand()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.pr">
+<code class="descclassname">KSChan.</code><code class="descname">pr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.pr" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kschan.pr()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.iv_type">
+<code class="descclassname">KSChan.</code><code class="descname">iv_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.iv_type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">kschan.iv_type()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">kschan.iv_type(type)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.gmax">
+<code class="descclassname">KSChan.</code><code class="descname">gmax</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.gmax" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">kschan.gmax()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">kschan.gmax(val)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.erev">
+<code class="descclassname">KSChan.</code><code class="descname">erev</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.erev" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">kschan.erev()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">kschan.erev(val)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.add_hhstate">
+<code class="descclassname">KSChan.</code><code class="descname">add_hhstate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.add_hhstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksstate</span> <span class="pre">=</span> <span class="pre">kschan.add_hhstate(name)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.add_ksstate">
+<code class="descclassname">KSChan.</code><code class="descname">add_ksstate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.add_ksstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksstate</span> <span class="pre">=</span> <span class="pre">kschan.add_ksstate(name)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.add_transition">
+<code class="descclassname">KSChan.</code><code class="descname">add_transition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.add_transition" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">kstrans</span> <span class="pre">=</span> <span class="pre">kschan.add_transition(src_index,</span> <span class="pre">target_index)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">kstrans</span> <span class="pre">=</span> <span class="pre">kschan.add_transition(src_ksstate,</span> <span class="pre">target_ksstate)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.trans">
+<code class="descclassname">KSChan.</code><code class="descname">trans</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.trans" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">kstrans</span> <span class="pre">=</span> <span class="pre">kschan.trans(index)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">kstrans</span> <span class="pre">=</span> <span class="pre">kschan.trans(src_ksstate,</span> <span class="pre">target_ksstate)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.state">
+<code class="descclassname">KSChan.</code><code class="descname">state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.state" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksstate</span> <span class="pre">=</span> <span class="pre">kschan.state(index)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.gate">
+<code class="descclassname">KSChan.</code><code class="descname">gate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.gate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksgate</span> <span class="pre">=</span> <span class="pre">kschan.gate(index)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.name">
+<code class="descclassname">KSChan.</code><code class="descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kschan.name()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kschan.name(string)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.ion">
+<code class="descclassname">KSChan.</code><code class="descname">ion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.ion" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kschan.ion()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kschan.ion(string)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSChan.ligand">
+<code class="descclassname">KSChan.</code><code class="descname">ligand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSChan.ligand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kschan.ligand(index)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py class">
+<dt id="KSState">
+<em class="property">class </em><code class="descname">KSState</code><a class="headerlink" href="#KSState" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd>cannot be created directly</dd>
+<dt>Description:</dt><dd>A helper class for <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan" title="KSChan"><code class="xref py py-class docutils literal notranslate"><span class="pre">KSChan</span></code></a>. KSChan creates and destroys
+these objects internally. It cannot be created directly
+with the “new” keyword. An error message will be printed
+if a hoc reference is used after KSChan has destroyed
+the referenced KSState.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.add_hhstate" title="KSChan.add_hhstate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.add_hhstate()</span></code></a>, <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.add_ksstate" title="KSChan.add_ksstate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.add_ksstate()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSState.frac">
+<code class="descclassname">KSState.</code><code class="descname">frac</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSState.frac" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">ksstate.frac()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">ksstate.frac(val)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSState.index">
+<code class="descclassname">KSState.</code><code class="descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSState.index" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">index</span> <span class="pre">=</span> <span class="pre">ksstate.index()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSState.gate">
+<code class="descclassname">KSState.</code><code class="descname">gate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSState.gate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksgate</span> <span class="pre">=</span> <span class="pre">ksstate.gate()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSState.name">
+<code class="descclassname">KSState.</code><code class="descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSState.name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">ksstate.name()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">ksstate.name(string)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py class">
+<dt id="KSGate">
+<em class="property">class </em><code class="descname">KSGate</code><a class="headerlink" href="#KSGate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd>cannot be created directly</dd>
+<dt>Description:</dt><dd>A helper class for <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan" title="KSChan"><code class="xref py py-class docutils literal notranslate"><span class="pre">KSChan</span></code></a>. KSChan creates and destroys
+these objects internally. It cannot be created directly
+with the “new” keyword. An error message will be printed
+if a hoc reference is used after KSChan has destroyed
+the referenced KSGate.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.gate" title="KSChan.gate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.gate()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSGate.nstate">
+<code class="descclassname">KSGate.</code><code class="descname">nstate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSGate.nstate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">ksgate.nstate()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSGate.power">
+<code class="descclassname">KSGate.</code><code class="descname">power</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSGate.power" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">ksgate.power()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">ksgate.power(i)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSGate.sindex">
+<code class="descclassname">KSGate.</code><code class="descname">sindex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSGate.sindex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">ksgate.sindex()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSGate.index">
+<code class="descclassname">KSGate.</code><code class="descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSGate.index" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">ksgate.index()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py class">
+<dt id="KSTrans">
+<em class="property">class </em><code class="descname">KSTrans</code><a class="headerlink" href="#KSTrans" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd>cannot be created directly</dd>
+<dt>Description:</dt><dd>A helper class for <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan" title="KSChan"><code class="xref py py-class docutils literal notranslate"><span class="pre">KSChan</span></code></a>. KSChan creates and destroys
+these objects internally. It cannot be created directly
+with the “new” keyword. An error message will be printed
+if a hoc reference is used after KSChan has destroyed
+the referenced KSTrans.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.add_transition" title="KSChan.add_transition"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.add_transition()</span></code></a>, <a class="reference internal" href="../../../python/modelspec/programmatic/kschan.html#KSChan.trans" title="KSChan.trans"><code class="xref py py-meth docutils literal notranslate"><span class="pre">KSChan.trans()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.set_f">
+<code class="descclassname">KSTrans.</code><code class="descname">set_f</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.set_f" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kstrans.set_f(direction,</span> <span class="pre">ftype,</span> <span class="pre">parmvec)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.index">
+<code class="descclassname">KSTrans.</code><code class="descname">index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.index" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">kstrans.index()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.type">
+<code class="descclassname">KSTrans.</code><code class="descname">type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">kstrans.type()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">kstrans.type(i)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.ftype">
+<code class="descclassname">KSTrans.</code><code class="descname">ftype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.ftype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">kstrans.ftype(direction)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.ab">
+<code class="descclassname">KSTrans.</code><code class="descname">ab</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.ab" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kstrans.ab(vvec,</span> <span class="pre">avec,</span> <span class="pre">bvec)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.inftau">
+<code class="descclassname">KSTrans.</code><code class="descname">inftau</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.inftau" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">kstrans.inftau(vvec,</span> <span class="pre">infvec,</span> <span class="pre">tauvec)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.f">
+<code class="descclassname">KSTrans.</code><code class="descname">f</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.f" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">val</span> <span class="pre">=</span> <span class="pre">kstrans.f(direction,</span> <span class="pre">v)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.src">
+<code class="descclassname">KSTrans.</code><code class="descname">src</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.src" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksstate</span> <span class="pre">=</span> <span class="pre">kstrans.src()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.target">
+<code class="descclassname">KSTrans.</code><code class="descname">target</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.target" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ksstate</span> <span class="pre">=</span> <span class="pre">kstrans.target()</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.parm">
+<code class="descclassname">KSTrans.</code><code class="descname">parm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.parm" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">parmvec</span> <span class="pre">=</span> <span class="pre">kstrans.parm(direction)</span></code></dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="KSTrans.ligand">
+<code class="descclassname">KSTrans.</code><code class="descname">ligand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#KSTrans.ligand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kstrans.ligand()</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">kstrans.ligand(string)</span></code></p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="linmod.html" class="btn btn-neutral float-right" title="LinearMechanism" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hocmech.html" class="btn btn-neutral float-left" title="HOC-based Mechanisms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

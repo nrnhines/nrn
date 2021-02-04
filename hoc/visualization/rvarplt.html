@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>RangeVarPlot &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Shape" href="shape.html" />
+    <link rel="prev" title="PlotShape Window" href="plotshape.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#visualization">Visualization</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="glyph.html">Glyph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph.html">Graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="grapher.html">Grapher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotshapeclass.html">PlotShape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotshape.html">PlotShape Window</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">RangeVarPlot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notify.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gui.html">GUI Look And Feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shapebox.html">MenuExplore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldgrph.html">Obsolete Plotting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+      <li>RangeVarPlot</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/visualization/rvarplt.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/hoc/visualization/rvarplt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><dl class="docutils"><dt><a href="#RangeVarPlot" title="Link to this definition">RangeVarPlot</a></dt><dd><a href="#RangeVarPlot.begin" title="Link to this definition">begin</a> &middot; <a href="#RangeVarPlot.color" title="Link to this definition">color</a> &middot; <a href="#RangeVarPlot.end" title="Link to this definition">end</a> &middot; <a href="#RangeVarPlot.from_vector" title="Link to this definition">from_vector</a> &middot; <a href="#RangeVarPlot.left" title="Link to this definition">left</a> &middot; <a href="#RangeVarPlot.list" title="Link to this definition">list</a> &middot; <a href="#RangeVarPlot.origin" title="Link to this definition">origin</a> &middot; <a href="#RangeVarPlot.right" title="Link to this definition">right</a> &middot; <a href="#RangeVarPlot.to_vector" title="Link to this definition">to_vector</a></dd></dl></p><div class="section" id="rangevarplot">
+<span id="rvarplt"></span><h1>RangeVarPlot<a class="headerlink" href="#rangevarplot" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="RangeVarPlot">
+<em class="property">class </em><code class="descname">RangeVarPlot</code><a class="headerlink" href="#RangeVarPlot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">RangeVarPlot(&quot;rangevar&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">RangeVarPlot(&quot;expression</span> <span class="pre">involving</span> <span class="pre">$1&quot;)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Class for making a space plot. eg. voltage as function of path between
+two points on a cell.  For plotting, an object of this type needs
+to be inserted in a Graph with
+<code class="docutils literal notranslate"><span class="pre">g.addobject(rvp)</span></code>
+By default, the location of the path nearest the root is location 0
+(the origin) of the space plot.</p>
+<p>If the <em>rangevar</em> does not exist at certain places in the path it
+is assumed to have a value of 0.</p>
+<p>The first form where <em>rangevar</em> is “<em>v</em>” or “<em>m_hh</em>”, etc. is very
+efficient since the object can store pointers to the variables
+for fast plotting.</p>
+<p>The second form is much slower since the expression
+must be executed by the interpreter for each point along the path
+for each plot.  Execution of the expression is equivalent to
+<code class="docutils literal notranslate"><span class="pre">forsec</span> <span class="pre">seclist</span></code> for (<em>x</em>) f(<em>x</em>)
+where the expression is the body of f. (Hence the use of $1 to
+denote the arc length position of the (temporary
+currently accessed section.)</p>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/modelspec/programmatic/topology/geometry.html#distance" title="distance"><code class="xref py py-func docutils literal notranslate"><span class="pre">distance()</span></code></a>, <a class="reference internal" href="../../python/visualization/graph.html#Graph.addobject" title="Graph.addobject"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Graph.addobject()</span></code></a></p>
+</div>
+<dl class="docutils">
+<dt>Example:</dt><dd><p>An example is plotting the transfer impedance with</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objectvar imp, rvp, g
+imp = new Impedance()
+rvp = new RangeVarPlot(&quot;imp.transfer($1)&quot;)
+rvp... //specify range begin and end
+imp... //specify impedance computation
+g = new Graph()
+g.addobject(rvp)
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.begin">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.begin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.begin(x)</span></code></dd>
+<dt>Description:</dt><dd>x position of the currently accessed section that starts the
+path used for the space plot.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.end">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.end" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.end(x)</span></code></dd>
+<dt>Description:</dt><dd>x position of the currently accessed section that ends the
+path used for the space plot.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.origin">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">origin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.origin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.origin(x)</span></code></dd>
+<dt>Description:</dt><dd>x position of the currently accessed section that is treated
+as the origin (location 0) of the space plot. The default is usually
+suitable unless you want to have several rangvarplots in one graph
+in which case this function is used to arrange all the plots relative
+to each other.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.left">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">left</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.left" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.left()</span></code></dd>
+<dt>Description:</dt><dd>returns the coordinate of the beginning of the path.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.right">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">right</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.right" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.right()</span></code></dd>
+<dt>Description:</dt><dd>returns the coordinate of the end of the path. The total length
+of the path is <code class="docutils literal notranslate"><span class="pre">right()</span> <span class="pre">-</span> <span class="pre">left()</span></code>.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.list">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.list" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.list(sectionlist)</span></code></dd>
+<dt>Description:</dt><dd>append the path of sections to the <a class="reference internal" href="../../python/modelspec/programmatic/topology/seclist.html#SectionList" title="SectionList"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionList</span></code></a> object argument.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.color">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.color(index)</span></code></dd>
+<dt>Description:</dt><dd>Change the color property. To see the change on an already plotted
+RangeVarPlot in a Graph, the Graph should be <a class="reference internal" href="../../python/visualization/graph.html#Graph.flush" title="Graph.flush"><code class="xref py py-meth docutils literal notranslate"><span class="pre">flush()</span></code></a>ed.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.to_vector">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">to_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.to_vector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">rvp.to_vector(yvec)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">rvp.to_vector(yvec,</span> <span class="pre">xvec)</span></code></p>
+</dd>
+<dt>Description:</dt><dd>Copy the range variable values to the <a class="reference internal" href="../../python/programming/math/vector.html#Vector" title="Vector"><code class="xref py py-func docutils literal notranslate"><span class="pre">Vector()</span></code></a> yvec. yvec is resized
+to the number of range points. If the second arg is present then
+the locations are copied to xvec. A plot of <code class="docutils literal notranslate"><span class="pre">yvec.line(g,</span> <span class="pre">xvec)</span></code> would
+be identical to a plot using <code class="docutils literal notranslate"><span class="pre">g.addobject(rvp)</span></code>.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/visualization/graph.html#Graph.addobject" title="Graph.addobject"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Graph.addobject()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py method">
+<dt id="RangeVarPlot.from_vector">
+<code class="descclassname">RangeVarPlot.</code><code class="descname">from_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#RangeVarPlot.from_vector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">rvp.from_vector(yvec)</span></code></dd>
+<dt>Description:</dt><dd>Copy the values in yvec to the range variables along the rvp path.
+The size of the vector must be consistent with rvp.</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="shape.html" class="btn btn-neutral float-right" title="Shape" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="plotshape.html" class="btn btn-neutral float-left" title="PlotShape Window" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

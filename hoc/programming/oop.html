@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Object Oriented Programming &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Predeclared Variables" href="predec.html" />
+    <link rel="prev" title="Plotter Control (obsolete)" href="io/plotters.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python.html">Python Language</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="hoc.html">HOC Language</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="hocsyntax.html">HOC Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ockeywor.html">HOC Keywords</a></li>
+<li class="toctree-l4"><a class="reference internal" href="io.html">Input and Output</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Object Oriented Programming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="predec.html">Predeclared Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mathematics.html">Mathematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="errors.html">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projectmanagement.html">Project Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+          <li><a href="hoc.html">HOC Language</a> &raquo;</li>
+        
+      <li>Object Oriented Programming</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/programming/oop.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/hoc/programming/oop.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a href="#init" title="Link to this definition">init</a> &middot; <a href="#this" title="Link to this definition">this</a> &middot; <a href="#unref" title="Link to this definition">unref</a></p><div class="section" id="object-oriented-programming">
+<span id="oop"></span><h1>Object Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Permalink to this headline">¶</a></h1>
+<p>See <a class="reference external" href="http://www.neuron.yale.edu/neuron/static/docs/refman/obj.html">Object Oriented Programming</a>
+in the reference manual.</p>
+<div class="section" id="begintemplate">
+<span id="index-0"></span><span id="id2"></span><h2>begintemplate<a class="headerlink" href="#begintemplate" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">begintemplate</span></code></dd>
+<dt>Description:</dt><dd>Declare a new class or data structure. Any HOC code may appear between the
+<code class="docutils literal notranslate"><span class="pre">begintemplate</span></code> and <code class="docutils literal notranslate"><span class="pre">endtemplate</span></code> declarations. Classes are instantiated with
+the new statement.</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>begintemplate String
+public s
+strdef s
+ proc init() {
+   if (numarg()) {
+     s = $s1
+   }
+ }
+endtemplate String
+objref s
+s = new String(&quot;Hello&quot;)
+print s.s
+</pre></div>
+</div>
+<p>will print “Hello” to the screen.</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="endtemplate">
+<span id="index-1"></span><span id="id3"></span><h2>endtemplate<a class="headerlink" href="#endtemplate" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">endtemplate</span></code></dd>
+<dt>Description:</dt><dd>Closes the class declaration</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/oop.html#begintemplate"><span class="std std-ref">begintemplate</span></a></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="objectvar">
+<span id="index-2"></span><span id="id4"></span><h2>objectvar<a class="headerlink" href="#objectvar" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">objectvar</span></code></dd>
+<dt>Description:</dt><dd>Synonym for <a class="reference internal" href="../../python/programming/oop.html#objref"><span class="std std-ref">objref</span></a>.</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="objref">
+<span id="index-3"></span><span id="id5"></span><h2>objref<a class="headerlink" href="#objref" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">objref</span></code></dd>
+<dt>Description:</dt><dd><p>A comma separated list declarations of object variables.  Object
+variables are labels (pointers, references) to the actual objects.  Thus <code class="docutils literal notranslate"><span class="pre">o1</span> <span class="pre">=</span> <span class="pre">o2</span></code>
+merely states that o1 and o2 are labels for the same object.  Objects are
+created with the <code class="docutils literal notranslate"><span class="pre">new</span></code> statement.  When there are no labels for an object
+the object is deleted. The keywords <code class="docutils literal notranslate"><span class="pre">objectvar</span></code> and <code class="docutils literal notranslate"><span class="pre">objref</span></code> are synonyms.</p>
+<p>An object has a unique name that can be determined with the <code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">obj</span></code> statement
+and consists of the template name followed by an index number in brackets.
+This name can be used in place of an objref.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objref vec, g
+vec = new Vector(20)
+g = new Graph()
+</pre></div>
+</div>
+<p>creates a vector object and a graph object with pointers named vec and g, respectively.</p>
+</div></blockquote>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/oop.html#new"><span class="std std-ref">new</span></a>, <a class="reference internal" href="../../python/programming/oop.html#begintemplate"><span class="std std-ref">begintemplate</span></a>, <a class="reference internal" href="../../python/programming/gui/list.html#List" title="List"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>, <a class="reference internal" href="../../python/modelspec/programmatic/mechanisms/mech.html#mech"><span class="std std-ref">Point Processes and Artificial Cells</span></a>, <a class="reference internal" href="../../python/modelspec/programmatic/topology/seclist.html#SectionList" title="SectionList"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionList</span></code></a></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="public">
+<span id="keyword-public"></span><span id="index-4"></span><h2>public<a class="headerlink" href="#public" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">public</span></code></dd>
+<dt>Description:</dt><dd>A comma separated list of all the names in a class that are available
+outside the class.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/oop.html#begintemplate"><span class="std std-ref">begintemplate</span></a></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="external">
+<span id="index-5"></span><span id="id6"></span><h2>external<a class="headerlink" href="#external" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">external</span></code></dd>
+<dt>Description:</dt><dd>A comma separated list of functions, procedures, iterators, objects,
+strings, or variables defined at the top
+level that can be executed within this class.  This statement is
+optional but if it exists must follow the begintemplate or public line.
+This allows an object to get information from the outside and can
+be used as information shared by all instances. External iterators
+can only use local variables and arguments.</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>global_ra = 100
+ func ra_value() {return global_ra}
+begintemplate Cell
+ external ra_value
+ create axon
+ proc init() {
+    forall Ra = ra_value()  /* just the axon */
+ }
+endtemplate Cell
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../python/programming/dynamiccode.html#execute1" title="execute1"><code class="xref py py-func docutils literal notranslate"><span class="pre">execute1()</span></code></a> can be used to obtain external information as well.</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="new">
+<span id="index-6"></span><span id="id7"></span><h2>new<a class="headerlink" href="#new" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">objectvariable</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Object(args)</span></code></dd>
+<dt>Description:</dt><dd>Creates a new object/instance of type/class Object and makes
+objectvariable label/point to it.
+When the object no longer is pointed to, it no longer exists.</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objref vec
+vec = new Vector(30)
+</pre></div>
+</div>
+<p>creates a vector of size 30 with its pointer named <code class="docutils literal notranslate"><span class="pre">vec</span></code>.</p>
+</div></blockquote>
+</div></blockquote>
+<hr class="docutils" />
+<dl class="py function">
+<dt id="init">
+<code class="descname">init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">init()</span> <span class="pre">{</span> <span class="pre">...</span> <span class="pre">}</span></code></dd>
+<dt>Description:</dt><dd>If an init procedure is defined in a template, then it is called whenever
+an instance of the template is created.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/oop.html#new"><span class="std std-ref">new</span></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py function">
+<dt id="unref">
+<code class="descname">unref</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unref" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">unref()</span> <span class="pre">{</span> <span class="pre">print</span> <span class="pre">this,</span> <span class="pre">&quot;</span> <span class="pre">refcount=&quot;,</span> <span class="pre">$1</span> <span class="pre">}</span></code></dd>
+<dt>Description:</dt><dd>If an unref procedure is defined in a template, then it is called whenever
+the reference count of an object of that type is decremented. The reference
+count is passed as the argument. When the count is 0, the object will be
+destroyed on return from unref. This is useful in properly managing
+objects which mutually reference each other. Note that unref may be
+called recursively.</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+</div>
+<div class="section" id="nullobject">
+<span id="nil"></span><span id="index-7"></span><h2>NULLobject<a class="headerlink" href="#nullobject" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">objref</span> <span class="pre">nil</span></code></dd>
+<dt>Description:</dt><dd>When an object variable is first declared, it refers to NULLobject
+until it has been associated with an instance of some object class
+by a <a class="reference internal" href="../../python/programming/oop.html#new"><span class="std std-ref">new</span></a> statement.
+A NULLobject object variable can
+be useful as an argument to certain class methods.</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>objref nil
+print nil  // prints NULLobject
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+<hr class="docutils" />
+<dl class="py data">
+<dt id="this">
+<code class="descname">this</code><a class="headerlink" href="#this" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">objref</span> <span class="pre">this</span></code></dd>
+<dt>Description:</dt><dd>Declared inside a template
+(see <a class="reference internal" href="../../python/programming/oop.html#begintemplate"><span class="std std-ref">begintemplate</span></a>).
+Allows the object to call a procedure
+with itself as one of the arguments.</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>begintemplate Demothis
+   public printname
+   objref this
+
+   proc init() {
+     printname()
+   }
+
+   proc printname() {
+     print &quot;I am &quot;, this
+   }
+endtemplate Demothis
+
+objref foo[3]
+print &quot;at creation&quot;
+for i=0,2 foo[i]=new Demothis()
+print &quot;check existing&quot;
+for i=0,2 foo[i].printname()
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="predec.html" class="btn btn-neutral float-right" title="Predeclared Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="io/plotters.html" class="btn btn-neutral float-left" title="Plotter Control (obsolete)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

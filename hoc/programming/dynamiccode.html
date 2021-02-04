@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Dynamic Code Loading and Execution &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Project Management" href="projectmanagement.html" />
+    <link rel="prev" title="Error Handling" href="errors.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="python.html">Python Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hoc.html">HOC Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mathematics.html">Mathematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="errors.html">Error Handling</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Dynamic Code Loading and Execution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#code-executing">code-executing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-loading">code-loading</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="projectmanagement.html">Project Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+      <li>Dynamic Code Loading and Execution</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/programming/dynamiccode.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/hoc/programming/dynamiccode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a href="#execute" title="Link to this definition">execute</a> &middot; <a href="#execute1" title="Link to this definition">execute1</a> &middot; <a href="#load_file" title="Link to this definition">load_file</a> &middot; <a href="#load_func" title="Link to this definition">load_func</a> &middot; <a href="#load_proc" title="Link to this definition">load_proc</a> &middot; <a href="#load_template" title="Link to this definition">load_template</a></p><div class="section" id="dynamic-code-loading-and-execution">
+<h1>Dynamic Code Loading and Execution<a class="headerlink" href="#dynamic-code-loading-and-execution" title="Permalink to this headline">¶</a></h1>
+<p>These functions either execute code contained in an arbitrary, possibly
+generated-at-runtime string or load code from a file potentially chosen at runtime.</p>
+<div class="section" id="code-executing">
+<h2>code-executing<a class="headerlink" href="#code-executing" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="execute">
+<code class="descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#execute" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">execute(&quot;statement&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">execute(&quot;statement&quot;,</span> <span class="pre">objref)</span></code></p>
+</dd>
+<dt>Description:</dt><dd>parse and execute the command in the context
+of the object. If second arg not present then execute it at the
+top level of the interpreter.
+If command begins with a ‘~’ then the tilda is removed and the rest
+of the command is executed without enclosing it in {}. This allows
+one to create a  func or proc dynamically.</dd>
+</dl>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../../python/programming/dynamiccode.html#execute1" title="execute1"><code class="xref py py-func docutils literal notranslate"><span class="pre">execute1()</span></code></a></p>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py function">
+<dt id="execute1">
+<code class="descname">execute1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#execute1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">err</span> <span class="pre">=</span> <span class="pre">execute1(&quot;statement&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">err</span> <span class="pre">=</span> <span class="pre">execute1(&quot;statement&quot;,</span> <span class="pre">objref)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">err</span> <span class="pre">=</span> <span class="pre">execute1(&quot;statement&quot;,</span> <span class="pre">show_err_mes)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">err</span> <span class="pre">=</span> <span class="pre">execute1(&quot;statement&quot;,</span> <span class="pre">objref,</span> <span class="pre">show_err_mes</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Same as <a class="reference internal" href="../../python/programming/dynamiccode.html#execute" title="execute"><code class="xref py py-func docutils literal notranslate"><span class="pre">execute()</span></code></a> but returns 0 if there was an interpreter error
+during execution of the statement and returns 1 if successful.
+Does not surround the command with {}.</p>
+<p>If the show_err_mes arg is present and equal to 0 then the normal
+interpreter error message printing is turned off for the scope of the
+statement.</p>
+<p>Error messages can be turned on even inside the statement
+with <a class="reference internal" href="../../python/programming/errors.html#show_errmess_always" title="show_errmess_always"><code class="xref py py-func docutils literal notranslate"><span class="pre">show_errmess_always()</span></code></a>.</p>
+<p>Parse and execute the command in the context
+of the object. If second arg not present then execute it at the
+top level of the interpreter.</p>
+</dd>
+<dt>Example:</dt><dd><p>Execute1 is heavily used in the construction of the fitter widgets.
+It is also useful to objects in gaining information about the outside with
+the idiom</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sprint(cmd, &quot;%s.var = outside_var&quot;, this)
+execute1(cmd)
+</pre></div>
+</div>
+<p>Here, outside_var is unavailable from within the object and so
+a command is constructed which can be executed at the top level where that
+variable is available and sets the public var in the object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="code-loading">
+<h2>code-loading<a class="headerlink" href="#code-loading" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="load_proc">
+<code class="descname">load_proc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#load_proc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">load_proc(&quot;name1&quot;,</span> <span class="pre">...)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">load_func(&quot;name1&quot;,</span> <span class="pre">...)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">load_template(&quot;name1&quot;,</span> <span class="pre">..._</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Load the file containing a definition.</p>
+<p>For each name in the list
+all the <code class="file docutils literal notranslate"><span class="pre">*.oc</span></code> and <code class="file docutils literal notranslate"><span class="pre">*.hoc</span></code> files will be searched and the first file that
+contains the appropriate proc, func, or begintemplate will be loaded.
+Loading only takes place if the name has not previously been defined.
+The search path consists of the current working directory, followed by
+the paths in the environment variable HOC_LIBRARY_PATH (space separated),
+followed by <a class="reference external" href="http://neuron.yale.edu/hg/neuron/nrn/file/tip/share/lib/hoc">$NEURONHOME/lib/hoc</a>.
+Remember that only entire files are loaded– not just the definition of
+the name. And nothing is loaded if the name is already defined.
+Inadvertent recursion will use up all the file descriptors.
+For efficiency, on the first load, all the names are cached in a
+temporary file and the file is scanned on subsequent loads for that session.</p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>This command is very slow under mswindows. Therefore it is often
+useful to explicitly load the standard run library with the statement:</p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>xopen(&quot;$(NEURONHOME)/lib/hoc/noload.hoc&quot;)
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py function">
+<dt id="load_file">
+<code class="descname">load_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#load_file" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">load_file(&quot;filename&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">load_file(&quot;filename&quot;,</span> <span class="pre">&quot;name&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">load_file(0or1,</span> <span class="pre">&quot;filename&quot;)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Similar to <a class="reference internal" href="../../python/programming/dynamiccode.html#load_proc" title="load_proc"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_proc()</span></code></a> but loads files and so does not have the
+search overhead. Suitable for loading packages of files.</p>
+<p>The functionality is identical to <a class="reference internal" href="../../python/programming/io/ropen.html#xopen" title="xopen"><code class="xref py py-func docutils literal notranslate"><span class="pre">xopen()</span></code></a> except that the xopen takes
+place only if
+if a file of that name has not already been loaded with the load_file,
+<a class="reference internal" href="../../python/programming/dynamiccode.html#load_proc" title="load_proc"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_proc()</span></code></a>, <a class="reference internal" href="../../python/programming/dynamiccode.html#load_template" title="load_template"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_template()</span></code></a>, or <a class="reference internal" href="../../python/programming/dynamiccode.html#load_func" title="load_func"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_func()</span></code></a> functions.
+The file is searched for in the current working
+directory, $HOC_LIBRARY_PATH (a colon or space separated list of directories),
+and <a class="reference external" href="http://neuron.yale.edu/hg/neuron/nrn/file/tip/share/lib/hoc">$NEURONHOME/lib/hoc</a> directories (in that order) for
+the file if there is no directory prefix.
+Before doing the xopen on the file the current working directory is
+temporarily changed to the directory containing the file so
+that it can xopen files relative to its location.</p>
+<p>If the second string arg exists, the file is xopen’ed only if the
+name is not defined as a variable AND the file has not been loaded
+with load_file. This is useful in those cases where the package was
+first xopen’ed without going through the load_file function.</p>
+<p>If the first arg is a number and is 1, then the file is loaded again even
+if it has already been loaded.</p>
+</dd>
+</dl>
+<p>Description:</p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py function">
+<dt id="load_func">
+<code class="descname">load_func</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#load_func" title="Permalink to this definition">¶</a></dt>
+<dd><p>see <a class="reference internal" href="../../python/programming/dynamiccode.html#load_proc" title="load_proc"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_proc()</span></code></a></p>
+</dd></dl>
+
+<hr class="docutils" />
+<dl class="py function">
+<dt id="load_template">
+<code class="descname">load_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#load_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>see <a class="reference internal" href="../../python/programming/dynamiccode.html#load_proc" title="load_proc"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_proc()</span></code></a></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="projectmanagement.html" class="btn btn-neutral float-right" title="Project Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="errors.html" class="btn btn-neutral float-left" title="Error Handling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

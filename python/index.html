@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>NEURON Python documentation &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="HOC Language" href="programming/hoc.html" />
+    <link rel="prev" title="Introduction" href="../cmake_doc/options.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NEURON Python documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-programming">Basic Programming</a><ul>
+<li class="toctree-l3"><a class="reference external" href="https://neuronsimulator.github.io/nrn/tutorials/scripting-neuron-basics.html">NEURON Python tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/hoc.html">HOC Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/mathematics.html">Mathematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/errors.html">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/projectmanagement.html">Project Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="programming/internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#model-specification">Model Specification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modelspec/guitools.html">Model Specification GUI Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modelspec/programmatic.html">Programmatic Model Specification</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-control">Simulation Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="simctrl/programmatic.html">Programmatic Simulation Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simctrl/stdrun.html">Standard Run Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compilationoptions.html">Rarely Used Compilation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="envvariables.html">Environment Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="simctrl/interpretermanagement.html">Interpreter Management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#visualization">Visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="visualization/glyph.html">Glyph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/graph.html">Graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/grapher.html">Grapher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/plotshapeclass.html">PlotShape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/plotshape.html">PlotShape Window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/rvarplt.html">RangeVarPlot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/notify.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/gui.html">GUI Look And Feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/shapebox.html">MenuExplore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="visualization/oldgrph.html">Obsolete Plotting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#analysis">Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="analysis/programmatic.html">Programmatic Analysis Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="analysis/guitools.html">GUI Analysis Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hoc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>NEURON Python documentation</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/hoc/index.html" > Switch to HOC</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/python/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="neuron-python-documentation">
+<h1>NEURON Python documentation<a class="headerlink" href="#neuron-python-documentation" title="Permalink to this headline">¶</a></h1>
+<p>(<a class="reference external" href="../hoc/index.html">Switch to HOC documentation</a>)</p>
+<div class="section" id="quick-links">
+<h2>Quick Links<a class="headerlink" href="#quick-links" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></p>
+</li>
+<li><dl class="first docutils">
+<dt>Commonly used:</dt><dd><p><a class="reference internal" href="programming/gui/layout.html#Deck" title="Deck"><code class="xref py py-class docutils literal notranslate"><span class="pre">Deck</span></code></a>, <a class="reference external" href="programming/io/file.html">File</a>, <a class="reference external" href="visualization/glyph.html">Glyph</a>,
+<a class="reference external" href="visualization/graph.html">Graph</a>, <a class="reference external" href="programming/math/guimath.html">GUIMath</a>,
+<a class="reference external" href="programming/gui/list.html">List</a>, <a class="reference external" href="programming/math/matrix.html">Matrix</a>,
+<a class="reference external" href="programming/pointers/pointer.html">Pointer</a>,
+<a class="reference external" href="programming/pointers/ptrvector.html">PtrVector</a>,
+<a class="reference external" href="programming/gui/pwman.html">PWManager</a>,
+<a class="reference external" href="programming/math/random.html">Random</a>, <a class="reference external" href="programming/strfun.html">StringFunctions</a>,
+<a class="reference external" href="programming/gui/symchooser.html">SymChooser</a>,
+<a class="reference external" href="programming/gui/texteditor.html">TextEditor</a>, <a class="reference external" href="programming/timer.html">Timer</a>, <a class="reference external" href="programming/gui/vfe.html">ValueFieldEditor</a>,
+<a class="reference internal" href="programming/gui/layout.html#VBox" title="VBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">VBox</span></code></a>, <a class="reference external" href="programming/math/vector.html">Vector</a></p>
+<p><a class="reference external" href="simctrl/bbsavestate.html">BBSaveState</a>, <a class="reference external" href="simctrl/cvode.html">CVode</a>, <a class="reference internal" href="simctrl/programmatic.html#FInitializeHandler" title="FInitializeHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">FInitializeHandler</span></code></a>, <a class="reference external" href="analysis/programmatic/impedance.html">Impedance</a>,
+<a class="reference external" href="modelspec/programmatic/kschan.html">KSChan</a>, <a class="reference external" href="modelspec/programmatic/linmod.html">LinearMechanism</a>,
+<a class="reference external" href="programming/mechstan.html">MechanismStandard</a>,
+<a class="reference external" href="modelspec/programmatic/mechtype.html">MechanismType</a>, <a class="reference external" href="modelspec/programmatic/network/netcon.html">NetCon</a>, <a class="reference external" href="modelspec/programmatic/network/parcon.html">ParallelContext</a>,
+<a class="reference external" href="modelspec/programmatic/network/parnet.html">ParallelNetManager</a>, <a class="reference external" href="visualization/plotshapeclass.html">PlotShape</a>, <a class="reference external" href="programming/python.html">Python</a>,
+<a class="reference external" href="visualization/rvarplt.html">RangeVarPlot</a>, <a class="reference external" href="simctrl/savstate.html">SaveState</a>, <a class="reference external" href="programming/gui/secbrows.html">SectionBrowser</a>,
+<a class="reference external" href="modelspec/programmatic/topology/seclist.html">SectionList</a>, <a class="reference external" href="modelspec/programmatic/topology/secref.html">SectionRef</a>, <a class="reference external" href="visualization/shape.html">Shape</a>,
+<a class="reference external" href="modelspec/programmatic/ste.html">StateTransitionEvent</a></p>
+<p><a class="reference internal" href="visualization/gui.html#panel"><span class="std std-ref">Panel</span></a>, <a class="reference internal" href="analysis/guitools/funfit.html#funfit"><span class="std std-ref">FunctionFitter</span></a>, <a class="reference internal" href="modelspec/programmatic/topology/geometry.html#geometry-geometry"><span class="std std-ref">Geometry</span></a>, <a class="reference internal" href="programming/io/printf.html#printf-doc"><span class="std std-ref">Printf (Formatted Output)</span></a>, <a class="reference internal" href="programming/ockeywor.html#ockeywor"><span class="std std-ref">HOC Keywords</span></a>, <a class="reference internal" href="programming/math/functions.html#math"><span class="std std-ref">Common Math Functions (HOC)</span></a>,
+<a class="reference internal" href="modelspec/programmatic/mechanisms/nmodl2.html#nmodl2"><span class="std std-ref">NEURON Extension to NMODL</span></a>, <a class="reference internal" href="modelspec/programmatic/mechanisms/nmodl.html#nmodl"><span class="std std-ref">NMODL</span></a>, <a class="reference internal" href="modelspec/programmatic/mechanisms/mech.html#mech"><span class="std std-ref">Point Processes and Artificial Cells</span></a>, <a class="reference internal" href="programming/predec.html#predec"><span class="std std-ref">Predeclared Variables</span></a>, <a class="reference internal" href="simctrl/stdrun.html#standardruntools"><span class="std std-ref">Standard Run Tools</span></a>,
+<a class="reference internal" href="programming/hocsyntax.html#ocsyntax"><span class="std std-ref">HOC Syntax</span></a>, <a class="reference internal" href="modelspec/programmatic/topology.html#topology"><span class="std std-ref">Topology</span></a></p>
+<p><a class="reference internal" href="modelspec/programmatic/rxd.html#neuron-rxd"><span class="std std-ref">Basic Reaction-Diffusion</span></a></p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="basic-programming">
+<h2>Basic Programming<a class="headerlink" href="#basic-programming" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://neuronsimulator.github.io/nrn/tutorials/scripting-neuron-basics.html">NEURON Python tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/hoc.html">HOC Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/mathematics.html">Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/strings.html">Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/guidesign.html">GUI Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/references.html">Pointers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/timer.html">Timer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/system.html">System Calls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/errors.html">Error Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/projectmanagement.html">Project Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/internals.html">Debugging and Internals Access</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="model-specification">
+<h2>Model Specification<a class="headerlink" href="#model-specification" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modelspec/guitools.html">Model Specification GUI Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modelspec/programmatic.html">Programmatic Model Specification</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="simulation-control">
+<h2>Simulation Control<a class="headerlink" href="#simulation-control" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="simctrl/programmatic.html">Programmatic Simulation Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simctrl/stdrun.html">Standard Run Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compilationoptions.html">Rarely Used Compilation Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="envvariables.html">Environment Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simctrl/interpretermanagement.html">Interpreter Management</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="visualization/glyph.html">Glyph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/graph.html">Graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/grapher.html">Grapher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/plotshapeclass.html">PlotShape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/plotshape.html">PlotShape Window</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/rvarplt.html">RangeVarPlot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/shape.html">Shape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/notify.html">Notification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/gui.html">GUI Look And Feel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/shapebox.html">MenuExplore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualization/oldgrph.html">Obsolete Plotting</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="analysis/programmatic.html">Programmatic Analysis Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis/guitools.html">GUI Analysis Tools</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="programming/hoc.html" class="btn btn-neutral float-right" title="HOC Language" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../cmake_doc/options.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

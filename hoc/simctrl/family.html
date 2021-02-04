@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Family &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Rarely Used Compilation Options" href="../compilationoptions.html" />
+    <link rel="prev" title="RunControl" href="runctrl.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="programmatic.html">Programmatic Simulation Control</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="stdrun.html">Standard Run Tools</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="runctrl.html">RunControl</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Family</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#execcommand">ExecCommand</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gathervec">GatherVec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vectorplay">VectorPlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vecwrap">VecWrap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdrun.html#neuron-main-menu">NEURON Main Menu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../compilationoptions.html">Rarely Used Compilation Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="interpretermanagement.html">Interpreter Management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">NEURON HOC documentation</a> &raquo;</li>
+        
+          <li><a href="stdrun.html">Standard Run Tools</a> &raquo;</li>
+        
+      <li>Family</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/python/simctrl/family.html" > Switch to Python</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/hoc/simctrl/family.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="family">
+<span id="index-0"></span><span id="id1"></span><h1>Family<a class="headerlink" href="#family" title="Permalink to this headline">¶</a></h1>
+<p>For several values of a variable, execute an action.
+Basically just a form for specifying a for loop.</p>
+<p>usage: <code class="docutils literal notranslate"><span class="pre">makeFamily()</span></code> constructs a Family and maps it to the screen. The Family
+instance is destroyed when its window is dismissed.</p>
+<p>The slider value ranges from start to end. Due to the length of time it
+generally takes to complete an action it is best to use the middle button
+to select a value with the slider. Dragging the slider button or using
+it too rapidly will cause many action requests to be ignored since a
+slider event taking place while handling the previous event is prevented
+from executing the action recursively. The occasionally has the unintended
+effect of missing the last action when one releases the mouse button.</p>
+<p>Menu items:</p>
+<dl class="docutils">
+<dt>start end numbersteps:</dt><dd>Beginning and final values of the loop variable. The number of steps
+includes these limiting values so should be at least 2 but if it is 1 then
+the loop reduces to only the start value.</dd>
+<dt>Variable:</dt><dd>Pops up a SymChooser for selection of a variable name.
+The Family object cannot work without a variable since there is no default.</dd>
+<dt>Action:</dt><dd>Pops up a stringchooser for selection of the body of the loop. The default
+run() action is typically what is desired.</dd>
+<dt>Run:</dt><dd>Starts the loop</dd>
+<dt>Stop – Now:</dt><dd>Stops the loop even in the middle of the action. (The stdrun.hoc run()
+action regularly checks the stop_run variable.)</dd>
+<dt>Stop – Atendofaction:</dt><dd>Waits for the current action to finish before stopping.</dd>
+<dt>Cont:</dt><dd>Starts the action with the next value of the variable.
+(If the previous action was stopped in the middle,
+that action is not restarted where it left off.)</dd>
+</dl>
+</div>
+<div class="section" id="execcommand">
+<span id="id2"></span><h1>ExecCommand<a class="headerlink" href="#execcommand" title="Permalink to this headline">¶</a></h1>
+<p>Specify a command and execute it.</p>
+</div>
+<div class="section" id="gathervec">
+<span id="id3"></span><h1>GatherVec<a class="headerlink" href="#gathervec" title="Permalink to this headline">¶</a></h1>
+<p>Press “Record” button and plot a new point consisting
+of the values for specified x and y variables. (x or y crosshair values
+are good candidates for the y variable and a run parameter is a good
+candidate for the x variable. Then one does a run, selects a point with
+crosshairs, and presses the record button on the GatherValues tool)</p>
+</div>
+<div class="section" id="vectorplay">
+<span id="id4"></span><h1>VectorPlay<a class="headerlink" href="#vectorplay" title="Permalink to this headline">¶</a></h1>
+<p>Copy a vector from the clipboard and play it into some
+chosen (from a Symchooser) variable name. There is button to connect
+and disconnect (return the default value to the variable) the vector.</p>
+</div>
+<div class="section" id="vecwrap">
+<span id="id5"></span><h1>VecWrap<a class="headerlink" href="#vecwrap" title="Permalink to this headline">¶</a></h1>
+<p>Copy vector(s) from the clipboard and do various
+manipulations: Discard left of crosshair, discard right of crosshair,
+crosshair point becomes origin. Obviously rudimentary but this egg
+may hatch into something.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../compilationoptions.html" class="btn btn-neutral float-right" title="Rarely Used Compilation Options" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="runctrl.html" class="btn btn-neutral float-left" title="RunControl" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

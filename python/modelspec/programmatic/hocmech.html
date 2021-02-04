@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>HOC-based Mechanisms &mdash; NEURON  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="KSChan" href="kschan.html" />
+    <link rel="prev" title="Dynamics (Channels, etc…)" href="mechanisms.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> NEURON
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Building:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../install/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cmake_doc/index.html">CMake Build Options</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">NEURON Python documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#basic-programming">Basic Programming</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html#model-specification">Model Specification</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../guitools.html">Model Specification GUI Tools</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../programmatic.html">Programmatic Model Specification</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="topology.html">Topology</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ions.html">Ions</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="mechanisms.html">Dynamics (Channels, etc…)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rxd.html">Basic Reaction-Diffusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="network.html">Networks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="electrod.html">Electrode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mechtype.html">MechanismType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="obsoletestimuli.html">Obsolete Stimuli</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hoc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/index.html">Python tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../coreneuron/index.html">How to use CoreNEURON</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../scm/index.html">NEURON SCM and Release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev/index.html">NEURON Development topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../doxygen.html">C/C++ API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">NEURON</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">NEURON Python documentation</a> &raquo;</li>
+        
+          <li><a href="../programmatic.html">Programmatic Model Specification</a> &raquo;</li>
+        
+          <li><a href="mechanisms.html">Dynamics (Channels, etc…)</a> &raquo;</li>
+        
+      <li>HOC-based Mechanisms</li>
+    
+    
+<li class="wy-breadcrumbs-aside">
+    
+        <a href="/nrn/hoc/modelspec/programmatic/hocmech.html" > Switch to HOC</a>
+    
+</li>
+
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/python/modelspec/programmatic/hocmech.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><a href="#make_mechanism" title="Link to this definition">make_mechanism</a> &middot; <a href="#make_pointprocess" title="Link to this definition">make_pointprocess</a></p><div class="section" id="hoc-based-mechanisms">
+<span id="hocmech"></span><h1>HOC-based Mechanisms<a class="headerlink" href="#hoc-based-mechanisms" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The functions on this page create density mechanisms and point processes from
+HOC templates; they have no direct way to use a Python class, but a HOC wrapper
+is possible as is inlining a HOC template inside of a file as shown in the
+example. For faster code, use NMODL (directly or after conversion from NeuroML/LEMS),
+the channel builder, or in NEURON 7.7+ the rxd module to implement mechanisms.</p>
+</div>
+<dl class="py function">
+<dt id="make_pointprocess">
+<code class="descname">make_pointprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#make_pointprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>See <a class="reference internal" href="#make_mechanism" title="make_mechanism"><code class="xref py py-func docutils literal notranslate"><span class="pre">make_mechanism()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="make_mechanism">
+<code class="descname">make_mechanism</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#make_mechanism" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">h.make_mechanism(&quot;suffix&quot;,</span> <span class="pre">&quot;Template&quot;,</span> <span class="pre">&quot;parm1</span> <span class="pre">parm2</span> <span class="pre">parm3</span> <span class="pre">...&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">h.make_pointprocess(&quot;Name&quot;,</span> <span class="pre">&quot;Template&quot;,</span> <span class="pre">&quot;parm1</span> <span class="pre">parm2</span> <span class="pre">parm3</span> <span class="pre">...&quot;)</span></code></p>
+</dd>
+<dt>Description:</dt><dd><p>Installs the HOC (in particular, <em>not</em> Python) class called “Template” as a density membrane mechanism
+called “suffix” or a POINT_PROCESS called Name. If the third argument exists it must be a space
+separated list of public variables in the Template which are to be
+treated as PARAMETERs. Public variables not in this list are treated as
+ASSIGNED variables. The new mechanism is used in exactly the same
+way as “hh” or mechanism defined by NMODL. Thus, instances are created
+in each segment with <code class="docutils literal notranslate"><span class="pre">section.insert(suffix)</span></code> and after insertion
+the public names are accessible via the normal range variable notation
+as in: <code class="docutils literal notranslate"><span class="pre">section(x).suffix.name</span></code>.</p>
+<p>At this time the functionality of such interpreter defined membrane
+mechanisms is a small subset of the functionality of mechanisms described
+by the model description language. Furthermore, being interpreted, they
+are much ( more than 100 times) slower than compiled model descriptions.
+However, it is a very powerful way to
+watch variables, specify events for delivery as specific times,
+receive events, and discontinuously (or continuously) modify parameters
+during a simulation. And it works in the context of all the integration
+methods, including local variable time steps. The following procedure
+names within a template, if they exist, are analogous to the
+indicated block in the model description language. In each case
+the currently accessed section is set to the location of this instance
+of the Template and one argument is passed, x, which is the
+range variable arc position <code class="docutils literal notranslate"><span class="pre">(0</span> <span class="pre">&lt;</span> <span class="pre">x</span> <span class="pre">&lt;</span> <span class="pre">1)</span></code>.</p>
+<p>INITIAL: <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">initial()</span></code>
+Called when <a class="reference internal" href="../../simctrl/programmatic.html#finitialize" title="finitialize"><code class="xref py py-func docutils literal notranslate"><span class="pre">finitialize()</span></code></a> is executed.</p>
+<p>BREAKPOINT {SOLVE … METHOD after_cvode}: <code class="docutils literal notranslate"><span class="pre">proc</span> <span class="pre">after_step()</span></code>
+For the standard staggered time step and global variable time step
+integration methods, called at every <a class="reference internal" href="../../simctrl/programmatic.html#fadvance" title="fadvance"><code class="xref py py-func docutils literal notranslate"><span class="pre">fadvance()</span></code></a> when t = t+dt.
+For the local variable step method, the instance is called when
+the individual cell CVode instance finished its solve step.
+In any case, it is safe to send an event any time after t-dt.</p>
+</dd>
+<dt>Example:</dt><dd><p>The following example creates and installs a mechanism that watches
+the membrane potential and keeps track of its maximum value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span><span class="p">,</span> <span class="n">gui</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">soma</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Section</span><span class="p">()</span>
+<span class="n">soma</span><span class="o">.</span><span class="n">L</span> <span class="o">=</span> <span class="n">soma</span><span class="o">.</span><span class="n">diam</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">100</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">soma</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s1">&#39;hh&#39;</span><span class="p">)</span>
+
+<span class="n">stim</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">IClamp</span><span class="p">(</span><span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">stim</span><span class="o">.</span><span class="n">dur</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">stim</span><span class="o">.</span><span class="n">amp</span> <span class="o">=</span> <span class="mf">0.3</span>
+
+<span class="c1"># declare a mechanism using HOC</span>
+<span class="n">h</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    begintemplate Max</span>
+<span class="s1">        public V</span>
+
+<span class="s1">        proc initial() {</span>
+<span class="s1">            V = v($1)</span>
+<span class="s1">        }</span>
+
+<span class="s1">        proc after_step() {</span>
+<span class="s1">            if (V &lt; v($1)) {</span>
+<span class="s1">                V = v($1)</span>
+<span class="s1">            }</span>
+<span class="s1">        }</span>
+<span class="s1">    endtemplate Max</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="n">h</span><span class="o">.</span><span class="n">make_mechanism</span><span class="p">(</span><span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;Max&#39;</span><span class="p">)</span>
+<span class="n">soma</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="s1">&#39;max&#39;</span><span class="p">)</span>
+<span class="n">h</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;V_max = </span><span class="si">%g</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">soma</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="kschan.html" class="btn btn-neutral float-right" title="KSChan" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="mechanisms.html" class="btn btn-neutral float-left" title="Dynamics (Channels, etc…)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

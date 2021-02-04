@@ -91,8 +91,8 @@
 </ul>
 <p class="caption"><span class="caption-text">User documentation:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="py_doc/index.html">NEURON Python documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="new_doc/index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python/index.html">NEURON Python documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hoc/index.html">NEURON HOC documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Python tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rxd-tutorials/index.html">Python RXD tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coreneuron/index.html">How to use CoreNEURON</a></li>
@@ -155,7 +155,8 @@
     
 <li class="wy-breadcrumbs-aside">
     
-    
+</li>
+
       <li class="wy-breadcrumbs-aside">
         
           
@@ -164,7 +165,6 @@
         
       </li>
     
-</li>
 
   </ul>
 
@@ -211,6 +211,7 @@ cmake as described in <a class="reference internal" href="#"><span class="doc">R
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cmake .. -DNRN_ENABLE_INTERVIEWS=OFF -DNRN_ENABLE_MPI=OFF -DNRN_ENABLE_RX3D=OFF -DCMAKE_INSTALL_PREFIX=`pwd`/install
 </pre></div>
 </div>
+<p>In order to execute the jupyter notebooks, make sure neuron python module can be imported.</p>
 <p>Then build docs using command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">docs</span>
 </pre></div>
@@ -218,10 +219,12 @@ cmake as described in <a class="reference internal" href="#"><span class="doc">R
 <p>That will build everything in the <code class="docutils literal notranslate"><span class="pre">build/docs</span></code> folder and you can then open <code class="docutils literal notranslate"><span class="pre">index.html</span></code> locally.</p>
 <p>When working locally on documentation, be aware of the following targets to speed up building process:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">doxygen</span></code> - build the API documentation only</li>
-<li><code class="docutils literal notranslate"><span class="pre">prepare_docs</span></code> - convert jupyter notebooks to html, see <a class="reference external" href=".prepare_docs.sh">.prepare_docs.sh</a></li>
-<li><code class="docutils literal notranslate"><span class="pre">sphinx</span></code> - build Sphinx documentation</li>
+<li><code class="docutils literal notranslate"><span class="pre">doxygen</span></code> 			- build the API documentation only</li>
+<li><code class="docutils literal notranslate"><span class="pre">notebooks</span></code> 			- execute &amp; convert jupyter notebooks to html, see <a class="reference external" href="notebooks.sh">notebooks.sh</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">notebooks-noexec</span></code>	- simply convert jupyter notebooks to html, see <a class="reference external" href="notebooks.sh">notebooks.sh</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">sphinx</span></code> 				- build Sphinx documentation</li>
 </ul>
+<p>NOTE: <code class="docutils literal notranslate"><span class="pre">docs</span></code> target calls: <code class="docutils literal notranslate"><span class="pre">doxygen</span></code> <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> <code class="docutils literal notranslate"><span class="pre">sphinx</span></code>.</p>
 </div>
 </div>
 </div>
@@ -236,7 +239,7 @@ cmake as described in <a class="reference internal" href="#"><span class="doc">R
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, Duke, Yale and the Blue Brain Project.
+        &#169; Copyright 2021, Duke, Yale and the Blue Brain Project.
 
     </p>
   </div>
