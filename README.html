@@ -188,8 +188,14 @@
 <h2>Developer documentation<a class="headerlink" href="#developer-documentation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="online">
 <h3>Online<a class="headerlink" href="#online" title="Permalink to this headline">¶</a></h3>
-<p>NEURON consolidated documentation is available at <a class="reference external" href="https://neuronsimulator.github.io/nrn/">https://neuronsimulator.github.io/nrn/</a>:</p>
+<p>Latest NEURON documentation is available on:</p>
 <ul class="simple">
+<li>GithubPages &#64; <a class="reference external" href="https://neuronsimulator.github.io/nrn/">https://neuronsimulator.github.io/nrn/</a>.</li>
+<li>ReadTheDocs &#64; <a class="reference external" href="https://nrn.readthedocs.io/en/latest/">https://nrn.readthedocs.io/en/latest/</a>.</li>
+</ul>
+<p>Contents:</p>
+<ul class="simple">
+<li>documentation on building NEURON</li>
 <li>user documentation (HOC, Python, tutorials, rxd)</li>
 <li>developer documentation (SCM, technical topics, Doxygen)</li>
 </ul>
@@ -206,8 +212,9 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="o">-</span><span class="n">r</span> <span class="n">docs</span><span class="o">/</span><span class="n">docs_requirements</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">upgrade</span>
 </pre></div>
 </div>
-<p>Also, make sure to have Doxygen installed on your system. With all dependencies installed, configure project with
-cmake as described in <a class="reference internal" href="#"><span class="doc">README</span></a>. e.g. In your CMake build folder:</p>
+<p>Also, make sure to have installed dependencies listed in <a class="reference external" href="conda_environment.yml">conda_environment.yml</a>.
+With all dependencies installed, configure project with CMake as described in <a class="reference internal" href="#"><span class="doc">README</span></a>.</p>
+<p>e.g. in your CMake build folder:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cmake .. -DNRN_ENABLE_INTERVIEWS=OFF -DNRN_ENABLE_MPI=OFF -DNRN_ENABLE_RX3D=OFF -DCMAKE_INSTALL_PREFIX=`pwd`/install
 </pre></div>
 </div>
@@ -225,6 +232,43 @@ cmake as described in <a class="reference internal" href="#"><span class="doc">R
 <li><code class="docutils literal notranslate"><span class="pre">sphinx</span></code> 				- build Sphinx documentation</li>
 </ul>
 <p>NOTE: <code class="docutils literal notranslate"><span class="pre">docs</span></code> target calls: <code class="docutils literal notranslate"><span class="pre">doxygen</span></code> <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> <code class="docutils literal notranslate"><span class="pre">sphinx</span></code>.</p>
+</div>
+</div>
+<div class="section" id="readthedocs-io-setup">
+<h2>ReadTheDocs.io setup<a class="headerlink" href="#readthedocs-io-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="config-file">
+<h3>Config file<a class="headerlink" href="#config-file" title="Permalink to this headline">¶</a></h3>
+<p>Configuration file is in the top directory: <a class="reference external" href="../.readthedocs.yml">../.readthedocs.yml</a>.</p>
+</div>
+<div class="section" id="documentation-not-handled-by-rtd">
+<h3>Documentation not handled by RTD<a class="headerlink" href="#documentation-not-handled-by-rtd" title="Permalink to this headline">¶</a></h3>
+<p>For RTD we need to call <code class="docutils literal notranslate"><span class="pre">doxygen</span></code> and <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> make targets, since only <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> executable is called therein.
+To that end we are using conda to be able to install packages like CMake in RTD.
+All conda dependencies are listed under <a class="reference external" href="conda_environment.yml">conda_environment.yml</a>.</p>
+</div>
+<div class="section" id="leveraging-conf-py">
+<h3>Leveraging <code class="docutils literal notranslate"><span class="pre">conf.py</span></code><a class="headerlink" href="#leveraging-conf-py" title="Permalink to this headline">¶</a></h3>
+<p>The only way to gather extra documentation in RTD is to make use of <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.
+Have a look at <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">os.environ.get(&quot;READTHEDOCS&quot;):</span></code> block in <a class="reference external" href="conf.py">conf.py</a> to see how we leverage the aforementioned targets and outputs.</p>
+</div>
+<div class="section" id="notebooks-execution-with-neuron-wheels">
+<h3>Notebooks execution with <code class="docutils literal notranslate"><span class="pre">neuron</span></code> wheels<a class="headerlink" href="#notebooks-execution-with-neuron-wheels" title="Permalink to this headline">¶</a></h3>
+<p>For <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> we are using <code class="docutils literal notranslate"><span class="pre">neuron</span></code> Python wheel as follows:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">neuron-nightly</span></code> for <code class="docutils literal notranslate"><span class="pre">master</span></code> RTD builds.</li>
+<li><code class="docutils literal notranslate"><span class="pre">neuron==X.Y.Z</span></code> for <code class="docutils literal notranslate"><span class="pre">release</span></code> RTD builds. Note that wheels need to be published first (see next section).</li>
+</ul>
+<p>To achieve this, we parse the RTD environment variable <code class="docutils literal notranslate"><span class="pre">READTHEDOCS_VERSION</span></code> and <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span></code> it (see <a class="reference external" href="conf.py">conf.py</a>) .</p>
+</div>
+<div class="section" id="new-release-on-rtd">
+<h3>New release on RTD<a class="headerlink" href="#new-release-on-rtd" title="Permalink to this headline">¶</a></h3>
+<p>Follow the following steps:</p>
+<ul class="simple">
+<li>create a new release (see <a class="reference external" href="https://github.com/neuronsimulator/nrn/actions?query=workflow%3A%22NEURON+Release%22">GHA Neuron Release - Manual Workflow</a>)</li>
+<li>publish wheels</li>
+<li>go to <a class="reference external" href="https://readthedocs.org/projects/nrnalex/versions/">NRN RTD Versions page</a> and activate the new tag.</li>
+</ul>
+<p>Note: build can be re-launched as many times as needed</p>
 </div>
 </div>
 </div>
