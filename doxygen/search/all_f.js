@@ -212,7 +212,7 @@ var searchData=
   ['ontology',['ontology',['../modlunit_2lex_8cpp.html#a7e8ad8b6ef9edc51542de6905085fe4e',1,'ontology():&#160;lex.cpp'],['../nmodl_2lex_8cpp.html#a7e8ad8b6ef9edc51542de6905085fe4e',1,'ontology():&#160;lex.cpp']]],
   ['ontology_5fid',['ONTOLOGY_ID',['../nmodl_2parse1_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aee18260b22a6afb8d64f231561c791ba',1,'ONTOLOGY_ID():&#160;parse1.cpp'],['../nmodl_2parse1_8hpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aee18260b22a6afb8d64f231561c791ba',1,'ONTOLOGY_ID():&#160;parse1.hpp']]],
   ['oop',['OOP',['../mwprefix_8h.html#aeff5f69db8d3a10dee6f43dd3eb26817',1,'OOP():&#160;mwprefix.h'],['../hocdec_8h.html#aeff5f69db8d3a10dee6f43dd3eb26817',1,'OOP():&#160;hocdec.h']]],
-  ['op',['op',['../readline_8cpp.html#a99a30df0f2488360cdd46b4b88e5f5f0',1,'op():&#160;readline.cpp'],['../ivos_2regexp_8cpp.html#a140367a510ad117b6e871c9042df9350',1,'OP():&#160;regexp.cpp']]],
+  ['op',['OP',['../ivos_2regexp_8cpp.html#a140367a510ad117b6e871c9042df9350',1,'OP():&#160;regexp.cpp'],['../readline_8cpp.html#a99a30df0f2488360cdd46b4b88e5f5f0',1,'op():&#160;readline.cpp']]],
   ['oparinfo',['OPARINFO',['../hocdec_8h.html#a7e337b1ab4c1e7a43aef3cc844712ad2',1,'hocdec.h']]],
   ['open',['open',['../class_oc_file.html#acb74ec85c53ae505a96a80c597031dfe',1,'OcFile::open()'],['../class_directory.html#a257b8ac686a29162569d3b69c5d4a05c',1,'Directory::open()'],['../class_input_file.html#adc13b2ba47633a1801616d71ea1edce1',1,'InputFile::open()'],['../ivos_2regexp_8cpp.html#a1354b70ac6803a06beebe84f61b5f95b',1,'OPEN():&#160;regexp.cpp']]],
   ['open64features_2eh',['open64features.h',['../open64features_8h.html',1,'']]],

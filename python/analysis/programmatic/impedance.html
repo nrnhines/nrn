@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -203,7 +202,7 @@
 <span id="impedanc"></span><h1>Impedance<a class="headerlink" href="#impedance" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="Impedance">
-<em class="property">class </em><code class="descname">Impedance</code><a class="headerlink" href="#Impedance" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">Impedance</span></code><a class="headerlink" href="#Impedance" title="Permalink to this definition">¶</a></dt>
 <dd><p>For calculating input and transfer impedances at an instant of time
 Usage involves first defining a location either
 for the current stimulus or else the voltage measuring electrode, then
@@ -261,7 +260,7 @@ to the <a class="reference internal" href="#Impedance.compute" title="Impedance.
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.loc">
-<code class="descclassname">Impedance.</code><code class="descname">loc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.loc" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">loc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.loc" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.loc(x,</span> <span class="pre">sec=section)</span></code></dd>
 <dt>Description:</dt><dd>A fixed current stimulus or voltage electrode location
@@ -276,7 +275,7 @@ x ranges over every position of every section.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.compute">
-<code class="descclassname">Impedance.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.compute" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">compute</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.compute" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">.compute(freq)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">.compute(freq,</span> <span class="pre">1)</span></code></p>
@@ -368,7 +367,7 @@ is not handled.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.transfer">
-<code class="descclassname">Impedance.</code><code class="descname">transfer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.transfer" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">transfer</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.transfer" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.transfer(x,</span> <span class="pre">sec=section)</span></code></dd>
 <dt>Description:</dt><dd><p>absolute amplitude of the transfer impedance between the position
@@ -390,7 +389,7 @@ other.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.input">
-<code class="descclassname">Impedance.</code><code class="descname">input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.input" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">input</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.input" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.input(x,</span> <span class="pre">sec=section)</span></code></dd>
 <dt>Description:</dt><dd>absolute amplitude of <code class="docutils literal notranslate"><span class="pre">v(x)/i(x)</span></code> of the specified section</dd>
@@ -400,7 +399,7 @@ other.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.ratio">
-<code class="descclassname">Impedance.</code><code class="descname">ratio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.ratio" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">ratio</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.ratio" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.ratio(x)</span></code></dd>
 <dt>Description:</dt><dd><code class="docutils literal notranslate"><span class="pre">|v(loc)/v(x)|</span></code> Think of it as voltage clamping to 1mV at x at some
@@ -411,7 +410,7 @@ frequency and recording the voltage at loc.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.transfer_phase">
-<code class="descclassname">Impedance.</code><code class="descname">transfer_phase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.transfer_phase" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">transfer_phase</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.transfer_phase" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.transfer_phase(x)</span></code></dd>
 <dt>Description:</dt><dd>phase of transfer impedance. The phase is modulo 2Pi in the range
@@ -425,7 +424,7 @@ if the amplitude is 0.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.input_phase">
-<code class="descclassname">Impedance.</code><code class="descname">input_phase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.input_phase" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">input_phase</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.input_phase" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.input_phase(x)</span></code></dd>
 <dt>Description:</dt><dd><p>phase of input impedance.</p>
@@ -447,7 +446,7 @@ but that could be fixed if increased performance was needed).</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="Impedance.deltafac">
-<code class="descclassname">Impedance.</code><code class="descname">deltafac</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.deltafac" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">Impedance.</span></code><code class="descname"><span class="pre">deltafac</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Impedance.deltafac" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">fac</span> <span class="pre">=</span> <span class="pre">imp.deltafac()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">fac</span> <span class="pre">=</span> <span class="pre">imp.deltafac(fac)</span></code></p>

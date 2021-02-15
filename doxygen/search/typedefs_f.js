@@ -7,7 +7,6 @@ var searchData=
   ['pfrd_5fvp',['Pfrd_vp',['../hocdec_8h.html#ae871aa089295e4319f4d5e3ae70e9d1e',1,'hocdec.h']]],
   ['pfri',['Pfri',['../hocdec_8h.html#af5a1dd4bc2f2914c62a8354080d4172b',1,'hocdec.h']]],
   ['pfri_5fvp',['Pfri_vp',['../hocdec_8h.html#a184caeb3cfe63e690c84c68e1a02b059',1,'hocdec.h']]],
-  ['pfridot',['Pfridot',['../nrncvode_2cvtrset_8cpp.html#ada3625db9949b1480710d6c51ada1c8e',1,'Pfridot():&#160;cvtrset.cpp'],['../nrncvode_2occvode_8cpp.html#ada3625db9949b1480710d6c51ada1c8e',1,'Pfridot():&#160;occvode.cpp'],['../nonlinz_8cpp.html#ada3625db9949b1480710d6c51ada1c8e',1,'Pfridot():&#160;nonlinz.cpp']]],
   ['pfro',['Pfro',['../hocdec_8h.html#a75170db363cc24bece1d49d98de980eb',1,'hocdec.h']]],
   ['pfro_5fvp',['Pfro_vp',['../hocdec_8h.html#a3dff1145214ea8e887fa83f55ff73b9e',1,'hocdec.h']]],
   ['pfrpdat',['Pfrpdat',['../membfunc_8h.html#abdf9bacb2bd2c7fafd1e57a982969867',1,'membfunc.h']]],

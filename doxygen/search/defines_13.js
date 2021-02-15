@@ -244,7 +244,7 @@ var searchData=
   ['spwheresingular',['spWhereSingular',['../cspredef_8h.html#a97b71dde385596be0203aed129f4e488',1,'cspredef.h']]],
   ['spzero_5fdiag',['spZERO_DIAG',['../spmatrix_8h.html#a490d9df4c540f51e0c1cd47bf7d914ff',1,'spmatrix.h']]],
   ['sq',['SQ',['../grids_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc',1,'grids.h']]],
-  ['sqr',['sqr',['../spbkp_8c.html#adee8c6d2fc20a1194cf64c481e7b6353',1,'sqr():&#160;spbkp.c'],['../spdefs_8h.html#ad41630f833e920c1ffa34722f45a8e77',1,'SQR():&#160;spdefs.h']]],
+  ['sqr',['SQR',['../spdefs_8h.html#ad41630f833e920c1ffa34722f45a8e77',1,'SQR():&#160;spdefs.h'],['../spbkp_8c.html#adee8c6d2fc20a1194cf64c481e7b6353',1,'sqr():&#160;spbkp.c']]],
   ['sqrt',['Sqrt',['../oc_2redef_8h.html#a3fbd8d8a562a86d88e9730f655b973eb',1,'redef.h']]],
   ['sqrt2',['SQRT2',['../symmeig_8c.html#a514396dd60fa0621c83072091fb2a0cd',1,'symmeig.c']]],
   ['square',['square',['../znorm_8c.html#a6dbf8d45b3bc0c6fec0c7584d2aaac3c',1,'znorm.c']]],

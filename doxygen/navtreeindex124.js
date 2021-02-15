@@ -1,8 +1,5 @@
 var NAVTREEINDEX124 =
 {
-"zmemory_8c_source.html":[5,0,0,4,69],
-"znorm_8c.html":[5,0,0,4,70],
-"znorm_8c.html#a0f1d83820a5b522e9cf8010aeb0e3dc8":[5,0,0,4,70,3],
 "znorm_8c.html#a679f0292bcc1f2defc2ddd85b98fda77":[5,0,0,4,70,7],
 "znorm_8c.html#a6dbf8d45b3bc0c6fec0c7584d2aaac3c":[5,0,0,4,70,1],
 "znorm_8c.html#a97153f5594b4f250cc5c01bc2fffd017":[5,0,0,4,70,4],

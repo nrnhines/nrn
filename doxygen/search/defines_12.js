@@ -65,7 +65,7 @@ var searchData=
   ['readin',['readin',['../memacs_2redef_8h.html#a3cc8614cce086faaba82be031d23ed06',1,'redef.h']]],
   ['readline',['READLINE',['../hoc_8cpp.html#a80ee265383238cdb7bf5d0e0d34238a1',1,'hoc.cpp']]],
   ['readpattern',['readpattern',['../memacs_2redef_8h.html#a46333e268acc88af2cbc387fcebbd8e5',1,'redef.h']]],
-  ['real',['Real',['../machine_8h.html#a060b837c3b4486ee35317744156f3da2',1,'Real():&#160;machine.h'],['../machine_8h.html#a4b654506f18b8bfd61ad2a29a7e38c25',1,'REAL():&#160;machine.h']]],
+  ['real',['REAL',['../machine_8h.html#a4b654506f18b8bfd61ad2a29a7e38c25',1,'REAL():&#160;machine.h'],['../machine_8h.html#a060b837c3b4486ee35317744156f3da2',1,'Real():&#160;machine.h']]],
   ['real_5fdbl',['REAL_DBL',['../machine_8h.html#a0ba7e3b1873866a179e345ab83a8ee35',1,'machine.h']]],
   ['realloc',['REALLOC',['../spdefs_8h.html#a5e80816b502a011917c22d2c5b7eba8e',1,'spdefs.h']]],
   ['record',['record',['../apcount_8c.html#a75fa2f9a167f94dde19917fe0f64632b',1,'apcount.c']]],

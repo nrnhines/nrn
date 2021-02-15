@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -180,7 +179,7 @@
 <span id="ste"></span><h1>StateTransitionEvent<a class="headerlink" href="#statetransitionevent" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="StateTransitionEvent">
-<em class="property">class </em><code class="descname">StateTransitionEvent</code><a class="headerlink" href="#StateTransitionEvent" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">StateTransitionEvent</span></code><a class="headerlink" href="#StateTransitionEvent" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ste</span> <span class="pre">=</span> <span class="pre">h.StateTransitionEvent(nstate,</span> <span class="pre">[pointprocess])</span></code></dd>
 <dt>Description:</dt><dd><p>A StateTransitionEvent describes a finite state machine which is computed during a simulation run and moves
@@ -275,7 +274,7 @@ should consider the benefits of condition order 2.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="StateTransitionEvent.state">
-<code class="descclassname">StateTransitionEvent.</code><code class="descname">state</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StateTransitionEvent.state" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">StateTransitionEvent.</span></code><code class="descname"><span class="pre">state</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StateTransitionEvent.state" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">istate</span> <span class="pre">=</span> <span class="pre">ste.state()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">ste.state(istate)</span></code></p>
@@ -293,7 +292,7 @@ when a new simulation run begins.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="StateTransitionEvent.transition">
-<code class="descclassname">StateTransitionEvent.</code><code class="descname">transition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StateTransitionEvent.transition" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">StateTransitionEvent.</span></code><code class="descname"><span class="pre">transition</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#StateTransitionEvent.transition" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ste.transition(isrcstate,</span> <span class="pre">ideststate,</span> <span class="pre">_ref_triggervar,</span> <span class="pre">_ref_triggerthresh,</span> <span class="pre">pycallable)</span></code></dd>
 <dt>Description:</dt><dd><p>Adds a transition from the <code class="docutils literal notranslate"><span class="pre">isrcstate</span></code> of the StateTransitionEvent instance to the <code class="docutils literal notranslate"><span class="pre">ideststate</span></code>.

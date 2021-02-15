@@ -1,8 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"nrnhash__alt_8h.html#a57817f47e35579fbc190dcf014f21d4e":[5,0,0,11,54,1],
-"nrnhash__alt_8h.html#a8c795e5b1277cbd542b3984e5d096a95":[5,0,0,11,54,2],
-"nrnhash__alt_8h.html#a9140ea3f03b47c08d0034cc5b49bcec4":[5,0,0,11,54,3],
 "nrnhash__alt_8h.html#ae3ea0d771c104d17e57113f7bd9dc5ee":[5,0,0,11,54,9],
 "nrnhash__alt_8h_source.html":[5,0,0,11,54],
 "nrnisaac_8cpp.html":[5,0,0,16,49],
@@ -249,5 +246,8 @@ var NAVTREEINDEX82 =
 "nrnmain_8cpp.html#a92bab8a97891d8d70b807faeee41a6a8":[5,0,0,1,53,3],
 "nrnmain_8cpp.html#ab08959a9caedf5abac3903fa5efb1a07":[5,0,0,1,53,0],
 "nrnmain_8cpp.html#af225b782bcdf9c6f9f94f3d5c3987763":[5,0,0,1,53,4],
-"nrnmain_8cpp_source.html":[5,0,0,1,53]
+"nrnmain_8cpp_source.html":[5,0,0,1,53],
+"nrnmath_8h.html":[5,0,0,6,2,4],
+"nrnmath_8h_source.html":[5,0,0,6,2,4],
+"nrnmech_8h.html":[5,0,0,6,2,5]
 };

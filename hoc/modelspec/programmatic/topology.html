@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -296,7 +295,7 @@ forming the loop.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="id0">
-<code class="descname">topology</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">topology</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">topology()</span></code></dd>
 <dt>Description:</dt><dd>Print the topology of how the sections are connected together.</dd>
@@ -306,7 +305,7 @@ forming the loop.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="delete_section">
-<code class="descname">delete_section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delete_section" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">delete_section</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delete_section" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">delete_section()</span></code></dd>
 <dt>Description:</dt><dd><p>Delete the currently accessed section from the main section
@@ -328,7 +327,7 @@ freed.</p>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="section_exists">
-<code class="descname">section_exists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_exists" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">section_exists</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_exists" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">boolean</span> <span class="pre">=</span> <span class="pre">section_exists(&quot;name&quot;,</span> <span class="pre">[index],</span> <span class="pre">[object])</span></code></dd>
 <dt>Description:</dt><dd>Returns 1 if the section defined by the args exists and can be used
@@ -344,7 +343,7 @@ a single index value.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="section_owner">
-<code class="descname">section_owner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_owner" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">section_owner</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_owner" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">section_owner()</span></code></dd>
 <dt>Description:</dt><dd>Return the object that created the currently accessed section. If the
@@ -359,7 +358,7 @@ cell object.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="disconnect">
-<code class="descname">disconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#disconnect" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">disconnect</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#disconnect" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">disconnect()</span></code></dd>
 <dt>Description:</dt><dd>Disconnect the currently accessed section from its parent. Such
@@ -370,7 +369,7 @@ a parent can be reconnected with the connect statement.</dd>
 <hr class="docutils" />
 <dl class="py data">
 <dt id="nseg">
-<code class="descname">nseg</code><a class="headerlink" href="#nseg" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">nseg</span></code><a class="headerlink" href="#nseg" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Description:</dt><dd><p>Number of segments (compartments) in the currently accessed section.
 When a section is created, nseg is 1.
@@ -416,7 +415,7 @@ oddfactor^2 more accurate with regard to spatial discretization error.</p>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="issection">
-<code class="descname">issection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#issection" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">issection</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#issection" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">issection(&quot;regular</span> <span class="pre">expression&quot;)</span></code></dd>
 <dt>Description:</dt><dd><p>Return 1 if the currently accessed section matches the regular expression.
@@ -470,7 +469,7 @@ axon
 <hr class="docutils" />
 <dl class="py function">
 <dt id="ismembrane">
-<code class="descname">ismembrane</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ismembrane" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">ismembrane</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ismembrane" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">ismembrane(&quot;mechanism&quot;)</span></code></dd>
 <dt>Description:</dt><dd>This function returns a 1 if the current membrane contains this
@@ -491,7 +490,7 @@ processes.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="sectionname">
-<code class="descname">sectionname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sectionname" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">sectionname</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sectionname" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">sectionname(strvar)</span></code></dd>
 <dt>Description:</dt><dd><p>The name of the currently accessed section is placed in <em>strvar</em>.</p>
@@ -503,7 +502,7 @@ processes.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="secname">
-<code class="descname">secname</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#secname" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">secname</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#secname" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">secname()</span></code></dd>
 <dt>Description:</dt><dd><p>Returns the currently accessed section name. Usage is</p>
@@ -526,7 +525,7 @@ processes.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="psection">
-<code class="descname">psection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#psection" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">psection</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#psection" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">psection()</span></code></dd>
 <dt>Description:</dt><dd>Print info about currently accessed section in a format which is executable.
@@ -537,7 +536,7 @@ processes.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="parent_section">
-<code class="descname">parent_section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_section" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">parent_section</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_section" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">parent_section(x)</span></code></dd>
 <dt>Description:</dt><dd>Return the pointer to the section parent of the segment containing <em>x</em>.
@@ -549,7 +548,7 @@ double this function is deprecated in favor of <a class="reference internal" hre
 <hr class="docutils" />
 <dl class="py function">
 <dt id="parent_node">
-<code class="descname">parent_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_node" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">parent_node</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_node" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">parent_node(x)</span></code></dd>
 <dt>Description:</dt><dd>Return the pointer of the parent of the segment containing <em>x</em>.</dd>
@@ -563,7 +562,7 @@ double this function is deprecated in favor of <a class="reference internal" hre
 <hr class="docutils" />
 <dl class="py function">
 <dt id="parent_connection">
-<code class="descname">parent_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_connection" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">parent_connection</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#parent_connection" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">parent_connection()</span></code></dd>
 <dt>Description:</dt><dd><p>Return location on parent that currently accessed section is
@@ -578,7 +577,7 @@ connected to. (0 &lt;= x &lt;= 1). This is the value, y, used in</p>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="section_orientation">
-<code class="descname">section_orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_orientation" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">section_orientation</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#section_orientation" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">section_orientation()</span></code></dd>
 <dt>Description:</dt><dd><p>Return the end (0 or 1) which connects to the parent. This is the

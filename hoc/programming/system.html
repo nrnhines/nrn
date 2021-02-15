@@ -33,7 +33,6 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -215,7 +214,7 @@
 <h2>Path Manipulation<a class="headerlink" href="#path-manipulation" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="chdir">
-<code class="descname">chdir</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#chdir" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">chdir</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#chdir" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">chdir(&quot;path&quot;)</span></code></dd>
 <dt>Description:</dt><dd>Change working directory to the indicated path. Returns 0 if successful
@@ -226,7 +225,7 @@ otherwise -1, ie the usual unix os shell return style.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="getcwd">
-<code class="descname">getcwd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#getcwd" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">getcwd</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#getcwd" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">getcwd()</span></code></dd>
 <dt>Description:</dt><dd>Returns absolute path of current working directory in unix format.
@@ -239,7 +238,7 @@ Must be less than
 <hr class="docutils" />
 <dl class="py function">
 <dt id="neuronhome">
-<code class="descname">neuronhome</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuronhome" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">neuronhome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuronhome" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Name:</dt><dd>neuronhome – installation path</dd>
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">neuronhome()</span></code></dd>
@@ -263,7 +262,7 @@ executable program.</p>
 <h2>Machine Identification<a class="headerlink" href="#machine-identification" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="machine_name">
-<code class="descname">machine_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine_name" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">machine_name</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#machine_name" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">strdef</span> <span class="pre">name</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">machine_name(name)</span></code></p>
@@ -275,7 +274,7 @@ executable program.</p>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="unix_mac_pc">
-<code class="descname">unix_mac_pc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unix_mac_pc" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">unix_mac_pc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#unix_mac_pc" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">unix_mac_pc()</span></code></dd>
 <dt>Description:</dt><dd>Return 1 if unix, 2 if mac, 3 if mswin, or 4 if mac osx darwin
@@ -288,7 +287,7 @@ a dll can be loaded.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="nrnversion">
-<code class="descname">nrnversion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrnversion" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">nrnversion</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrnversion" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">versionstring</span> <span class="pre">=</span> <span class="pre">nrnversion()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">=</span> <span class="pre">nrnversion(i)</span></code></p>
@@ -352,7 +351,7 @@ progam is unknown</p>
 <h2>Execute a Command<a class="headerlink" href="#execute-a-command" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="WinExec">
-<code class="descname">WinExec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WinExec" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">WinExec</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#WinExec" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">WinExec(&quot;mswin</span> <span class="pre">command&quot;)</span></code></dd>
 <dt>Description:</dt><dd>MSWin version only.</dd>
@@ -362,7 +361,7 @@ progam is unknown</p>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="system">
-<code class="descname">system</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#system" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">system</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#system" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Name:</dt><dd>system — issue a shell command</dd>
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">exitcode</span> <span class="pre">=</span> <span class="pre">system(cmdstr)</span></code></p>
@@ -404,7 +403,7 @@ Redirection of stdout to a file can only be done with the idiom
 <h2>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="startsw">
-<code class="descname">startsw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#startsw" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">startsw</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#startsw" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initializes a stopwatch with a resolution of 1 second or 0.01 second if
 gettimeofday system call is available. See <a class="reference internal" href="../../python/programming/system.html#stopsw" title="stopsw"><code class="xref py py-func docutils literal notranslate"><span class="pre">stopsw()</span></code></a> .</p>
 </dd></dl>
@@ -412,7 +411,7 @@ gettimeofday system call is available. See <a class="reference internal" href=".
 <hr class="docutils" />
 <dl class="py function">
 <dt id="stopsw">
-<code class="descname">stopsw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stopsw" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">stopsw</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#stopsw" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
 <div><p>Returns the time in seconds since the stopwatch was last initialized with a <a class="reference internal" href="../../python/programming/system.html#startsw" title="startsw"><code class="xref py py-func docutils literal notranslate"><span class="pre">startsw()</span></code></a> .</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>startsw()
@@ -443,7 +442,7 @@ startsw() - x
 <h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt id="nrn_load_dll">
-<code class="descname">nrn_load_dll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrn_load_dll" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">nrn_load_dll</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrn_load_dll" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">nrn_load_dll(dll_file_name)</span></code></dd>
 <dt>Description:</dt><dd>Loads a dll containing membrane mechanisms. This works for mswin, mac,
@@ -453,7 +452,7 @@ and linux.</dd>
 
 <dl class="py function">
 <dt id="show_winio">
-<code class="descname">show_winio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#show_winio" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">show_winio</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#show_winio" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">show_winio(0or1)</span></code></dd>
 <dt>Description:</dt><dd>MSWin and Mac version only. Hides or shows the console window.</dd>

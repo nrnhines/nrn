@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -213,7 +212,7 @@
 <h1>PtrVector<a class="headerlink" href="#ptrvector" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="PtrVector">
-<em class="property">class </em><code class="descname">PtrVector</code><a class="headerlink" href="#PtrVector" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">PtrVector</span></code><a class="headerlink" href="#PtrVector" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="samp docutils literal notranslate"><span class="pre">pv</span> <span class="pre">=</span> <span class="pre">h.PtrVector(</span><em><span class="pre">size</span></em><span class="pre">)</span></code></dd>
 </dl>
@@ -251,7 +250,7 @@ memory segfaults when internal memory is reallocated.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.size">
-<code class="descclassname">PtrVector.</code><code class="descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.size" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">size</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.size" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">length</span> <span class="pre">=</span> <span class="pre">pv.size()</span></code></dd>
 <dt>Description:</dt><dd>Return the number of elements in the PtrVector.</dd>
@@ -261,7 +260,7 @@ memory segfaults when internal memory is reallocated.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.resize">
-<code class="descclassname">PtrVector.</code><code class="descname">resize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.resize" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">resize</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.resize" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">newsize</span> <span class="pre">=</span> <span class="pre">pv.resize(newsize)</span></code></dd>
 <dt>Description:</dt><dd>Old pointer array is freed and new pointer array with specified size
@@ -274,7 +273,7 @@ Newsize must be an integer greater than 0.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.pset">
-<code class="descclassname">PtrVector.</code><code class="descname">pset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.pset" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">pset</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.pset" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">var_val</span> <span class="pre">=</span> <span class="pre">pv.pset(i,</span> <span class="pre">_ref_var)</span></code></dd>
 <dt>Description:</dt><dd>The ith pointer in the PtrVector points to var. 0 &lt;= i &lt; pv.size()</dd>
@@ -284,7 +283,7 @@ Newsize must be an integer greater than 0.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.scatter">
-<code class="descclassname">PtrVector.</code><code class="descname">scatter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.scatter" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">scatter</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.scatter" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">0.</span> <span class="pre">=</span> <span class="pre">pv.scatter(srcvec)</span></code></dd>
 <dt>Description:</dt><dd>The elements of the Vector argument are copied to the variables pointed
@@ -295,7 +294,7 @@ to. The size of the Vector must be the same as the size of the PtrVector</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.gather">
-<code class="descclassname">PtrVector.</code><code class="descname">gather</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.gather" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">gather</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.gather" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">0.</span> <span class="pre">=</span> <span class="pre">pv.gather(destvec)</span></code></dd>
 <dt>Description:</dt><dd>The variable values pointed to by the PtrVector are copied into the
@@ -306,7 +305,7 @@ destination Vector.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.getval">
-<code class="descclassname">PtrVector.</code><code class="descname">getval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.getval" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">getval</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.getval" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="samp docutils literal notranslate"><em><span class="pre">val</span></em> <span class="pre">=</span> <span class="pre">pv.getval(</span><em><span class="pre">i</span></em><span class="pre">)</span></code></dd>
 <dt>Description:</dt><dd>Return the value pointed to by the ith pointer in the PtrVector.</dd>
@@ -316,7 +315,7 @@ destination Vector.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.setval">
-<code class="descclassname">PtrVector.</code><code class="descname">setval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.setval" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">setval</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.setval" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="samp docutils literal notranslate"><em><span class="pre">val</span></em> <span class="pre">=</span> <span class="pre">pv.getval(</span><em><span class="pre">i</span></em><span class="pre">,</span> <em><span class="pre">x</span></em><span class="pre">)</span></code></dd>
 <dt>Description:</dt><dd>Set the variable pointed to by the ith pointer to the value of x.</dd>
@@ -326,7 +325,7 @@ destination Vector.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.ptr_update_callback">
-<code class="descclassname">PtrVector.</code><code class="descname">ptr_update_callback</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.ptr_update_callback" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">ptr_update_callback</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.ptr_update_callback" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="samp docutils literal notranslate"><span class="pre">pv.ptr_update_callback(pythoncallback)</span></code></p>
 <p><code class="samp docutils literal notranslate"><span class="pre">pv.ptr_update_callback(&quot;hoc_statement&quot;,</span> <span class="pre">[object])</span></code></p>
@@ -342,7 +341,7 @@ not be destroyed. The return value is 0.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.plot">
-<code class="descclassname">PtrVector.</code><code class="descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.plot" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">plot</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.plot" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">pv.plot(graphobj)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">pv.plot(graphobj,</span> <span class="pre">color,</span> <span class="pre">brush)</span></code></p>
@@ -412,7 +411,7 @@ Vector.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PtrVector.label">
-<code class="descclassname">PtrVector.</code><code class="descname">label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.label" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PtrVector.</span></code><code class="descname"><span class="pre">label</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PtrVector.label" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="samp docutils literal notranslate"><em><span class="pre">curstr</span></em> <span class="pre">=</span> <span class="pre">pv.label(&quot;str&quot;)</span></code></p>
 <p><code class="samp docutils literal notranslate"><em><span class="pre">curstr</span></em> <span class="pre">=</span> <span class="pre">pv.label()</span></code></p>

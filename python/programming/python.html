@@ -33,7 +33,6 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -309,7 +308,7 @@ with HOC; for a Python-based introduction to NEURON, see
 </div>
 <dl class="py class">
 <dt id="neuron.hoc.HocObject">
-<em class="property">class </em><code class="descclassname">neuron.hoc.</code><code class="descname">HocObject</code><a class="headerlink" href="#neuron.hoc.HocObject" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.hoc.</span></code><code class="descname"><span class="pre">HocObject</span></code><a class="headerlink" href="#neuron.hoc.HocObject" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">neuron</span> <span class="pre">import</span> <span class="pre">h</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">h</span> <span class="pre">=</span> <span class="pre">neuron.hoc.HocObject()</span></code></p>
@@ -584,7 +583,7 @@ a POINTER bar and you want it to point to t use</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="neuron.hoc.hoc_ac">
-<code class="descclassname">neuron.hoc.</code><code class="descname">hoc_ac</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.hoc.hoc_ac" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">neuron.hoc.</span></code><code class="descname"><span class="pre">hoc_ac</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.hoc.hoc_ac" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">hoc</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">double_value</span> <span class="pre">=</span> <span class="pre">hoc.hoc_ac()</span></code></p>
@@ -607,7 +606,7 @@ is far more general.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="neuron.h.cas">
-<code class="descclassname">neuron.h.</code><code class="descname">cas</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.h.cas" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">neuron.h.</span></code><code class="descname"><span class="pre">cas</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.h.cas" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">sec</span> <span class="pre">=</span> <span class="pre">h.cas()</span></code></dd>
 <dt>Description:</dt><dd><p>Returns the <a class="reference internal" href="../modelspec/programmatic/topology/secspec.html#currentlyaccessedsection"><span class="std std-ref">currently accessed section</span></a> as a Python
@@ -631,7 +630,7 @@ section objects, sec=, and section methods instead.</p>
 <hr class="docutils" />
 <dl class="py class">
 <dt id="neuron.h.Section">
-<em class="property">class </em><code class="descclassname">neuron.h.</code><code class="descname">Section</code><a class="headerlink" href="#neuron.h.Section" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.h.</span></code><code class="descname"><span class="pre">Section</span></code><a class="headerlink" href="#neuron.h.Section" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">sec</span> <span class="pre">=</span> <span class="pre">h.Section()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">sec</span> <span class="pre">=</span> <span class="pre">h.Section([name='string',</span> <span class="pre">[cell=self])</span></code></p>
@@ -781,7 +780,7 @@ in the python world can be assigned or evaluated.</dd>
 <hr class="docutils" />
 <dl class="py function">
 <dt id="nrnpython">
-<code class="descname">nrnpython</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrnpython" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">nrnpython</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nrnpython" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">nrnpython(&quot;any</span> <span class="pre">python</span> <span class="pre">statement&quot;)</span></code></dd>
 <dt>Description:</dt><dd><p>Executes any python statement. Returns 1 on success; 0 if an exception
@@ -807,7 +806,7 @@ available.</p>
 <hr class="docutils" />
 <dl class="py class">
 <dt id="PythonObject">
-<em class="property">class </em><code class="descname">PythonObject</code><a class="headerlink" href="#PythonObject" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">PythonObject</span></code><a class="headerlink" href="#PythonObject" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">PythonObject()</span></code></dd>
 <dt>Description:</dt><dd><p>Accesses any python object. Almost equivalent to <a class="reference internal" href="#neuron.hoc.HocObject" title="neuron.hoc.HocObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">HocObject</span></code></a> in the
@@ -873,7 +872,7 @@ the __getitem__ idiom.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="neuron.hoc.execute">
-<code class="descclassname">neuron.hoc.</code><code class="descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.hoc.execute" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">neuron.hoc.</span></code><code class="descname"><span class="pre">execute</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.hoc.execute" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">neuron</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">neuron.hoc.execute('any</span> <span class="pre">hoc</span> <span class="pre">statement')</span></code></p>

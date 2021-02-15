@@ -5,7 +5,6 @@ var nrncvode_2occvode_8cpp =
     [ "SETUP", "nrncvode_2occvode_8cpp.html#ac3b15998ba7221fca6fc579b1cd60557", null ],
     [ "USED", "nrncvode_2occvode_8cpp.html#abcd0a22ee4346cad5706adb6d2119429", null ],
     [ "VECTORIZE", "nrncvode_2occvode_8cpp.html#a240729fe74a7b9a3b6c3887397d869ea", null ],
-    [ "Pfridot", "nrncvode_2occvode_8cpp.html#ada3625db9949b1480710d6c51ada1c8e", null ],
     [ "gather_y_thread", "nrncvode_2occvode_8cpp.html#a29e1074e7df6663210d8bee3400c304d", null ],
     [ "gather_ydot_thread", "nrncvode_2occvode_8cpp.html#a454ce97875314e78bcf84f03693cb338", null ],
     [ "long_difus_solve", "nrncvode_2occvode_8cpp.html#a1bf1eb457b64105f806dffae402b8c80", null ],

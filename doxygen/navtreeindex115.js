@@ -1,8 +1,5 @@
 var NAVTREEINDEX115 =
 {
-"struct_info.html#a07cb8f50c3f51673fad548f59759a88f":[4,0,175,1],
-"struct_info.html#a4b63c9e3a7d2411020fcce7895d7fb6d":[4,0,175,2],
-"struct_info.html#a68eeac05d344a9b666e20a856e47df8c":[4,0,175,0],
 "struct_inter_thread_event.html":[4,0,178],
 "struct_inter_thread_event.html#a612de490c244abd9d0275fab00d9ce0d":[4,0,178,0],
 "struct_inter_thread_event.html#af993043fe27638f0bb06b161ed3a8c63":[4,0,178,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX115 =
 "struct_node.html#a622e41c41f8d87d13478d62e4c12e1cd":[4,0,259,11],
 "struct_node.html#a7b4d42c1de91d7fa119012c1dd192bfc":[4,0,259,0],
 "struct_node.html#a8124af7410b3e16e47ca187958ba337a":[4,0,259,14],
-"struct_node.html#a8272596a06a5a4b8fa932a0f7e7652ba":[4,0,259,16]
+"struct_node.html#a8272596a06a5a4b8fa932a0f7e7652ba":[4,0,259,16],
+"struct_node.html#a9f0d6ecd140f206a9589d8688258bc0f":[4,0,259,13],
+"struct_node.html#ab4141c4b5db094cdd8d546b47bbdbf85":[4,0,259,10],
+"struct_node.html#abc6301e6bb5b10203e5978967e9e588c":[4,0,259,2]
 };

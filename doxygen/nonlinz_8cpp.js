@@ -1,7 +1,6 @@
 var nonlinz_8cpp =
 [
     [ "NonLinImpRep", "class_non_lin_imp_rep.html", "class_non_lin_imp_rep" ],
-    [ "Pfridot", "nonlinz_8cpp.html#ada3625db9949b1480710d6c51ada1c8e", null ],
     [ "nrn_rhs", "nonlinz_8cpp.html#a3bc45f0f8aafd591bb5e99ec15567ded", null ],
     [ "nrndae_extra_eqn_count", "nonlinz_8cpp.html#a324139c6660ed162e31931d24b772154", null ],
     [ "pargap_jacobi_rhs", "nonlinz_8cpp.html#aac9ec7f1256f3c48d4c4193f0842ed94", null ],

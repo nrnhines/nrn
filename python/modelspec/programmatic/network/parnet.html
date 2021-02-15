@@ -33,7 +33,6 @@
         <script src="../../../../_static/jquery.js"></script>
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
 
@@ -210,7 +209,7 @@
 <span id="parnet"></span><h1>ParallelNetManager<a class="headerlink" href="#parallelnetmanager" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="ParallelNetManager">
-<em class="property">class </em><code class="descname">ParallelNetManager</code><a class="headerlink" href="#ParallelNetManager" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">ParallelNetManager</span></code><a class="headerlink" href="#ParallelNetManager" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm</span> <span class="pre">=</span> <span class="pre">h.ParallelNetManager(ncell)</span></code></dd>
 <dt>Description:</dt><dd><p>Manages the setup and running of a network simulation on a cluster
@@ -438,7 +437,7 @@ tell all the workers to quit.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.set_gid2node">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">set_gid2node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.set_gid2node" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">set_gid2node</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.set_gid2node" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.set_gid2node(gid,</span> <span class="pre">machine_id)</span></code></dd>
 <dt>Description:</dt><dd>When MPI is being used, this is just
@@ -450,7 +449,7 @@ a wrapper for the ParallelContext version of
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.round_robin">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">round_robin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.round_robin" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">round_robin</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.round_robin" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.round_robin()</span></code></dd>
 <dt>Description:</dt><dd>The gid ranging from 0 to ncell-1
@@ -463,7 +462,7 @@ available.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.gid_exists">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">gid_exists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.gid_exists" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">gid_exists</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.gid_exists" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">result</span> <span class="pre">=</span> <span class="pre">pnm.gid_exists(gid)</span></code></dd>
 <dt>Description:</dt><dd>Returns 1 if the gid exists on this machine, 2 if it exists and has been
@@ -475,7 +474,7 @@ Just a wrapper for <a class="reference internal" href="parcon.html#ParallelConte
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.create_cell">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">create_cell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.create_cell" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">create_cell</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.create_cell" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">cellobject</span> <span class="pre">=</span> <span class="pre">pnm.create_cell(gid,</span> <span class="pre">&quot;obexpr&quot;)</span></code></dd>
 <dt>Description:</dt><dd><p>This is deprecated. Use <a class="reference internal" href="#ParallelNetManager.register_cell" title="ParallelNetManager.register_cell"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelNetManager.register_cell()</span></code></a> .</p>
@@ -499,7 +498,7 @@ this cell is a source but the target is on another machine.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.register_cell">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">register_cell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.register_cell" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">register_cell</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.register_cell" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.register_cell(gid,</span> <span class="pre">cellobject)</span></code></dd>
 <dt>Description:</dt><dd><p>Associate gid and cellobject. If <a class="reference internal" href="parcon.html#ParallelContext.gid_exists" title="ParallelContext.gid_exists"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelContext.gid_exists()</span></code></a>
@@ -516,7 +515,7 @@ cell creation arguments.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.nc_append">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">nc_append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.nc_append" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">nc_append</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.nc_append" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">netcon</span> <span class="pre">=</span> <span class="pre">pnm.nc_append(src_gid,</span> <span class="pre">target_gid,</span> <span class="pre">synapse_id,</span> <span class="pre">weight,</span> <span class="pre">delay)</span></code></dd>
 <dt>Description:</dt><dd><p>If the source and target exist on this machine a NetCon is created
@@ -553,7 +552,7 @@ there is nothing to do.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.want_all_spikes">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">want_all_spikes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.want_all_spikes" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">want_all_spikes</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.want_all_spikes" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.want_all_spikes()</span></code></dd>
 <dt>Description:</dt><dd>Records all spikes of all cells on this machine into the
@@ -565,7 +564,7 @@ and the idvec holds the corresponding gid values.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.spike_record">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">spike_record</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.spike_record" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">spike_record</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.spike_record" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.spike_record(gid)</span></code></dd>
 <dt>Description:</dt><dd>Wraps <a class="reference internal" href="parcon.html#ParallelContext.spike_record" title="ParallelContext.spike_record"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelContext.spike_record()</span></code></a> but calls it only if
@@ -577,7 +576,7 @@ into the pnm.spikevec and pnm.gidvec Vector objects.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.prun">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">prun</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.prun" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">prun</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.prun" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.prun()</span></code></dd>
 <dt>Description:</dt><dd>All the workers and the master are asked to <a class="reference internal" href="#ParallelNetManager.pinit" title="ParallelNetManager.pinit"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelNetManager.pinit()</span></code></a>
@@ -588,7 +587,7 @@ and <a class="reference internal" href="#ParallelNetManager.pcontinue" title="Pa
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.psolve">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">psolve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.psolve" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">psolve</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.psolve" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.psolve(tstop)</span></code></dd>
 <dt>Description:</dt><dd>Wraps <a class="reference internal" href="parcon.html#ParallelContext.psolve" title="ParallelContext.psolve"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelContext.psolve()</span></code></a> .</dd>
@@ -598,7 +597,7 @@ and <a class="reference internal" href="#ParallelNetManager.pcontinue" title="Pa
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.pinit">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">pinit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.pinit" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">pinit</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.pinit" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.pinit()</span></code></dd>
 <dt>Description:</dt><dd>All the workers and the master execute a call to
@@ -612,7 +611,7 @@ standard run system.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.pcontinue">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">pcontinue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.pcontinue" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">pcontinue</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.pcontinue" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.pcontinue(tstop)</span></code></dd>
 <dt>Description:</dt><dd>All the workers and the master execute a call to <a class="reference internal" href="parcon.html#ParallelContext.psolve" title="ParallelContext.psolve"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ParallelContext.psolve()</span></code></a>
@@ -623,7 +622,7 @@ to integrate from the current value of t to the argument value.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.prstat">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">prstat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.prstat" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">prstat</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.prstat" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">pnm.prstat(0)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">pnm.prstat(1)</span></code></p>
@@ -649,7 +648,7 @@ are printed. The format is</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.gatherspikes">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">gatherspikes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.gatherspikes" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">gatherspikes</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.gatherspikes" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.gatherspikes</span></code></dd>
 <dt>Description:</dt><dd>All the workers are asked to post their spikevec and idvec Vectors
@@ -661,7 +660,7 @@ and idvec Vectors.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="ParallelNetManager.splitcell">
-<code class="descclassname">ParallelNetManager.</code><code class="descname">splitcell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.splitcell" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">ParallelNetManager.</span></code><code class="descname"><span class="pre">splitcell</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ParallelNetManager.splitcell" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">pnm.splitcell(hostcas,</span> <span class="pre">hostparent,</span> <span class="pre">sec=split_at)</span></code></dd>
 <dt>Description:</dt><dd><p>The cell is split at the section <code class="docutils literal notranslate"><span class="pre">split_at</span></code> and that section’s

@@ -33,7 +33,6 @@
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -288,7 +287,8 @@ Please <a class="reference external" href="https://github.com/neuronsimulator/nr
 <p>Depending on platform you can install these dependencies as follows:</p>
 <div class="section" id="id1">
 <h3>Mac OS<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>The easiest way to install depndencies on Mac OS is to use <a class="reference external" href="https://brew.sh/">brew</a> or
+<p>This is for x86_64. For Apple M1 (arm64), see <a class="reference external" href="#Apple-M1-Build-Dependencies">here</a></p>
+<p>The easiest way to install dependencies on Mac OS is to use <a class="reference external" href="https://brew.sh/">brew</a> or
 <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/index.html">conda</a> package manager. For example,
 once <a class="reference external" href="https://docs.brew.sh/Installation">brew is installed</a> you can do:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install coreutils openmpi cmake
@@ -303,6 +303,39 @@ brew install --cask xquartz
 <a class="reference external" href="https://www.python.org/downloads/mac-osx/">official distribution</a>. Also, note that
 <a class="reference external" href="https://stackoverflow.com/questions/9329243/how-to-install-xcode-command-line-tools">Xcode Command Line Tools</a>
 needs to be installed for development.</p>
+<p><a name="Apple-M1-Build-Dependencies"></a></p>
+<div class="section" id="apple-m1">
+<h4>Apple M1<a class="headerlink" href="#apple-m1" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">Install command line tools as</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>xcode-select --install
+</pre></div>
+</div>
+</li>
+<li><p class="first">If desire classical NEURON GUI : from <a class="reference external" href="https://www.xquartz.org/">xquartz.org</a>, click “Releases”, click XQuartz-2.8.0_beta3 , and follow instructions. After installing, logout and log back in.</p>
+<p>If you desire single click button action for X11 when entering a window then execute below command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>defaults write org.xquartz.X11 wm_ffm -bool <span class="nb">true</span>
+</pre></div>
+</div>
+<p>For the new default to take effect, logout then log back in.</p>
+</li>
+<li><p class="first">Install dependencies with HomeBrew and pip as:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># install brew and initialize shell</span>
+/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nb">echo</span> <span class="s1">&#39;eval $(/opt/homebrew/bin/brew shellenv)&#39;</span> &gt;&gt; <span class="nv">$HOME</span>/.zprofile
+<span class="nb">eval</span> <span class="k">$(</span>/opt/homebrew/bin/brew shellenv<span class="k">)</span>
+
+brew install cmake
+brew install open-mpi
+
+pip3 install --user --upgrade pip
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Library/Python/3.8/bin&quot;</span>:<span class="nv">$PATH</span>
+pip3 install --user cython
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
 </div>
 <div class="section" id="id2">
 <h3>Linux<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>

@@ -33,7 +33,6 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -268,7 +267,7 @@ E.g.: 7.8a, 8.0a or 8.0a2</li>
 <p>At the beginning of the development towards a new release, a special annotated tag should be created in master named MAJOR.MINOR.dev. Development then proceeds naturally in master. This ensures that git describe works well to obtain a valid development version id.</p>
 <div class="section" id="from-alpha-to-final-release">
 <h4>From Alpha to Final Release<a class="headerlink" href="#from-alpha-to-final-release" title="Permalink to this headline">¶</a></h4>
-<p><img alt="../../_images/image21.png" src="../../_images/image21.png" /></p>
+<p><img alt="../../_images/image2.png" src="../../_images/image2.png" /></p>
 <p>When a considerable set of features have been implemented, cycles of pre-release -&gt; test -&gt; fixes -&gt; release happen until a final release.</p>
 <ul class="simple">
 <li>Alpha: Alpha marks the beginning of integration tests.<ul>
@@ -289,7 +288,7 @@ E.g.: 7.8a, 8.0a or 8.0a2</li>
 </div>
 <div class="section" id="patch-releases">
 <h4>Patch Releases<a class="headerlink" href="#patch-releases" title="Permalink to this headline">¶</a></h4>
-<p><img alt="../../_images/image11.png" src="../../_images/image11.png" /></p>
+<p><img alt="../../_images/image1.png" src="../../_images/image1.png" /></p>
 <p>After a version is released, and until it’s declared deprecated, it shall receive fixes and improvements. As mentioned in <a class="reference external" href="https://docs.google.com/document/d/15KEVxrg3dcXIRjc3Jp9sX2WOJlO_yqMCeSeg3j_lKks/edit?ts=5ebd1648#heading=h.j25n41g028t9">Contributing</a>, at this stage, patches should target master. It is therefore required to port these changes individually to the active releases they apply (e.g. patch 11 in the figure). For that, the release maintainer must cherry-pick the patch and, if necessary, make the required adjustments. However, in the case of hotfixes - critical release fixes - the process can be reversed, i.e. developed directly from the release and merged into it, allowing the release to get the fix more rapidly (figure: patch “hot-12”).</p>
 <p>After some fixes were applied to the release branch, a PATCH release may be made available. Even though some branching models make patch releases on every commit, NEURON has followed a more traditional release cycle. As guidelines, it seems reasonable to::</p>
 <ul class="simple">

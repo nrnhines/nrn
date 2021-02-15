@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -217,7 +216,7 @@
 <h1>Plotter Control (obsolete)<a class="headerlink" href="#plotter-control-obsolete" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="lw">
-<code class="descname">lw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lw" title="Permalink to this definition">¶</a></dt>
+<code class="descname"><span class="pre">lw</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lw" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Name:</dt><dd>lw - laser writer graphical output (or HP pen plotter)</dd>
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">lw(file)</span></code></p>
@@ -238,7 +237,7 @@ PC program, <code class="docutils literal notranslate"><span class="pre">CODRAW<
 </dl>
 <p>Lw keeps copying every plot to the screen until the file is closed with
 the command, <code class="docutils literal notranslate"><span class="pre">lw()</span></code>. Note that erasing the screen with <code class="docutils literal notranslate"><span class="pre">plt(-3)</span></code> or
-a <kbd class="kbd docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Control</kbd>-<kbd class="kbd docutils literal notranslate">e</kbd></kbd> will throw away whatever is in the file and restart the file at the
+a <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Control</kbd>-<kbd class="kbd docutils literal notranslate">e</kbd></kbd> will throw away whatever is in the file and restart the file at the
 beginning.  Therefore, <code class="docutils literal notranslate"><span class="pre">lw</span></code> keeps an accurate representation of the
 current graphic status of the screen.</p>
 <p>After setting the device once, it remains the same unless changed again

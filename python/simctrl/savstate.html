@@ -33,7 +33,6 @@
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -209,7 +208,7 @@
 <span id="savstate"></span><h1>SaveState<a class="headerlink" href="#savestate" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="SaveState">
-<em class="property">class </em><code class="descname">SaveState</code><a class="headerlink" href="#SaveState" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">SaveState</span></code><a class="headerlink" href="#SaveState" title="Permalink to this definition">¶</a></dt>
 <dd><p>The state includes <a class="reference internal" href="programmatic.html#t" title="t"><code class="xref py py-data docutils literal notranslate"><span class="pre">t</span></code></a>, the voltage for all segments of all sections,
 and all the STATEs defined in all the membrane and point process
 mechanisms. With regard to model descriptions, it does not include
@@ -254,7 +253,7 @@ general and SaveState will be useless.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="SaveState.save">
-<code class="descclassname">SaveState.</code><code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.save" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">SaveState.</span></code><code class="descname"><span class="pre">save</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.save" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.save()</span></code></dd>
 <dt>Description:</dt><dd>t, voltage, state and event values are stored in the object.</dd>
@@ -264,7 +263,7 @@ general and SaveState will be useless.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="SaveState.restore">
-<code class="descclassname">SaveState.</code><code class="descname">restore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.restore" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">SaveState.</span></code><code class="descname"><span class="pre">restore</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.restore" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">.restore()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">.restore(1)</span></code></p>
@@ -286,7 +285,7 @@ events on the queue after finitialize() are not disturbed.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="SaveState.fread">
-<code class="descclassname">SaveState.</code><code class="descname">fread</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.fread" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">SaveState.</span></code><code class="descname"><span class="pre">fread</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.fread" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">.fread(File)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">.fread(File,</span> <span class="pre">close)</span></code></p>
@@ -315,7 +314,7 @@ at least <a class="reference internal" href="../modelspec/programmatic/network/p
 <hr class="docutils" />
 <dl class="py method">
 <dt id="SaveState.fwrite">
-<code class="descclassname">SaveState.</code><code class="descname">fwrite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.fwrite" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">SaveState.</span></code><code class="descname"><span class="pre">fwrite</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.fwrite" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.fwrite(File)</span></code></dd>
 <dt>Description:</dt><dd>Opens the file defined by the <em>File</em> object, writes saved
@@ -329,7 +328,7 @@ may be written to the file, e.g. <a class="reference internal" href="../programm
 <hr class="docutils" />
 <dl class="py method">
 <dt id="SaveState.writehoc">
-<code class="descclassname">SaveState.</code><code class="descname">writehoc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.writehoc" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">SaveState.</span></code><code class="descname"><span class="pre">writehoc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SaveState.writehoc" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">.writehoc(File)</span></code></dd>
 <dt>Description:</dt><dd>Writes saved state data as sequence of hoc statements that

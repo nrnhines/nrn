@@ -33,7 +33,6 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -224,7 +223,7 @@
 <span id="pwman"></span><h1>PWManager<a class="headerlink" href="#pwmanager" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="PWManager">
-<em class="property">class </em><code class="descname">PWManager</code><a class="headerlink" href="#PWManager" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="descname"><span class="pre">PWManager</span></code><a class="headerlink" href="#PWManager" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">h.PWManager()</span></code></dd>
 <dt>Description:</dt><dd>A variety of hooks into the <a class="reference internal" href="../../visualization/gui.html#pwm"><span class="std std-ref">Print &amp; File Window Manager</span></a> to allow program control
@@ -238,7 +237,7 @@ the leader. It cannot be closed.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.count">
-<code class="descclassname">PWManager.</code><code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.count" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">count</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.count" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">cnt</span> <span class="pre">=</span> <span class="pre">p.count()</span></code></dd>
 <dt>Description:</dt><dd>Returns number of “Printable” windows on the screen.</dd>
@@ -254,7 +253,7 @@ the leader. It cannot be closed.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.is_mapped">
-<code class="descclassname">PWManager.</code><code class="descname">is_mapped</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.is_mapped" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">is_mapped</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.is_mapped" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">boolean</span> <span class="pre">=</span> <span class="pre">p.is_mapped(index)</span></code></dd>
 <dt>Description:</dt><dd>Return 1 if the index’th window is visible.</dd>
@@ -274,7 +273,7 @@ the leader. It cannot be closed.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.map">
-<code class="descclassname">PWManager.</code><code class="descname">map</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.map" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">map</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.map" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.map(index)</span></code></dd>
 <dt>Description:</dt><dd>Makes the index’th window visible.</dd>
@@ -291,7 +290,7 @@ the leader. It cannot be closed.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.hide">
-<code class="descclassname">PWManager.</code><code class="descname">hide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.hide" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">hide</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.hide" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.hide(index)</span></code></dd>
 <dt>Description:</dt><dd>Unmaps the index’th window. The window is NOT closed.</dd>
@@ -312,7 +311,7 @@ the leader. It cannot be closed.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.close">
-<code class="descclassname">PWManager.</code><code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.close" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">close</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.close" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.close(index)</span></code></dd>
 <dt>Description:</dt><dd>Closes the index’th window. This will destroy the window and decrement the
@@ -330,7 +329,7 @@ reference count of the associated hoc object (if any).</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.iconify">
-<code class="descclassname">PWManager.</code><code class="descname">iconify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.iconify" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">iconify</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.iconify" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.iconify()</span></code></dd>
 <dt>Description:</dt><dd>Hides all windows and iconifies the leader.</dd>
@@ -347,7 +346,7 @@ reference count of the associated hoc object (if any).</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.deiconify">
-<code class="descclassname">PWManager.</code><code class="descname">deiconify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.deiconify" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">deiconify</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.deiconify" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.deiconify()</span></code></dd>
 <dt>Description:</dt><dd>Un-iconifies the leader window and maps any windows not hidden before it was
@@ -358,7 +357,7 @@ iconified.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.leader">
-<code class="descclassname">PWManager.</code><code class="descname">leader</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.leader" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">leader</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.leader" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">index</span> <span class="pre">=</span> <span class="pre">p.leader()</span></code></dd>
 <dt>Description:</dt><dd>Window index of the leader window.</dd>
@@ -368,7 +367,7 @@ iconified.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.manager">
-<code class="descclassname">PWManager.</code><code class="descname">manager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.manager" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">manager</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.manager" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">index</span> <span class="pre">=</span> <span class="pre">p.manager()</span></code></dd>
 <dt>Description:</dt><dd>Window index of the <a class="reference internal" href="../../visualization/gui.html#pwm"><span class="std std-ref">Print &amp; File Window Manager</span></a> window.</dd>
@@ -384,7 +383,7 @@ iconified.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.save">
-<code class="descclassname">PWManager.</code><code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.save" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">save</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.save" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">p.save(&quot;filename&quot;,</span> <span class="pre">group_object,</span> <span class="pre">[&quot;header&quot;])</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">p.save(&quot;filename&quot;,</span> <span class="pre">selected,</span> <span class="pre">[&quot;header&quot;])</span></code></p>
@@ -414,7 +413,7 @@ the windows on the paper icon are saved in the session file.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.group">
-<code class="descclassname">PWManager.</code><code class="descname">group</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.group" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">group</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.group" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">group_obj</span> <span class="pre">=</span> <span class="pre">p.group(index,</span> <span class="pre">group_obj)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">group_obj</span> <span class="pre">=</span> <span class="pre">p.group(index)</span></code></p>
@@ -434,7 +433,7 @@ group object associated with that window.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.snap">
-<code class="descclassname">PWManager.</code><code class="descname">snap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.snap" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">snap</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.snap" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">p.snap()</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">p.snap(&quot;filename&quot;)</span></code></p>
@@ -457,7 +456,7 @@ printed to a postscript file with the “filename” or filebrowser selection.</
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.jwindow">
-<code class="descclassname">PWManager.</code><code class="descname">jwindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.jwindow" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">jwindow</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.jwindow" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">index</span> <span class="pre">=</span> <span class="pre">p.jwindow(hoc_owner,</span> <span class="pre">mapORhide,</span> <span class="pre">x,</span> <span class="pre">y,</span> <span class="pre">w,</span> <span class="pre">h)</span></code></dd>
 <dt>Description:</dt><dd>Manipulate the position and size of a java window frame associated with the
@@ -470,7 +469,7 @@ statements created by the java object in order to specify window attributes.</dd
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.scale">
-<code class="descclassname">PWManager.</code><code class="descname">scale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.scale" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">scale</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.scale" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.scale(x)</span></code></dd>
 <dt>Description:</dt><dd>Works only under mswin.
@@ -490,7 +489,7 @@ i.e, a scale value of 1 gives normal size windows.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.name">
-<code class="descclassname">PWManager.</code><code class="descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.name" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">name</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.name" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">strdef</span> <span class="pre">=</span> <span class="pre">p.name(index)</span></code></dd>
 <dt>Description:</dt><dd>Returns the window title bar string of the index’th window.</dd>
@@ -506,7 +505,7 @@ i.e, a scale value of 1 gives normal size windows.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.window_place">
-<code class="descclassname">PWManager.</code><code class="descname">window_place</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.window_place" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">window_place</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.window_place" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.window_place(index,</span> <span class="pre">left,</span> <span class="pre">top)</span></code></dd>
 <dt>Description:</dt><dd>moves the index window to the left,top pixel
@@ -523,7 +522,7 @@ coordinates of the screen.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.paper_place">
-<code class="descclassname">PWManager.</code><code class="descname">paper_place</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.paper_place" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">paper_place</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.paper_place" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">p.paper_place(index,</span> <span class="pre">show)</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">p.paper_place(index,</span> <span class="pre">left,</span> <span class="pre">bottom,</span> <span class="pre">scale)</span></code></p>
@@ -541,7 +540,7 @@ the paper is printed in postscript mode.</p>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.landscape">
-<code class="descclassname">PWManager.</code><code class="descname">landscape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.landscape" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">landscape</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.landscape" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.landscape(boolean)</span></code></dd>
 <dt>Description:</dt><dd>Determines if postscript printing is in landscape
@@ -552,7 +551,7 @@ or portrait mode.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.deco">
-<code class="descclassname">PWManager.</code><code class="descname">deco</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.deco" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">deco</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.deco" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.deco(mode)</span></code></dd>
 <dt>Description:</dt><dd><p>When printing in postscript mode,
@@ -566,7 +565,7 @@ or portrait mode.</dd>
 <hr class="docutils" />
 <dl class="py method">
 <dt id="PWManager.printfile">
-<code class="descclassname">PWManager.</code><code class="descname">printfile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.printfile" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname"><span class="pre">PWManager.</span></code><code class="descname"><span class="pre">printfile</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PWManager.printfile" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Syntax:</dt><dd><code class="docutils literal notranslate"><span class="pre">p.printfile(&quot;filename&quot;,</span> <span class="pre">mode,</span> <span class="pre">selected)</span></code></dd>
 <dt>Description:</dt><dd>Print to a file in postcript, idraw, or ascii mode (mode=0,1,2) the selected windows
