@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['k',['k',['../class_a_c_g.html#acb9bb7f384f443d1afbe52f5489256ff',1,'ACG::k()'],['../class_erlang.html#a037def7df09de60747b50ce6dea16338',1,'Erlang::k()'],['../struct_iter__data.html#a1718580235adc66704f49d917315b582',1,'Iter_data::k()'],['../readline_8cpp.html#a3c808d025d1faa6697fd4a4b0dc95189',1,'k():&#160;readline.cpp'],['../nrnran123_8cpp.html#a4528930a01faf6ddf27301c98283f817',1,'k():&#160;nrnran123.cpp']]],
+  ['k',['k',['../class_a_c_g.html#acb9bb7f384f443d1afbe52f5489256ff',1,'ACG::k()'],['../class_erlang.html#a037def7df09de60747b50ce6dea16338',1,'Erlang::k()'],['../struct_iter__data.html#a1718580235adc66704f49d917315b582',1,'Iter_data::k()'],['../readline_8cpp.html#ab66ed8e0098c0a86b458672a55a9cca9',1,'k():&#160;readline.cpp'],['../nrnran123_8cpp.html#a4528930a01faf6ddf27301c98283f817',1,'k():&#160;nrnran123.cpp']]],
   ['k_5fcode',['k_code',['../struct_k_e_y_t_a_b.html#a0e03da13187bcad4c90657edb827ed36',1,'KEYTAB']]],
   ['k_5ffp',['k_fp',['../struct_k_e_y_t_a_b.html#a4beca333bf44ff5cbbaf501662f70a8a',1,'KEYTAB']]],
   ['k_5fion',['k_ion',['../eion_8cpp.html#a645b625cca08c3ac34dce2282095e8a0',1,'eion.cpp']]],

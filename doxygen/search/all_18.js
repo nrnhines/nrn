@@ -80,7 +80,7 @@ var searchData=
   ['xmenu_2eh',['xmenu.h',['../xmenu_8h.html',1,'']]],
   ['xmin_5f',['xmin_',['../class_shape_section.html#a1dabe68df76cfe94d01e1b01e1b767a4',1,'ShapeSection']]],
   ['xmove',['xmove',['../class_printable_window.html#a2326becbc1ddf052259bb6024ca04424',1,'PrintableWindow']]],
-  ['xo',['xo',['../pump_8c.html#a895469f2d9c3e8a10b96a31f53964729',1,'xo():&#160;pump.c'],['../oc_2axis_8cpp.html#a588716f3292e5d950a1d2eb72115cd7e',1,'XO():&#160;axis.cpp']]],
+  ['xo',['XO',['../oc_2axis_8cpp.html#a588716f3292e5d950a1d2eb72115cd7e',1,'XO():&#160;axis.cpp'],['../pump_8c.html#a895469f2d9c3e8a10b96a31f53964729',1,'xo():&#160;pump.c']]],
   ['xopen',['xopen',['../oc_2redef_8h.html#acd51034df0a1e20805e55c98cb1d881b',1,'xopen():&#160;redef.h'],['../fileio_8cpp.html#a20961bf05c62d637c875a6123791f02d',1,'xopen(void):&#160;fileio.cpp']]],
   ['xopen_5faudit',['xopen_audit',['../audit_8cpp.html#ae078cb522ccec38f54f33013d43ce805',1,'audit.cpp']]],
   ['xor_5fcolor_5f',['xor_color_',['../class_rubberband.html#a3b504585a621799d447c5034c57b8ec8',1,'Rubberband']]],

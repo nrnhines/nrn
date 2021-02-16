@@ -1,8 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"ldifus_8cpp_source.html":[5,0,0,14,24],
-"leave-scope_8h.html":[5,0,0,2,1,6],
-"leave-scope_8h_source.html":[5,0,0,2,1,6],
 "limits_8h.html":[5,0,0,6,2,3],
 "limits_8h.html#a00c1f0e7816626f58349492ef0720b5f":[5,0,0,6,2,3,20],
 "limits_8h.html#a00cf97459af586fe5bd88099fc5f38d1":[5,0,0,6,2,3,32],
@@ -249,5 +246,8 @@ var NAVTREEINDEX50 =
 "math_8h.html#a964c0807c79b3da215c8e74d3e1b388a":[5,0,0,2,1,8,1],
 "math_8h_source.html":[5,0,0,2,1,8],
 "matlab_8c.html":[5,0,0,4,24],
-"matlab_8c.html#a62ffe7434a95711666ee1699fba4c74c":[5,0,0,4,24,3]
+"matlab_8c.html#a62ffe7434a95711666ee1699fba4c74c":[5,0,0,4,24,3],
+"matlab_8c.html#aaa5d5deb15e82f6cc4bba6e90ad4b8d8":[5,0,0,4,24,1],
+"matlab_8c.html#ac5027a7f69e740ed117eb7f10e6abd19":[5,0,0,4,24,2],
+"matlab_8c.html#af1b3bff1622925d03c9cd14c5f1a51bf":[5,0,0,4,24,4]
 };

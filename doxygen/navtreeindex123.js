@@ -1,8 +1,5 @@
 var NAVTREEINDEX123 =
 {
-"zfunc_8c.html#aebc9353251e401e254462c14a4f32547":[5,0,0,4,58,4],
-"zfunc_8c.html#af1b3bff1622925d03c9cd14c5f1a51bf":[5,0,0,4,58,12],
-"zfunc_8c_source.html":[5,0,0,4,58],
 "zgivens_8c.html":[5,0,0,4,59],
 "zgivens_8c.html#a081aa5411a82a529f44d827f78c135cc":[5,0,0,4,59,1],
 "zgivens_8c.html#a278293ee1803c4e1be4f7b58ea8798e4":[5,0,0,4,59,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX123 =
 "zmemory_8c.html#af22a0648bcbebcbc5c88c5251149e6c2":[5,0,0,4,69,1],
 "zmemory_8c_source.html":[5,0,0,4,69],
 "znorm_8c.html":[5,0,0,4,70],
-"znorm_8c.html#a0f1d83820a5b522e9cf8010aeb0e3dc8":[5,0,0,4,70,3]
+"znorm_8c.html#a0f1d83820a5b522e9cf8010aeb0e3dc8":[5,0,0,4,70,3],
+"znorm_8c.html#a679f0292bcc1f2defc2ddd85b98fda77":[5,0,0,4,70,7],
+"znorm_8c.html#a6dbf8d45b3bc0c6fec0c7584d2aaac3c":[5,0,0,4,70,1],
+"znorm_8c.html#a97153f5594b4f250cc5c01bc2fffd017":[5,0,0,4,70,4]
 };

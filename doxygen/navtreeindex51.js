@@ -1,8 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"matlab_8c.html#aaa5d5deb15e82f6cc4bba6e90ad4b8d8":[5,0,0,4,24,1],
-"matlab_8c.html#ac5027a7f69e740ed117eb7f10e6abd19":[5,0,0,4,24,2],
-"matlab_8c.html#af1b3bff1622925d03c9cd14c5f1a51bf":[5,0,0,4,24,4],
 "matlab_8c.html#afc0b6cb0961a881e08e0ed97b89a52b2":[5,0,0,4,24,0],
 "matlab_8c_source.html":[5,0,0,4,24],
 "matlab_8h.html":[5,0,0,4,25],
@@ -249,5 +246,8 @@ var NAVTREEINDEX51 =
 "matrix_8h.html#a8308768471b91f4086f293d9eb43eb50":[5,0,0,4,27,89],
 "matrix_8h.html#a87d45eea0d72906c6d83a448dbe510ef":[5,0,0,4,27,29],
 "matrix_8h.html#a8a4f3fd849a38d0ce9b591daf3bdc26c":[5,0,0,4,27,150],
-"matrix_8h.html#a8ad7d12900b5b481e2d76b768d1ed5e3":[5,0,0,4,27,116]
+"matrix_8h.html#a8ad7d12900b5b481e2d76b768d1ed5e3":[5,0,0,4,27,116],
+"matrix_8h.html#a8cfcc8dacf8b29c58a17d99813e8acc4":[5,0,0,4,27,166],
+"matrix_8h.html#a8eb23c58ad91a383f690ef8751e53302":[5,0,0,4,27,72],
+"matrix_8h.html#a8f9f2fe5ce503b45385bb03c8b77a351":[5,0,0,4,27,67]
 };

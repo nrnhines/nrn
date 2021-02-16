@@ -1,8 +1,5 @@
 var NAVTREEINDEX116 =
 {
-"struct_node.html#abeb9cecac648f30c4c7acdf360338b42":[4,0,259,4],
-"struct_node.html#add638c3ea795476857fd39987efd0f69":[4,0,259,7],
-"struct_node.html#afa9cd0f11a97d5e3a295b72416e18a8d":[4,0,259,15],
 "struct_nrn_mapping_info.html":[4,0,277],
 "struct_nrn_mapping_info.html#a5cccc3a3861162d57ca146eb74d926a6":[4,0,277,4],
 "struct_nrn_mapping_info.html#a655f2f2c7e6553da3a04752bfd913f29":[4,0,277,5],
@@ -249,5 +246,8 @@ var NAVTREEINDEX116 =
 "struct_save_state_1_1_state_struct_info.html#a3bb239ee668b2974f63ac6eee5ad4651":[4,0,383,5,1],
 "struct_save_state_1_1_state_struct_info.html#ad9c2deba9780880eafb1dbcb970a2dcb":[4,0,383,5,0],
 "struct_save_state_1_1_t_q_state.html":[4,0,383,6],
-"struct_save_state_1_1_t_q_state.html#a52c6fe30a12f5e2ad6bf53a4fb75c981":[4,0,383,6,1]
+"struct_save_state_1_1_t_q_state.html#a52c6fe30a12f5e2ad6bf53a4fb75c981":[4,0,383,6,1],
+"struct_save_state_1_1_t_q_state.html#a8b851207855fc92c89f69a2fefeec544":[4,0,383,6,2],
+"struct_save_state_1_1_t_q_state.html#a8cbe2cf871e5777ab53b57a0d890235b":[4,0,383,6,0],
+"struct_sec_mapping.html":[4,0,386]
 };

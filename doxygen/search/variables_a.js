@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['j',['j',['../class_a_c_g.html#adfc89117cb90b1585806d0a517f247b4',1,'ACG::j()'],['../nrngsl__real__radix2_8cpp.html#a1e98c19b740188571d492121595fe5ae',1,'j():&#160;nrngsl_real_radix2.cpp'],['../readline_8cpp.html#a1e98c19b740188571d492121595fe5ae',1,'j():&#160;readline.cpp'],['../treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0',1,'j():&#160;treeset.cpp']]],
+  ['j',['j',['../class_a_c_g.html#adfc89117cb90b1585806d0a517f247b4',1,'ACG::j()'],['../nrngsl__real__radix2_8cpp.html#a37d972ae0b47b9099e30983131d31916',1,'j():&#160;nrngsl_real_radix2.cpp'],['../readline_8cpp.html#a37d972ae0b47b9099e30983131d31916',1,'j():&#160;readline.cpp'],['../treeset_8cpp.html#abf2bc2545a4a5f5683d9ef3ed0d977e0',1,'j():&#160;treeset.cpp']]],
   ['jac_5fcalls_5f',['jac_calls_',['../class_cvode.html#a43c21dbb6ff15a1204b7fbaa47cfaac8',1,'Cvode']]],
   ['jacob',['jacob',['../struct_memb__func.html#a19cdf22f4319912c99cafe043cacf4b2',1,'Memb_func']]],
   ['jacobian',['jacobian',['../struct_reaction_variables.html#a8e3b421bf6faf672074098c613b6e848',1,'ReactionVariables']]],

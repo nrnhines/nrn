@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s',['s',['../classdouble_vec.html#aed2370a470d9eab1dc74c971b0f78867',1,'doubleVec::s()'],['../union_private_r_n_g_single_type.html#af4af92bd0d391cdfac78953b49d390b7',1,'PrivateRNGSingleType::s()'],['../class_message_item.html#a61149ca07b4a5cc788e47b72a127b990',1,'MessageItem::s()'],['../bgpdmasetup_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84',1,'s():&#160;bgpdmasetup.cpp'],['../system_8cpp.html#aa8ca182462c7f7eaa385ba421fb972a4',1,'s():&#160;system.cpp']]],
-  ['s2',['s2',['../funmap_8cpp.html#a36fdaf7513e8082d59908cbf4fc32e5a',1,'s2():&#160;funmap.cpp'],['../readline_8cpp.html#a2e63e71737e8b6802b81f6a7c5ca6a0a',1,'s2():&#160;readline.cpp']]],
+  ['s2',['s2',['../readline_8cpp.html#a36fdaf7513e8082d59908cbf4fc32e5a',1,'readline.cpp']]],
   ['s2rt',['s2rt',['../class_reduced_tree.html#a6c00c9652026edd2150a9df08e22890e',1,'ReducedTree']]],
   ['s_5f',['s_',['../class_axis.html#aca9a9076da4ce4031fb52ed59f25e0d7',1,'Axis::s_()'],['../class_nrn_random123.html#a095e7ede677649fc520cbf2347488b17',1,'NrnRandom123::s_()'],['../class_hoc_command.html#a525d1b429700e446925e5384b176333f',1,'HocCommand::s_()'],['../class_oc_pointer.html#afc4f873c8d3a6a516b570347a2f5ac8f',1,'OcPointer::s_()'],['../class_field_dialog.html#a4711c057efad27d3812ac7f0722105af',1,'FieldDialog::s_()'],['../class_nrn_message.html#af0f1b50f69a3253e9eb3d4da59d14025',1,'NrnMessage::s_()'],['../struct_py_hoc_object.html#a95612266e2cf261c03c2a578e17dfe69',1,'PyHocObject::s_()'],['../class_nrn_b_b_s_callback_item.html#a9c45193de5be9429ce6d50c1cdc4a287',1,'NrnBBSCallbackItem::s_()']]],
   ['s_5fflags',['s_flags',['../structexternal__scnhdr.html#a6b56fbd1931658396d2b48eaafe227bb',1,'external_scnhdr']]],
@@ -292,7 +292,7 @@ var searchData=
   ['strfun_5fblt',['strfun_blt',['../oc_2hoc__init_8cpp.html#a33247191f4f339b26df1921a2877ca99',1,'hoc_init.cpp']]],
   ['strfun_5fbltin',['strfun_bltin',['../oc_2hoc__init_8cpp.html#af54e62f4a7b55193b024aec0ceff0f97',1,'hoc_init.cpp']]],
   ['stride',['stride',['../nrngsl_8h.html#a937248e8308cfb4fe4ca43f6fb35881f',1,'stride():&#160;nrngsl.h'],['../nrngsl__hc__radix2_8cpp.html#a937248e8308cfb4fe4ca43f6fb35881f',1,'stride():&#160;nrngsl_hc_radix2.cpp'],['../nrngsl__real__radix2_8cpp.html#a937248e8308cfb4fe4ca43f6fb35881f',1,'stride():&#160;nrngsl_real_radix2.cpp']]],
-  ['string',['string',['../structsaved__macro.html#a76df419e52824ee8427783e192e60294',1,'saved_macro::string()'],['../readline_8cpp.html#a011da1b4ce0ce54090d9a3c28a0ef195',1,'string():&#160;readline.cpp'],['../ustring_8cpp.html#a626ea521670a14e666c265c566fe9f86',1,'String():&#160;ustring.cpp']]],
+  ['string',['string',['../structsaved__macro.html#a76df419e52824ee8427783e192e60294',1,'saved_macro::string()'],['../ustring_8cpp.html#a626ea521670a14e666c265c566fe9f86',1,'String():&#160;ustring.cpp'],['../readline_8cpp.html#a011da1b4ce0ce54090d9a3c28a0ef195',1,'string():&#160;readline.cpp']]],
   ['string_5flen',['string_len',['../history_8cpp.html#ad27223edd7e79249a92d635a34404d73',1,'history.cpp']]],
   ['stringfunctions_5freg',['StringFunctions_reg',['../occlass_8h.html#a25e7fca2ea3ccf5123cf8d01544581df',1,'occlass.h']]],
   ['strlist_5f',['strlist_',['../class_hoc_data_path_impl.html#a94a0ec5bbf2e20e2f1941e0f5a78611d',1,'HocDataPathImpl']]],
