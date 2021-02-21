@@ -45,8 +45,6 @@ var searchData=
   ['_7ediscreteevent',['~DiscreteEvent',['../class_discrete_event.html#aaa26e07d51727b90e079c00563cc5ae9',1,'DiscreteEvent']]],
   ['_7edismissablewindow',['~DismissableWindow',['../class_dismissable_window.html#a573aaf60bfe3e808cc8baaa88ee2e396',1,'DismissableWindow']]],
   ['_7edocbrowser',['~DocBrowser',['../class_doc_browser.html#ae882f73683a190fed4351b75e8a2ebe7',1,'DocBrowser']]],
-  ['_7edoubleavec',['~doubleAVec',['../classdouble_a_vec.html#a7bfbbf3a413184b6d38c30c489212509',1,'doubleAVec']]],
-  ['_7edoublevec',['~doubleVec',['../classdouble_vec.html#aadbb4016d24c8d67a5d82c9fb0c69bb3',1,'doubleVec']]],
   ['_7eecs_5fgrid_5fnode',['~ECS_Grid_node',['../class_e_c_s___grid__node.html#a8a51f75f3f6cb42a62ecfdd0f7a37e6f',1,'ECS_Grid_node']]],
   ['_7eepsprinter',['~EPSPrinter',['../class_e_p_s_printer.html#ae974f0fa86e90ab66f487e00328691a0',1,'EPSPrinter']]],
   ['_7efastshape',['~FastShape',['../class_fast_shape.html#adff946b97ba6b019ddbe2556fb40ebe5',1,'FastShape']]],

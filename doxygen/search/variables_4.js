@@ -114,7 +114,7 @@ var searchData=
   ['done_5flist1',['done_list1',['../kinetic_8cpp.html#a5f6cbbd2433bcb80438abc0d77560d8b',1,'kinetic.cpp']]],
   ['dorealdirect',['DoRealDirect',['../struct_matrix_frame.html#a3cec4a5afed8b8e2028cff59956db10d',1,'MatrixFrame']]],
   ['doublemantissa',['doubleMantissa',['../class_r_n_g.html#a70f6ef5640983f80001d08a7cc3e39fc',1,'RNG']]],
-  ['doublevec_5ferror_5fhandler',['doubleVec_error_handler',['../d__vec_8cpp.html#a5a984164cf73d8cc95fe8090d3a00c63',1,'doubleVec_error_handler():&#160;d_vec.cpp'],['../d__vec_8h.html#a5a984164cf73d8cc95fe8090d3a00c63',1,'doubleVec_error_handler():&#160;d_vec.cpp']]],
+  ['doublevec_5ferror_5fhandler',['doubleVec_error_handler',['../d__vec_8cpp.html#a5a984164cf73d8cc95fe8090d3a00c63',1,'d_vec.cpp']]],
   ['dp_5f',['dp_',['../class_graph_vector.html#ab68056ab92529846a3781edc090a95a4',1,'GraphVector']]],
   ['dparam',['dparam',['../struct_prop.html#a0b99fdef2200457d3e8a1efa762990de',1,'Prop']]],
   ['dparam_5fsemantics',['dparam_semantics',['../struct_memb__func.html#a137b5085c5ac78b5a8c9f6be836bdc72',1,'Memb_func']]],

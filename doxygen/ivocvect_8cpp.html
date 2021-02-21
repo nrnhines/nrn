@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('ivocvect_8cpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,8 @@ $(document).ready(function(){initNavTree('ivocvect_8cpp.html','');});
 <code>#include &lt;<a class="el" href="ivstream_8h_source.html">ivstream.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="math_8h_source.html">math.h</a>&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &quot;<a class="el" href="fourier_8h_source.html">fourier.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="resource_8h_source.html">InterViews/resource.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="list_8h_source.html">OS/list.h</a>&gt;</code><br />
@@ -110,7 +113,6 @@ $(document).ready(function(){initNavTree('ivocvect_8cpp.html','');});
 <code>#include &lt;<a class="el" href="_smpl_hist_8h_source.html">SmplHist.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="random1_8h_source.html">random1.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="_uniform_8h_source.html">Uniform.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="d__defs_8h_source.html">d_defs.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="oc2iv_8h_source.html">oc2iv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parse_8hpp_source.html">parse.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ocfile_8h_source.html">ocfile.h</a>&quot;</code><br />
@@ -150,8 +152,6 @@ Macros</h2></td></tr>
 <tr class="separator:a002b2f4894492820fe708b1b7e7c5e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8ca24bfa8800ef12143b19cf846f7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#aad8ca24bfa8800ef12143b19cf846f7f">PUBLIC_TYPE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:aad8ca24bfa8800ef12143b19cf846f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64968ebe9726a435badfe5589b7f4921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a64968ebe9726a435badfe5589b7f4921">USE_MLH_GSORT</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a64968ebe9726a435badfe5589b7f4921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab54041a01cbad80fff3162204d936483"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#ab54041a01cbad80fff3162204d936483">SIMPLEX_MAXN</a>&#160;&#160;&#160;1e+300</td></tr>
 <tr class="separator:ab54041a01cbad80fff3162204d936483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557fa74b6d1edb94b79ed968f4bcf8c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a557fa74b6d1edb94b79ed968f4bcf8c9">SIMPLEX_INORM</a>&#160;&#160;&#160;1.2</td></tr>
@@ -179,12 +179,15 @@ Macros</h2></td></tr>
 <tr class="memitem:a4c76d6ac54df967f4f2d09030fdaa610"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a4c76d6ac54df967f4f2d09030fdaa610">MAX_THRESH</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a4c76d6ac54df967f4f2d09030fdaa610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a382a558eac16c2a09ff590eb7ba21fba"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a382a558eac16c2a09ff590eb7ba21fba">doubleComparator</a>) (double, double)</td></tr>
+<tr class="separator:a382a558eac16c2a09ff590eb7ba21fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7eb3b5ca96b6b48d60d51b8a2121bf65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a7eb3b5ca96b6b48d60d51b8a2121bf65">nrn_exit</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
 <tr class="separator:a7eb3b5ca96b6b48d60d51b8a2121bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2908f5152647a29c0e0ec0f2eb4d6b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a2908f5152647a29c0e0ec0f2eb4d6b26">cmpfcn</a> (double <a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, double <a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)</td></tr>
-<tr class="separator:a2908f5152647a29c0e0ec0f2eb4d6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9705d4b5bc8353a1f2bfb3ca739afb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a9c9705d4b5bc8353a1f2bfb3ca739afb">hoc_Log</a> (double x)</td></tr>
 <tr class="separator:a9c9705d4b5bc8353a1f2bfb3ca739afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708ea97fefb6ef883c75b91bcaf97a33"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a708ea97fefb6ef883c75b91bcaf97a33">hoc_Log10</a> (double x)</td></tr>
@@ -197,11 +200,13 @@ Functions</h2></td></tr>
 <tr class="separator:a9fca76fc5eec90fa0e09cfb686c7da51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5c2ff90fcb408e89beb87cf6c7e7f48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#aa5c2ff90fcb408e89beb87cf6c7e7f48">narg</a> ()</td></tr>
 <tr class="separator:aa5c2ff90fcb408e89beb87cf6c7e7f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2908f5152647a29c0e0ec0f2eb4d6b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a2908f5152647a29c0e0ec0f2eb4d6b26">cmpfcn</a> (double <a class="el" href="diffeq_8cpp.html#a19dfbf217fb17c63f0f23874a12468a9">a</a>, double <a class="el" href="diffeq_8cpp.html#a1e0e7633d035a085b7e83a8272f0dcfc">b</a>)</td></tr>
+<tr class="separator:a2908f5152647a29c0e0ec0f2eb4d6b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ad80254c78127ddf883f1b224e2d73d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hoc__functions.html#ga8ad80254c78127ddf883f1b224e2d73d">install_vector_method</a> (const char *<a class="el" href="hocmodl_8h.html#a5ac083a645d964373f022d03df4849c8">name</a>, <a class="el" href="hocdec_8h.html#ae871aa089295e4319f4d5e3ae70e9d1e">Pfrd_vp</a>)</td></tr>
 <tr class="separator:ga8ad80254c78127ddf883f1b224e2d73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga398589d8a7606b5ebf61ae610b45d1d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hoc__functions.html#ga398589d8a7606b5ebf61ae610b45d1d8">vector_instance_px</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *, double **)</td></tr>
 <tr class="separator:ga398589d8a7606b5ebf61ae610b45d1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64240fc1ba2e68b56eac6d00cadebe97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a64240fc1ba2e68b56eac6d00cadebe97">nrn_mlh_gsort</a> (double *vec, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *base_ptr, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> total_elems, <a class="el" href="d__vec_8h.html#a382a558eac16c2a09ff590eb7ba21fba">doubleComparator</a> cmp)</td></tr>
+<tr class="memitem:a64240fc1ba2e68b56eac6d00cadebe97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a64240fc1ba2e68b56eac6d00cadebe97">nrn_mlh_gsort</a> (double *vec, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *base_ptr, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> total_elems, <a class="el" href="ivocvect_8cpp.html#a382a558eac16c2a09ff590eb7ba21fba">doubleComparator</a> cmp)</td></tr>
 <tr class="separator:a64240fc1ba2e68b56eac6d00cadebe97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4668c74bcd4d55227aca62f1da3a57d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hoc__functions.html#ga4668c74bcd4d55227aca62f1da3a57d1">vector_arg_px</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, double **)</td></tr>
 <tr class="separator:ga4668c74bcd4d55227aca62f1da3a57d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,8 +330,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac4400655a2c923f42aa392e4199ef78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6886f79cb4dba1b1bc3286401c02887"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#af6886f79cb4dba1b1bc3286401c02887">v_interpolate</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:af6886f79cb4dba1b1bc3286401c02887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37be09b0bc0cf5ea23b0882ce688bed7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a37be09b0bc0cf5ea23b0882ce688bed7">possible_srcvec</a> (<a class="el" href="ivocvect_8h.html#a500f77eec37a9d60f057319a33b21f0b">ParentVect</a> *&amp;src, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *dest, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="intfire4_8c.html#acb7a517f6cc25250ec5e28f1c2e0df20">flag</a>)</td></tr>
-<tr class="separator:a37be09b0bc0cf5ea23b0882ce688bed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d061c639ac39cc78d5929af22a4e0fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a3d061c639ac39cc78d5929af22a4e0fd">possible_srcvec</a> (<a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *&amp;src, <a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *dest, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &amp;<a class="el" href="intfire4_8c.html#acb7a517f6cc25250ec5e28f1c2e0df20">flag</a>)</td></tr>
+<tr class="separator:a3d061c639ac39cc78d5929af22a4e0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6d37dec1948b21c22c77a2fa99cf124"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_object.html">Object</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#ae6d37dec1948b21c22c77a2fa99cf124">v_where</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
 <tr class="separator:ae6d37dec1948b21c22c77a2fa99cf124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee75592e594e7ed30d1c3551f14feb7"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a8ee75592e594e7ed30d1c3551f14feb7">v_indwhere</a> (<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> *<a class="el" href="vclmp_8c.html#a3b90d5a73541ab9402511d87bed076ef">v</a>)</td></tr>
@@ -491,8 +496,6 @@ Variables</h2></td></tr>
 <tr class="separator:aa91de0c070a48ac60e12364327603928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b3c55317afb034696ef2c638915cc3"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#aa1b3c55317afb034696ef2c638915cc3">nullstr</a> = &quot;&quot;</td></tr>
 <tr class="separator:aa1b3c55317afb034696ef2c638915cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a245c97e06df9f976522f32386d9b2653"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_ivoc_vect.html">IvocVect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a245c97e06df9f976522f32386d9b2653">subvec_</a></td></tr>
-<tr class="separator:a245c97e06df9f976522f32386d9b2653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7209ef580d88479920797279e52f6f8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_symbol.html">Symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a7209ef580d88479920797279e52f6f8c">svec_</a></td></tr>
 <tr class="separator:a7209ef580d88479920797279e52f6f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d00f925bf0afeb177c9124d6e58d19"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ivocvect_8cpp.html#a47d00f925bf0afeb177c9124d6e58d19">splx_evl_</a></td></tr>
@@ -519,7 +522,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00059">59</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00061">61</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +538,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00096">96</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00098">98</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -551,7 +554,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03827">3827</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03768">3768</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +570,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03826">3826</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03767">3767</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -597,7 +600,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (BYTESWAP_FLAG == 1) { \</div><div class="line">    _IN__ = (<span class="keywordtype">char</span> *) &amp;(_X__); \</div><div class="line">    for (_II__=0;_II__&lt;<span class="keyword">sizeof</span>(_TYPE__);_II__++) { \</div><div class="line">        _OUT__[_II__] = _IN__[<span class="keyword">sizeof</span>(_TYPE__)-_II__-1]; } \</div><div class="line">    (_X__) = *((_TYPE__ *) &amp;_OUT__); \</div><div class="line">    }</div></div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00097">97</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00099">99</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -613,7 +616,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00155">155</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00150">150</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +658,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00065">65</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00067">67</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -697,7 +700,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00064">64</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00066">66</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -713,7 +716,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00055">55</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00057">57</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -729,7 +732,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00149">149</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00144">144</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -745,7 +748,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03838">3838</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03779">3779</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -761,7 +764,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00153">153</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00148">148</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +780,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00152">152</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00147">147</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -793,7 +796,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00057">57</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00059">59</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -823,7 +826,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03833">3833</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03774">3774</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -867,7 +870,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03832">3832</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03773">3773</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +886,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02458">2458</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02401">2401</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +902,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02459">2459</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02402">2402</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -915,7 +918,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02461">2461</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02404">2404</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -931,7 +934,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02460">2460</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02403">2403</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -947,7 +950,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02450">2450</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02393">2393</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -963,7 +966,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02449">2449</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02392">2392</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -979,7 +982,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03834">3834</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03775">3775</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -995,7 +998,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03831">3831</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03772">3772</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1011,23 +1014,24 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00151">151</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00146">146</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a64968ebe9726a435badfe5589b7f4921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64968ebe9726a435badfe5589b7f4921">&#9670;&nbsp;</a></span>USE_MLH_GSORT</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a382a558eac16c2a09ff590eb7ba21fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382a558eac16c2a09ff590eb7ba21fba">&#9670;&nbsp;</a></span>doubleComparator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define USE_MLH_GSORT&#160;&#160;&#160;0</td>
+          <td class="memname">typedef <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>(* doubleComparator) (double, double)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01543">1543</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00154">154</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1086,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02693">2693</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02636">2636</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1116,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00132">132</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00153">153</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1172,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02475">2475</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02418">2418</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1224,7 +1228,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02551">2551</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02494">2494</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1376,7 +1380,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03778">3778</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03720">3720</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1396,7 +1400,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03773">3773</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03715">3715</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1423,7 +1427,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00143">143</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00138">138</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1504,7 +1508,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="d__vec_8h.html#a382a558eac16c2a09ff590eb7ba21fba">doubleComparator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ivocvect_8cpp.html#a382a558eac16c2a09ff590eb7ba21fba">doubleComparator</a>&#160;</td>
           <td class="paramname"><em>cmp</em>&#160;</td>
         </tr>
         <tr>
@@ -1515,7 +1519,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03865">3865</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03806">3806</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1603,12 +1607,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00393">393</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00360">360</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a37be09b0bc0cf5ea23b0882ce688bed7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37be09b0bc0cf5ea23b0882ce688bed7">&#9670;&nbsp;</a></span>possible_srcvec()</h2>
+<a id="a3d061c639ac39cc78d5929af22a4e0fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d061c639ac39cc78d5929af22a4e0fd">&#9670;&nbsp;</a></span>possible_srcvec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1619,7 +1623,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> possible_srcvec </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ivocvect_8h.html#a500f77eec37a9d60f057319a33b21f0b">ParentVect</a> *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="ocmatrix_8h.html#a805d047a38285ba33c94e1dbdf021a09">Vect</a> *&amp;&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1647,7 +1651,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01658">1658</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01600">1600</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1695,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00205">205</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00204">204</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1747,7 +1751,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02565">2565</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02508">2508</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1785,7 +1789,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01547">1547</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01510">1510</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1813,7 +1817,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03784">3784</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03726">3726</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1851,7 +1855,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03820">3820</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03761">3761</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1879,7 +1883,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03515">3515</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03457">3457</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1911,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02310">2310</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02248">2248</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1935,7 +1939,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02005">2005</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01929">1929</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1963,7 +1967,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01352">1352</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01324">1324</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -1991,7 +1995,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02043">2043</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01967">1967</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2011,7 +2015,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03629">3629</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03571">3571</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2039,7 +2043,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01523">1523</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01488">1488</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2067,7 +2071,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01301">1301</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01282">1282</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2095,7 +2099,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01601">1601</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01543">1543</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2127,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01605">1605</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01547">1547</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2151,7 +2155,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01334">1334</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01306">1306</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2179,7 +2183,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00266">266</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00235">235</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2207,7 +2211,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01430">1430</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01395">1395</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2235,7 +2239,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02845">2845</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02788">2788</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2263,7 +2267,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01441">1441</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01406">1406</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2291,7 +2295,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02804">2804</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02747">2747</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2319,7 +2323,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03086">3086</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03029">3029</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2347,7 +2351,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00288">288</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00257">257</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2379,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02363">2363</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02301">2301</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2403,7 +2407,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02285">2285</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02223">2223</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2431,7 +2435,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02399">2399</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02342">2342</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2459,7 +2463,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02973">2973</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02916">2916</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2487,7 +2491,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01955">1955</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01879">1879</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2515,7 +2519,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02926">2926</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02869">2869</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2543,7 +2547,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02715">2715</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02658">2658</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2571,7 +2575,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03535">3535</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03477">3477</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2599,7 +2603,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00434">434</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00401">401</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2627,7 +2631,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02298">2298</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02236">2236</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2647,7 +2651,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03614">3614</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03556">3556</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2675,7 +2679,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00408">408</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00375">375</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2703,7 +2707,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01340">1340</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01312">1312</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2731,7 +2735,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01136">1136</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01114">1114</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2759,7 +2763,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01109">1109</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01087">1087</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2787,7 +2791,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01275">1275</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01256">1256</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2815,7 +2819,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03575">3575</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03517">3517</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2843,7 +2847,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01969">1969</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01893">1893</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2871,7 +2875,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01855">1855</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01789">1789</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2899,7 +2903,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01770">1770</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01704">1704</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2927,7 +2931,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03407">3407</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03349">3349</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2955,7 +2959,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01373">1373</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01341">1341</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -2983,7 +2987,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03131">3131</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03074">3074</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3011,7 +3015,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01611">1611</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01553">1553</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3039,7 +3043,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00194">194</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00193">193</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3067,7 +3071,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01011">1011</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00989">989</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3099,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03288">3288</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03232">3232</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3123,7 +3127,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03308">3308</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03252">3252</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3151,7 +3155,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02292">2292</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02230">2230</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3179,7 +3183,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01061">1061</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01039">1039</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3207,7 +3211,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02123">2123</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02053">2053</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3235,7 +3239,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02136">2136</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02069">2069</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3263,7 +3267,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02176">2176</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02112">2112</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3291,7 +3295,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02252">2252</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02190">2190</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3319,7 +3323,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03194">3194</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03137">3137</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3347,7 +3351,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03231">3231</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03174">3174</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3375,7 +3379,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02096">2096</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02020">2020</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3403,7 +3407,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02109">2109</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02036">2036</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3431,7 +3435,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02345">2345</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02283">2283</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3459,7 +3463,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00906">906</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00884">884</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3487,7 +3491,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00403">403</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00370">370</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3515,7 +3519,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00913">913</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00891">891</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3543,7 +3547,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00969">969</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00947">947</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3571,7 +3575,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03446">3446</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03388">3388</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3599,7 +3603,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00741">741</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00711">711</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3627,7 +3631,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03375">3375</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03318">3318</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3655,7 +3659,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03328">3328</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03272">3272</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3683,7 +3687,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00897">897</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00875">875</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3711,7 +3715,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02071">2071</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01995">1995</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3739,7 +3743,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01413">1413</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01378">1378</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3767,7 +3771,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03354">3354</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03298">3298</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3795,7 +3799,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01328">1328</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01300">1300</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3823,7 +3827,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03262">3262</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03206">3206</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3851,7 +3855,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03045">3045</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02988">2988</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3879,7 +3883,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02380">2380</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02318">2318</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3907,7 +3911,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00788">788</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00758">758</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3935,7 +3939,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00846">846</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00821">821</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3963,7 +3967,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01345">1345</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01317">1317</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -3991,7 +3995,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02022">2022</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01946">1946</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4019,7 +4023,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03270">3270</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03214">3214</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4047,7 +4051,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01295">1295</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01276">1276</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4075,7 +4079,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01202">1202</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01180">1180</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4103,7 +4107,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03255">3255</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03199">3199</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4131,7 +4135,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01555">1555</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01518">1518</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4159,7 +4163,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02894">2894</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02837">2837</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4187,7 +4191,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03012">3012</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02955">2955</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4215,7 +4219,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03495">3495</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03437">3437</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4243,7 +4247,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02233">2233</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02171">2171</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4271,7 +4275,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02214">2214</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02152">2152</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4299,7 +4303,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02328">2328</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02266">2266</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4327,7 +4331,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02150">2150</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02086">2086</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4355,7 +4359,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01164">1164</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01142">1142</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4383,7 +4387,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02163">2163</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02099">2099</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4411,7 +4415,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03555">3555</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03497">3497</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4431,7 +4435,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03622">3622</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03564">3564</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4459,7 +4463,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03157">3157</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03100">3100</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4487,7 +4491,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02195">2195</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02133">2133</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4515,7 +4519,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00630">630</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00600">600</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4543,7 +4547,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00512">512</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00478">478</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4571,7 +4575,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01670">1670</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l01612">1612</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4601,7 +4605,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00309">309</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00278">278</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4621,7 +4625,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00301">301</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00270">270</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4641,7 +4645,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00302">302</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00271">271</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4661,7 +4665,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00300">300</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00269">269</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4681,7 +4685,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00307">307</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00276">276</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4701,7 +4705,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00299">299</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00268">268</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4721,7 +4725,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00306">306</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00275">275</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4740,7 +4744,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03794">3794</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03736">3736</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4770,7 +4774,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00303">303</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00272">272</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4800,7 +4804,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00308">308</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00277">277</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4820,7 +4824,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00304">304</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00273">273</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4840,7 +4844,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00305">305</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00274">274</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4885,7 +4889,7 @@ Variables</h2></td></tr>
 <p>9007199254740992.0</p>
 <p>See <a href="https://stackoverflow.com/questions/1848700/biggest-integer-that-can-be-stored-in-a-double">https://stackoverflow.com/questions/1848700/biggest-integer-that-can-be-stored-in-a-double</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00087">87</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00089">89</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4981,7 +4985,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00129">129</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00128">128</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -4997,7 +5001,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00127">127</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00126">126</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5013,7 +5017,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00128">128</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00127">127</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5037,7 +5041,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00192">192</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00191">191</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5061,7 +5065,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02471">2471</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02414">2414</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5085,31 +5089,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02470">2470</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a245c97e06df9f976522f32386d9b2653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a245c97e06df9f976522f32386d9b2653">&#9670;&nbsp;</a></span>subvec_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_ivoc_vect.html">IvocVect</a>* subvec_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00223">223</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l02413">2413</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5133,7 +5113,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00292">292</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l00261">261</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5157,7 +5137,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03643">3643</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03585">3585</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5181,7 +5161,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03687">3687</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03629">3629</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>
@@ -5204,9 +5184,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    <span class="stringliteral">&quot;label&quot;</span>,    <a class="code" href="ivocvect_8cpp.html#a56757d567471c9ce270d6f9e19806d2a">v_label</a>,</div><div class="line"></div><div class="line">    0,0</div><div class="line">}</div><div class="ttc" id="ivocvect_8cpp_html_a56757d567471c9ce270d6f9e19806d2a"><div class="ttname"><a href="ivocvect_8cpp.html#a56757d567471c9ce270d6f9e19806d2a">v_label</a></div><div class="ttdeci">static const char ** v_label(void *v)</div><div class="ttdef"><b>Definition:</b> <a href="ivocvect_8cpp_source.html#l00194">ivocvect.cpp:194</a></div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    <span class="stringliteral">&quot;label&quot;</span>,    <a class="code" href="ivocvect_8cpp.html#a56757d567471c9ce270d6f9e19806d2a">v_label</a>,</div><div class="line"></div><div class="line">    0,0</div><div class="line">}</div><div class="ttc" id="ivocvect_8cpp_html_a56757d567471c9ce270d6f9e19806d2a"><div class="ttname"><a href="ivocvect_8cpp.html#a56757d567471c9ce270d6f9e19806d2a">v_label</a></div><div class="ttdeci">static const char ** v_label(void *v)</div><div class="ttdef"><b>Definition:</b> <a href="ivocvect_8cpp_source.html#l00193">ivocvect.cpp:193</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03765">3765</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ivocvect_8cpp_source.html#l03707">3707</a> of file <a class="el" href="ivocvect_8cpp_source.html">ivocvect.cpp</a>.</p>
 
 </div>
 </div>

@@ -13,6 +13,6 @@ var class_oc_ptr_vector =
     [ "size", "class_oc_ptr_vector.html#a530c2ab1930620c2dcaa8119a890d3a1", null ],
     [ "label_", "class_oc_ptr_vector.html#acfd21c30508ede8a8d203a1a101f177a", null ],
     [ "pd_", "class_oc_ptr_vector.html#ae8d9283cdf14cc4b62c1ada4ba0af096", null ],
-    [ "size_", "class_oc_ptr_vector.html#a9f4d5cdae411cb747e4f092214e84c72", null ],
+    [ "size_", "class_oc_ptr_vector.html#a9a0e806617f4eba281f074a90d0f385e", null ],
     [ "update_cmd_", "class_oc_ptr_vector.html#af3bb995572fe300e2e95b03a61c71490", null ]
 ];

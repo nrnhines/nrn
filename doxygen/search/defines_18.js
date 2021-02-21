@@ -18,7 +18,7 @@ var searchData=
   ['xpop',['xpop',['../section_8h.html#a0e8d16ed98c078b545f1c38d8ab9491b',1,'xpop():&#160;section.h'],['../oc_2redef_8h.html#a0e8d16ed98c078b545f1c38d8ab9491b',1,'xpop():&#160;redef.h']]],
   ['xpopm',['xpopm',['../oc_2code_8cpp.html#aa6c5d0bc70e290fea67c4bbb2b0f77c3',1,'code.cpp']]],
   ['xraxial',['xraxial',['../extcelln_8cpp.html#a2e3c3ca5843c7dd24cbe7fa046b37bd0',1,'extcelln.cpp']]],
-  ['xred',['Xred',['../oc_2redef_8h.html#af1dec0ef27c48ed01b1b9edd1e40bb90',1,'Xred():&#160;redef.h'],['../oc_2redef_8h.html#a7500e975e2f902ae6603ebb6f90d81c8',1,'xred():&#160;redef.h']]],
+  ['xred',['xred',['../oc_2redef_8h.html#a7500e975e2f902ae6603ebb6f90d81c8',1,'xred():&#160;redef.h'],['../oc_2redef_8h.html#af1dec0ef27c48ed01b1b9edd1e40bb90',1,'Xred():&#160;redef.h']]],
   ['xs',['XS',['../oc_2axis_8cpp.html#a44ee47e8957e8528ae8249a7e5559bca',1,'axis.cpp']]],
   ['xsav',['xsav',['../oc_2axis_8cpp.html#af30f802203ec82d1cf11b655b547eefb',1,'axis.cpp']]],
   ['xscale',['xscale',['../oc_2axis_8cpp.html#a801eb827a467c27c6ee21d0c0258ced2',1,'axis.cpp']]],

@@ -81,8 +81,6 @@ var annotated_dup =
     [ "dl_info", "structdl__info.html", "structdl__info" ],
     [ "dll_s", "structdll__s.html", "structdll__s" ],
     [ "DocBrowser", "class_doc_browser.html", "class_doc_browser" ],
-    [ "doubleAVec", "classdouble_a_vec.html", "classdouble_a_vec" ],
-    [ "doubleVec", "classdouble_vec.html", "classdouble_vec" ],
     [ "DoubScal", "struct_doub_scal.html", "struct_doub_scal" ],
     [ "DoubVec", "struct_doub_vec.html", "struct_doub_vec" ],
     [ "ECS_Grid_node", "class_e_c_s___grid__node.html", "class_e_c_s___grid__node" ],

@@ -126,7 +126,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac87b63e88a5955066fd7651c3fef2b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55981509e7e3906d1ff83201e5afc2d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a55981509e7e3906d1ff83201e5afc2d8">NEW_A</a>(num,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;((<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a> *)calloc((size_t)(num),(size_t)sizeof(<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)))</td></tr>
 <tr class="separator:a55981509e7e3906d1ff83201e5afc2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab99f3785ad8e0167a2fd42c69fe51085"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#ab99f3785ad8e0167a2fd42c69fe51085">RENEW</a>(var,  num,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)</td></tr>
+<tr class="memitem:ab99f3785ad8e0167a2fd42c69fe51085"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#ab99f3785ad8e0167a2fd42c69fe51085">RENEW</a>(<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>,  num,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)</td></tr>
 <tr class="separator:ab99f3785ad8e0167a2fd42c69fe51085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d45eea0d72906c6d83a448dbe510ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a87d45eea0d72906c6d83a448dbe510ef">MEMCOPY</a>(<a class="el" href="readline_8cpp.html#ab7c4ae05c7c7c68b60f227ec2d0ab804">from</a>,  <a class="el" href="readline_8cpp.html#af71dbe52628a3f83a77ab494817525c6">to</a>,  n_items,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;<a class="el" href="extras_8c.html#a702c2cfe9c0e9c6abdc74c5ca43413a8">MEM_COPY</a>((char *)(<a class="el" href="readline_8cpp.html#ab7c4ae05c7c7c68b60f227ec2d0ab804">from</a>),(char *)(<a class="el" href="readline_8cpp.html#af71dbe52628a3f83a77ab494817525c6">to</a>),(unsigned)(n_items)*sizeof(<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>))</td></tr>
 <tr class="separator:a87d45eea0d72906c6d83a448dbe510ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +182,9 @@ Macros</h2></td></tr>
 <tr class="separator:a354c63c5b1c2f3a3537eac634eed37da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc3780d480fa73269b59f10c2438407f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#afc3780d480fa73269b59f10c2438407f">iv_input</a>(iv)&#160;&#160;&#160;<a class="el" href="matrix_8h.html#a7278118005aa58531dc7c150ee69b465">iv_finput</a>(stdin,iv)</td></tr>
 <tr class="separator:afc3780d480fa73269b59f10c2438407f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc033c138bae33a13e73c4fe4ffc8fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(<a class="el" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>,  prompt,  fmt,  var)</td></tr>
+<tr class="memitem:a1cc033c138bae33a13e73c4fe4ffc8fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(<a class="el" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>,  prompt,  fmt,  <a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>)</td></tr>
 <tr class="separator:a1cc033c138bae33a13e73c4fe4ffc8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293777359ae82c086cac8c786f28d0bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a293777359ae82c086cac8c786f28d0bd">input</a>(prompt,  fmt,  var)&#160;&#160;&#160;<a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(stdin,prompt,fmt,var)</td></tr>
+<tr class="memitem:a293777359ae82c086cac8c786f28d0bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a293777359ae82c086cac8c786f28d0bd">input</a>(prompt,  fmt,  <a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>)&#160;&#160;&#160;<a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(stdin,prompt,fmt,<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>)</td></tr>
 <tr class="separator:a293777359ae82c086cac8c786f28d0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75847998bab0d39464d74e931c7d8a5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html#a75847998bab0d39464d74e931c7d8a5b">fprompter</a>(<a class="el" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>,  prompt)&#160;&#160;&#160;( isatty(fileno(<a class="el" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>)) ? <a class="el" href="treeset_8cpp.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(stderr,prompt) : <a class="el" href="matrixio_8c.html#a69b6a0bc97298353faad59912fcefb8f">skipjunk</a>(<a class="el" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>) )</td></tr>
 <tr class="separator:a75847998bab0d39464d74e931c7d8a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -547,7 +547,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">var&#160;</td>
+          <td class="paramname"><a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -556,9 +556,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">( ( isatty(fileno(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>)) ? <a class="code" href="mwprefix_8h.html#aab6e63106cf29e5160e5c2d63db86d27">fprintf</a>(stderr,prompt) : <a class="code" href="matrix_8h.html#a69b6a0bc97298353faad59912fcefb8f">skipjunk</a>(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>) ), \</div><div class="line">                            fscanf(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>,fmt,var) )</div><div class="ttc" id="mwprefix_8h_html_aab6e63106cf29e5160e5c2d63db86d27"><div class="ttname"><a href="mwprefix_8h.html#aab6e63106cf29e5160e5c2d63db86d27">fprintf</a></div><div class="ttdeci">#define fprintf</div><div class="ttdef"><b>Definition:</b> <a href="mwprefix_8h_source.html#l00030">mwprefix.h:30</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">( ( isatty(fileno(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>)) ? <a class="code" href="mwprefix_8h.html#aab6e63106cf29e5160e5c2d63db86d27">fprintf</a>(stderr,prompt) : <a class="code" href="matrix_8h.html#a69b6a0bc97298353faad59912fcefb8f">skipjunk</a>(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>) ), \</div><div class="line">                            fscanf(<a class="code" href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a>,fmt,<a class="code" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>) )</div><div class="ttc" id="mwprefix_8h_html_aab6e63106cf29e5160e5c2d63db86d27"><div class="ttname"><a href="mwprefix_8h.html#aab6e63106cf29e5160e5c2d63db86d27">fprintf</a></div><div class="ttdeci">#define fprintf</div><div class="ttdef"><b>Definition:</b> <a href="mwprefix_8h_source.html#l00030">mwprefix.h:30</a></div></div>
 <div class="ttc" id="oc_2code_8cpp_html_a546bb42b7a8e3f5f87bc3edd43969cd6"><div class="ttname"><a href="oc_2code_8cpp.html#a546bb42b7a8e3f5f87bc3edd43969cd6">fp</a></div><div class="ttdeci">static Frame * fp</div><div class="ttdef"><b>Definition:</b> <a href="oc_2code_8cpp_source.html#l00154">code.cpp:154</a></div></div>
 <div class="ttc" id="matrix_8h_html_a69b6a0bc97298353faad59912fcefb8f"><div class="ttname"><a href="matrix_8h.html#a69b6a0bc97298353faad59912fcefb8f">skipjunk</a></div><div class="ttdeci">int skipjunk(FILE *fp)</div><div class="ttdef"><b>Definition:</b> <a href="matrixio_8c_source.html#l00047">matrixio.c:47</a></div></div>
+<div class="ttc" id="ivocvect_8h_html_a7b09551e9daf8c5424b835d4aad9ca4a"><div class="ttname"><a href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a></div><div class="ttdeci">double var(InputIterator begin, InputIterator end)</div><div class="ttdef"><b>Definition:</b> <a href="ivocvect_8h_source.html#l00093">ivocvect.h:93</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="matrix_8h_source.html#l00365">365</a> of file <a class="el" href="matrix_8h_source.html">matrix.h</a>.</p>
 
@@ -718,12 +719,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">var&#160;</td>
+          <td class="paramname"><a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(stdin,prompt,fmt,var)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="matrix_8h.html#a1cc033c138bae33a13e73c4fe4ffc8fa">finput</a>(stdin,prompt,fmt,<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1398,7 +1399,7 @@ Functions</h2></td></tr>
           <td class="memname">#define RENEW</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
+          <td class="paramname"><a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1419,7 +1420,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((var)=(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a> *)((var) ? \</div><div class="line">            realloc((<span class="keywordtype">char</span> *)(var),(<span class="keywordtype">size_t</span>)((num)*<span class="keyword">sizeof</span>(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a>))) : \</div><div class="line">            calloc((<span class="keywordtype">size_t</span>)(num),(<span class="keywordtype">size_t</span>)<span class="keyword">sizeof</span>(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a>))))</div><div class="ttc" id="md1redef_8h_html_a53155e22eaa05190346890241be3367c"><div class="ttname"><a href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a></div><div class="ttdeci">#define type</div><div class="ttdef"><b>Definition:</b> <a href="md1redef_8h_source.html#l00032">md1redef.h:32</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line">((<a class="code" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>)=(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a> *)((<a class="code" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>) ? \</div><div class="line">            realloc((<span class="keywordtype">char</span> *)(<a class="code" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>),(<span class="keywordtype">size_t</span>)((num)*<span class="keyword">sizeof</span>(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a>))) : \</div><div class="line">            calloc((<span class="keywordtype">size_t</span>)(num),(<span class="keywordtype">size_t</span>)<span class="keyword">sizeof</span>(<a class="code" href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a>))))</div><div class="ttc" id="md1redef_8h_html_a53155e22eaa05190346890241be3367c"><div class="ttname"><a href="md1redef_8h.html#a53155e22eaa05190346890241be3367c">type</a></div><div class="ttdeci">#define type</div><div class="ttdef"><b>Definition:</b> <a href="md1redef_8h_source.html#l00032">md1redef.h:32</a></div></div>
+<div class="ttc" id="ivocvect_8h_html_a7b09551e9daf8c5424b835d4aad9ca4a"><div class="ttname"><a href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a></div><div class="ttdeci">double var(InputIterator begin, InputIterator end)</div><div class="ttdef"><b>Definition:</b> <a href="ivocvect_8h_source.html#l00093">ivocvect.h:93</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="matrix_8h_source.html#l00142">142</a> of file <a class="el" href="matrix_8h_source.html">matrix.h</a>.</p>
 

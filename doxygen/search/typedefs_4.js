@@ -7,9 +7,5 @@ var searchData=
   ['dimensionname',['DimensionName',['../geometry_8h.html#acf591e379afab1e3705a9f38f1b47d30',1,'geometry.h']]],
   ['dirent',['dirent',['../sysdep_8h.html#ae50c911db67dfb4b55fbfc97a557f6f2',1,'sysdep.h']]],
   ['dl_5finfo',['Dl_info',['../osxdlfcn_8h.html#a85b7f9d1e8c273837a19847410ffd9b1',1,'osxdlfcn.h']]],
-  ['doublecombiner',['doubleCombiner',['../d__vec_8h.html#af769e7eee19f36d499a1a98823e2a06e',1,'d_vec.h']]],
-  ['doublecomparator',['doubleComparator',['../d__vec_8h.html#a382a558eac16c2a09ff590eb7ba21fba',1,'d_vec.h']]],
-  ['doublemapper',['doubleMapper',['../d__vec_8h.html#af6f55bd858774bbc598ed43e0415c7ca',1,'d_vec.h']]],
-  ['doublepredicate',['doublePredicate',['../d__vec_8h.html#a14baca50ff588c838a96b99d9ab0443c',1,'d_vec.h']]],
-  ['doubleprocedure',['doubleProcedure',['../d__vec_8h.html#a42f4181937fc5f47b450ff2fc7960ec8',1,'d_vec.h']]]
+  ['doublecomparator',['doubleComparator',['../ivocvect_8cpp.html#a382a558eac16c2a09ff590eb7ba21fba',1,'ivocvect.cpp']]]
 ];

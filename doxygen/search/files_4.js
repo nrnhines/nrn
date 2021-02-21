@@ -2,11 +2,7 @@ var searchData=
 [
   ['d2uenv_2ecpp',['d2uenv.cpp',['../d2uenv_8cpp.html',1,'']]],
   ['d2upath_2ecpp',['d2upath.cpp',['../d2upath_8cpp.html',1,'']]],
-  ['d_5favec_2ecpp',['d_avec.cpp',['../d__avec_8cpp.html',1,'']]],
-  ['d_5favec_2eh',['d_avec.h',['../d__avec_8h.html',1,'']]],
-  ['d_5fdefs_2eh',['d_defs.h',['../d__defs_8h.html',1,'']]],
   ['d_5fvec_2ecpp',['d_vec.cpp',['../d__vec_8cpp.html',1,'']]],
-  ['d_5fvec_2eh',['d_vec.h',['../d__vec_8h.html',1,'']]],
   ['datapath_2ecpp',['datapath.cpp',['../ivoc_2datapath_8cpp.html',1,'(Global Namespace)'],['../nrniv_2datapath_8cpp.html',1,'(Global Namespace)']]],
   ['datapath_2eh',['datapath.h',['../datapath_8h.html',1,'']]],
   ['datum_5findices_2ecpp',['datum_indices.cpp',['../datum__indices_8cpp.html',1,'']]],

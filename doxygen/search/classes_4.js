@@ -13,8 +13,6 @@ var searchData=
   ['dl_5finfo',['dl_info',['../structdl__info.html',1,'']]],
   ['dll_5fs',['dll_s',['../structdll__s.html',1,'']]],
   ['docbrowser',['DocBrowser',['../class_doc_browser.html',1,'']]],
-  ['doubleavec',['doubleAVec',['../classdouble_a_vec.html',1,'']]],
-  ['doublevec',['doubleVec',['../classdouble_vec.html',1,'']]],
   ['doubscal',['DoubScal',['../struct_doub_scal.html',1,'']]],
   ['doubvec',['DoubVec',['../struct_doub_vec.html',1,'']]]
 ];

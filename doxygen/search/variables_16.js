@@ -38,6 +38,7 @@ var searchData=
   ['vd',['vd',['../structhoc___item.html#a040ef03d98e256c757fd6a00fdd8d8e9',1,'hoc_Item']]],
   ['vdoub',['vdoub',['../hocmodl_8h.html#ad705566d0b918746441f3aae9bf0f308',1,'hocmodl.h']]],
   ['ve',['ve',['../struct_v_e_c.html#a64d2d1c47f09b9d490051ce7fa1784d0',1,'VEC::ve()'],['../struct_z_v_e_c.html#a5dfbe2c410ddff128a05ce9de9880a28',1,'ZVEC::ve()']]],
+  ['vec_5f',['vec_',['../class_ivoc_vect.html#a613de6a4d9250cecaf666f80a3735931',1,'IvocVect']]],
   ['vec_5fas_5fnumpy',['vec_as_numpy',['../nrnpy__hoc_8cpp.html#a5de2d9b6e321bed2034fc3e5a9ddea8d',1,'nrnpy_hoc.cpp']]],
   ['vec_5fevent_5fstore_5f',['vec_event_store_',['../class_net_cvode.html#a30fa6405e8ad2b991de78428aca46ef1',1,'NetCvode']]],
   ['vec_5fpy_5fsave',['vec_py_save',['../hocprax_8cpp.html#add834919449efc5d7d2a0ae178d6f944',1,'hocprax.cpp']]],

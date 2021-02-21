@@ -80,7 +80,7 @@ var searchData=
   ['indef',['indef',['../oc_2redef_8h.html#ae4b3168a6ca6ee268d65fc7d63ccbab6',1,'redef.h']]],
   ['indent',['indent',['../memacs_2redef_8h.html#a3f356010119e2949013e80215a8241dc',1,'redef.h']]],
   ['indep',['INDEP',['../model_8h.html#a6e1def2dcd8b0140323c6c2d3417a83c',1,'model.h']]],
-  ['index',['index',['../declare_8cpp.html#a8227c495a4fdf3385a170810f90c2b78',1,'index():&#160;declare.cpp'],['../grids_8h.html#a13ce4f696dd4ff83d9dc30232a1a3501',1,'INDEX():&#160;grids.h']]],
+  ['index',['INDEX',['../grids_8h.html#a13ce4f696dd4ff83d9dc30232a1a3501',1,'INDEX():&#160;grids.h'],['../declare_8cpp.html#a8227c495a4fdf3385a170810f90c2b78',1,'index():&#160;declare.cpp']]],
   ['infile',['infile',['../oc_2redef_8h.html#a6f2fe108e48c469dbdcf7b6ca4191785',1,'redef.h']]],
   ['infocast',['INFOCAST',['../pattern_8c.html#a2a45a3b94042d42331bb074427935eec',1,'pattern.c']]],
   ['init_5faccess',['init_access',['../oc_2redef_8h.html#aabf0adfa66a3f120e0b3d0fcdb58530a',1,'redef.h']]],

@@ -126,9 +126,9 @@ Macros</h2></td></tr>
 <tr class="separator:aea9dca2c544c21c2ae719454b1b7cf75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13bd87b56685187c71b8852bea230e86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#a13bd87b56685187c71b8852bea230e86">mem_info</a>()&#160;&#160;&#160;<a class="el" href="meminfo_8h.html#a10afc4ebb290916c55064807665b8d31">mem_info_file</a>(stdout,0)</td></tr>
 <tr class="separator:a13bd87b56685187c71b8852bea230e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac48ca3da4d475de4384a4db8adfb642e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#ac48ca3da4d475de4384a4db8adfb642e">mem_stat_reg</a>(var,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)var,<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td></tr>
+<tr class="memitem:ac48ca3da4d475de4384a4db8adfb642e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#ac48ca3da4d475de4384a4db8adfb642e">mem_stat_reg</a>(<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>,<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td></tr>
 <tr class="separator:ac48ca3da4d475de4384a4db8adfb642e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af18bc1e3245cb742a99b083c291e062c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#af18bc1e3245cb742a99b083c291e062c">MEM_STAT_REG</a>(var,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)&amp;(var),<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td></tr>
+<tr class="memitem:af18bc1e3245cb742a99b083c291e062c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#af18bc1e3245cb742a99b083c291e062c">MEM_STAT_REG</a>(<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>,  <a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>)&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)&amp;(<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>),<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td></tr>
 <tr class="separator:af18bc1e3245cb742a99b083c291e062c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1183d09d08aeeae6f57a68844973ad92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="meminfo_8h.html#a1183d09d08aeeae6f57a68844973ad92">mem_stat_free</a>(mark)&#160;&#160;&#160;<a class="el" href="memstat_8c.html#ab6bebd100d8362fc749c5a57693713b0">mem_stat_free_list</a>(mark,0)</td></tr>
 <tr class="separator:a1183d09d08aeeae6f57a68844973ad92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
           <td class="memname">#define mem_stat_reg</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
+          <td class="paramname"><a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -351,7 +351,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)var,<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>,<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -370,7 +370,7 @@ Functions</h2></td></tr>
           <td class="memname">#define MEM_STAT_REG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
+          <td class="paramname"><a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)&amp;(var),<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="memstat_8c.html#a2ff860c96db1650a89db49dc19e52a0c">mem_stat_reg_list</a>((<a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> **)&amp;(<a class="el" href="ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a">var</a>),<a class="el" href="cabvars_8h.html#acd579dfd50a9ea905ca697ed8707bf3b">type</a>,0)</td>
         </tr>
       </table>
 </div><div class="memdoc">

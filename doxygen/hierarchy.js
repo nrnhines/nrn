@@ -109,9 +109,6 @@ var hierarchy =
     ] ],
     [ "dl_info", "structdl__info.html", null ],
     [ "dll_s", "structdll__s.html", null ],
-    [ "doubleVec", "classdouble_vec.html", [
-      [ "doubleAVec", "classdouble_a_vec.html", null ]
-    ] ],
     [ "DoubScal", "struct_doub_scal.html", null ],
     [ "DoubVec", "struct_doub_vec.html", null ],
     [ "ECSAdiDirection", "struct_e_c_s_adi_direction.html", null ],
@@ -241,6 +238,7 @@ var hierarchy =
     [ "Item", "struct_item.html", null ],
     [ "Iter_data", "struct_iter__data.html", null ],
     [ "IVEC", "struct_i_v_e_c.html", null ],
+    [ "IvocVect", "class_ivoc_vect.html", null ],
     [ "K", "class_k.html", null ],
     [ "KEYTAB", "struct_k_e_y_t_a_b.html", null ],
     [ "KSChan", "class_k_s_chan.html", null ],
@@ -406,9 +404,6 @@ var hierarchy =
     ] ],
     [ "OcPtrVector", "class_oc_ptr_vector.html", null ],
     [ "OcPtrVector_", "struct_oc_ptr_vector__.html", null ],
-    [ "ParentVect", null, [
-      [ "IvocVect", "class_ivoc_vect.html", null ]
-    ] ],
     [ "ParseTopLevel", "class_parse_top_level.html", null ],
     [ "PathValue", "class_path_value.html", null ],
     [ "PERM", "struct_p_e_r_m.html", null ],
@@ -541,8 +536,8 @@ var hierarchy =
     [ "StandardPicker", "class_standard_picker.html", [
       [ "ScenePicker", "class_scene_picker.html", null ]
     ] ],
-    [ "SaveState::StateStructInfo", "struct_save_state_1_1_state_struct_info.html", null ],
     [ "StateStructInfo", "struct_state_struct_info.html", null ],
+    [ "SaveState::StateStructInfo", "struct_save_state_1_1_state_struct_info.html", null ],
     [ "StateTransitionEvent", "class_state_transition_event.html", null ],
     [ "Stepper", null, [
       [ "HocValStepper", "class_hoc_val_stepper.html", null ]

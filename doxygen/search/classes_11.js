@@ -35,7 +35,7 @@ var searchData=
   ['spvec',['SPVEC',['../struct_s_p_v_e_c.html',1,'']]],
   ['standardpicker',['StandardPicker',['../class_standard_picker.html',1,'']]],
   ['standardwindow',['StandardWindow',['../class_standard_window.html',1,'']]],
-  ['statestructinfo',['StateStructInfo',['../struct_save_state_1_1_state_struct_info.html',1,'SaveState::StateStructInfo'],['../struct_state_struct_info.html',1,'StateStructInfo']]],
+  ['statestructinfo',['StateStructInfo',['../struct_state_struct_info.html',1,'StateStructInfo'],['../struct_save_state_1_1_state_struct_info.html',1,'SaveState::StateStructInfo']]],
   ['statetransitionevent',['StateTransitionEvent',['../class_state_transition_event.html',1,'']]],
   ['stdinput',['StdInput',['../class_std_input.html',1,'']]],
   ['stecondition',['STECondition',['../class_s_t_e_condition.html',1,'']]],

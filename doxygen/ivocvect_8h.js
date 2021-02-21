@@ -1,9 +1,12 @@
 var ivocvect_8h =
 [
     [ "IvocVect", "class_ivoc_vect.html", "class_ivoc_vect" ],
-    [ "ParentVect", "ivocvect_8h.html#a500f77eec37a9d60f057319a33b21f0b", null ],
     [ "Vect", "ivocvect_8h.html#a805d047a38285ba33c94e1dbdf021a09", null ],
+    [ "ParentVect", "ivocvect_8h.html#a78534d784f15f7c925e5ea1d2c1408ba", null ],
     [ "is_vector_arg", "ivocvect_8h.html#abaddcc5cfd8007908a564c8e164f05a3", null ],
+    [ "notify_freed_val_array", "ivocvect_8h.html#a621aeacde9bf7f00bfc4ca463e8e96af", null ],
+    [ "stdDev", "ivocvect_8h.html#a810c5d3e3516c1808609346b8971bdb5", null ],
+    [ "var", "ivocvect_8h.html#a7b09551e9daf8c5424b835d4aad9ca4a", null ],
     [ "vector_arg", "ivocvect_8h.html#ad9319bdaaf4f85ee6d00a825fe161b2e", null ],
     [ "vector_buffer_size", "ivocvect_8h.html#a1107c0b3eba24c2436c02048885c7929", null ],
     [ "vector_capacity", "ivocvect_8h.html#aecb91bfb49fc85d789e312bc4a677654", null ],

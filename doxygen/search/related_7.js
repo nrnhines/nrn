@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quotient',['quotient',['../classdouble_a_vec.html#a231bd70a84a5eff63b1d86860fabe756',1,'doubleAVec']]]
+  ['xyview',['XYView',['../class_scene.html#a8df0b34edf5efbaf8f004109cba52d05',1,'Scene']]]
 ];
