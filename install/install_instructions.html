@@ -344,8 +344,9 @@ install dependencies. For example, on Ubuntu:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
 sudo apt-get install -y bison cmake flex git <span class="se">\</span>
      libncurses-dev libopenmpi-dev libx11-dev <span class="se">\</span>
-     libxcomposite-dev openmpi-bin python3-numpy <span class="se">\</span>
-     python3-dev python3-scipy cython3
+     libxcomposite-dev openmpi-bin python3-dev
+<span class="c1"># for python dependencies</span>
+pip install scipy numpy cython
 <span class="c1"># for autotools based installation only</span>
 sudo apt-get install -y automake libtool make
 </pre></div>
