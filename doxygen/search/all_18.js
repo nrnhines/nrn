@@ -83,7 +83,7 @@ var searchData=
   ['xopen',['xopen',['../oc_2redef_8h.html#acd51034df0a1e20805e55c98cb1d881b',1,'xopen():&#160;redef.h'],['../fileio_8cpp.html#a20961bf05c62d637c875a6123791f02d',1,'xopen(void):&#160;fileio.cpp']]],
   ['xopen_5faudit',['xopen_audit',['../audit_8cpp.html#ae078cb522ccec38f54f33013d43ce805',1,'audit.cpp']]],
   ['xor_5fcolor_5f',['xor_color_',['../class_rubberband.html#a3b504585a621799d447c5034c57b8ec8',1,'Rubberband']]],
-  ['xorg',['xorg',['../oc_2axis_8cpp.html#a32380cfc3b89ef52ec592abc4d7b3231',1,'xorg():&#160;axis.cpp'],['../oc_2axis_8cpp.html#a61a36a186270cec68aa330b6923afa0a',1,'XORG():&#160;axis.cpp']]],
+  ['xorg',['XORG',['../oc_2axis_8cpp.html#a61a36a186270cec68aa330b6923afa0a',1,'XORG():&#160;axis.cpp'],['../oc_2axis_8cpp.html#a32380cfc3b89ef52ec592abc4d7b3231',1,'xorg():&#160;axis.cpp']]],
   ['xpass',['xpass',['../nvector__nrnthread_8cpp.html#a3f6bab7ba11105ae9d6ad2129c630607',1,'xpass():&#160;nvector_nrnthread.cpp'],['../nvector__nrnthread__ld_8cpp.html#a3f6bab7ba11105ae9d6ad2129c630607',1,'xpass():&#160;nvector_nrnthread_ld.cpp']]],
   ['xpath_5f',['xpath_',['../class_oc_idraw.html#ae1a11eb18000245c5ca78cb72651025d',1,'OcIdraw']]],
   ['xplace',['xplace',['../class_printable_window.html#a8a2e3df6a2e4487ec686b8ddbdca16b6',1,'PrintableWindow::xplace()'],['../class_printable_window_manager.html#a010a3b5107ea26b1efb25cd076a679d8',1,'PrintableWindowManager::xplace()']]],

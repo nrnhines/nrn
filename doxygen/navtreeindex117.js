@@ -1,5 +1,7 @@
 var NAVTREEINDEX117 =
 {
+"structdl__info.html#aaa4f56a92441a0e19e051d2d19c59c6a":[4,0,78,0],
+"structdll__s.html":[4,0,79],
 "structdll__s.html#a0408f5de0e630809048e140c0cdf17fd":[4,0,79,3],
 "structdll__s.html#a32002edf9b35137031069c4958c9c10e":[4,0,79,4],
 "structdll__s.html#a365feb30f00b4c15481a5ce8b41722d0":[4,0,79,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX117 =
 "svclmp_8c.html#a38bf1e5e0427bdeba2b469eea9befc23":[5,0,0,14,65,31],
 "svclmp_8c.html#a4087cce84a0aa62537a7cbc69769bd9e":[5,0,0,14,65,35],
 "svclmp_8c.html#a4089408385117bd65fc4d857eb32d4e5":[5,0,0,14,65,3],
-"svclmp_8c.html#a40f1261f2e8fb86cc0bba14703c7ea9a":[5,0,0,14,65,77],
-"svclmp_8c.html#a42cc7dae7a40abcb545fc41730fa1476":[5,0,0,14,65,26],
-"svclmp_8c.html#a46da3ff1e495329b241e5830b70bcb80":[5,0,0,14,65,27]
+"svclmp_8c.html#a40f1261f2e8fb86cc0bba14703c7ea9a":[5,0,0,14,65,77]
 };

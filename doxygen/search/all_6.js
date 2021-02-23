@@ -121,6 +121,7 @@ var searchData=
   ['fft_5fbinary_5flogn',['fft_binary_logn',['../nrngsl__real__radix2_8cpp.html#a7d3b7f7b2fa5ce71ee3a01e74eeb4555',1,'nrngsl_real_radix2.cpp']]],
   ['ffwopen',['ffwopen',['../memacs_2redef_8h.html#a3f374da47cb7f627974b4efa6ae64760',1,'ffwopen():&#160;redef.h'],['../fileio_8c.html#af9323942221379605bb5989a6a827f7f',1,'ffwopen(char *fn):&#160;fileio.c']]],
   ['fgets',['Fgets',['../modlunit_2io_8cpp.html#a7d3329d0dcb19fbd4b871eb9cc21e283',1,'Fgets(char *buf, int size, FILE *f):&#160;io.cpp'],['../nmodl_2io_8cpp.html#a7d3329d0dcb19fbd4b871eb9cc21e283',1,'Fgets(char *buf, int size, FILE *f):&#160;io.cpp']]],
+  ['fgets_5fno_5fnewline',['fgets_no_newline',['../nrncore__io_8cpp.html#aaeed2b709cf516dcc7c8dd5641acdb3c',1,'nrncore_io.cpp']]],
   ['fgets_5funlimited',['fgets_unlimited',['../hoc_8cpp.html#a1aae46f49bc7c1ad1f069df8443692f1',1,'fgets_unlimited(HocStr *s, NrnFILEWrap *f):&#160;hoc.cpp'],['../nrnfilewrap_8h.html#a1aae46f49bc7c1ad1f069df8443692f1',1,'fgets_unlimited(HocStr *s, NrnFILEWrap *f):&#160;hoc.cpp']]],
   ['fgets_5funlimited_5fnltrans',['fgets_unlimited_nltrans',['../hoc_8cpp.html#a3501fd94ab517f6e2871023c1dc275b1',1,'hoc.cpp']]],
   ['field',['field',['../class_field_s_editor.html#aff6967317dc57d6a1bd41081e0d3c41f',1,'FieldSEditor::field(const char *)'],['../class_field_s_editor.html#a07a000b88193d13c5b3fcd69448b47e7',1,'FieldSEditor::field(const String &amp;)']]],

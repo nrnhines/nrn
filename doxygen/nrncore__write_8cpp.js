@@ -1,12 +1,12 @@
 var nrncore__write_8cpp =
 [
     [ "nrnbbcore_gap_write", "nrncore__write_8cpp.html#a159333f2fd5b06b9b3b1748c7e2cb135", null ],
-    [ "nrnbbcore_write", "nrncore__write_8cpp.html#a14c1379a41579a07744a53f1dc4f4526", null ],
     [ "nrncore_is_enabled", "nrncore__write_8cpp.html#a42f13f7b31eb65a85aa8adcef4d976b7", null ],
     [ "nrncore_is_file_mode", "nrncore__write_8cpp.html#a4de785e01fcce1ce13d95062555445e6", null ],
     [ "nrncore_netpar_bytes", "nrncore__write_8cpp.html#aef610a991cb6bc046d108ad1cb1e0d53", null ],
     [ "nrncore_psolve", "nrncore__write_8cpp.html#a7fc549a13fe3b516927eadc30ef9c34d", null ],
     [ "nrncore_run", "nrncore__write_8cpp.html#a0415189332cf2d5c581878aa5bb44e35", null ],
+    [ "nrncore_write", "nrncore__write_8cpp.html#a93ed0d320d33214e6dc2870a9653bf35", null ],
     [ "part1", "nrncore__write_8cpp.html#ac0a26eaaaccaada5a3452b77e310254c", null ],
     [ "part2", "nrncore__write_8cpp.html#a00be9f35dad80fa69bcfaf8f4ba69c14", null ],
     [ "write_corenrn_model", "nrncore__write_8cpp.html#a1648850cfe22059e8dfd93d80bfff68c", null ],

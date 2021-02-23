@@ -144,9 +144,11 @@ Functions</h2></td></tr>
 <tr class="separator:aca9c714e12dff3995f861479bd9e88b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae46677433e843e71058761a0a683613d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__io_8cpp.html#ae46677433e843e71058761a0a683613d">nrnbbcore_vecplay_write</a> (FILE *<a class="el" href="bbsavestate_8cpp.html#a0b175f3b3b17a49df23f43f0584daebe">f</a>, <a class="el" href="struct_nrn_thread.html">NrnThread</a> &amp;nt)</td></tr>
 <tr class="separator:ae46677433e843e71058761a0a683613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad636b4b6e27d5856b52594a7b049691a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__io_8cpp.html#ad636b4b6e27d5856b52594a7b049691a">write_nrnthread_task</a> (const char *path, <a class="el" href="class_cell_group.html">CellGroup</a> *<a class="el" href="sparse2_8h.html#ad80ac6fea68e2c24c5f053bb85a3a709">cgs</a>)</td></tr>
-<tr class="memdesc:ad636b4b6e27d5856b52594a7b049691a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write all dataset ids to files.dat.  <a href="#ad636b4b6e27d5856b52594a7b049691a">More...</a><br /></td></tr>
-<tr class="separator:ad636b4b6e27d5856b52594a7b049691a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeed2b709cf516dcc7c8dd5641acdb3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__io_8cpp.html#aaeed2b709cf516dcc7c8dd5641acdb3c">fgets_no_newline</a> (char *<a class="el" href="system_8cpp.html#aa8ca182462c7f7eaa385ba421fb972a4">s</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> size, FILE *<a class="el" href="bbsavestate_8cpp.html#a0b175f3b3b17a49df23f43f0584daebe">f</a>)</td></tr>
+<tr class="separator:aaeed2b709cf516dcc7c8dd5641acdb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e53dd54dbe9d581ca54b0b0c147034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__io_8cpp.html#ab9e53dd54dbe9d581ca54b0b0c147034">write_nrnthread_task</a> (const char *path, <a class="el" href="class_cell_group.html">CellGroup</a> *<a class="el" href="sparse2_8h.html#ad80ac6fea68e2c24c5f053bb85a3a709">cgs</a>, bool <a class="el" href="fmenu_8cpp.html#a89462beae1ccb8f3b31f3af2c2195604">append</a>)</td></tr>
+<tr class="memdesc:ab9e53dd54dbe9d581ca54b0b0c147034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write all dataset ids to files.dat.  <a href="#ab9e53dd54dbe9d581ca54b0b0c147034">More...</a><br /></td></tr>
+<tr class="separator:ab9e53dd54dbe9d581ca54b0b0c147034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e13377d9feb3acf8384bcc1c7814841"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nrncore__io_8cpp.html#a9e13377d9feb3acf8384bcc1c7814841">nrn_write_mapping_info</a> (const char *path, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> gid, <a class="el" href="struct_nrn_mapping_info.html">NrnMappingInfo</a> &amp;minfo)</td></tr>
 <tr class="memdesc:a9e13377d9feb3acf8384bcc1c7814841"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump mapping information to gid_3.dat file  <a href="#a9e13377d9feb3acf8384bcc1c7814841">More...</a><br /></td></tr>
 <tr class="separator:a9e13377d9feb3acf8384bcc1c7814841"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +290,50 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aaeed2b709cf516dcc7c8dd5641acdb3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeed2b709cf516dcc7c8dd5641acdb3c">&#9670;&nbsp;</a></span>fgets_no_newline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> fgets_no_newline </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="nrncore__io_8cpp_source.html#l00309">309</a> of file <a class="el" href="nrncore__io_8cpp_source.html">nrncore_io.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a4f31dbc88ed47580c5eedc42e03fa345"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f31dbc88ed47580c5eedc42e03fa345">&#9670;&nbsp;</a></span>get_filename()</h2>
 
@@ -377,7 +423,7 @@ Variables</h2></td></tr>
 <p>section list name, number of sections, number of segments</p>
 <p>section - segment mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__io_8cpp_source.html#l00425">425</a> of file <a class="el" href="nrncore__io_8cpp_source.html">nrncore_io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__io_8cpp_source.html#l00486">486</a> of file <a class="el" href="nrncore__io_8cpp_source.html">nrncore_io.cpp</a>.</p>
 
 </div>
 </div>
@@ -529,8 +575,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad636b4b6e27d5856b52594a7b049691a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad636b4b6e27d5856b52594a7b049691a">&#9670;&nbsp;</a></span>write_nrnthread_task()</h2>
+<a id="ab9e53dd54dbe9d581ca54b0b0c147034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e53dd54dbe9d581ca54b0b0c147034">&#9670;&nbsp;</a></span>write_nrnthread_task()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -545,7 +591,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_cell_group.html">CellGroup</a> *&#160;</td>
-          <td class="paramname"><em>cgs</em>&#160;</td>
+          <td class="paramname"><em>cgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>append</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -558,13 +610,13 @@ Variables</h2></td></tr>
 <p>Write all dataset ids to files.dat. </p>
 <p>Format of the files.dat file is: </p><pre class="fragment">version string
 -1 (if model uses gap junction)
-n (number of datasets)
+n (number of datasets) in format %10d
 id1
 id2
 ...
 idN</pre> <p>Writing the file with task, correspondent number of threads and list of correspondent first gids </p>
 
-<p class="definition">Definition at line <a class="el" href="nrncore__io_8cpp_source.html#l00321">321</a> of file <a class="el" href="nrncore__io_8cpp_source.html">nrncore_io.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="nrncore__io_8cpp_source.html#l00332">332</a> of file <a class="el" href="nrncore__io_8cpp_source.html">nrncore_io.cpp</a>.</p>
 
 </div>
 </div>
