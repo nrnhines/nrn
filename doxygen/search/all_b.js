@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['k',['K',['../class_k.html',1,'K'],['../class_a_c_g.html#acb9bb7f384f443d1afbe52f5489256ff',1,'ACG::k()'],['../class_erlang.html#a037def7df09de60747b50ce6dea16338',1,'Erlang::k()'],['../struct_iter__data.html#a1718580235adc66704f49d917315b582',1,'Iter_data::k()'],['../unitstest_8c.html#a13b230ea1d237595fb236c951a0849e0',1,'k():&#160;unitstest.c'],['../readline_8cpp.html#ab66ed8e0098c0a86b458672a55a9cca9',1,'k():&#160;readline.cpp'],['../nrnran123_8cpp.html#a4528930a01faf6ddf27301c98283f817',1,'k():&#160;nrnran123.cpp']]],
+  ['k',['K',['../class_k.html',1,'K'],['../class_a_c_g.html#acb9bb7f384f443d1afbe52f5489256ff',1,'ACG::k()'],['../class_erlang.html#a037def7df09de60747b50ce6dea16338',1,'Erlang::k()'],['../struct_iter__data.html#a1718580235adc66704f49d917315b582',1,'Iter_data::k()'],['../readline_8cpp.html#ab66ed8e0098c0a86b458672a55a9cca9',1,'k():&#160;readline.cpp'],['../nrnran123_8cpp.html#a4528930a01faf6ddf27301c98283f817',1,'k():&#160;nrnran123.cpp']]],
   ['k_5fcode',['k_code',['../struct_k_e_y_t_a_b.html#a0e03da13187bcad4c90657edb827ed36',1,'KEYTAB']]],
   ['k_5ffp',['k_fp',['../struct_k_e_y_t_a_b.html#a4beca333bf44ff5cbbaf501662f70a8a',1,'KEYTAB']]],
   ['k_5fion',['k_ion',['../eion_8cpp.html#a645b625cca08c3ac34dce2282095e8a0',1,'eion.cpp']]],
@@ -10,8 +10,6 @@ var searchData=
   ['kbdtext',['kbdtext',['../memacs_2redef_8h.html#aa00d54a5200b5fbc202a17f00fdd3a92',1,'kbdtext():&#160;redef.h'],['../display_8c.html#ab27ff473730255cf1aec59dc81f78ac7',1,'kbdtext(char *buf):&#160;display.c']]],
   ['kblock',['KBLOCK',['../line_8c.html#af4f8b580fb0494576d9711e90484f7e7',1,'line.c']]],
   ['kbufp',['kbufp',['../memacs_2redef_8h.html#a30c87d1e3d5759aaacf526482cce38e5',1,'kbufp():&#160;redef.h'],['../line_8c.html#a3f4150b681a2617ed086d81ce8a0c2a1',1,'kbufp():&#160;line.c']]],
-  ['kd',['Kd',['../pump_8c.html#a91066ed459a1747b160e47aa1dd54e36',1,'pump.c']]],
-  ['kd_5fpump',['Kd_pump',['../pump_8c.html#a41ecb0ac87fc4b620cd65ef6f353d370',1,'pump.c']]],
   ['kdelete',['kdelete',['../memacs_2redef_8h.html#a8ab4c5466f443fefae5e6115ca3309b7',1,'kdelete():&#160;redef.h'],['../line_8c.html#a821a37071e50d8cf2092d3d344936bc0',1,'kdelete():&#160;line.c']]],
   ['ke',['ke',['../intfire4_8c.html#aff908732c133f4031a1f4e8e4dbeeb2c',1,'intfire4.c']]],
   ['keep_5flines',['keep_lines',['../class_graph.html#a288ce5c00ffcaadbbed5bcbe9e3f1003',1,'Graph']]],

@@ -360,8 +360,6 @@ var searchData=
   ['auxesz',['AUXESZ',['../coff_8h.html#a5066656e79b1826791f31a1a4c72d604',1,'coff.h']]],
   ['auxsize',['auxSize',['../class_a_c_g.html#a5244df9d253878020371f48e08c3db3c',1,'ACG']]],
   ['auxstate',['auxState',['../class_a_c_g.html#af7f0fa7d9aed0762dd9e3eb10355a813',1,'ACG']]],
-  ['avo',['avo',['../unitstest_8c.html#af49937e0f25df7131c8e7895a0b7c835',1,'unitstest.c']]],
-  ['avogadro',['avogadro',['../unitstest_8c.html#af1a3eb1b486ca17c07cc089e1fc7fdc5',1,'unitstest.c']]],
   ['ax',['Ax',['../struct_iter__data.html#a5adc1ddcc5a08e6d9394a42970c84ba0',1,'Iter_data']]],
   ['axis',['Axis',['../class_axis.html',1,'Axis'],['../class_graph.html#aee476888882406335676b6a81832766c',1,'Graph::axis()'],['../class_axis.html#ababcf34dfd12a89107e84811d34e972a',1,'Axis::Axis(Scene *, DimensionName)'],['../class_axis.html#a675132c661717fbd8222232d53f6ec4d',1,'Axis::Axis(Scene *, DimensionName, Coord x1, Coord x2)'],['../class_axis.html#a421fc6e0bd40d6f9e1cf8b664ef692c2',1,'Axis::Axis(Scene *, DimensionName, Coord x1, Coord x2, Coord pos, int ntic=1, int nminor=0, int invert=0, bool number=true)']]],
   ['axis_2ecpp',['axis.cpp',['../ivoc_2axis_8cpp.html',1,'(Global Namespace)'],['../oc_2axis_8cpp.html',1,'(Global Namespace)']]],

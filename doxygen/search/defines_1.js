@@ -82,7 +82,5 @@ var searchData=
   ['audit_5fscript_5fdir',['AUDIT_SCRIPT_DIR',['../audit_8cpp.html#a833d93aeb1d0c438b6cfb8f05c9feee3',1,'audit.cpp']]],
   ['auxent',['AUXENT',['../coff_8h.html#a4b815fb3feca5a462fa1a4805089bb3c',1,'coff.h']]],
   ['auxesz',['AUXESZ',['../coff_8h.html#a5066656e79b1826791f31a1a4c72d604',1,'coff.h']]],
-  ['avo',['avo',['../unitstest_8c.html#af49937e0f25df7131c8e7895a0b7c835',1,'unitstest.c']]],
-  ['avogadro',['avogadro',['../unitstest_8c.html#af1a3eb1b486ca17c07cc089e1fc7fdc5',1,'unitstest.c']]],
   ['aztec',['AZTEC',['../estruct_8h.html#a66290bac067501b29c2e9ef1a7adb869',1,'estruct.h']]]
 ];

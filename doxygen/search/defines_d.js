@@ -117,8 +117,6 @@ var searchData=
   ['modename',['modename',['../memacs_2redef_8h.html#ace42e65bb335a33d066d08c6f9e0225f',1,'redef.h']]],
   ['modlunitconst',['modlunitCONST',['../model_8h.html#a6ec71ddec3b0c4b30461465a48a71dec',1,'model.h']]],
   ['modulus',['MODULUS',['../init_8c.html#a9bc1fe94bf8c1b9aaef3dade106b6304',1,'init.c']]],
-  ['mol',['mol',['../unitstest_8c.html#a4d592611dd21d886df169e05954a0fe5',1,'unitstest.c']]],
-  ['mole',['mole',['../unitstest_8c.html#ae0e49cdf29a491348c3a96511521c9b1',1,'unitstest.c']]],
   ['monoglyph',['MonoGlyph',['../_inter_views_2__defines_8h.html#a8e1be1bba179639222566098b4a351f4',1,'_defines.h']]],
   ['monokit',['MonoKit',['../_inter_views_2__defines_8h.html#a0becd085ab232829e8ec910ceab8aee2',1,'_defines.h']]],
   ['monokitimpl',['MonoKitImpl',['../_inter_views_2__defines_8h.html#af8c44e211734deebbd12f79b09cad39f',1,'_defines.h']]],

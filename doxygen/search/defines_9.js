@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i',['I',['../intfire2_8c.html#a7e215e6127bc5bf6b38595e645eaae6e',1,'I():&#160;intfire2.c'],['../intfire4_8c.html#a60ef6e1bcfabb95cfeb300e1d03ce470',1,'I():&#160;intfire4.c'],['../exp2syn_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;exp2syn.c'],['../expsyn_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;expsyn.c'],['../intfire2_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;intfire2.c'],['../md1redef_8h.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;md1redef.h'],['../oclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;oclmp.c'],['../passive_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;passive.c'],['../stim_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;stim.c'],['../svclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;svclmp.c'],['../syn_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;syn.c'],['../vclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;vclmp.c'],['../pump_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;pump.c']]],
+  ['i',['I',['../intfire2_8c.html#a7e215e6127bc5bf6b38595e645eaae6e',1,'I():&#160;intfire2.c'],['../intfire4_8c.html#a60ef6e1bcfabb95cfeb300e1d03ce470',1,'I():&#160;intfire4.c'],['../exp2syn_8c.html#acb559820d9ca11295b4500f179ef6392',1,'i():&#160;exp2syn.c'],['../expsyn_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;expsyn.c'],['../intfire2_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;intfire2.c'],['../md1redef_8h.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;md1redef.h'],['../oclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;oclmp.c'],['../passive_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;passive.c'],['../stim_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;stim.c'],['../svclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;svclmp.c'],['../syn_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;syn.c'],['../vclmp_8c.html#a08582ce460e3d5e1cf0b7fea017d608e',1,'i():&#160;vclmp.c']]],
   ['i1',['i1',['../intfire4_8c.html#aab37e37b56dcbb737f240cf221754b2f',1,'intfire4.c']]],
   ['i1new',['i1new',['../intfire4_8c.html#abee179922e1edc1ba1d6a0466c88e88c',1,'intfire4.c']]],
   ['i2',['i2',['../intfire4_8c.html#a9cf49e97bacbfddbfe651a7ecec4631a',1,'intfire4.c']]],
@@ -45,8 +45,7 @@ var searchData=
   ['imag_5frhs',['IMAG_RHS',['../spdefs_8h.html#a79321eab95458cccebd46741286f2504',1,'spdefs.h']]],
   ['imag_5fvectors',['IMAG_VECTORS',['../spdefs_8h.html#abd2e76f31787de296f58c292d31b1d05',1,'spdefs.h']]],
   ['image',['Image',['../_inter_views_2__defines_8h.html#a00e10f90bb04c63972b0729024b0883b',1,'_defines.h']]],
-  ['imax',['imax',['../nrnjava_8cpp.html#a788916a7426baf172c67386359720d6d',1,'imax():&#160;nrnjava.cpp'],['../pump_8c.html#a788916a7426baf172c67386359720d6d',1,'imax():&#160;pump.c']]],
-  ['imax_5fpump',['imax_pump',['../pump_8c.html#a1d4baea022b5570174231ab5c187aeae',1,'pump.c']]],
+  ['imax',['imax',['../nrnjava_8cpp.html#a788916a7426baf172c67386359720d6d',1,'nrnjava.cpp']]],
   ['imemfast',['IMEMFAST',['../membfunc_8h.html#a0bc0ca05a272356573426ef1c64034b5',1,'membfunc.h']]],
   ['imkdll',['IMKDLL',['../dll_8cpp.html#a185ecdc7144f983343374438027acc88',1,'IMKDLL():&#160;dll.cpp'],['../dll_8cpp.html#a185ecdc7144f983343374438027acc88',1,'IMKDLL():&#160;dll.cpp']]],
   ['implement_5f4_5fminmax',['implement_4_minmax',['../math_8h.html#a0f642650f656e9af6601e573f9894137',1,'math.h']]],
@@ -72,7 +71,7 @@ var searchData=
   ['in_5fvec',['in_vec',['../oldnames_8h.html#ae26504f846652f6edb608ca393056e98',1,'oldnames.h']]],
   ['in_5fzmat',['in_zmat',['../oldnames_8h.html#a02d80af083e8353d033292d8143acc4e',1,'oldnames.h']]],
   ['in_5fzvec',['in_zvec',['../oldnames_8h.html#a01a69df16d3d940ce093a58ae09d19c3',1,'oldnames.h']]],
-  ['ina',['ina',['../hh_8c.html#a80497abd3bf0b32cfb120b66c3780c5e',1,'ina():&#160;hh.c'],['../unitstest_8c.html#a80497abd3bf0b32cfb120b66c3780c5e',1,'ina():&#160;unitstest.c']]],
+  ['ina',['ina',['../hh_8c.html#a80497abd3bf0b32cfb120b66c3780c5e',1,'hh.c']]],
   ['inch',['inch',['../_inter_views_2__defines_8h.html#aa324338d5411b78023609aff18b41e45',1,'_defines.h']]],
   ['inches',['inches',['../_inter_views_2__defines_8h.html#a140ad6618556776e29e23edc4e0b46ed',1,'_defines.h']]],
   ['includehoch',['INCLUDEHOCH',['../hocdec_8h.html#ab9d255620150cd083735df6348db2ba2',1,'hocdec.h']]],
@@ -181,6 +180,5 @@ var searchData=
   ['iv_5fos_5fu_5fchar',['iv_os_u_char',['../_o_s_2enter-scope_8h.html#a12fbbc4197412c229131ca05bca95ab6',1,'enter-scope.h']]],
   ['iv_5foutput',['iv_output',['../matrix_8h.html#a354c63c5b1c2f3a3537eac634eed37da',1,'matrix.h']]],
   ['ivnull',['IVNULL',['../matrix_8h.html#ac4905792f53f29c852f83072ed47a2d2',1,'matrix.h']]],
-  ['ivocvect',['IvocVect',['../oc_2ocnoiv_8cpp.html#abb792b3c2b5d28d47dc4da111c970ab4',1,'ocnoiv.cpp']]],
-  ['ix',['ix',['../pump_8c.html#aa96f0443cf1f4f27c819fc9b9488576e',1,'pump.c']]]
+  ['ivocvect',['IvocVect',['../oc_2ocnoiv_8cpp.html#abb792b3c2b5d28d47dc4da111c970ab4',1,'ocnoiv.cpp']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['r',['R',['../unitstest_8c.html#a5c71a5e59a53413cd6c270266d63b031',1,'unitstest.c']]],
   ['r0',['R0',['../modlunit_2parse1_8cpp.html#a30ab9da60435727bc80839d416461b8f',1,'parse1.cpp']]],
   ['r1',['R1',['../modlunit_2parse1_8cpp.html#a918f64eb53db8e8dc694f36a87646476',1,'parse1.cpp']]],
   ['r123_5fassert',['R123_ASSERT',['../crayfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;crayfeatures.h'],['../fujitsufeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;fujitsufeatures.h'],['../gccfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;gccfeatures.h'],['../iccfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;iccfeatures.h'],['../msvcfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;msvcfeatures.h'],['../nvccfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;nvccfeatures.h'],['../openclfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;openclfeatures.h'],['../pgccfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;pgccfeatures.h'],['../sunprofeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;sunprofeatures.h'],['../xlcfeatures_8h.html#a7d1fa84d7a60aff1e1894fbb98b41c7e',1,'R123_ASSERT():&#160;xlcfeatures.h']]],
@@ -65,7 +64,7 @@ var searchData=
   ['readin',['readin',['../memacs_2redef_8h.html#a3cc8614cce086faaba82be031d23ed06',1,'redef.h']]],
   ['readline',['READLINE',['../hoc_8cpp.html#a80ee265383238cdb7bf5d0e0d34238a1',1,'hoc.cpp']]],
   ['readpattern',['readpattern',['../memacs_2redef_8h.html#a46333e268acc88af2cbc387fcebbd8e5',1,'redef.h']]],
-  ['real',['REAL',['../machine_8h.html#a4b654506f18b8bfd61ad2a29a7e38c25',1,'REAL():&#160;machine.h'],['../machine_8h.html#a060b837c3b4486ee35317744156f3da2',1,'Real():&#160;machine.h']]],
+  ['real',['Real',['../machine_8h.html#a060b837c3b4486ee35317744156f3da2',1,'Real():&#160;machine.h'],['../machine_8h.html#a4b654506f18b8bfd61ad2a29a7e38c25',1,'REAL():&#160;machine.h']]],
   ['real_5fdbl',['REAL_DBL',['../machine_8h.html#a0ba7e3b1873866a179e345ab83a8ee35',1,'machine.h']]],
   ['realloc',['REALLOC',['../spdefs_8h.html#a5e80816b502a011917c22d2c5b7eba8e',1,'spdefs.h']]],
   ['record',['record',['../apcount_8c.html#a75fa2f9a167f94dde19917fe0f64632b',1,'apcount.c']]],
@@ -97,7 +96,7 @@ var searchData=
   ['revsta',['REVSTA',['../estruct_8h.html#ac489093ea2d8b50ef907f88bbbd57445',1,'estruct.h']]],
   ['rg',['rg',['../memacs_2redef_8h.html#a5613bde842ffa05b20fc64daee73c778',1,'redef.h']]],
   ['rgbtable',['RGBTable',['../_inter_views_2__defines_8h.html#a91c225fc67aa65da2beea545b7c2eb4c',1,'_defines.h']]],
-  ['rhs',['RHS',['../multisplit_8cpp.html#a4db9d9768fbcecde6df42209c8176b22',1,'RHS():&#160;multisplit.cpp'],['../lineq_8h.html#a1939c197093fe6b7fa35494fd046328d',1,'rhs():&#160;lineq.h']]],
+  ['rhs',['rhs',['../lineq_8h.html#a1939c197093fe6b7fa35494fd046328d',1,'rhs():&#160;lineq.h'],['../multisplit_8cpp.html#a4db9d9768fbcecde6df42209c8176b22',1,'RHS():&#160;multisplit.cpp']]],
   ['right',['right',['../rbtqueue_8cpp.html#ae545bf658b2c876abbbae55a7d12875f',1,'rbtqueue.cpp']]],
   ['rightlink',['rightlink',['../spt2queue_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;spt2queue.cpp'],['../sptbinq_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptbinq.cpp'],['../sptfifoq_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptfifoq.cpp'],['../sptqueue_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptqueue.cpp']]],
   ['rightmover',['RightMover',['../_inter_views_2__defines_8h.html#a8eee11eae500ffb6c709623b161e9d2b',1,'RightMover():&#160;_defines.h'],['../__names_8h.html#a8eee11eae500ffb6c709623b161e9d2b',1,'RightMover():&#160;_names.h']]],

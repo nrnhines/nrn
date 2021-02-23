@@ -276,7 +276,6 @@ var searchData=
   ['bndinfo',['bndinfo',['../partial_8cpp.html#a26f29e77f985556ce26f46184e181a37',1,'partial.cpp']]],
   ['board',['board',['../class_nrn_d_a_q.html#a9216ee0755cb3e310d519a87520b6384',1,'NrnDAQ']]],
   ['bol',['BOL',['../ivos_2regexp_8cpp.html#a3b6c9a4a7fbccb1ac0e525e52c931896',1,'regexp.cpp']]],
-  ['boltzmann',['boltzmann',['../unitstest_8c.html#a7fbbd2598e01a681d14a2c1d2ee12b0a',1,'unitstest.c']]],
   ['boolean',['BOOLEAN',['../spdefs_8h.html#a50168fdbaa52d4a0b1c287d476050f12',1,'spdefs.h']]],
   ['boolean_2eh',['boolean.h',['../boolean_8h.html',1,'']]],
   ['boolean_5fdialog',['boolean_dialog',['../utility_8h.html#a9d306a714dde8dad1b79c882bad06199',1,'utility.h']]],

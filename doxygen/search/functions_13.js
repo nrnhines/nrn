@@ -642,5 +642,5 @@ var searchData=
   ['symmeigen',['symmeigen',['../class_oc_matrix.html#aea4f913fe998a8a851837f930515e202',1,'OcMatrix::symmeigen()'],['../class_oc_full_matrix.html#ab338c66ddf59964f3c99809847a88b7a',1,'OcFullMatrix::symmeigen()'],['../class_matrix_map.html#afd6a1e6231e9c23c6823158ed763882f',1,'MatrixMap::symmeigen()']]],
   ['symtab',['Symtab',['../struct_symtab.html#a8a18df45b4aceb4b6b8fcfd96f65dfea',1,'Symtab']]],
   ['synapse_5fprepare',['synapse_prepare',['../nrn__ansi_8h.html#a6350b7eeba134b4f1ba01da825a687a2',1,'synapse_prepare(void):&#160;synapse.cpp'],['../synapse_8cpp.html#a6350b7eeba134b4f1ba01da825a687a2',1,'synapse_prepare(void):&#160;synapse.cpp']]],
-  ['system',['system',['../mswinprt_8cpp.html#a935e3586536789ea9863fa9e374e1ff8',1,'system(const char *s):&#160;mswinprt.cpp'],['../system_8cpp.html#a3968269813fdfd6e7a2f62c9dc878a54',1,'system(s) _CONST char *s:&#160;system.cpp'],['../code2_8cpp.html#ac412af3cd5d1b1f8ebb5b42895444745',1,'System(void):&#160;code2.cpp']]]
+  ['system',['System',['../code2_8cpp.html#ac412af3cd5d1b1f8ebb5b42895444745',1,'System(void):&#160;code2.cpp'],['../mswinprt_8cpp.html#a935e3586536789ea9863fa9e374e1ff8',1,'system(const char *s):&#160;mswinprt.cpp'],['../system_8cpp.html#a3968269813fdfd6e7a2f62c9dc878a54',1,'system(s) _CONST char *s:&#160;system.cpp']]]
 ];

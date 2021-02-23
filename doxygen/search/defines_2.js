@@ -64,7 +64,6 @@ var searchData=
   ['bltin',['bltin',['../oc_2redef_8h.html#afaba369541cd596be4f3b270f02ba9b1',1,'redef.h']]],
   ['bmpraster',['BMPRaster',['../_inter_views_2__defines_8h.html#a6ea5ed6ebf6ec196a4474682248658e8',1,'_defines.h']]],
   ['bol',['BOL',['../ivos_2regexp_8cpp.html#a3b6c9a4a7fbccb1ac0e525e52c931896',1,'regexp.cpp']]],
-  ['boltzmann',['boltzmann',['../unitstest_8c.html#a7fbbd2598e01a681d14a2c1d2ee12b0a',1,'unitstest.c']]],
   ['boolean',['BOOLEAN',['../spdefs_8h.html#a50168fdbaa52d4a0b1c287d476050f12',1,'spdefs.h']]],
   ['border',['Border',['../_inter_views_2__defines_8h.html#a506d6b74a7d9c4d503b8923ce92676dd',1,'Border():&#160;_defines.h'],['../__names_8h.html#a506d6b74a7d9c4d503b8923ce92676dd',1,'Border():&#160;_names.h']]],
   ['borderframe',['BorderFrame',['../_inter_views_2__defines_8h.html#a2de8c037337e17dae1307e03bcd69018',1,'_defines.h']]],

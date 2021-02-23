@@ -80,7 +80,7 @@ var searchData=
   ['family_5fval_5f',['family_val_',['../class_graph.html#a523fac54fffb1711c5d265f69ce7bb36',1,'Graph']]],
   ['family_5fvalue',['family_value',['../class_graph.html#abbdef9de01b4a3608c4a128438a2defb',1,'Graph']]],
   ['fanout',['fanout',['../class_pre_syn.html#a7a222d8badebb062a95fc9bafa2be895',1,'PreSyn']]],
-  ['faraday',['faraday',['../unitstest_8c.html#a829fe88fe75e8e7993eee0d4f1d86225',1,'faraday():&#160;unitstest.c'],['../eion_8cpp.html#ab6d3ffb7936453b4d74b579827bb0ea1',1,'FARADAY():&#160;eion.cpp'],['../unitstest_8c.html#ab6d3ffb7936453b4d74b579827bb0ea1',1,'FARADAY():&#160;unitstest.c']]],
+  ['faraday',['FARADAY',['../eion_8cpp.html#ab6d3ffb7936453b4d74b579827bb0ea1',1,'eion.cpp']]],
   ['fast_5fdraw',['fast_draw',['../class_fast_shape.html#ad6d3961e7a96ac2fdf0a93d47c9fe27c',1,'FastShape::fast_draw()'],['../class_shape_section.html#ae2c25e0cb262269ef4e2cb7601964a20',1,'ShapeSection::fast_draw()']]],
   ['fast_5fflush',['fast_flush',['../class_graph.html#a7cc78827717bbdec8d0070374eaf270a',1,'Graph::fast_flush()'],['../shapeplt_8cpp.html#a6e2fde695543d3c406963448ac39e520',1,'fast_flush():&#160;shapeplt.cpp']]],
   ['fast_5fimem_5f',['fast_imem_',['../multicore_8cpp.html#abfe50b5976717f5860dced6040fa2848',1,'multicore.cpp']]],
