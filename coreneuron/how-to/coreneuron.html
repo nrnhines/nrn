@@ -198,7 +198,7 @@
 <li>Simulating large network models</li>
 <li>Reduce memory usage</li>
 <li>Support for GPUs</li>
-<li>Optimisations like Vectorisation and memory layout (e.g. Structure-Of-Array)</li>
+<li>Optimisations like vectorisation and memory layout (e.g. Structure-Of-Arrays)</li>
 </ul>
 <p>CoreNEURON is designed as a library within the NEURON simulator and can transparently handle all spiking network simulations including gap junction coupling with the <strong>fixed time step method</strong>. In order to run a NEURON model with CoreNEURON:</p>
 <ul class="simple">
@@ -206,6 +206,8 @@
 <li>Random123 shall be used if a random generator is needed (instead of MCellRan4)</li>
 <li>POINTER variables need to be converted to BBCOREPOINTER (<a class="reference internal" href="bbcorepointer.html"><span class="doc">details here</span></a>)</li>
 </ul>
+<blockquote>
+<div>:warning: It is not possible for a single build of CoreNEURON to support usage of Random123 in both CPU and GPU code (<a class="reference external" href="https://github.com/BlueBrain/CoreNeuron/issues/345">CoreNEURON#345</a>). This means that, if your model makes use of Random123, you can only execute it on CPU by disabling GPU support.</div></blockquote>
 <div class="section" id="build-dependencies">
 <h2>Build Dependencies<a class="headerlink" href="#build-dependencies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -219,47 +221,42 @@
 </ul>
 <div class="section" id="choosing-compiler">
 <h3>Choosing Compiler<a class="headerlink" href="#choosing-compiler" title="Permalink to this headline">¶</a></h3>
-<p>CoreNEURON relies on compiler <a class="reference external" href="https://en.wikipedia.org/wiki/Automatic_vectorization">auto-vectorisation</a> to achieve better performance on moder CPUs. With this release we recommend compilers like <strong>Intel / PGI / Cray  Compiler</strong>. These compilers are able to vectorize the code better than <strong>GCC</strong> or <strong>Clang</strong>, achieving the best possible performance gains. If you are using any cluster platform, then Intel or Cray compiler should be available as a module. You can also install the Intel compiler by downloading <a class="reference external" href="https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit.html">oneAPI HPC Toolkit</a>.  CoreNEURON supports also GPU execution based on an <a class="reference external" href="https://en.wikipedia.org/wiki/OpenACC">OpenACC</a> backend. Currently, the best supported compiler for the OpenACC backend is PGI, available as part of <a class="reference external" href="https://developer.nvidia.com/hpc-sdk">NVIDIA-HPC-SDK</a>. You need to use this compiler for NVIDIA GPUs. Note that AMD GPU support is not tested.</p>
+<p>CoreNEURON relies on compiler <a class="reference external" href="https://en.wikipedia.org/wiki/Automatic_vectorization">auto-vectorisation</a> to achieve better performance on moder CPUs. With this release we recommend compilers like <strong>Intel / PGI / Cray  Compiler</strong>. These compilers are able to vectorise the code better than <strong>GCC</strong> or <strong>Clang</strong>, achieving the best possible performance gains. If you are using any cluster platform, then Intel or Cray compiler should be available as a module. You can also install the Intel compiler by downloading <a class="reference external" href="https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit.html">oneAPI HPC Toolkit</a>.  CoreNEURON supports also GPU execution based on an <a class="reference external" href="https://en.wikipedia.org/wiki/OpenACC">OpenACC</a> backend. Currently, the best supported compiler for the OpenACC backend is PGI, available as part of <a class="reference external" href="https://developer.nvidia.com/hpc-sdk">NVIDIA-HPC-SDK</a>. You need to use this compiler for NVIDIA GPUs. Note that AMD GPU support is not tested.</p>
 </div>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>CoreNEURON is a submodule of the NEURON git repository. If you are a NEURON user, the preferred way to install CoreNEURON is to enable extra build options during NEURON installation as follows:</p>
-<ol class="simple">
-<li>Clone the latest version of NEURON:</li>
-</ol>
+<ol>
+<li><p class="first">Clone the latest version of NEURON:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">neuronsimulator</span><span class="o">/</span><span class="n">nrn</span>
 <span class="n">cd</span> <span class="n">nrn</span>
 </pre></div>
 </div>
-<ol class="simple">
-<li>Create a build directory:</li>
-</ol>
+</li>
+<li><p class="first">Create a build directory:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
 <span class="n">cd</span> <span class="n">build</span>
 </pre></div>
 </div>
-<ol>
-<li><p class="first">Load software dependencies</p>
-<p>If compilers and necessary dependencies are already available in the default paths then you do not need to do anything. In cluster or HPC environment we often use a module system to select software. For example, you can load the compiler, cmake, and python dependencies using module as follows:</p>
 </li>
-</ol>
+<li><p class="first">Load software dependencies
+If compilers and necessary dependencies are already available in the default paths then you do not need to do anything.
+In cluster or HPC environment we often use a module system to select software.
+For example, you can load the compiler, cmake, and python dependencies using module as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">module</span> <span class="n">load</span> <span class="n">intel</span> <span class="n">openmpi</span> <span class="n">python</span> <span class="n">cmake</span>
 </pre></div>
 </div>
 <p>If you want to enable GPU support then you have to load PGI/NVIDIA-HPC-SDK and CUDA modules:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-module load cuda nvidia-hpc-sdk
-```
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">module</span> <span class="n">load</span> <span class="n">cuda</span> <span class="n">nvidia</span><span class="o">-</span><span class="n">hpc</span><span class="o">-</span><span class="n">sdk</span>
 </pre></div>
 </div>
-<p>Make sure to change module names based on your system. Also, if you are building on a Cray system with the GNU toolchain, you have to set the following environment variable:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-export CRAYPE_LINK_TYPE=dynamic
-```
+<p>Make sure to change module names based on your system.
+Also, if you are building on a Cray system with the GNU toolchain, you have to set the following environment variable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">CRAYPE_LINK_TYPE</span><span class="o">=</span><span class="n">dynamic</span>
 </pre></div>
 </div>
-<ol>
+</li>
 <li><p class="first">Run CMake with the appropriate <a class="reference external" href="https://github.com/neuronsimulator/nrn#build-using-cmake">options</a> and additionally enable CoreNEURON with <code class="docutils literal notranslate"><span class="pre">-DNRN_ENABLE_CORENEURON=ON</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cmake .. \
 	-DNRN_ENABLE_CORENEURON=ON \
@@ -291,19 +288,18 @@ export CRAYPE_LINK_TYPE=dynamic
 <p>NOTE : If the CMake command fails, please make sure to delete temporary CMake cache files (<code class="docutils literal notranslate"><span class="pre">CMakeCache.txt</span></code> or build directory) before re-running CMake.</p>
 </li>
 <li><p class="first">Once the configure step is done, you can build and install the project as:</p>
-</li>
-</ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>  make -j
-  make install
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make -j
+make install
 </pre></div>
 </div>
-<ol class="simple">
-<li>Set PATH and PYTHONPATH environmental variables to use the installation:</li>
-</ol>
+</li>
+<li><p class="first">Set PATH and PYTHONPATH environmental variables to use the installation:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/install/bin:<span class="nv">$PATH</span>
 <span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$HOME</span>/install/lib/python:<span class="nv">$PYTHONPATH</span>
 </pre></div>
 </div>
+</li>
+</ol>
 <p>Now you should be able to import neuron module as:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;from neuron import h; from neuron import coreneuron&quot;</span>
 </pre></div>
@@ -312,22 +308,25 @@ export CRAYPE_LINK_TYPE=dynamic
 </div>
 <div class="section" id="building-mod-files">
 <h2>Building MOD files<a class="headerlink" href="#building-mod-files" title="Permalink to this headline">¶</a></h2>
-<p>As in a typical NEURON workflow, you can now use <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span></code> to translate MOD files. In order to enable CoreNEURON support, you must set the  <code class="docutils literal notranslate"><span class="pre">-coreneuron</span></code> flag. Make sure to necessary modules (compilers, CUDA, MPI etc) are loaded before using nrnivmodl:</p>
+<p>As in a typical NEURON workflow, you can now use <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span></code> to translate MOD files.
+In order to enable CoreNEURON support, you must set the <code class="docutils literal notranslate"><span class="pre">-coreneuron</span></code> flag.
+Make sure any necessary modules (compilers, CUDA, MPI etc) are loaded before using <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nrnivmodl -coreneuron &lt;directory containing mod files&gt;
 </pre></div>
 </div>
-<p>If you don’t have additional mod files and using only inbuilt mod files from NEURON then <strong>you still need to use <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span> <span class="pre">-coreneuron</span></code> to generate CoreNEURON library</strong>. For example, you can run:</p>
+<p>If you don’t have additional mod files and are only using inbuilt mod files from NEURON then <strong>you still need to use <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span> <span class="pre">-coreneuron</span></code> to generate a CoreNEURON library</strong>. For example, you can run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nrnivmodl -coreneuron .
 </pre></div>
 </div>
-<p>With above commands, NEURON will create <code class="docutils literal notranslate"><span class="pre">x86_64/special</span></code> binary linked to CoreNEURON (here <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> is the architecture name of your system).</p>
-<p>If you see any compilation error then one of the mod files might be incompatible with CoreNEURON. Please <a class="reference external" href="https://github.com/BlueBrain/CoreNeuron/issues">open an issue</a> with mod file example.</p>
+<p>With above commands, NEURON will create a <code class="docutils literal notranslate"><span class="pre">x86_64/special</span></code> binary linked to CoreNEURON (here <code class="docutils literal notranslate"><span class="pre">x86_64</span></code> is the architecture name of your system).</p>
+<p>If you see any compilation error then one of the mod files might be incompatible with CoreNEURON.
+Please <a class="reference external" href="https://github.com/BlueBrain/CoreNeuron/issues">open an issue</a> with mod file example.</p>
 </div>
 <div class="section" id="running-simulations">
 <h2>Running Simulations<a class="headerlink" href="#running-simulations" title="Permalink to this headline">¶</a></h2>
-<p>With CoreNEURON, existing NEURON models can be run with minimal changes. For a given NEURON model, we typically need to do the following steps:</p>
+<p>With CoreNEURON, existing NEURON models can be run with minimal changes.For a given NEURON model, we typically need to do the following steps:</p>
 <ol>
-<li><p class="first">Enable cache effficiency :</p>
+<li><p class="first">Enable cache efficiency :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span>
 <span class="n">h</span><span class="o">.</span><span class="n">cvode</span><span class="o">.</span><span class="n">cache_efficient</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
@@ -343,6 +342,10 @@ export CRAYPE_LINK_TYPE=dynamic
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">coreneuron</span><span class="o">.</span><span class="n">gpu</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
+<blockquote>
+<div><p>:warning: <strong>In this case you must launch your script using the <code class="docutils literal notranslate"><span class="pre">special</span></code> binary!</strong>
+This is explained in more detail below.</p>
+</div></blockquote>
 </li>
 <li><p class="first">Use <code class="docutils literal notranslate"><span class="pre">psolve</span></code> to run simulation after initialization :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h</span><span class="o">.</span><span class="n">stdinit</span><span class="p">()</span>
@@ -351,7 +354,9 @@ export CRAYPE_LINK_TYPE=dynamic
 </div>
 </li>
 </ol>
-<p>With the above steps, NEURON will build the model and will transfer it to CoreNEURON for simulation. At the end of the simulation CoreNEURON transfers by default : spikes, voltages, state variables, NetCon weights, all Vector.record, and most GUI trajectories to NEURON. These variables can be recorded using regular NEURON API (e.g. <a class="reference external" href="https://www.neuron.yale.edu/neuron/static/py_doc/programming/math/vector.html#Vector.record">Vector.record</a> or <a class="reference external" href="https://www.neuron.yale.edu/neuron/static/new_doc/modelspec/programmatic/network/parcon.html#ParallelContext.spike_record">spike_record</a>).</p>
+<p>With the above steps, NEURON will build the model and will transfer it to CoreNEURON for simulation.
+At the end of the simulation CoreNEURON transfers by default: spikes, voltages, state variables, NetCon weights, all Vector.record, and most GUI trajectories to NEURON.
+These variables can be recorded using regular NEURON API (e.g. <a class="reference external" href="https://www.neuron.yale.edu/neuron/static/py_doc/programming/math/vector.html#Vector.record">Vector.record</a> or <a class="reference external" href="https://www.neuron.yale.edu/neuron/static/new_doc/modelspec/programmatic/network/parcon.html#ParallelContext.spike_record">spike_record</a>).</p>
 <p>If you are primarily using HOC then before calling <code class="docutils literal notranslate"><span class="pre">psolve</span></code> you can enable CoreNEURON as:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>// make sure NEURON is compiled with Python
 if (!nrnpython(&quot;from neuron import coreneuron&quot;)) {
@@ -369,20 +374,22 @@ py_obj.coreneuron.enable = 1
 mpiexec -n &lt;num_process&gt; nrniv -mpi your_script.hoc              <span class="c1"># hoc</span>
 </pre></div>
 </div>
-<p>Alternatively, instead of <code class="docutils literal notranslate"><span class="pre">nrniv</span></code> you can use <code class="docutils literal notranslate"><span class="pre">special</span></code> binary generated by <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span></code> command. Note that for GPU execution you must use <code class="docutils literal notranslate"><span class="pre">special</span></code> binary to launch simulation:</p>
+<p>Alternatively, instead of <code class="docutils literal notranslate"><span class="pre">nrniv</span></code> you can use the <code class="docutils literal notranslate"><span class="pre">special</span></code> binary generated by <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span></code> command.
+Note that for GPU execution you <strong>must</strong> use the <code class="docutils literal notranslate"><span class="pre">special</span></code> binary to launch your simulation:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -n &lt;num_process&gt; x86_64/special -mpi -python your_script.py       <span class="c1"># python</span>
 mpiexec -n &lt;num_process&gt; x86_64/special -mpi your_script.hoc              <span class="c1"># hoc</span>
 </pre></div>
 </div>
+<p>This is because the GPU-enabled build is statically linked <a class="reference external" href="https://forums.developer.nvidia.com/t/clarification-on-using-openacc-in-a-shared-library/136279/27">to avoid issues with OpenACC</a>, so <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">nrniv</span></code> cannot dynamically load CoreNEURON.</p>
 <p>As CoreNEURON is used as a library under NEURON, it will use the same number of MPI ranks as NEURON. Also, if you enable threads using <a class="reference external" href="https://www.neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/network/parcon.html#ParallelContext.nthread">ParallelContext.nthread()</a> then CoreNEURON will internally use the same number of OpenMP threads.</p>
 <blockquote>
-<div>NOTE: Replace mpiexec with supported MPI launcher on your system (e.g. srun or mpirun)</div></blockquote>
+<div>NOTE: Replace mpiexec with an MPI launcher supported on your system (e.g. <code class="docutils literal notranslate"><span class="pre">srun</span></code> or <code class="docutils literal notranslate"><span class="pre">mpirun</span></code>).</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>Here are some test examples to illustrate the usage of CoreNEURON API with NEURON:</p>
 <ol>
-<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.py">test_direct.py</a> : This is a simple, single cell, serial Python example using demonstrating use of CoreNEURON. We first run simulation with NEURON and record voltage and membrane current. Then, the same model is executed with CoreNEURON, and we make sure the same results are achieved. Note that in order to run this example make sure to compile <a class="reference external" href="https://github.com/neuronsimulator/nrn/tree/master/test/coreneuron/mod">these mod files</a> with <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span> <span class="pre">-coreneuron</span></code>. You can this example as:</p>
+<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.py">test_direct.py</a>: This is a simple, single cell, serial Python example using demonstrating use of CoreNEURON. We first run simulation with NEURON and record voltage and membrane current. Then, the same model is executed with CoreNEURON, and we make sure the same results are achieved. Note that in order to run this example make sure to compile <a class="reference external" href="https://github.com/neuronsimulator/nrn/tree/master/test/coreneuron/mod">these mod files</a> with <code class="docutils literal notranslate"><span class="pre">nrnivmodl</span> <span class="pre">-coreneuron</span></code>. You can this example as:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nrnivmodl -coreneuron mod                <span class="c1"># first compile mod files</span>
 nrniv -python test_direct.py             <span class="c1"># run via nrniv</span>
 x86_64/special -python test_direct.py    <span class="c1"># run via special</span>
@@ -390,9 +397,9 @@ python test_direct.py                    <span class="c1"># run via python</span
 </pre></div>
 </div>
 </li>
-<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.hoc">test_direct.hoc</a> : This is the same example as above test_direct.py but written HOC.</p>
+<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_direct.hoc">test_direct.hoc</a>: This is the same example as above (<code class="docutils literal notranslate"><span class="pre">test_direct.py</span></code>) but written using HOC.</p>
 </li>
-<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_spikes.py">test_spikes.py</a> : This is similar to above mentioned test_direct.py but can be run with MPI where each MPI process creates a single cell and connect it with a cell on another rank. Each rank records spike and compare it between NEURON execution and CoreNEURON execution. It also demonstrates usage of <a class="reference external" href="https://github.com/mpi4py/mpi4py">mpi4py</a> python module or NEURON’s native MPI API.</p>
+<li><p class="first"><a class="reference external" href="https://github.com/neuronsimulator/nrn/blob/master/test/coreneuron/test_spikes.py">test_spikes.py</a>: This is similar to above mentioned test_direct.py but can be run with MPI where each MPI process creates a single cell and connect it with a cell on another rank. Each rank records spikes and compares them between NEURON execution and CoreNEURON execution. It also demonstrates usage of <a class="reference external" href="https://github.com/mpi4py/mpi4py">mpi4py</a> python module or NEURON’s native MPI API.</p>
 <p>You can run this MPI example in different ways:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -n &lt;num_process&gt; python test_spikes.py mpi4py                        <span class="c1"># using mpi4py</span>
 mpiexec -n &lt;num_process&gt; x86_64/special -mpi -python test_spikes.py          <span class="c1"># neuron internal MPI</span>
