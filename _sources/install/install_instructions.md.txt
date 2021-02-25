@@ -43,7 +43,7 @@ compatible with Python versions 2.7, 3.6, 3.7, 3.8 and 3.9. Note that if you dou
 then you might see warning like below. In this case you have to right-click on the installer and then
 click `Open`. You can then see an option to `Open` installer: 
 
-![Installer Warning](docs/_static/osx_installer_warning_solution.png "Mac OS Warning")
+![Installer Warning](../_static/osx_installer_warning_solution.png "Mac OS Warning")
 
 This will install NEURON under directory `/Applications/NEURON-<version>/` directory. For GUI support you
 have to install [XQuartz](https://www.xquartz.org/) separately. Once you start Terminal application, NEURON
