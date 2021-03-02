@@ -6,8 +6,8 @@ Python RXD tutorials
    :maxdepth: 2
 
    Calcium Waves
+   Changing initial conditions and parameters
    Reaction-Diffusion tutorial
-   changing intial conditions
    circadian
    degradable_buffer
    extracellular
