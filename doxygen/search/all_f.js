@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['o',['o',['../union_templatedatum.html#ab547d073b03928607b0aab7ca4eae788',1,'Templatedatum::o()'],['../seclist_8cpp.html#ae47ca7a09cf6781e29634502345930a7',1,'o():&#160;seclist.cpp'],['../modlunit_2lex_8cpp.html#a396fecfabe3105afc15a61c209f910f0',1,'O():&#160;lex.cpp']]],
+  ['o',['o',['../union_templatedatum.html#ab547d073b03928607b0aab7ca4eae788',1,'Templatedatum::o()'],['../modlunit_2lex_8cpp.html#a396fecfabe3105afc15a61c209f910f0',1,'O():&#160;lex.cpp'],['../seclist_8cpp.html#ae47ca7a09cf6781e29634502345930a7',1,'o():&#160;seclist.cpp']]],
   ['o1',['o1',['../class_oc_jump_impl.html#a8769485822732d09bcce9da677bb16b8',1,'OcJumpImpl']]],
   ['o2',['o2',['../class_oc_jump_impl.html#a77c6500bc0db684f7888e8291d0d191e',1,'OcJumpImpl']]],
   ['o2loc',['o2loc',['../nrnpy__nrn_8cpp.html#a3dc0918ac5f4ba0daae64ceb32123873',1,'nrnpy_nrn.cpp']]],
@@ -212,7 +212,7 @@ var searchData=
   ['ontology',['ontology',['../modlunit_2lex_8cpp.html#a7e8ad8b6ef9edc51542de6905085fe4e',1,'ontology():&#160;lex.cpp'],['../nmodl_2lex_8cpp.html#a7e8ad8b6ef9edc51542de6905085fe4e',1,'ontology():&#160;lex.cpp']]],
   ['ontology_5fid',['ONTOLOGY_ID',['../nmodl_2parse1_8cpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aee18260b22a6afb8d64f231561c791ba',1,'ONTOLOGY_ID():&#160;parse1.cpp'],['../nmodl_2parse1_8hpp.html#a15c9f7bd2f0e9686df5d9df4f3314aa9aee18260b22a6afb8d64f231561c791ba',1,'ONTOLOGY_ID():&#160;parse1.hpp']]],
   ['oop',['OOP',['../mwprefix_8h.html#aeff5f69db8d3a10dee6f43dd3eb26817',1,'OOP():&#160;mwprefix.h'],['../hocdec_8h.html#aeff5f69db8d3a10dee6f43dd3eb26817',1,'OOP():&#160;hocdec.h']]],
-  ['op',['OP',['../ivos_2regexp_8cpp.html#a140367a510ad117b6e871c9042df9350',1,'OP():&#160;regexp.cpp'],['../readline_8cpp.html#a99a30df0f2488360cdd46b4b88e5f5f0',1,'op():&#160;readline.cpp']]],
+  ['op',['op',['../readline_8cpp.html#a99a30df0f2488360cdd46b4b88e5f5f0',1,'op():&#160;readline.cpp'],['../ivos_2regexp_8cpp.html#a140367a510ad117b6e871c9042df9350',1,'OP():&#160;regexp.cpp']]],
   ['oparinfo',['OPARINFO',['../hocdec_8h.html#a7e337b1ab4c1e7a43aef3cc844712ad2',1,'hocdec.h']]],
   ['open',['open',['../class_oc_file.html#acb74ec85c53ae505a96a80c597031dfe',1,'OcFile::open()'],['../class_directory.html#a257b8ac686a29162569d3b69c5d4a05c',1,'Directory::open()'],['../class_input_file.html#adc13b2ba47633a1801616d71ea1edce1',1,'InputFile::open()'],['../ivos_2regexp_8cpp.html#a1354b70ac6803a06beebe84f61b5f95b',1,'OPEN():&#160;regexp.cpp']]],
   ['open64features_2eh',['open64features.h',['../open64features_8h.html',1,'']]],

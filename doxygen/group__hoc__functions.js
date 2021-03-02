@@ -37,6 +37,7 @@ var group__hoc__functions =
     [ "hoc_Emalloc", "group__hoc__functions.html#ga3ef172a9d5862c803e4ee9bcacfdde96", null ],
     [ "hoc_Erealloc", "group__hoc__functions.html#ga6569f52970b1d7539fb8ce52e6b5200d", null ],
     [ "hoc_errno_check", "group__hoc__functions.html#ga6942106e3e6f107a81151b28d1f338f6", null ],
+    [ "hoc_execerr_ext", "group__hoc__functions.html#ga1b7923bdc5b809f009fd4de56a7c1d72", null ],
     [ "hoc_execerror", "group__hoc__functions.html#ga1f1290c5c93eb6c5c39f4352be583cfa", null ],
     [ "hoc_execerror_mes", "group__hoc__functions.html#gacf5a183dfc9c199d2ebfecbbaafaaf81", null ],
     [ "hoc_fake_call", "group__hoc__functions.html#gabd74f3cb34c1e995c84bc42820f520ab", null ],

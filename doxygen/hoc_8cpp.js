@@ -87,7 +87,7 @@ var hoc_8cpp =
     [ "hoc_tmpbuf", "hoc_8cpp.html#a249986fd34c15ca30e669eb5710a58ff", null ],
     [ "hoc_usegui", "hoc_8cpp.html#ae10f28e0067070df3358c5069bcc86f3", null ],
     [ "hoc_xopen_file_", "hoc_8cpp.html#a22b9de0a7e3311b1a4d5c60a07577d0b", null ],
-    [ "hoc_xopen_file_size_", "hoc_8cpp.html#a42e27eb91a7e6d667e651d3a08931cc5", null ],
+    [ "hoc_xopen_file_size_", "hoc_8cpp.html#a7c0a6b7654179eaf011ad6061e253c18", null ],
     [ "indef", "hoc_8cpp.html#a4245a6f24a805aebab65fb1cfe0138b9", null ],
     [ "infile", "hoc_8cpp.html#a44ce3ff5f72a9923a369520ad2513bf8", null ],
     [ "intset", "hoc_8cpp.html#acd7149e348ba68759417fa536283fad0", null ],

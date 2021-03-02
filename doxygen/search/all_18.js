@@ -92,7 +92,7 @@ var searchData=
   ['xpopm',['xpopm',['../oc_2code_8cpp.html#aa6c5d0bc70e290fea67c4bbb2b0f77c3',1,'code.cpp']]],
   ['xraxial',['xraxial',['../extcelln_8cpp.html#a2e3c3ca5843c7dd24cbe7fa046b37bd0',1,'extcelln.cpp']]],
   ['xrealloc',['xrealloc',['../funmap_8cpp.html#a0957a83a67184f5f7ec9ab3ae77a1e5f',1,'xrealloc():&#160;funmap.cpp'],['../history_8cpp.html#a0957a83a67184f5f7ec9ab3ae77a1e5f',1,'xrealloc():&#160;history.cpp'],['../keymaps_8cpp.html#a0957a83a67184f5f7ec9ab3ae77a1e5f',1,'xrealloc():&#160;keymaps.cpp'],['../readline_8cpp.html#a0957a83a67184f5f7ec9ab3ae77a1e5f',1,'xrealloc():&#160;readline.cpp']]],
-  ['xred',['xred',['../oc_2redef_8h.html#a7500e975e2f902ae6603ebb6f90d81c8',1,'xred():&#160;redef.h'],['../xred_8cpp.html#aea7bfd2f95d449f6bba8bf2ef90b0070',1,'xred(const char *prompt, double defalt, double min, double max):&#160;xred.cpp'],['../oc_2redef_8h.html#af1dec0ef27c48ed01b1b9edd1e40bb90',1,'Xred():&#160;redef.h'],['../code2_8cpp.html#a6342d980c16e618b97d656d52e123abe',1,'Xred(void):&#160;code2.cpp']]],
+  ['xred',['Xred',['../oc_2redef_8h.html#af1dec0ef27c48ed01b1b9edd1e40bb90',1,'Xred():&#160;redef.h'],['../code2_8cpp.html#a6342d980c16e618b97d656d52e123abe',1,'Xred(void):&#160;code2.cpp'],['../oc_2redef_8h.html#a7500e975e2f902ae6603ebb6f90d81c8',1,'xred():&#160;redef.h'],['../xred_8cpp.html#aea7bfd2f95d449f6bba8bf2ef90b0070',1,'xred(const char *prompt, double defalt, double min, double max):&#160;xred.cpp']]],
   ['xred_2ecpp',['xred.cpp',['../xred_8cpp.html',1,'']]],
   ['xs',['XS',['../oc_2axis_8cpp.html#a44ee47e8957e8528ae8249a7e5559bca',1,'axis.cpp']]],
   ['xsav',['xsav',['../oc_2axis_8cpp.html#af30f802203ec82d1cf11b655b547eefb',1,'axis.cpp']]],
