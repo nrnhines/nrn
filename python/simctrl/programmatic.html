@@ -248,7 +248,7 @@ re-load.</p>
 <dt>Description:</dt><dd><p>Integrate all section equations over the interval <code class="xref py py-data docutils literal notranslate"><span class="pre">h.dt</span></code> .
 The value of <a class="reference internal" href="#t" title="t"><code class="xref py py-data docutils literal notranslate"><span class="pre">t</span></code></a> is incremented by dt.
 The default method is first order implicit but may be changed to
-Crank-Nicholson by changing <code class="xref py py-data docutils literal notranslate"><span class="pre">h.secondorder</span></code> = 2.</p>
+Crank-Nicolson by changing <code class="xref py py-data docutils literal notranslate"><span class="pre">h.secondorder</span></code> = 2.</p>
 <p>fadvance integrates the equation over the dt step by
 calling all the BREAKPOINT blocks of models at t+dt/2 twice with
 v+.001 and v in order to compute the current and conductance to form
