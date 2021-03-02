@@ -1,0 +1,6 @@
+Combining currents from mod files with rxd
+----------------
+
+.. raw:: html
+   :file: Combining currents from mod files with rxd.html
+

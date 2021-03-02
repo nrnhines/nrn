@@ -7,7 +7,9 @@ Python RXD tutorials
 
    Calcium Waves
    Changing initial conditions and parameters
+   Combining currents from mod files with rxd
    Reaction-Diffusion tutorial
+   Restricting reactions to certain sections
    circadian
    degradable_buffer
    extracellular
