@@ -184,23 +184,474 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="basic-reaction-diffusion">
+  <p><dl class="docutils"><dt><a href="#neuron.rxd.generalizedReaction.GeneralizedReaction" title="Link to this definition">neuron.rxd.generalizedReaction.GeneralizedReaction</a></dt><dd></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.geometry.FixedCrossSection" title="Link to this definition">neuron.rxd.geometry.FixedCrossSection</a></dt><dd><a href="#neuron.rxd.geometry.FixedCrossSection.__call__" title="Link to this definition">__call__</a> &middot; <a href="#neuron.rxd.geometry.FixedCrossSection.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.geometry.FixedPerimeter" title="Link to this definition">neuron.rxd.geometry.FixedPerimeter</a></dt><dd><a href="#neuron.rxd.geometry.FixedPerimeter.__call__" title="Link to this definition">__call__</a> &middot; <a href="#neuron.rxd.geometry.FixedPerimeter.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.geometry.FractionalVolume" title="Link to this definition">neuron.rxd.geometry.FractionalVolume</a></dt><dd><a href="#neuron.rxd.geometry.FractionalVolume.__call__" title="Link to this definition">__call__</a> &middot; <a href="#neuron.rxd.geometry.FractionalVolume.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.geometry.Shell" title="Link to this definition">neuron.rxd.geometry.Shell</a></dt><dd><a href="#neuron.rxd.geometry.Shell.__call__" title="Link to this definition">__call__</a> &middot; <a href="#neuron.rxd.geometry.Shell.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.MultiCompartmentReaction" title="Link to this definition">neuron.rxd.MultiCompartmentReaction</a></dt><dd></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.node.Node" title="Link to this definition">neuron.rxd.node.Node</a></dt><dd><a href="#neuron.rxd.node.Node.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.node.Node._ref_concentration" title="Link to this definition">_ref_concentration</a> &middot; <a href="#neuron.rxd.node.Node.concentration" title="Link to this definition">concentration</a> &middot; <a href="#neuron.rxd.node.Node.d" title="Link to this definition">d</a> &middot; <a href="#neuron.rxd.node.Node.satisfies" title="Link to this definition">satisfies</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.nodelist.NodeList" title="Link to this definition">neuron.rxd.nodelist.NodeList</a></dt><dd><a href="#neuron.rxd.nodelist.NodeList.__call__" title="Link to this definition">__call__</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.concentration" title="Link to this definition">concentration</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.diff" title="Link to this definition">diff</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.region" title="Link to this definition">region</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.species" title="Link to this definition">species</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.surface_area" title="Link to this definition">surface_area</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.volume" title="Link to this definition">volume</a> &middot; <a href="#neuron.rxd.nodelist.NodeList.x" title="Link to this definition">x</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.Rate" title="Link to this definition">neuron.rxd.Rate</a></dt><dd><a href="#neuron.rxd.Rate.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.Reaction" title="Link to this definition">neuron.rxd.Reaction</a></dt><dd><a href="#neuron.rxd.Reaction.__init__" title="Link to this definition">__init__</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.Region" title="Link to this definition">neuron.rxd.Region</a></dt><dd><a href="#neuron.rxd.Region.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.Region.nrn_region" title="Link to this definition">nrn_region</a> &middot; <a href="#neuron.rxd.Region.secs" title="Link to this definition">secs</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.section1d.Section1D" title="Link to this definition">neuron.rxd.section1d.Section1D</a></dt><dd><a href="#neuron.rxd.section1d.Section1D.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.section1d.Section1D.L" title="Link to this definition">L</a> &middot; <a href="#neuron.rxd.section1d.Section1D.name" title="Link to this definition">name</a> &middot; <a href="#neuron.rxd.section1d.Section1D.nrn_region" title="Link to this definition">nrn_region</a> &middot; <a href="#neuron.rxd.section1d.Section1D.nseg" title="Link to this definition">nseg</a> &middot; <a href="#neuron.rxd.section1d.Section1D.region" title="Link to this definition">region</a> &middot; <a href="#neuron.rxd.section1d.Section1D.section_orientation" title="Link to this definition">section_orientation</a> &middot; <a href="#neuron.rxd.section1d.Section1D.species" title="Link to this definition">species</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.Species" title="Link to this definition">neuron.rxd.Species</a></dt><dd><a href="#neuron.rxd.Species.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.Species.charge" title="Link to this definition">charge</a> &middot; <a href="#neuron.rxd.Species.indices" title="Link to this definition">indices</a> &middot; <a href="#neuron.rxd.Species.name" title="Link to this definition">name</a> &middot; <a href="#neuron.rxd.Species.nodes" title="Link to this definition">nodes</a></dd></dl></p><p><dl class="docutils"><dt><a href="#neuron.rxd.species.SpeciesOnRegion" title="Link to this definition">neuron.rxd.species.SpeciesOnRegion</a></dt><dd><a href="#neuron.rxd.species.SpeciesOnRegion.__init__" title="Link to this definition">__init__</a> &middot; <a href="#neuron.rxd.species.SpeciesOnRegion.concentration" title="Link to this definition">concentration</a> &middot; <a href="#neuron.rxd.species.SpeciesOnRegion.indices" title="Link to this definition">indices</a> &middot; <a href="#neuron.rxd.species.SpeciesOnRegion.nodes" title="Link to this definition">nodes</a></dd></dl></p><div class="section" id="basic-reaction-diffusion">
 <span id="neuron-rxd"></span><h1>Basic Reaction-Diffusion<a class="headerlink" href="#basic-reaction-diffusion" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
+<dl class="py class">
+<dt id="neuron.rxd.Region">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.</span></code><code class="descname"><span class="pre">Region</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">secs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">nrn_region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">dx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Declare a conceptual region of the neuron.</p>
+<p>Examples: Cytosol, ER</p>
+<dl class="py method">
+<dt id="neuron.rxd.Region.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">secs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">nrn_region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">geometry</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">dx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Region.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>In NEURON 7.4+, secs is optional at initial region declaration, but it
+must be specified before the reaction-diffusion model is instantiated.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">dimension and dx will be deprecated in a future version</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Region.nrn_region">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">nrn_region</span></code><a class="headerlink" href="#neuron.rxd.Region.nrn_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the classic NEURON region associated with this object.</p>
+<dl class="docutils">
+<dt>There are three possible values:</dt><dd><ul class="simple">
+<li><cite>‘i’</cite> – just inside the plasma membrane</li>
+<li><cite>‘o’</cite> – just outside the plasma membrane</li>
+<li><cite>None</cite> – none of the above</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting only supported in NEURON 7.4+, and then only before the reaction-diffusion model is instantiated.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Region.secs">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">secs</span></code><a class="headerlink" href="#neuron.rxd.Region.secs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the sections associated with this region.</p>
+<p>The sections may be expressed as a NEURON SectionList or as any Python
+iterable of sections.</p>
+<dl class="docutils">
+<dt>Note: The return value is a copy of the internal section list; modifying</dt><dd>it will not change the Region.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting is new in NEURON 7.4+ and allowed only before the reaction-diffusion model is instantiated.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.Species">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.</span></code><code class="descname"><span class="pre">Species</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">charge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">atolscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em><span class="n"><span class="pre">ecs_boundary_conditions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">represents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Species" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.Species.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">charge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">atolscale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em><span class="n"><span class="pre">ecs_boundary_conditions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">represents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Species.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>s = rxd.Species(regions, d = 0, name = None, charge = 0, initial = None, atolscale=1)</p>
+<p>Declare a species.</p>
+<p>Parameters:</p>
+<p>regions – a Region or list of Region objects containing the species</p>
+<p>d – the diffusion constant of the species (optional; default is 0, i.e. non-diffusing)</p>
+<p>name – the name of the Species; used for syncing with HOC (optional; default is none)</p>
+<p>charge – the charge of the Species (optional; default is 0)</p>
+<p>initial – the initial concentration or None (if None, then imports from HOC if the species is defined at finitialize, else 0)</p>
+<p>atolscale – scale factor for absolute tolerance in variable step integrations</p>
+<p>ecs_boundary_conditions  – if Extracellular rxd is used ecs_boundary_conditions=None for zero flux boundaries or if ecs_boundary_conditions=the concentration at the boundary.</p>
+<p>represents – optionally provide CURIE (Compact URI) to annotate what the species represents e.g. CHEBI:29101 for sodium(1+)</p>
+<p>Note:</p>
+<p>charge must match the charges specified in NMODL files for the same ion, if any.</p>
+<p>You probably want to adjust atolscale for species present at low concentrations (e.g. calcium).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Species.charge">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">charge</span></code><a class="headerlink" href="#neuron.rxd.Species.charge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the charge of the Species.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting is new in NEURON 7.4+ and is allowed only before the reaction-diffusion model is instantiated.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Species.indices">
+<code class="descname"><span class="pre">indices</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">secs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Species.indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the indices corresponding to this species in the given region</p>
+<p>if r is None, then returns all species indices
+If r is a list of regions return indices for only those sections that are on all the regions.
+If secs is a set return all indices on the regions for those sections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Species.name">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">name</span></code><a class="headerlink" href="#neuron.rxd.Species.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the name of the Species.</p>
+<p>This is used only for syncing with the non-reaction-diffusion parts of NEURON.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Setting only supported in NEURON 7.4+, and then only before the reaction-diffusion model is instantiated.</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.Species.nodes">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">nodes</span></code><a class="headerlink" href="#neuron.rxd.Species.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A NodeList of all the nodes corresponding to the species.</p>
+<p>This can then be further restricted using the callable property of NodeList objects.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.Reaction">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.</span></code><code class="descname"><span class="pre">Reaction</span></code><span class="sig-paren">(</span><em><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Reaction" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.Reaction.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Reaction.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify a reaction to be added to the system.</p>
+<dl class="docutils">
+<dt>Examples:</dt><dd><dl class="docutils">
+<dt>For 2 * H + O &gt; H2O in a mass action reaction at rate k:</dt><dd>r = rxd.Reaction(2 * H + O, H2O, k)</dd>
+</dl>
+<p>To constrain the reaction to a specified list of regions,
+say to just the extracellular space (ext) and the cytosol (cyt),
+use the regions keyword, e.g.</p>
+<blockquote>
+<div>r = rxd.Reaction(2 * H + O, H2O, k, regions=[ext, cyt])</div></blockquote>
+<p>For a bi-directional reaction, specify a backward reaction rate.
+e.g. if kf is the forward rate and kb is the backward rate, then:</p>
+<blockquote>
+<div>r = rxd.Reaction(2 * H + O, H2O, kf, kb)</div></blockquote>
+<p>To use dynamics other than mass-action, add that mass_action=False
+flag and put the full formula instead of a mass-action rate for
+kf (and kb). E.g. Michaelis-Menten degradation</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>r = rxd.Reaction(</dt><dd>dimer, decomposed, dimer / (k + diamer), mass_action=False</dd>
+</dl>
+<p>)</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.Rate">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.</span></code><code class="descname"><span class="pre">Rate</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">rate</span></span></em>, <em><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">membrane_flux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Declare a contribution to the rate of change of a species or other state variable.</p>
+<p>Example:</p>
+<blockquote>
+<div>constant_production = rxd.Rate(protein, k)</div></blockquote>
+<p>If this was the only contribution to protein dynamics and there was no
+diffusion, the above would be equivalent to:</p>
+<blockquote>
+<div>dprotein/dt = k</div></blockquote>
+<p>If there are multiple rxd.Rate objects (or an rxd.Reaction, etc) acting on
+the same species, then their effects are summed.</p>
+<dl class="py method">
+<dt id="neuron.rxd.Rate.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">rate</span></span></em>, <em><span class="n"><span class="pre">regions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">membrane_flux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.Rate.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a rate of change for a species on a given region or set of regions</p>
+<p>if regions is None, then does it on all regions</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.MultiCompartmentReaction">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.</span></code><code class="descname"><span class="pre">MultiCompartmentReaction</span></code><span class="sig-paren">(</span><em><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.MultiCompartmentReaction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.node.Node">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.node.</span></code><code class="descname"><span class="pre">Node</span></code><a class="headerlink" href="#neuron.rxd.node.Node" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.node.Node.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.node.Node.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.node.Node._ref_concentration">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">_ref_concentration</span></code><a class="headerlink" href="#neuron.rxd.node.Node._ref_concentration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a HOC reference to the Node’s concentration</p>
+<p>(The node must store concentration data. Use _ref_molecules for nodes
+storing molecule counts.)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.node.Node.concentration">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">concentration</span></code><a class="headerlink" href="#neuron.rxd.node.Node.concentration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the concentration at the Node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.node.Node.d">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">d</span></code><a class="headerlink" href="#neuron.rxd.node.Node.d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the diffusion rate within the compartment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.node.Node.satisfies">
+<code class="descname"><span class="pre">satisfies</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.node.Node.satisfies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests if a Node satisfies a given condition.</p>
+<p>If a nrn.Section object or RxDSection is provided, returns True if the Node lies in the section; else False.
+If a Region object is provided, returns True if the Node lies in the Region; else False.
+If a number between 0 and 1 is provided, returns True if the normalized position lies within the Node; else False.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.generalizedReaction.GeneralizedReaction">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.generalizedReaction.</span></code><code class="descname"><span class="pre">GeneralizedReaction</span></code><a class="headerlink" href="#neuron.rxd.generalizedReaction.GeneralizedReaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>an abstract class, parent of Rate, Reaction, MultiCompartmentReaction</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.species.SpeciesOnRegion">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.species.</span></code><code class="descname"><span class="pre">SpeciesOnRegion</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.species.SpeciesOnRegion" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.species.SpeciesOnRegion.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">region</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.species.SpeciesOnRegion.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>The restriction of a Species to a Region.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.species.SpeciesOnRegion.concentration">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">concentration</span></code><a class="headerlink" href="#neuron.rxd.species.SpeciesOnRegion.concentration" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the current concentrations.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.species.SpeciesOnRegion.indices">
+<code class="descname"><span class="pre">indices</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">secs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.species.SpeciesOnRegion.indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>If no Region is specified or if r is the Region specified in the constructor,
+returns a list of the indices of state variables corresponding
+to the Species when restricted to the Region defined in the constructor.</p>
+<p>If r is a different Region, then returns the empty list.
+If secs is a set return all indices on the regions for those sections.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.species.SpeciesOnRegion.nodes">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">nodes</span></code><a class="headerlink" href="#neuron.rxd.species.SpeciesOnRegion.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A NodeList of the Node objects containing concentration data for the given Species and Region.</p>
+<p>The code</p>
+<blockquote>
+<div>node_list = ca[cyt].nodes</div></blockquote>
+<p>is more efficient than the otherwise equivalent</p>
+<blockquote>
+<div>node_list = ca.nodes(cyt)</div></blockquote>
+<p>because the former only creates the Node objects belonging to the restriction ca[cyt] whereas the second option
+constructs all Node objects belonging to the Species ca and then culls the list to only include those also
+belonging to the Region cyt.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.section1d.Section1D">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.section1d.</span></code><code class="descname"><span class="pre">Section1D</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">sec</span></span></em>, <em><span class="n"><span class="pre">diff</span></span></em>, <em><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.section1d.Section1D" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.L">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">L</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.L" title="Permalink to this definition">¶</a></dt>
+<dd><p>The length of the section in microns.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">species</span></span></em>, <em><span class="n"><span class="pre">sec</span></span></em>, <em><span class="n"><span class="pre">diff</span></span></em>, <em><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.section1d.Section1D.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.name">
+<code class="descname"><span class="pre">name</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.section1d.Section1D.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the section, as defined by HOC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.nrn_region">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">nrn_region</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.nrn_region" title="Permalink to this definition">¶</a></dt>
+<dd><p>The HOC region, if any.</p>
+<p>‘i’ if the corresponding Region maps to HOC’s internal concentration</p>
+<p>‘o’ if it maps to HOC’s external concentration</p>
+<p>None otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.nseg">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">nseg</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.nseg" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of segments in the NEURON section.</p>
+<p>In some implementations, this might be different than the number of nodes in the section.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.region">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">region</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.region" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Region containing the RxDSection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.section_orientation">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">section_orientation</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.section_orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The HOC section orientation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.section1d.Section1D.species">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">species</span></code><a class="headerlink" href="#neuron.rxd.section1d.Section1D.species" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Species object stores on this RxDSection.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.nodelist.NodeList">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.nodelist.</span></code><code class="descname"><span class="pre">NodeList</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">items</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.nodelist.NodeList" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.__call__">
+<code class="descname"><span class="pre">__call__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">restriction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a sub-NodeList consisting of nodes satisfying restriction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">items</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructs a NodeList from items, a python iterable containing Node objects.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.concentration">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">concentration</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.concentration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the concentration of the Node objects in the NodeList as an iterable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.diff">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">diff</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.diff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the diffusion constant of the Node objects in the NodeList as an iterable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.region">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">region</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.region" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the Region objects corresponding to the Node objects in the NodeList.</p>
+<p>Read only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.species">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">species</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.species" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the Species objects corresponding to the Node objects in the NodeList.</p>
+<p>Read only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.surface_area">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">surface_area</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.surface_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the surface areas of the Node objects in the NodeList.</p>
+<p>Read only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.volume">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">volume</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the volumes of the Node objects in the NodeList.</p>
+<p>Read only.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.nodelist.NodeList.x">
+<em class="property"><span class="pre">property</span> </em><code class="descname"><span class="pre">x</span></code><a class="headerlink" href="#neuron.rxd.nodelist.NodeList.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>An iterable of the normalized positions of the Node objects in the NodeList.</p>
+<p>Read only.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.geometry.FixedCrossSection">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.geometry.</span></code><code class="descname"><span class="pre">FixedCrossSection</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">cross_area</span></span></em>, <em><span class="n"><span class="pre">surface_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedCrossSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.geometry.FixedCrossSection.__call__">
+<code class="descname"><span class="pre">__call__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedCrossSection.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>calling returns self to allow for rxd.inside or rxd.inside()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.geometry.FixedCrossSection.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">cross_area</span></span></em>, <em><span class="n"><span class="pre">surface_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedCrossSection.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.geometry.FractionalVolume">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.geometry.</span></code><code class="descname"><span class="pre">FractionalVolume</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">volume_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em><span class="n"><span class="pre">surface_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">neighbor_areas_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FractionalVolume" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.geometry.FractionalVolume.__call__">
+<code class="descname"><span class="pre">__call__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FractionalVolume.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>calling returns self to allow for rxd.inside or rxd.inside()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.geometry.FractionalVolume.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">volume_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em><span class="n"><span class="pre">surface_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em><span class="n"><span class="pre">neighbor_areas_fraction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FractionalVolume.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.geometry.FixedPerimeter">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.geometry.</span></code><code class="descname"><span class="pre">FixedPerimeter</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">perimeter</span></span></em>, <em><span class="n"><span class="pre">on_cell_surface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedPerimeter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.geometry.FixedPerimeter.__call__">
+<code class="descname"><span class="pre">__call__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedPerimeter.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>calling returns self to allow for rxd.inside or rxd.inside()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.geometry.FixedPerimeter.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">perimeter</span></span></em>, <em><span class="n"><span class="pre">on_cell_surface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.FixedPerimeter.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py class">
+<dt id="neuron.rxd.geometry.Shell">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.rxd.geometry.</span></code><code class="descname"><span class="pre">Shell</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">lo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">hi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.Shell" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="neuron.rxd.geometry.Shell.__call__">
+<code class="descname"><span class="pre">__call__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.Shell.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>calling returns self to allow for rxd.inside or rxd.inside()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="neuron.rxd.geometry.Shell.__init__">
+<code class="descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">lo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em><span class="n"><span class="pre">hi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.rxd.geometry.Shell.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 

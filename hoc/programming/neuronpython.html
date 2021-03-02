@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>&lt;no title&gt; &mdash; NEURON  documentation</title>
+  <title>neuron &mdash; NEURON  documentation</title>
   
 
   
@@ -92,9 +92,38 @@
 <li class="toctree-l1"><a class="reference internal" href="../../install/developer.html">Developer Builds</a></li>
 </ul>
 <p class="caption"><span class="caption-text">User documentation:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../python/index.html">NEURON Python documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">NEURON HOC documentation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">NEURON HOC documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#quick-links">Quick Links</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#basic-programming">Basic Programming</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="python.html">Python Language</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">neuron</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../modelspec/programmatic/rxd.html">Basic Reaction-Diffusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python.html#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python.html#python-accessing-hoc">Python Accessing HOC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="python.html#hoc-accessing-python">HOC accessing Python</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="hoc.html">HOC Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mathematics.html">Mathematics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="guidesign.html">GUI Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="references.html">Pointers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="timer.html">Timer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="system.html">System Calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="errors.html">Error Handling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dynamiccode.html">Dynamic Code Loading and Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projectmanagement.html">Project Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="internals.html">Debugging and Internals Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#model-specification">Model Specification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#simulation-control">Simulation Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#visualization">Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#analysis">Analysis</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Python tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../rxd-tutorials/index.html">Python RXD tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../coreneuron/index.html">How to use CoreNEURON</a></li>
@@ -156,7 +185,7 @@
         
           <li><a href="python.html">Python Language</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>neuron</li>
     
     
 <li class="wy-breadcrumbs-aside">
@@ -184,7 +213,197 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="admonition seealso">
+  <p><a href="#neuron.init" title="Link to this definition">neuron.init</a> &middot; <a href="#neuron.load_mechanisms" title="Link to this definition">neuron.load_mechanisms</a> &middot; <a href="#neuron.new_hoc_class" title="Link to this definition">neuron.new_hoc_class</a> &middot; <a href="#neuron.new_point_process" title="Link to this definition">neuron.new_point_process</a> &middot; <a href="#neuron.nrn_dll" title="Link to this definition">neuron.nrn_dll</a> &middot; <a href="#neuron.nrn_dll_sym" title="Link to this definition">neuron.nrn_dll_sym</a> &middot; <a href="#neuron.nrn_dll_sym_nt" title="Link to this definition">neuron.nrn_dll_sym_nt</a> &middot; <a href="#neuron.numpy_element_ref" title="Link to this definition">neuron.numpy_element_ref</a> &middot; <a href="#neuron.run" title="Link to this definition">neuron.run</a> &middot; <a href="#neuron.test" title="Link to this definition">neuron.test</a> &middot; <a href="#neuron.test_rxd" title="Link to this definition">neuron.test_rxd</a></p><p><dl class="docutils"><dt><a href="#neuron.Wrapper" title="Link to this definition">neuron.Wrapper</a></dt><dd></dd></dl></p><span class="target" id="module-neuron"></span><div class="section" id="neuron">
+<h1>neuron<a class="headerlink" href="#neuron" title="Permalink to this headline">¶</a></h1>
+<p>For empirically-based simulations of neurons and networks of neurons in Python.</p>
+<p>This is the top-level module of the official python interface to
+the NEURON simulation environment (<a class="reference external" href="http://neuron.yale.edu/neuron/">http://neuron.yale.edu/neuron/</a>).</p>
+<p>Documentation is available in the docstrings.</p>
+<p>For a list of available names, try dir(neuron).</p>
+<p>Example:</p>
+<p>$ ipython
+In [1]: import neuron
+NEURON – VERSION 6.2 2008-08-22
+Duke, Yale, and the BlueBrain Project – Copyright 1984-2007
+See <a class="reference external" href="http://neuron.yale.edu/credits.html">http://neuron.yale.edu/credits.html</a></p>
+<p>In [2]: neuron.h ?</p>
+<div class="section" id="important-names-and-sub-packages">
+<h2>Important names and sub-packages<a class="headerlink" href="#important-names-and-sub-packages" title="Permalink to this headline">¶</a></h2>
+<p>For help on these useful functions, see their docstrings:</p>
+<blockquote>
+<div>neuron.init, run, psection, load_mechanisms</div></blockquote>
+<p>neuron.h</p>
+<blockquote>
+<div><p>The top-level Hoc interpreter.</p>
+<p>Execute Hoc commands by calling h with a string argument:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="s1">&#39;objref myobj&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="s1">&#39;myobj = new Vector(10)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>All Hoc defined variables are accessible by attribute access to h.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">h</span><span class="o">.</span><span class="n">myobj</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Hoc Classes are also defined, for example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">soma</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">Section</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>More help is available for the respective class by looking in the object docstring:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">Vector</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>neuron.gui</p>
+<blockquote>
+<div><p>Import this package if you are using NEURON as an extension to Python,
+and you would like to use the NEURON GUI.</p>
+<p>If you are using NEURON with embedded python, “nrniv -python”,
+use rather “nrngui -python” if you would like to use the NEURON GUI.</p>
+</div></blockquote>
+<p>$Id: __init__.py,v 1.1 2008/05/26 11:39:44 hines Exp hines $</p>
+<dl class="py exception">
+<dt id="neuron.HocError">
+<em class="property"><span class="pre">exception</span> </em><code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">HocError</span></code><a class="headerlink" href="#neuron.HocError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="neuron.Wrapper">
+<em class="property"><span class="pre">class</span> </em><code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">Wrapper</span></code><a class="headerlink" href="#neuron.Wrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class to provide attribute access for HocObjects.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.init">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">init</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#neuron.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>function init():</p>
+<p>Initialize the simulation kernel.  This should be called before a run(tstop) call.</p>
+<p>** This function exists for historical purposes. Use in new code is not recommended. **</p>
+<p>Use h.finitialize() instead, which allows you to specify the membrane potential
+to initialize to; via e.g. h.finitialize(-65)</p>
+<p>By default, the units used by h.finitialize are in mV, but you can be explicit using
+NEURON’s unit’s library, e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron.units</span> <span class="kn">import</span> <span class="n">mV</span>
+<span class="n">h</span><span class="o">.</span><span class="n">finitialize</span><span class="p">(</span><span class="o">-</span><span class="mi">65</span> <span class="o">*</span> <span class="n">mV</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://www.neuron.yale.edu/neuron/static/py_doc/simctrl/programmatic.html">https://www.neuron.yale.edu/neuron/static/py_doc/simctrl/programmatic.html</a>?#finitialize</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.load_mechanisms">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">load_mechanisms</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.load_mechanisms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search for and load NMODL mechanisms from the path given.</p>
+<p>This function will not load a mechanism path twice.</p>
+<p>The path should specify the directory in which nrnivmodl or mknrndll was run,
+and in which the directory ‘i686’ (or ‘x86_64’ or ‘powerpc’ depending on your platform)
+was created</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.new_hoc_class">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">new_hoc_class</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">name</span></span></em>, <em><span class="n"><span class="pre">doc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.new_hoc_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Python-wrapped hoc class where the object does not need to be
+associated with a section.</p>
+<p>doc - specify a docstring for the new hoc class</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.new_point_process">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">new_point_process</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">name</span></span></em>, <em><span class="n"><span class="pre">doc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.new_point_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a Python-wrapped hoc class where the object needs to be associated
+with a section.</p>
+<p>doc - specify a docstring for the new pointprocess class</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.nrn_dll">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">nrn_dll</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">printpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.nrn_dll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a ctypes object corresponding to the NEURON library.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This provides access to the C-language internals of NEURON and should
+be used with care.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.nrn_dll_sym">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">nrn_dll_sym</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">name</span></span></em>, <em><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.nrn_dll_sym" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the specified object from the NEURON dlls.</p>
+<dl class="docutils">
+<dt>name<span class="classifier">string</span></dt><dd>the name of the object (function, integer, etc…)</dd>
+<dt>type<span class="classifier">None or ctypes type (e.g. ctypes.c_int)</span></dt><dd>the type of the object (if None, assumes function pointer)</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.nrn_dll_sym_nt">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">nrn_dll_sym_nt</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">name</span></span></em>, <em><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.nrn_dll_sym_nt" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the specified object from the NEURON dlls.
+helper for nrn_dll_sym(name, type). Try to find the name in either
+nrniv.dll or libnrnpython1013.dll</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.numpy_element_ref">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">numpy_element_ref</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">numpy_array</span></span></em>, <em><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.numpy_element_ref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a HOC reference into a numpy array.</p>
+<dl class="docutils">
+<dt>numpy_array<span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></span></dt><dd>the numpy array</dd>
+<dt>index<span class="classifier">int</span></dt><dd>the index into the numpy array</dd>
+</dl>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">No bounds checking.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Assumes a contiguous array of doubles. In particular, be careful when
+using slices. If the array is multi-dimensional,
+the user must figure out the integer index to the desired element.</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.run">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">run</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">tstop</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>function run(tstop)</p>
+<p>Run the simulation (advance the solver) until tstop [ms]</p>
+<p><cite>h.run()</cite> and <cite>h.continuerun(tstop)</cite> are more powerful solutions defined in the <cite>stdrun.hoc</cite> library.</p>
+<p>** This function exists for historical purposes. Use in new code is not recommended. **</p>
+<p>For running a simulation, consider doing the following instead:</p>
+<p>Begin your code with</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neuron</span> <span class="kn">import</span> <span class="n">h</span>
+<span class="kn">from</span> <span class="nn">neuron.units</span> <span class="kn">import</span> <span class="n">ms</span><span class="p">,</span> <span class="n">mV</span>
+<span class="n">h</span><span class="o">.</span><span class="n">load_file</span><span class="p">(</span><span class="s1">&#39;stdrun.hoc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then when it is time to initialize and run the simulation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h</span><span class="o">.</span><span class="n">finitialize</span><span class="p">(</span><span class="o">-</span><span class="mi">65</span> <span class="o">*</span> <span class="n">mV</span><span class="p">)</span>
+<span class="n">h</span><span class="o">.</span><span class="n">continuerun</span><span class="p">(</span><span class="mi">100</span> <span class="o">*</span> <span class="n">ms</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where the initial membrane potential and the simulation run time are adjusted as appropriate
+for your model.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.test">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">test</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">exitOnError</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a global battery of unit tests on the neuron module.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="neuron.test_rxd">
+<code class="descclassname"><span class="pre">neuron.</span></code><code class="descname"><span class="pre">test_rxd</span></code><span class="sig-paren">(</span><em><span class="n"><span class="pre">exitOnError</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#neuron.test_rxd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs a tests on the rxd and crxd modules.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <div class="toctree-wrapper last compound">
 <ul>
