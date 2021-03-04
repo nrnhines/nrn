@@ -48,6 +48,7 @@ var searchData=
   ['userpart',['userpart',['../struct_nrn_thread.html#ad2e60d738d74358ac2034c20b5db9c8e',1,'NrnThread']]],
   ['users_5fdirname',['users_dirname',['../readline_8cpp.html#a100ecf3eb2752a1df73a7f5706053e4b',1,'readline.cpp']]],
   ['uses_5fligands_5f',['uses_ligands_',['../class_k_s_single.html#af8c4ebddf6deba486e067698a68c5eba',1,'KSSingle']]],
+  ['usetable',['usetable',['../hh_8c.html#a81adc8ee74901580a5c1925e302f990b',1,'hh.c']]],
   ['usetable_5f',['usetable_',['../class_k_s_chan.html#ad8e23e2ed071b5dcc7fb23876ed937a2',1,'KSChan']]],
   ['using_5farray',['using_array',['../simultan_8cpp.html#adedde4e8d78c1a65d4cd8776bbf51cb8',1,'simultan.cpp']]],
   ['usp',['usp',['../modlunit_2units_8cpp.html#af8a286716e70211696c998e2eb8b87ec',1,'units.cpp']]],

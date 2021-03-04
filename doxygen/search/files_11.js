@@ -8,7 +8,7 @@ var searchData=
   ['rbtqueue_2eh',['rbtqueue.h',['../rbtqueue_8h.html',1,'']]],
   ['readline_2ecpp',['readline.cpp',['../readline_8cpp.html',1,'']]],
   ['readline_2eh',['readline.h',['../readline_8h.html',1,'']]],
-  ['readme_2emd',['README.md',['../test_2rxd_2testdata_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['rect_2ecpp',['rect.cpp',['../rect_8cpp.html',1,'']]],
   ['rect_2eh',['rect.h',['../rect_8h.html',1,'']]],
   ['redef_2eh',['redef.h',['../memacs_2redef_8h.html',1,'(Global Namespace)'],['../oc_2redef_8h.html',1,'(Global Namespace)']]],

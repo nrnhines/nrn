@@ -28,6 +28,7 @@ var searchData=
   ['helpch',['HELPCH',['../estruct_8h.html#ac76380379bbcbc725e5ab3f6273f3daf',1,'estruct.h']]],
   ['hglue',['HGlue',['../_inter_views_2__defines_8h.html#ad3c6655d53e6f94f0121d8b4e53cb793',1,'HGlue():&#160;_defines.h'],['../__names_8h.html#ad3c6655d53e6f94f0121d8b4e53cb793',1,'HGlue():&#160;_names.h']]],
   ['hinf',['hinf',['../hh_8c.html#a0a08acbce0bc6518483d24463f3b135a',1,'hh.c']]],
+  ['hinf_5fhh',['hinf_hh',['../hh_8c.html#a74442bb061dc458c95da00dd7e84aa15',1,'hh.c']]],
   ['hires',['HIRES',['../plot_8cpp.html#a1c9924a6b2b20400631343200c30e79b',1,'plot.cpp']]],
   ['history',['HISTORY',['../uxnrnbbs_2nrnbbs_8cpp.html#a8a4c48612df951af1b7f066b47950b2f',1,'nrnbbs.cpp']]],
   ['history_5fappend',['HISTORY_APPEND',['../history_8cpp.html#a1272f46726ccc0a9698a09a0b659a613',1,'history.cpp']]],
@@ -58,6 +59,7 @@ var searchData=
   ['hscrollbar',['HScrollBar',['../_inter_views_2__defines_8h.html#ab9332a1b5bffc872425dee77cdd1efe9',1,'HScrollBar():&#160;_defines.h'],['../__names_8h.html#ab9332a1b5bffc872425dee77cdd1efe9',1,'HScrollBar():&#160;_names.h']]],
   ['hscroller',['HScroller',['../_inter_views_2__defines_8h.html#a645c9f810c6bf04a11b578580c26ea4c',1,'HScroller():&#160;_defines.h'],['../__names_8h.html#a645c9f810c6bf04a11b578580c26ea4c',1,'HScroller():&#160;_names.h']]],
   ['htau',['htau',['../hh_8c.html#a8d9a0b992809ac6d58bc628d8eeb140e',1,'hh.c']]],
+  ['htau_5fhh',['htau_hh',['../hh_8c.html#a5b86068447cc15546935f1d3ecf7f8ec',1,'hh.c']]],
   ['huge',['HUGE',['../estruct_8h.html#a5f3d17bf39f78da3422ca52e475d7724',1,'estruct.h']]],
   ['huge_5fval',['HUGE_VAL',['../_smpl_hist_8cpp.html#af2164b2db92d8a0ed3838ad5c28db971',1,'HUGE_VAL():&#160;SmplHist.cpp'],['../_smpl_stat_8cpp.html#af2164b2db92d8a0ed3838ad5c28db971',1,'HUGE_VAL():&#160;SmplStat.cpp'],['../machine_8h.html#af2164b2db92d8a0ed3838ad5c28db971',1,'HUGE_VAL():&#160;machine.h']]]
 ];

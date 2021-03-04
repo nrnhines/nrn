@@ -20,7 +20,7 @@ var searchData=
   ['widgetkitimpl',['WidgetKitImpl',['../_inter_views_2__defines_8h.html#a0c98e0be0d3df64f9149634718b40f07',1,'_defines.h']]],
   ['width',['WIDTH',['../oc_2axis_8cpp.html#a241aeeb764887ae5e3de58b98f04b16d',1,'axis.cpp']]],
   ['win32',['WIN32',['../mwprefix_8h.html#a6402e8b8594280624585b8fd643bfb65',1,'mwprefix.h']]],
-  ['window',['WINDOW',['../fourier_8cpp.html#a1c1ff01607260f08d4fd61341f9008e0',1,'WINDOW():&#160;fourier.cpp'],['../_inter_views_2__defines_8h.html#a12f0b3ea7a02ede1c5799a956e008406',1,'Window():&#160;_defines.h']]],
+  ['window',['Window',['../_inter_views_2__defines_8h.html#a12f0b3ea7a02ede1c5799a956e008406',1,'Window():&#160;_defines.h'],['../fourier_8cpp.html#a1c1ff01607260f08d4fd61341f9008e0',1,'WINDOW():&#160;fourier.cpp']]],
   ['windowcursorstack',['WindowCursorStack',['../_inter_views_2__defines_8h.html#a317dd067f74c2c759f53b697fcde29df',1,'_defines.h']]],
   ['windowrep',['WindowRep',['../_inter_views_2__defines_8h.html#a720a51cccadf730e51b18067a596ee82',1,'_defines.h']]],
   ['windowtable',['WindowTable',['../_inter_views_2__defines_8h.html#a430a0838900cd6baf660b6a3a2fb20d5',1,'_defines.h']]],

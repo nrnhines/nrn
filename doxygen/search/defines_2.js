@@ -34,7 +34,7 @@ var searchData=
   ['before_5fbreakpoint',['BEFORE_BREAKPOINT',['../membfunc_8h.html#affc1611e553b9e8acb727c61c0202578',1,'membfunc.h']]],
   ['before_5finitial',['BEFORE_INITIAL',['../membfunc_8h.html#a6902dde7efff195184b19379f19c18e7',1,'membfunc.h']]],
   ['before_5fstep',['BEFORE_STEP',['../membfunc_8h.html#aafad82939e4f93ee9102a8b6fa4c1649',1,'membfunc.h']]],
-  ['begin',['BEGIN',['../modlunit_2lex_8cpp.html#ab766bbbee08d04b67e3fe599d6900873',1,'BEGIN():&#160;lex.cpp'],['../nmodl_2lex_8cpp.html#ab766bbbee08d04b67e3fe599d6900873',1,'BEGIN():&#160;lex.cpp'],['../oc_2redef_8h.html#aa6756696bd68e8b60d37f7c5a68aec3d',1,'begin():&#160;redef.h']]],
+  ['begin',['begin',['../oc_2redef_8h.html#aa6756696bd68e8b60d37f7c5a68aec3d',1,'begin():&#160;redef.h'],['../modlunit_2lex_8cpp.html#ab766bbbee08d04b67e3fe599d6900873',1,'BEGIN():&#160;lex.cpp'],['../nmodl_2lex_8cpp.html#ab766bbbee08d04b67e3fe599d6900873',1,'BEGIN():&#160;lex.cpp']]],
   ['beginblk',['BEGINBLK',['../model_8h.html#ac7e63e72384e38f7fc4e02a7566d5a23',1,'model.h']]],
   ['bel',['BEL',['../tcap_8c.html#ab610cca62532f04c7b1e0d61eb7816ee',1,'tcap.c']]],
   ['bell',['BELL',['../estruct_8h.html#a3d3e3f5f057ab1f94efad5b35ec210ed',1,'estruct.h']]],

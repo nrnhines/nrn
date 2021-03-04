@@ -76,6 +76,7 @@ var searchData=
   ['nrnmpi_2ecpp',['nrnmpi.cpp',['../nrnmpi_8cpp.html',1,'']]],
   ['nrnmpi_2eh',['nrnmpi.h',['../nrnmpi_8h.html',1,'']]],
   ['nrnmpi_5fdynam_2ecpp',['nrnmpi_dynam.cpp',['../nrnmpi_2nrnmpi__dynam_8cpp.html',1,'(Global Namespace)'],['../oc_2nrnmpi__dynam_8cpp.html',1,'(Global Namespace)']]],
+  ['nrnmpi_5fdynam_2eh',['nrnmpi_dynam.h',['../nrnmpi__dynam_8h.html',1,'']]],
   ['nrnmpi_5fdynam_5fstubs_2ecpp',['nrnmpi_dynam_stubs.cpp',['../nrnmpi_2nrnmpi__dynam__stubs_8cpp.html',1,'(Global Namespace)'],['../oc_2nrnmpi__dynam__stubs_8cpp.html',1,'(Global Namespace)']]],
   ['nrnmpi_5fimpl_2eh',['nrnmpi_impl.h',['../nrnmpi__impl_8h.html',1,'']]],
   ['nrnmpidec_2eh',['nrnmpidec.h',['../nrnmpidec_8h.html',1,'']]],

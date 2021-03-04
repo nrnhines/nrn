@@ -224,10 +224,10 @@ With all dependencies installed, configure project with CMake as described in <a
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">docs</span>
 </pre></div>
 </div>
-<p>That will build everything in the <code class="docutils literal notranslate"><span class="pre">build/docs</span></code> folder and you can then open <code class="docutils literal notranslate"><span class="pre">index.html</span></code> locally.</p>
+<p>That will build everything in the <code class="docutils literal notranslate"><span class="pre">nrn/docs/_build</span></code> folder and you can then open <code class="docutils literal notranslate"><span class="pre">index.html</span></code> locally.</p>
 <p>When working locally on documentation, be aware of the following targets to speed up building process:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">doxygen</span></code> 			- build the API documentation only</li>
+<li><code class="docutils literal notranslate"><span class="pre">doxygen</span></code> 			- build the API documentation only. Ends up in <a class="reference external" href="_generated">_generated</a></li>
 <li><code class="docutils literal notranslate"><span class="pre">notebooks</span></code> 			- execute &amp; convert jupyter notebooks to html, see <a class="reference external" href="notebooks.sh">notebooks.sh</a></li>
 <li><code class="docutils literal notranslate"><span class="pre">notebooks-noexec</span></code>	- simply convert jupyter notebooks to html, see <a class="reference external" href="notebooks.sh">notebooks.sh</a></li>
 <li><code class="docutils literal notranslate"><span class="pre">sphinx</span></code> 				- build Sphinx documentation</li>

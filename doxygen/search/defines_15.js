@@ -17,7 +17,7 @@ var searchData=
   ['uniquestringpool',['UniqueStringPool',['../_o_s_2__defines_8h.html#ac5f42e8dbc89311d7f921c22ce9f838c',1,'_defines.h']]],
   ['uniquestringtable',['UniqueStringTable',['../_o_s_2__defines_8h.html#afcf14b88ef2d645ab73772feb852b0b3',1,'_defines.h']]],
   ['unit_5fstk_5fsize',['UNIT_STK_SIZE',['../modlunit_2units_8cpp.html#a86badef3b9c0e7d7e8883ecd86090b08',1,'units.cpp']]],
-  ['unlock',['UNLOCK',['../nrncvode_2netcvode_8cpp.html#af2aa2fe13863361670b63de7e6df0fdd',1,'UNLOCK():&#160;netcvode.cpp'],['../nvector__nrnthread_8cpp.html#a19e724aeaec7c4ef71c5087e2d63bd7a',1,'unlock():&#160;nvector_nrnthread.cpp'],['../nvector__nrnthread__ld_8cpp.html#a19e724aeaec7c4ef71c5087e2d63bd7a',1,'unlock():&#160;nvector_nrnthread_ld.cpp']]],
+  ['unlock',['unlock',['../nvector__nrnthread_8cpp.html#a19e724aeaec7c4ef71c5087e2d63bd7a',1,'unlock():&#160;nvector_nrnthread.cpp'],['../nvector__nrnthread__ld_8cpp.html#a19e724aeaec7c4ef71c5087e2d63bd7a',1,'unlock():&#160;nvector_nrnthread_ld.cpp'],['../nrncvode_2netcvode_8cpp.html#af2aa2fe13863361670b63de7e6df0fdd',1,'UNLOCK():&#160;netcvode.cpp']]],
   ['unmeta',['UNMETA',['../chardefs_8h.html#ac125da79ccad5247fa4172d995d0b533',1,'chardefs.h']]],
   ['unput',['unput',['../modlunit_2lex_8cpp.html#a448a4e9041a09588332733c6846c770c',1,'unput():&#160;lex.cpp'],['../nmodl_2lex_8cpp.html#a448a4e9041a09588332733c6846c770c',1,'unput():&#160;lex.cpp']]],
   ['upcase',['UpCase',['../readline_8cpp.html#a2d5f39b30d39be2a2b949eea67e27f57',1,'readline.cpp']]],
@@ -48,5 +48,6 @@ var searchData=
   ['userfloat',['USERFLOAT',['../hocdec_8h.html#a510abd0cb2215c23d009f332c1d3c1eb',1,'hocdec.h']]],
   ['userint',['USERINT',['../hocdec_8h.html#abe0e0bc17380dd3192e058352baa04d7',1,'hocdec.h']]],
   ['userproperty',['USERPROPERTY',['../hocdec_8h.html#a12691df0fc5cda63988a996008ce248e',1,'hocdec.h']]],
+  ['usetable',['usetable',['../hh_8c.html#a6032693a91fb829a5aeb13dc01a579d4',1,'hh.c']]],
   ['ushrt_5fmax',['USHRT_MAX',['../limits_8h.html#a689b119da994dece91d44b5aeac643ed',1,'limits.h']]]
 ];

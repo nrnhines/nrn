@@ -45,7 +45,7 @@ var searchData=
   ['rank_5fbbs',['rank_bbs',['../parallel_2ocbbs_8cpp.html#a66a3288be5a1abb49353090a9d084ab9',1,'ocbbs.cpp']]],
   ['rank_5fworld',['rank_world',['../parallel_2ocbbs_8cpp.html#aafbcbbfd858d388a76bbc66cee931481',1,'ocbbs.cpp']]],
   ['rate',['rate',['../class_k_s_single_trans.html#afffec260434b1970dc5ca77609fbec6f',1,'KSSingleTrans::rate(Point_process *)'],['../class_k_s_single_trans.html#a7ba4e55cee58c9a3289cb40711e86d9d',1,'KSSingleTrans::rate(double v)'],['../class_k_s_single_trans.html#a84ed3b72e55e07cd85680629111b320d',1,'KSSingleTrans::rate(Datum *pd)'],['../class_single_chan_state.html#a8d1f255c6d8b1f5cd61eb71e770be341',1,'SingleChanState::rate()']]],
-  ['rates',['rates',['../hh_8c.html#aaad99b2c30a66bf7f9d44e08f8735191',1,'hh.c']]],
+  ['rates',['rates',['../hh_8c.html#aaad99b2c30a66bf7f9d44e08f8735191',1,'rates(_threadargsprotocomma_ double):&#160;hh.c'],['../hh_8c.html#a46c81b308ef7c51d0acb4ed73a26a0da',1,'rates(double *_p, Datum *_ppvar, Datum *_thread, _NrnThread *_nt, double _lv):&#160;hh.c']]],
   ['ratio_5famp',['ratio_amp',['../class_imp.html#aa62ec248d669be0e537ae9f061f84269',1,'Imp::ratio_amp()'],['../class_non_lin_imp.html#a9bfac625ccb4b694d85f01e8bb59fcea',1,'NonLinImp::ratio_amp()'],['../impedanc_8cpp.html#aa469a858bce505bbdaf6d904a512162c',1,'ratio_amp():&#160;impedanc.cpp']]],
   ['ratio_5fview',['ratio_view',['../class_x_y_view.html#a812650c67d6972be603e2e3b1f9374c0',1,'XYView']]],
   ['rbox',['rbox',['../class_standard_window.html#a6950786ab9bab1de37e3bf891d1b5a1d',1,'StandardWindow']]],
