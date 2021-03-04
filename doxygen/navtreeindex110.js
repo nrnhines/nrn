@@ -1,5 +1,6 @@
 var NAVTREEINDEX110 =
 {
+"spaceplt_8cpp.html#ae3554240a06423631dbf946f233defc9":[5,0,0,11,94,13],
 "spaceplt_8cpp.html#af4218468dd01b68295fa8ab52e60e90e":[5,0,0,11,94,21],
 "spaceplt_8cpp_source.html":[5,0,0,11,94],
 "spalloc_8c.html":[5,0,0,20,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX110 =
 "spdaveb_8cpp_source.html":[5,0,0,10,17],
 "spdefs_8h.html":[5,0,0,20,11],
 "spdefs_8h.html#a00c23b242f0841208c08baadfc1c9b58":[5,0,0,20,11,29],
-"spdefs_8h.html#a037e783cce899f22ff5f9c5ddf896b1c":[5,0,0,20,11,25],
-"spdefs_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4":[5,0,0,20,11,50]
+"spdefs_8h.html#a037e783cce899f22ff5f9c5ddf896b1c":[5,0,0,20,11,25]
 };

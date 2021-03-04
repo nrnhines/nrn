@@ -209,7 +209,7 @@ var searchData=
   ['vectorize_5fsubstitute',['vectorize_substitute',['../nmodlfunc_8h.html#a21056c2d2f12cae6c9848bf5ec5408de',1,'nmodlfunc.h']]],
   ['vectorize_5fuse_5ffunc',['vectorize_use_func',['../nmodlfunc_8h.html#ae31ba68d4260ce0e3acd7b2f259a97df',1,'nmodlfunc.h']]],
   ['verbatim_5fadjust',['verbatim_adjust',['../group___n_m_o_d_l.html#ga3a6ff26fa7d29b2ca3b6da9e6b1cc8ea',1,'verbatim_adjust(char *q):&#160;modl.cpp'],['../group___n_m_o_d_l.html#ga3a6ff26fa7d29b2ca3b6da9e6b1cc8ea',1,'verbatim_adjust(char *q):&#160;modl.cpp']]],
-  ['verify_5fstructure',['verify_structure',['../fadvance_8cpp.html#ac54e763e9f96c15e42c909ded59983da',1,'fadvance.cpp']]],
+  ['verify_5fstructure',['verify_structure',['../fadvance_8cpp.html#ac54e763e9f96c15e42c909ded59983da',1,'verify_structure(void):&#160;fadvance.cpp'],['../psection_8cpp.html#ac54e763e9f96c15e42c909ded59983da',1,'verify_structure(void):&#160;fadvance.cpp']]],
   ['vfe_5fcons',['vfe_cons',['../xmenu_8cpp.html#adb8223b82e81e1a536a61a6055c108b0',1,'xmenu.cpp']]],
   ['vfe_5fdefault',['vfe_default',['../xmenu_8cpp.html#a3d84a65bc43a2faeb206e3b3eda0ca3f',1,'xmenu.cpp']]],
   ['vfe_5fdestruct',['vfe_destruct',['../xmenu_8cpp.html#a1f23a1029f2c69b53be8343bdf2f2709',1,'xmenu.cpp']]],
