@@ -6,6 +6,7 @@ var searchData=
   ['n_5fvectorcontent_5fnrnthreadld',['N_VectorContent_NrnThreadLD',['../nvector__nrnthread__ld_8h.html#ab80441c61ca306c7c1f59a5e65f653eb',1,'nvector_nrnthread_ld.h']]],
   ['name2cellorsec',['Name2CellorSec',['../pysecname2sec_8cpp.html#a70e20b195273938ae9a9ce13b55a553d',1,'pysecname2sec.cpp']]],
   ['node',['Node',['../section_8h.html#a0466fc5f1bc9e6de776e48149b19c471',1,'section.h']]],
+  ['nodeplist',['NodePList',['../partrans_8cpp.html#a7faa4c1f6c2f9653788242637c135dbf',1,'partrans.cpp']]],
   ['nonvsrcupdateinfo',['NonVSrcUpdateInfo',['../partrans_8cpp.html#adfca1c219d604ba8c1265b800ecf571e',1,'partrans.cpp']]],
   ['nrn_5fbamech_5ft',['nrn_bamech_t',['../membfunc_8h.html#a2d5745124560e53f03ce5584072f948b',1,'membfunc.h']]],
   ['nrn_5fode_5fcount_5ft',['nrn_ode_count_t',['../membfunc_8h.html#a45f8bde9ed978f835671f8e7d31a3d4c',1,'membfunc.h']]],

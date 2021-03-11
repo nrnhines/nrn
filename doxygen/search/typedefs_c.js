@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['mapnode2pdbl',['MapNode2PDbl',['../partrans_8cpp.html#acc869a7e5207a7121e688edd270bf089',1,'partrans.cpp']]],
+  ['mapsgid2int',['MapSgid2Int',['../partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d',1,'partrans.cpp']]],
   ['matrixptr',['MatrixPtr',['../spdefs_8h.html#a6bd923fd2fd5d39d31c39d62d8c478d3',1,'spdefs.h']]],
   ['memb_5ffunc',['Memb_func',['../membfunc_8h.html#a40375bc27773018f86bfbbc5dea6fd0b',1,'membfunc.h']]],
   ['memb_5flist',['Memb_list',['../nrnoc__ml_8h.html#a040600d5e790b2da6dde215fbc51326b',1,'nrnoc_ml.h']]],

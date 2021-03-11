@@ -101,14 +101,13 @@ $(document).ready(function(){initNavTree('partrans_8cpp.html','');});
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;errno.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="resource_8h_source.html">InterViews/resource.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="list_8h_source.html">OS/list.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="nrnoc2iv_8h_source.html">nrnoc2iv.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="nrniv__mf_8h_source.html">nrniv_mf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="nrnmpi_8h_source.html">nrnmpi.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="nrnhash_8h_source.html">nrnhash.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mymath_8h_source.html">mymath.h</a>&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &quot;<a class="el" href="partrans_8h_source.html">partrans.h</a>&quot;</code><br />
 </div>
 <p><a href="partrans_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -128,13 +127,27 @@ Macros</h2></td></tr>
 <tr class="separator:afe04cdda593e66dd95eeb701d8b3e7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da102fd11efbe615cf2c819e87f4de3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9da102fd11efbe615cf2c819e87f4de3">HAVEWANT_alltoallv</a>&#160;&#160;&#160;sgid_alltoallv</td></tr>
 <tr class="separator:a9da102fd11efbe615cf2c819e87f4de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e58052b64384d801a236b8160363e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a09e58052b64384d801a236b8160363e5">HAVEWANT2Int</a>&#160;&#160;&#160;MapSgid2Int</td></tr>
+<tr class="memitem:a09e58052b64384d801a236b8160363e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a09e58052b64384d801a236b8160363e5">HAVEWANT2Int</a>&#160;&#160;&#160;<a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a></td></tr>
 <tr class="separator:a09e58052b64384d801a236b8160363e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37be231c8d7f8d431358250c2759fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9b37be231c8d7f8d431358250c2759fd">CHKPNT</a>&#160;&#160;&#160;<a class="el" href="treeset_8cpp.html#a90db4c8ea76e4a6a14363cd92e22932a">fprintf</a>(<a class="el" href="bbsavestate_8cpp.html#a0b175f3b3b17a49df23f43f0584daebe">f</a>, &quot;chkpnt %<a class="el" href="multicore_8cpp.html#aeab71244afb687f16d8c4f5ee9d6ef0e">d\n</a>&quot;, chkpnt++);</td></tr>
 <tr class="separator:a9b37be231c8d7f8d431358250c2759fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a8e7f59aa51b2925100b5374a63fe2b0d"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a></td></tr>
+<tr class="separator:a8e7f59aa51b2925100b5374a63fe2b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc869a7e5207a7121e688edd270bf089"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="struct_node.html">Node</a> *, double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#acc869a7e5207a7121e688edd270bf089">MapNode2PDbl</a></td></tr>
+<tr class="separator:acc869a7e5207a7121e688edd270bf089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d94ca47bb4149450890b2702278491"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a68d94ca47bb4149450890b2702278491">DblPList</a></td></tr>
+<tr class="separator:a68d94ca47bb4149450890b2702278491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7faa4c1f6c2f9653788242637c135dbf"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="struct_node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a7faa4c1f6c2f9653788242637c135dbf">NodePList</a></td></tr>
+<tr class="separator:a7faa4c1f6c2f9653788242637c135dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36cdace55dc7346b666b6f8ba4f0df1"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="struct_point__process.html">Point_process</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ae36cdace55dc7346b666b6f8ba4f0df1">PPList</a></td></tr>
+<tr class="separator:ae36cdace55dc7346b666b6f8ba4f0df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f2af9bd55214f967d506ebad8d0913"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aa7f2af9bd55214f967d506ebad8d0913">IntList</a></td></tr>
+<tr class="separator:aa7f2af9bd55214f967d506ebad8d0913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955831dcca6e0e19aed607453a130ecc"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a></td></tr>
+<tr class="separator:a955831dcca6e0e19aed607453a130ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9076ca66e0eac270b06dcbda13a22f6e"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; double * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9076ca66e0eac270b06dcbda13a22f6e">DblPVec</a></td></tr>
 <tr class="separator:a9076ca66e0eac270b06dcbda13a22f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfca1c219d604ba8c1265b800ecf571e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ocdeck_8cpp.html#a7b109ded19176468549dea01f3fca60c">std::map</a>&lt; <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>, std::pair&lt; <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#adfca1c219d604ba8c1265b800ecf571e">NonVSrcUpdateInfo</a></td></tr>
@@ -162,26 +175,6 @@ Functions</h2></td></tr>
 <tr class="separator:a74587b5975cff6f3673a5a9488d68946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a93a41da378d9b6c9cc7c34d409646"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a71a93a41da378d9b6c9cc7c34d409646">nrn_partrans_update_ptrs</a> ()</td></tr>
 <tr class="separator:a71a93a41da378d9b6c9cc7c34d409646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffa339972ad1e2502106f7c3c96787f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a6ffa339972ad1e2502106f7c3c96787f">declareNrnHash</a> (MapSgid2Int, <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:a6ffa339972ad1e2502106f7c3c96787f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162a0a7d717a691e456e9e9504144271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a162a0a7d717a691e456e9e9504144271">implementNrnHash</a> (MapSgid2Int, <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
-<tr class="separator:a162a0a7d717a691e456e9e9504144271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf63e68a506db8ebd50290cf1550219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aecf63e68a506db8ebd50290cf1550219">declareNrnHash</a> (MapNode2PDbl, <a class="el" href="struct_node.html">Node</a> *, double *)</td></tr>
-<tr class="separator:aecf63e68a506db8ebd50290cf1550219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59300c2a262d4e0ae62244657e4e09e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a59300c2a262d4e0ae62244657e4e09e8">implementNrnHash</a> (MapNode2PDbl, <a class="el" href="struct_node.html">Node</a> *, double *)</td></tr>
-<tr class="separator:a59300c2a262d4e0ae62244657e4e09e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f925731beefc2a1de0381768cc157e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a98f925731beefc2a1de0381768cc157e">declarePtrList</a> (DblPList, double) <a class="el" href="nrncvode_2netcvode_8cpp.html#aa372937427ce0114b0c81b4d8573b334">implementPtrList</a>(DblPList</td></tr>
-<tr class="separator:a98f925731beefc2a1de0381768cc157e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4588049930757142fb5318538989b71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ab4588049930757142fb5318538989b71">declarePtrList</a> (NodePList, <a class="el" href="struct_node.html">Node</a>) <a class="el" href="nrncvode_2netcvode_8cpp.html#aa372937427ce0114b0c81b4d8573b334">implementPtrList</a>(NodePList</td></tr>
-<tr class="separator:ab4588049930757142fb5318538989b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c2be7a7c982553fcc56364c7882deb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aa3c2be7a7c982553fcc56364c7882deb">declarePtrList</a> (<a class="el" href="partrans_8cpp.html#acdc74b6650e1d6e3bb2f589016ef0e02">PPList</a>, <a class="el" href="struct_point__process.html">Point_process</a>) <a class="el" href="nrncvode_2netcvode_8cpp.html#aa372937427ce0114b0c81b4d8573b334">implementPtrList</a>(<a class="el" href="partrans_8cpp.html#acdc74b6650e1d6e3bb2f589016ef0e02">PPList</a></td></tr>
-<tr class="separator:aa3c2be7a7c982553fcc56364c7882deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4035bd1b9d998b4091d8e2abf3fb8d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_point__process.html">Point_process</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a4035bd1b9d998b4091d8e2abf3fb8d18">declareList</a> (IntList, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>) <a class="el" href="spaceplt_8cpp.html#a41d02ad0f7689b1b2f12a43313a02cfd">implementList</a>(IntList</td></tr>
-<tr class="separator:a4035bd1b9d998b4091d8e2abf3fb8d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828fcbefaa9f27e2377d9a762ae02763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_point__process.html">Point_process</a> <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a828fcbefaa9f27e2377d9a762ae02763">declareList</a> (SgidList, <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>) <a class="el" href="spaceplt_8cpp.html#a41d02ad0f7689b1b2f12a43313a02cfd">implementList</a>(SgidList</td></tr>
-<tr class="separator:a828fcbefaa9f27e2377d9a762ae02763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20608e619854235e676e62daa0f9275"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#af20608e619854235e676e62daa0f9275">alloclists</a> ()</td></tr>
-<tr class="separator:af20608e619854235e676e62daa0f9275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab5d3a1dda493e7aa08a5d479445400"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a7ab5d3a1dda493e7aa08a5d479445400">delete_imped_info</a> ()</td></tr>
 <tr class="separator:a7ab5d3a1dda493e7aa08a5d479445400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc789b9b6fa1c1fe1c1081aa24de9a0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#afbc789b9b6fa1c1fe1c1081aa24de9a0">non_vsrc_setinfo</a> (<a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a> ssid, <a class="el" href="struct_node.html">Node</a> *<a class="el" href="treeset_8cpp.html#add0c87c82883834eec91b5b34b49a1d9">nd</a>, double *<a class="el" href="partial_8cpp.html#a6387da4a388a70e2ff4cf440cb62f4a2">pv</a>)</td></tr>
@@ -194,15 +187,13 @@ Functions</h2></td></tr>
 <tr class="separator:a81b2054de5fb0f61bde334c308cef273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab83cf7868287504186b8e8c69af90e7e"><td class="memItemLeft" align="right" valign="top">static double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ab83cf7868287504186b8e8c69af90e7e">tar_ptr</a> (<a class="el" href="struct_point__process.html">Point_process</a> *pp, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="readline_8cpp.html#aa4a0de5bffcb84a01c711ce72ef194a9">index</a>)</td></tr>
 <tr class="separator:ab83cf7868287504186b8e8c69af90e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23106b098fe068e91d3de636bad58f08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a23106b098fe068e91d3de636bad58f08">check_pointers</a> ()</td></tr>
-<tr class="separator:a23106b098fe068e91d3de636bad58f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8df9728738709b23d863734631f11ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ad8df9728738709b23d863734631f11ea">target_ptr_update</a> ()</td></tr>
 <tr class="separator:ad8df9728738709b23d863734631f11ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb1d889e3eff19c9bc48842b12e4d32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a6eb1d889e3eff19c9bc48842b12e4d32">rm_ttd</a> ()</td></tr>
 <tr class="separator:a6eb1d889e3eff19c9bc48842b12e4d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63676377c68892dbf0363b484c596a56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a63676377c68892dbf0363b484c596a56">rm_svibuf</a> ()</td></tr>
 <tr class="separator:a63676377c68892dbf0363b484c596a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a2fe1fb05364b019f9b6df0271c113"><td class="memItemLeft" align="right" valign="top">static MapNode2PDbl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ad8a2fe1fb05364b019f9b6df0271c113">mk_svibuf</a> ()</td></tr>
+<tr class="memitem:ad8a2fe1fb05364b019f9b6df0271c113"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#acc869a7e5207a7121e688edd270bf089">MapNode2PDbl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ad8a2fe1fb05364b019f9b6df0271c113">mk_svibuf</a> ()</td></tr>
 <tr class="separator:ad8a2fe1fb05364b019f9b6df0271c113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2505e018713fa21359e94db8c2bfe3d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a2505e018713fa21359e94db8c2bfe3d1">pargap_jacobi_setup</a> (<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> <a class="el" href="history_8cpp.html#a31e945c9271ad63747ccfedc303fdb78">mode</a>)</td></tr>
 <tr class="separator:a2505e018713fa21359e94db8c2bfe3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,8 +234,8 @@ Variables</h2></td></tr>
 <tr class="separator:a3a6a5b2cf9f155ae0db4e16dbec06038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a993ed6fd8d6b131c5f855db96d40bbf3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a993ed6fd8d6b131c5f855db96d40bbf3">n_source_vi_buf_</a></td></tr>
 <tr class="separator:a993ed6fd8d6b131c5f855db96d40bbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a729e83db7de9357a72ee1e8deb15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_point__process.html">Point_process</a> <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> static <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a> double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a42a729e83db7de9357a72ee1e8deb15a">insrc_buf_</a></td></tr>
-<tr class="separator:a42a729e83db7de9357a72ee1e8deb15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af888af429d1df3b1f345acd13dd0f6c6"><td class="memItemLeft" align="right" valign="top">static double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#af888af429d1df3b1f345acd13dd0f6c6">insrc_buf_</a></td></tr>
+<tr class="separator:af888af429d1df3b1f345acd13dd0f6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceceb96882eacf512ceca7c2a4ead6fd"><td class="memItemLeft" align="right" valign="top">static double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aceceb96882eacf512ceca7c2a4ead6fd">outsrc_buf_</a></td></tr>
 <tr class="separator:aceceb96882eacf512ceca7c2a4ead6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5ab124351b57f69d3d05cd315834f3"><td class="memItemLeft" align="right" valign="top">static double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aab5ab124351b57f69d3d05cd315834f3">poutsrc_</a></td></tr>
@@ -263,22 +254,22 @@ Variables</h2></td></tr>
 <tr class="separator:a754686cdc5387044fa3e1a25ccb74f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19e3ecc3d11dd251a52ead431d66cd9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a19e3ecc3d11dd251a52ead431d66cd9c">outsrcdspl_</a></td></tr>
 <tr class="separator:a19e3ecc3d11dd251a52ead431d66cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69097a7dc6c6dc65bd8a85e4aeb01ba5"><td class="memItemLeft" align="right" valign="top">static MapSgid2Int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a69097a7dc6c6dc65bd8a85e4aeb01ba5">sid2insrc_</a></td></tr>
-<tr class="separator:a69097a7dc6c6dc65bd8a85e4aeb01ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80cf2baefe0f391d8f67ead476026f0"><td class="memItemLeft" align="right" valign="top">static DblPList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ab80cf2baefe0f391d8f67ead476026f0">targets_</a></td></tr>
-<tr class="separator:ab80cf2baefe0f391d8f67ead476026f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e040c8652e4a4191a1de4c8bf3f9d1b"><td class="memItemLeft" align="right" valign="top">static SgidList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9e040c8652e4a4191a1de4c8bf3f9d1b">sgid2targets_</a></td></tr>
-<tr class="separator:a9e040c8652e4a4191a1de4c8bf3f9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae104e46fd28b1cd2e195dfa1e00040a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#acdc74b6650e1d6e3bb2f589016ef0e02">PPList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ae104e46fd28b1cd2e195dfa1e00040a1">target_pntlist_</a></td></tr>
-<tr class="separator:ae104e46fd28b1cd2e195dfa1e00040a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a561bff7cbf04ec4b8578375808246c93"><td class="memItemLeft" align="right" valign="top">static IntList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a561bff7cbf04ec4b8578375808246c93">target_parray_index_</a></td></tr>
-<tr class="separator:a561bff7cbf04ec4b8578375808246c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9582af3242950b83662a546ad29aead1"><td class="memItemLeft" align="right" valign="top">static NodePList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9582af3242950b83662a546ad29aead1">visources_</a></td></tr>
-<tr class="separator:a9582af3242950b83662a546ad29aead1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7720e8818e8abd4417835e1f6737fc3"><td class="memItemLeft" align="right" valign="top">static SgidList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#ac7720e8818e8abd4417835e1f6737fc3">sgids_</a></td></tr>
-<tr class="separator:ac7720e8818e8abd4417835e1f6737fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe112a81aefb34162443150cd1a6a8d8"><td class="memItemLeft" align="right" valign="top">static MapSgid2Int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#abe112a81aefb34162443150cd1a6a8d8">sgid2srcindex_</a></td></tr>
-<tr class="separator:abe112a81aefb34162443150cd1a6a8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea11fac59fadc4b0768660e21d6cae7e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aea11fac59fadc4b0768660e21d6cae7e">sid2insrc_</a></td></tr>
+<tr class="separator:aea11fac59fadc4b0768660e21d6cae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dc9e198aa8431702b954c8b68a0f60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a68d94ca47bb4149450890b2702278491">DblPList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#af6dc9e198aa8431702b954c8b68a0f60">targets_</a></td></tr>
+<tr class="separator:af6dc9e198aa8431702b954c8b68a0f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a786f86b38874f09f3a8af26e555e136f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a786f86b38874f09f3a8af26e555e136f">sgid2targets_</a></td></tr>
+<tr class="separator:a786f86b38874f09f3a8af26e555e136f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b615a81ae8c9857dd80f791e44348fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#ae36cdace55dc7346b666b6f8ba4f0df1">PPList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9b615a81ae8c9857dd80f791e44348fd">target_pntlist_</a></td></tr>
+<tr class="separator:a9b615a81ae8c9857dd80f791e44348fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872e0c03844c7e41ef25bb351f6d461c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#aa7f2af9bd55214f967d506ebad8d0913">IntList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a872e0c03844c7e41ef25bb351f6d461c">target_parray_index_</a></td></tr>
+<tr class="separator:a872e0c03844c7e41ef25bb351f6d461c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8292278756c7a0242068d4358e1bf3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a7faa4c1f6c2f9653788242637c135dbf">NodePList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a6a8292278756c7a0242068d4358e1bf3">visources_</a></td></tr>
+<tr class="separator:a6a8292278756c7a0242068d4358e1bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae2089ac286ee313c1b9168a04a4e90"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a0ae2089ac286ee313c1b9168a04a4e90">sgids_</a></td></tr>
+<tr class="separator:a0ae2089ac286ee313c1b9168a04a4e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be4d355ded63c2042b30d359af6835f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a0be4d355ded63c2042b30d359af6835f">sgid2srcindex_</a></td></tr>
+<tr class="separator:a0be4d355ded63c2042b30d359af6835f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a87ac9012d835c2a5bd850a001bd253"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="partrans_8cpp.html#adfca1c219d604ba8c1265b800ecf571e">NonVSrcUpdateInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#a9a87ac9012d835c2a5bd850a001bd253">non_vsrc_update_info_</a></td></tr>
 <tr class="separator:a9a87ac9012d835c2a5bd850a001bd253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0b94c8799dcb9472d1686ce0f773f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="partrans_8cpp.html#aea0b94c8799dcb9472d1686ce0f773f9">max_targets_</a></td></tr>
@@ -326,12 +317,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define HAVEWANT2Int&#160;&#160;&#160;MapSgid2Int</td>
+          <td class="memname">#define HAVEWANT2Int&#160;&#160;&#160;<a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00683">683</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00670">670</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +338,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00682">682</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00669">669</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +354,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00681">681</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00668">668</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -374,16 +365,32 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PPList&#160;&#160;&#160;partrans_PPList</td>
+          <td class="memname">#define <a class="el" href="partrans_8cpp.html#ae36cdace55dc7346b666b6f8ba4f0df1">PPList</a>&#160;&#160;&#160;partrans_PPList</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00178">178</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00173">173</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a68d94ca47bb4149450890b2702278491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d94ca47bb4149450890b2702278491">&#9670;&nbsp;</a></span>DblPList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;double*&gt; <a class="el" href="partrans_8cpp.html#a68d94ca47bb4149450890b2702278491">DblPList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00171">171</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a9076ca66e0eac270b06dcbda13a22f6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9076ca66e0eac270b06dcbda13a22f6e">&#9670;&nbsp;</a></span>DblPVec</h2>
 
@@ -396,7 +403,71 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00202">202</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00195">195</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa7f2af9bd55214f967d506ebad8d0913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f2af9bd55214f967d506ebad8d0913">&#9670;&nbsp;</a></span>IntList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&gt; <a class="el" href="partrans_8cpp.html#aa7f2af9bd55214f967d506ebad8d0913">IntList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00175">175</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acc869a7e5207a7121e688edd270bf089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc869a7e5207a7121e688edd270bf089">&#9670;&nbsp;</a></span>MapNode2PDbl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="struct_node.html">Node</a>*, double*&gt; <a class="el" href="partrans_8cpp.html#acc869a7e5207a7121e688edd270bf089">MapNode2PDbl</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00170">170</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e7f59aa51b2925100b5374a63fe2b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7f59aa51b2925100b5374a63fe2b0d">&#9670;&nbsp;</a></span>MapSgid2Int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>, <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&gt; <a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00169">169</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7faa4c1f6c2f9653788242637c135dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7faa4c1f6c2f9653788242637c135dbf">&#9670;&nbsp;</a></span>NodePList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="struct_node.html">Node</a>*&gt; <a class="el" href="partrans_8cpp.html#a7faa4c1f6c2f9653788242637c135dbf">NodePList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00172">172</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -412,65 +483,43 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00207">207</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00200">200</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae36cdace55dc7346b666b6f8ba4f0df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36cdace55dc7346b666b6f8ba4f0df1">&#9670;&nbsp;</a></span>PPList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="struct_point__process.html">Point_process</a>*&gt; <a class="el" href="partrans_8cpp.html#ae36cdace55dc7346b666b6f8ba4f0df1">PPList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00174">174</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a955831dcca6e0e19aed607453a130ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955831dcca6e0e19aed607453a130ecc">&#9670;&nbsp;</a></span>SgidList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>&gt; <a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00176">176</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af20608e619854235e676e62daa0f9275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20608e619854235e676e62daa0f9275">&#9670;&nbsp;</a></span>alloclists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> alloclists </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00874">874</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a23106b098fe068e91d3de636bad58f08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23106b098fe068e91d3de636bad58f08">&#9670;&nbsp;</a></span>check_pointers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="ivoc_2classreg_8cpp.html#ac9c84fa68bbad002983e35ce3663c686">void</a> check_pointers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00319">319</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a81b2054de5fb0f61bde334c308cef273"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81b2054de5fb0f61bde334c308cef273">&#9670;&nbsp;</a></span>compute_parray_index()</h2>
 
@@ -505,215 +554,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00305">305</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a4035bd1b9d998b4091d8e2abf3fb8d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4035bd1b9d998b4091d8e2abf3fb8d18">&#9670;&nbsp;</a></span>declareList() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_point__process.html">Point_process</a> declareList </td>
-          <td>(</td>
-          <td class="paramtype">IntList&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a828fcbefaa9f27e2377d9a762ae02763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828fcbefaa9f27e2377d9a762ae02763">&#9670;&nbsp;</a></span>declareList() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_point__process.html">Point_process</a> <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> declareList </td>
-          <td>(</td>
-          <td class="paramtype">SgidList&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ffa339972ad1e2502106f7c3c96787f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ffa339972ad1e2502106f7c3c96787f">&#9670;&nbsp;</a></span>declareNrnHash() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">declareNrnHash </td>
-          <td>(</td>
-          <td class="paramtype">MapSgid2Int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aecf63e68a506db8ebd50290cf1550219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecf63e68a506db8ebd50290cf1550219">&#9670;&nbsp;</a></span>declareNrnHash() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">declareNrnHash </td>
-          <td>(</td>
-          <td class="paramtype">MapNode2PDbl&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98f925731beefc2a1de0381768cc157e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98f925731beefc2a1de0381768cc157e">&#9670;&nbsp;</a></span>declarePtrList() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">declarePtrList </td>
-          <td>(</td>
-          <td class="paramtype">DblPList&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4588049930757142fb5318538989b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4588049930757142fb5318538989b71">&#9670;&nbsp;</a></span>declarePtrList() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double declarePtrList </td>
-          <td>(</td>
-          <td class="paramtype">NodePList&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_node.html">Node</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa3c2be7a7c982553fcc56364c7882deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3c2be7a7c982553fcc56364c7882deb">&#9670;&nbsp;</a></span>declarePtrList() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">declarePtrList </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="partrans_8cpp.html#acdc74b6650e1d6e3bb2f589016ef0e02">PPList</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_point__process.html">Point_process</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00290">290</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -740,75 +581,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00226">226</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a162a0a7d717a691e456e9e9504144271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162a0a7d717a691e456e9e9504144271">&#9670;&nbsp;</a></span>implementNrnHash() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">implementNrnHash </td>
-          <td>(</td>
-          <td class="paramtype">MapSgid2Int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a59300c2a262d4e0ae62244657e4e09e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59300c2a262d4e0ae62244657e4e09e8">&#9670;&nbsp;</a></span>implementNrnHash() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">implementNrnHash </td>
-          <td>(</td>
-          <td class="paramtype">MapNode2PDbl&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00218">218</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +595,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static MapNode2PDbl* mk_svibuf </td>
+          <td class="memname">static <a class="el" href="partrans_8cpp.html#acc869a7e5207a7121e688edd270bf089">MapNode2PDbl</a>* mk_svibuf </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -835,7 +608,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00424">424</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00401">401</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -862,7 +635,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00502">502</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00479">479</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -889,7 +662,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00604">604</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00591">591</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -933,7 +706,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00237">237</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00229">229</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -977,7 +750,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00248">248</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00240">240</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +786,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01076">1076</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01031">1031</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1032,7 +805,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00886">886</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00845">845</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +824,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00364">364</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00345">345</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +874,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01084">1084</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01039">1039</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +902,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01131">1131</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l01086">1086</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +921,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00688">688</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00675">675</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +940,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00284">284</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00272">272</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1186,7 +959,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00343">343</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00319">319</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1216,7 +989,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00996">996</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00951">951</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1009,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00916">916</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00873">873</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1274,7 +1047,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00265">265</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00254">254</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1074,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00409">409</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00386">386</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1101,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00394">394</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00371">371</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1366,7 +1139,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00315">315</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00298">298</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1166,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00327">327</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00302">302</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1194,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00632">632</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00619">619</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1449,7 +1222,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00590">590</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00577">577</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1490,7 +1263,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00914">914</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00871">871</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1287,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00224">224</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00216">216</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1311,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00223">223</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00215">215</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1562,12 +1335,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00222">222</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00214">214</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a42a729e83db7de9357a72ee1e8deb15a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42a729e83db7de9357a72ee1e8deb15a">&#9670;&nbsp;</a></span>insrc_buf_</h2>
+<a id="af888af429d1df3b1f345acd13dd0f6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af888af429d1df3b1f345acd13dd0f6c6">&#9670;&nbsp;</a></span>insrc_buf_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1576,7 +1349,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_point__process.html">Point_process</a> <a class="el" href="nrnmusic_8cpp.html#a61569f2965b7a369eb10b6d75d410d11">int</a> static <a class="el" href="partrans_8h.html#ab6ffc963eb8d7ad0dd97c1d269cb454d">sgid_t</a> double* insrc_buf_</td>
+          <td class="memname">double* insrc_buf_</td>
         </tr>
       </table>
   </td>
@@ -1586,7 +1359,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00185">185</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00178">178</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1610,7 +1383,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00189">189</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00182">182</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1407,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00189">189</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00182">182</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1658,7 +1431,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00189">189</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00182">182</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1682,7 +1455,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00217">217</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00210">210</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1706,7 +1479,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00211">211</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00204">204</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1730,7 +1503,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00168">168</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00167">167</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1754,7 +1527,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00159">159</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00158">158</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1778,7 +1551,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00208">208</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00201">201</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1882,7 +1655,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00186">186</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00179">179</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1906,7 +1679,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00190">190</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00183">183</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1930,7 +1703,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00190">190</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00183">183</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1954,7 +1727,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00190">190</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00183">183</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -1978,7 +1751,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00187">187</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00180">180</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2002,12 +1775,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00188">188</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00181">181</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="abe112a81aefb34162443150cd1a6a8d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe112a81aefb34162443150cd1a6a8d8">&#9670;&nbsp;</a></span>sgid2srcindex_</h2>
+<a id="a0be4d355ded63c2042b30d359af6835f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be4d355ded63c2042b30d359af6835f">&#9670;&nbsp;</a></span>sgid2srcindex_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2016,7 +1789,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MapSgid2Int* sgid2srcindex_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a> sgid2srcindex_</td>
         </tr>
       </table>
   </td>
@@ -2026,12 +1799,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00205">205</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00198">198</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9e040c8652e4a4191a1de4c8bf3f9d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e040c8652e4a4191a1de4c8bf3f9d1b">&#9670;&nbsp;</a></span>sgid2targets_</h2>
+<a id="a786f86b38874f09f3a8af26e555e136f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786f86b38874f09f3a8af26e555e136f">&#9670;&nbsp;</a></span>sgid2targets_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2040,7 +1813,31 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SgidList* sgid2targets_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a> sgid2targets_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00190">190</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0ae2089ac286ee313c1b9168a04a4e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae2089ac286ee313c1b9168a04a4e90">&#9670;&nbsp;</a></span>sgids_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a955831dcca6e0e19aed607453a130ecc">SgidList</a> sgids_</td>
         </tr>
       </table>
   </td>
@@ -2054,8 +1851,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7720e8818e8abd4417835e1f6737fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7720e8818e8abd4417835e1f6737fc3">&#9670;&nbsp;</a></span>sgids_</h2>
+<a id="aea11fac59fadc4b0768660e21d6cae7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea11fac59fadc4b0768660e21d6cae7e">&#9670;&nbsp;</a></span>sid2insrc_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2064,7 +1861,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SgidList* sgids_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a8e7f59aa51b2925100b5374a63fe2b0d">MapSgid2Int</a> sid2insrc_</td>
         </tr>
       </table>
   </td>
@@ -2074,31 +1871,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00204">204</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a69097a7dc6c6dc65bd8a85e4aeb01ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69097a7dc6c6dc65bd8a85e4aeb01ba5">&#9670;&nbsp;</a></span>sid2insrc_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MapSgid2Int* sid2insrc_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00191">191</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00184">184</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2122,7 +1895,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00167">167</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00166">166</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2138,7 +1911,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00058">58</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00057">57</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2158,8 +1931,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a561bff7cbf04ec4b8578375808246c93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a561bff7cbf04ec4b8578375808246c93">&#9670;&nbsp;</a></span>target_parray_index_</h2>
+<a id="a872e0c03844c7e41ef25bb351f6d461c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872e0c03844c7e41ef25bb351f6d461c">&#9670;&nbsp;</a></span>target_parray_index_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2168,7 +1941,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IntList* target_parray_index_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#aa7f2af9bd55214f967d506ebad8d0913">IntList</a> target_parray_index_</td>
         </tr>
       </table>
   </td>
@@ -2178,12 +1951,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00199">199</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00192">192</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ae104e46fd28b1cd2e195dfa1e00040a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae104e46fd28b1cd2e195dfa1e00040a1">&#9670;&nbsp;</a></span>target_pntlist_</h2>
+<a id="a9b615a81ae8c9857dd80f791e44348fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b615a81ae8c9857dd80f791e44348fd">&#9670;&nbsp;</a></span>target_pntlist_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2192,7 +1965,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="partrans_8cpp.html#acdc74b6650e1d6e3bb2f589016ef0e02">PPList</a>* target_pntlist_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#ae36cdace55dc7346b666b6f8ba4f0df1">PPList</a> target_pntlist_</td>
         </tr>
       </table>
   </td>
@@ -2202,7 +1975,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00198">198</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00191">191</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2226,7 +1999,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00214">214</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00207">207</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2250,12 +2023,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00213">213</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00206">206</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab80cf2baefe0f391d8f67ead476026f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab80cf2baefe0f391d8f67ead476026f0">&#9670;&nbsp;</a></span>targets_</h2>
+<a id="af6dc9e198aa8431702b954c8b68a0f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dc9e198aa8431702b954c8b68a0f60">&#9670;&nbsp;</a></span>targets_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2264,7 +2037,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DblPList* targets_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a68d94ca47bb4149450890b2702278491">DblPList</a> targets_</td>
         </tr>
       </table>
   </td>
@@ -2274,7 +2047,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00196">196</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00189">189</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2298,7 +2071,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00158">158</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00157">157</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2314,7 +2087,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00057">57</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00056">56</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2338,7 +2111,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00913">913</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00870">870</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2362,12 +2135,12 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00913">913</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00870">870</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a9582af3242950b83662a546ad29aead1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9582af3242950b83662a546ad29aead1">&#9670;&nbsp;</a></span>visources_</h2>
+<a id="a6a8292278756c7a0242068d4358e1bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8292278756c7a0242068d4358e1bf3">&#9670;&nbsp;</a></span>visources_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2376,7 +2149,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">NodePList* visources_</td>
+          <td class="memname"><a class="el" href="partrans_8cpp.html#a7faa4c1f6c2f9653788242637c135dbf">NodePList</a> visources_</td>
         </tr>
       </table>
   </td>
@@ -2386,7 +2159,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00203">203</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00196">196</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>
@@ -2410,7 +2183,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00215">215</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="partrans_8cpp_source.html#l00208">208</a> of file <a class="el" href="partrans_8cpp_source.html">partrans.cpp</a>.</p>
 
 </div>
 </div>

@@ -96,7 +96,7 @@ var searchData=
   ['revsta',['REVSTA',['../estruct_8h.html#ac489093ea2d8b50ef907f88bbbd57445',1,'estruct.h']]],
   ['rg',['rg',['../memacs_2redef_8h.html#a5613bde842ffa05b20fc64daee73c778',1,'redef.h']]],
   ['rgbtable',['RGBTable',['../_inter_views_2__defines_8h.html#a91c225fc67aa65da2beea545b7c2eb4c',1,'_defines.h']]],
-  ['rhs',['rhs',['../lineq_8h.html#a1939c197093fe6b7fa35494fd046328d',1,'rhs():&#160;lineq.h'],['../multisplit_8cpp.html#a4db9d9768fbcecde6df42209c8176b22',1,'RHS():&#160;multisplit.cpp']]],
+  ['rhs',['RHS',['../multisplit_8cpp.html#a4db9d9768fbcecde6df42209c8176b22',1,'RHS():&#160;multisplit.cpp'],['../lineq_8h.html#a1939c197093fe6b7fa35494fd046328d',1,'rhs():&#160;lineq.h']]],
   ['right',['right',['../rbtqueue_8cpp.html#ae545bf658b2c876abbbae55a7d12875f',1,'rbtqueue.cpp']]],
   ['rightlink',['rightlink',['../spt2queue_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;spt2queue.cpp'],['../sptbinq_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptbinq.cpp'],['../sptfifoq_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptfifoq.cpp'],['../sptqueue_8cpp.html#a9d205c6ef5889343852b6996252b8284',1,'rightlink():&#160;sptqueue.cpp']]],
   ['rightmover',['RightMover',['../_inter_views_2__defines_8h.html#a8eee11eae500ffb6c709623b161e9d2b',1,'RightMover():&#160;_defines.h'],['../__names_8h.html#a8eee11eae500ffb6c709623b161e9d2b',1,'RightMover():&#160;_names.h']]],

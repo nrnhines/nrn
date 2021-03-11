@@ -91,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../cmake_doc/index.html">CMake Build Options</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="developer.html">Developer Builds</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Code Coverage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simplified-workflow">Simplified Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mac_pkg.html">Mac Binary Package (Apple M1 and Mac x86_64)</a></li>
 </ul>
 </li>
@@ -197,6 +198,11 @@
     <span class="n">cd</span> <span class="n">build</span>
 </pre></div>
 </div>
+<p>Note: A simplified workflow is supported via the cmake option
+<a class="reference external" href="../cmake_doc/options.html#nrn-enable-coverage-bool-off">-DNRN_ENABLE_COVERAGE=ON</a>
+that removes the need to be concerned with COVERAGE_FLAGS and explicit
+use of lcov and genhtml by providing the make targets <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cover_begin</span></code>
+and <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cover_html</span></code>. See <a class="reference external" href="#simplified-workflow">Simplified Workflow</a> below.</p>
 <p>In addition to the COVERAGE_FLAGS use whatever cmake options you desire.
 But you will generally want <code class="docutils literal notranslate"><span class="pre">-DNRN_ENABLE_TESTS=ON</span></code> to see what
 effect your new tests have on coverage.</p>
@@ -241,6 +247,24 @@ build folder and hence it is easier to remove).</p>
 </pre></div>
 </div>
 <p>And view the report by loading <code class="docutils literal notranslate"><span class="pre">./html/index.html</span></code> into your browser.</p>
+</div>
+<div class="section" id="simplified-workflow">
+<h1>Simplified Workflow<a class="headerlink" href="#simplified-workflow" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cmake .. -DCMAKE_INSTALL_PREFIX=install \
+  -DPYTHON_EXECUTABLE=`which python3` \
+  -DNRN_ENABLE_TESTS=ON \
+  -DNRN_ENABLE_COVERAGE=ON \
+  -DNRN_COVERAGE_FILES=&quot;src/nrniv/partrans.cpp;src/nmodl/parsact.cpp;src/nrnpython/nrnpy_hoc.cpp&quot;
+
+make -j 6 install
+
+make cover_begin
+
+make test
+
+make cover_html
+</pre></div>
+</div>
 </div>
 
 

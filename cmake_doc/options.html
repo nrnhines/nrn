@@ -130,6 +130,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#cmake-cxx-compiler-filepath-usr-bin-c">CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#readline-root-dir-path-usr">Readline_ROOT_DIR:PATH=/usr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#nrn-enable-tests-bool-off">NRN_ENABLE_TESTS:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-enable-coverage-bool-off">NRN_ENABLE_COVERAGE:BOOL=OFF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nrn-coverage-files-string">NRN_COVERAGE_FILES:STRING=</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#neuron-cmake-format-bool-off">NEURON_CMAKE_FORMAT:BOOL=OFF</a></li>
 </ul>
 </li>
@@ -586,6 +588,38 @@ python3 -m pytest
 python3 -m pytest test_currents.py
 </pre></div>
 </div>
+</div></blockquote>
+</div>
+<div class="section" id="nrn-enable-coverage-bool-off">
+<h2>NRN_ENABLE_COVERAGE:BOOL=OFF<a class="headerlink" href="#nrn-enable-coverage-bool-off" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Enable code coverage</p>
+<p>Requires <code class="docutils literal notranslate"><span class="pre">lcov</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">lcov</span></code>).</p>
+<p>Provides two make targets to simplify the repeated “run tests, examine coverage”
+workflow.</p>
+<blockquote>
+<div><p>– <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cover_begin</span></code> erases all previous coverage data
+(<code class="docutils literal notranslate"><span class="pre">*.gcda</span></code> files), and creates a baseline report. (Note all files and
+folders are created in the <code class="docutils literal notranslate"><span class="pre">CMAKE_BINARY_DIR</span></code> where you ran cmake.)</p>
+<p class="attribution">&mdash;<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">cover_html</span></code> creates a coverage report for the sum of all the
+software runs since the last <code class="docutils literal notranslate"><span class="pre">cover_begin</span></code> and prints a file url
+that you can paste into your browser to review the coverage.</p>
+</div></blockquote>
+<p>When using an iterative workflow to examine test coverage of a single
+or a few files, the above targets run much faster when this option is
+combined with <a class="reference internal" href="#nrn-coverage-files-string">NRN_COVERAGE_FILES:STRING=</a></p>
+<p>Code coverage without the use of this option is explained in
+<a class="reference external" href="../install/code_coverage.html">Developer Builds: Code Coverage</a></p>
+</div></blockquote>
+</div>
+<div class="section" id="nrn-coverage-files-string">
+<h2>NRN_COVERAGE_FILES:STRING=<a class="headerlink" href="#nrn-coverage-files-string" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Coverage limited to semicolon (;) separated list of file paths
+relative to <code class="docutils literal notranslate"><span class="pre">PROJECT_SOURCE_DIR</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">-DNRN_COVERAGE_FILES=&quot;src/nrniv/partrans.cpp;src/nmodl/parsact.cpp;src/nrnpython/nrnpy_hoc.cpp&quot;</span>
+<span class="pre">`</span></code></p>
 </div></blockquote>
 </div>
 <div class="section" id="neuron-cmake-format-bool-off">

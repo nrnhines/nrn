@@ -26,7 +26,7 @@ var searchData=
   ['pathrenderinfo',['PathRenderInfo',['../_inter_views_2__defines_8h.html#ae388126cf30c2d4ecfda0af5f38cf689',1,'_defines.h']]],
   ['pattern',['Pattern',['../_inter_views_2__defines_8h.html#a4cd513b63b638813c2f1644645863169',1,'_defines.h']]],
   ['patternrep',['PatternRep',['../_inter_views_2__defines_8h.html#a041b87e1e89f45c8e5fd5990dca042cf',1,'_defines.h']]],
-  ['pc',['PC',['../matlab_8h.html#a600721f0222b857dc8a3ae59e5077347',1,'PC():&#160;matlab.h'],['../section_8h.html#a2f03b14a71de24f7c904d4ce6d26d7f5',1,'pc():&#160;section.h'],['../oc_2redef_8h.html#a2f03b14a71de24f7c904d4ce6d26d7f5',1,'pc():&#160;redef.h']]],
+  ['pc',['pc',['../section_8h.html#a2f03b14a71de24f7c904d4ce6d26d7f5',1,'pc():&#160;section.h'],['../oc_2redef_8h.html#a2f03b14a71de24f7c904d4ce6d26d7f5',1,'pc():&#160;redef.h'],['../matlab_8h.html#a600721f0222b857dc8a3ae59e5077347',1,'PC():&#160;matlab.h']]],
   ['pdata',['pdata',['../md1redef_8h.html#aea2e5a282b579f8e789d94760dce947d',1,'md1redef.h']]],
   ['pdebug',['PDEBUG',['../bbsavestate_8cpp.html#ab524bf5b133823d5d8bdbae90a7b5977',1,'PDEBUG():&#160;bbsavestate.cpp'],['../oc_2hoc__oop_8cpp.html#ab524bf5b133823d5d8bdbae90a7b5977',1,'PDEBUG():&#160;hoc_oop.cpp']]],
   ['perm',['PERM',['../ocmatrix_8h.html#ac807e65b8c2cf0d924823993c5d3e99d',1,'ocmatrix.h']]],

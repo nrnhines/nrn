@@ -58,7 +58,7 @@ var searchData=
   ['termcap',['TERMCAP',['../estruct_8h.html#aabe12332269bfd961876a51f7daf3435',1,'estruct.h']]],
   ['termdef',['termdef',['../ansi_8c.html#a93f5abe59540a3587e8df3132a1eef20',1,'termdef():&#160;ansi.c'],['../ibm_8c.html#a93f5abe59540a3587e8df3132a1eef20',1,'termdef():&#160;ibm.c'],['../tcap_8c.html#a93f5abe59540a3587e8df3132a1eef20',1,'termdef():&#160;tcap.c']]],
   ['texcompositor',['TeXCompositor',['../_inter_views_2__defines_8h.html#abae10dc3e3ef75f254fc28725aeff2c1',1,'_defines.h']]],
-  ['text',['text',['../plot_8cpp.html#a479fffc6c8db2b437b1cca3c819f6079',1,'text():&#160;plot.cpp'],['../_inter_views_2__defines_8h.html#af3ff568bb8675bb41da57034f22f9b32',1,'Text():&#160;_defines.h'],['../plot_8cpp.html#a52e3db5a1724beab41ebbabe72460f12',1,'TEXT():&#160;plot.cpp'],['../plot_8cpp.html#a52e3db5a1724beab41ebbabe72460f12',1,'TEXT():&#160;plot.cpp']]],
+  ['text',['TEXT',['../plot_8cpp.html#a52e3db5a1724beab41ebbabe72460f12',1,'TEXT():&#160;plot.cpp'],['../plot_8cpp.html#a52e3db5a1724beab41ebbabe72460f12',1,'TEXT():&#160;plot.cpp'],['../_inter_views_2__defines_8h.html#af3ff568bb8675bb41da57034f22f9b32',1,'Text():&#160;_defines.h'],['../plot_8cpp.html#a479fffc6c8db2b437b1cca3c819f6079',1,'text():&#160;plot.cpp']]],
   ['textannotation',['TextAnnotation',['../_inter_views_2__defines_8h.html#a14515ec1ec0847cf8ef1fb18ec2770f7',1,'_defines.h']]],
   ['textbuffer',['TextBuffer',['../_inter_views_2__defines_8h.html#a15961e42265c429889d8898c97f59e5e',1,'_defines.h']]],
   ['textbutton',['TextButton',['../_inter_views_2__defines_8h.html#a7cf404c30da8f3e4c6b71abe491ec2ac',1,'_defines.h']]],

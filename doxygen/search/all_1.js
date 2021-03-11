@@ -167,7 +167,6 @@ var searchData=
   ['allocationtable',['AllocationTable',['../_inter_views_2__defines_8h.html#a07fb94e2d1d47e8e630689be26c38114',1,'_defines.h']]],
   ['allocationtableimpl',['AllocationTableImpl',['../_inter_views_2__defines_8h.html#a0a13800c9c25a512068ab045fb543dca',1,'_defines.h']]],
   ['alloced_5fline',['alloced_line',['../readline_8cpp.html#ad6d2c1fa363d02f61c04be6ed7c180eb',1,'readline.cpp']]],
-  ['alloclists',['alloclists',['../partrans_8cpp.html#af20608e619854235e676e62daa0f9275',1,'partrans.cpp']]],
   ['allocnet',['allocnet',['../class_save_state.html#a2e5610c12c333897cf453337f2252d01',1,'SaveState::allocnet()'],['../savstate_8cpp.html#aecaf978c878eb9ce9e5fb31b90490801',1,'allocnet():&#160;savstate.cpp']]],
   ['allocnode',['allocnode',['../class_save_state.html#ac2300402342c125ce7d2d8add9ae85d0',1,'SaveState']]],
   ['allocopy',['allocopy',['../rxd_8cpp.html#a7a6d230f809951143f6434b849f82f3a',1,'rxd.cpp']]],

@@ -9,7 +9,7 @@ var searchData=
   ['i386badmag',['I386BADMAG',['../coff_8h.html#a586d6bc7b2f2b40330a249cdb9f1d28a',1,'coff.h']]],
   ['i386magic',['I386MAGIC',['../coff_8h.html#add6fa4c072df112da54115446f30fd77',1,'coff.h']]],
   ['i_5fcap',['i_cap',['../capac_8cpp.html#a16275621babf65d9550b14d04b65335d',1,'capac.cpp']]],
-  ['i_5fmembrane',['i_membrane',['../extcelln_8cpp.html#ada83544b1e3dbd637baf8034b301c757',1,'i_membrane():&#160;extcelln.cpp'],['../options_8h.html#a0c869dee96086cb6ff861024cb5dc3e9',1,'I_MEMBRANE():&#160;options.h']]],
+  ['i_5fmembrane',['I_MEMBRANE',['../options_8h.html#a0c869dee96086cb6ff861024cb5dc3e9',1,'I_MEMBRANE():&#160;options.h'],['../extcelln_8cpp.html#ada83544b1e3dbd637baf8034b301c757',1,'i_membrane():&#160;extcelln.cpp']]],
   ['ib',['ib',['../intfire2_8c.html#a8ae555962fe1fc188c45ff01dd417905',1,'ib():&#160;intfire2.c'],['../intfire4_8c.html#a8ae555962fe1fc188c45ff01dd417905',1,'ib():&#160;intfire4.c']]],
   ['icapacity_5f',['icapacity_',['../mpispike_8h.html#afc270eb535bcc30c3155780731eb5098',1,'mpispike.h']]],
   ['iconwindow',['IconWindow',['../_inter_views_2__defines_8h.html#afb3296ce7440d22e39967b49c65d304c',1,'_defines.h']]],
